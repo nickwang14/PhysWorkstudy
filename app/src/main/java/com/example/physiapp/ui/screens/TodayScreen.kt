@@ -24,6 +24,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.FitnessCenter
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Psychology
@@ -66,6 +67,7 @@ fun TodayScreen(
     suggestedTemplate: WorkoutTemplate,
     workoutHistory: List<LoggedWorkoutSession>,
     onOpenLesson: (String) -> Unit,
+    onReviewSplit: (WorkoutTemplate) -> Unit,
     onStartWorkout: (WorkoutTemplate) -> Unit,
     onOpenDeloadDetails: () -> Unit,
     onAcknowledgeDeload: () -> Unit,
@@ -271,10 +273,11 @@ fun TodayScreen(
                 }
             }
 
-            // Training Track: Programmed Session Card
+            // Training Track: Programmed Session Card (Reviewable and Launchable)
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .clickable { onReviewSplit(suggestedTemplate) }
                     .testTag("today_workout_card"),
                 shape = RoundedCornerShape(20.dp),
                 colors = CardDefaults.cardColors(
@@ -359,10 +362,22 @@ fun TodayScreen(
 
                     Spacer(modifier = Modifier.height(14.dp))
 
+                    // Buttons row: Review Split | Start Live | Custom
                     Row(
                         modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.spacedBy(10.dp)
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
+                        OutlinedButton(
+                            onClick = { onReviewSplit(suggestedTemplate) },
+                            modifier = Modifier
+                                .weight(1f)
+                                .testTag("review_split_button")
+                        ) {
+                            Icon(Icons.Default.Info, contentDescription = null, modifier = Modifier.size(16.dp))
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text("Review")
+                        }
+
                         Button(
                             onClick = { onStartWorkout(suggestedTemplate) },
                             modifier = Modifier
@@ -373,18 +388,18 @@ fun TodayScreen(
                             )
                         ) {
                             Icon(Icons.Default.PlayArrow, contentDescription = null, modifier = Modifier.size(18.dp))
-                            Spacer(modifier = Modifier.width(6.dp))
-                            Text("Start Session")
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text("Start Live")
                         }
 
                         OutlinedButton(
                             onClick = onLogCustomWorkout,
                             modifier = Modifier
-                                .weight(1f)
+                                .weight(0.9f)
                                 .testTag("custom_workout_log_button")
                         ) {
                             Icon(Icons.Default.Add, contentDescription = null, modifier = Modifier.size(16.dp))
-                            Spacer(modifier = Modifier.width(4.dp))
+                            Spacer(modifier = Modifier.width(2.dp))
                             Text("Custom")
                         }
                     }

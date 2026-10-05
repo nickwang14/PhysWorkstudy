@@ -6,7 +6,7 @@ import com.example.physiapp.data.model.WorkoutTemplate
 
 object ExerciseRepository {
 
-    val exercises: List<ExerciseDef> = listOf(
+    private val _exercises: MutableList<ExerciseDef> = mutableListOf(
         // SQUAT PATTERN
         ExerciseDef(
             id = "sq-1",
@@ -26,7 +26,8 @@ object ExerciseRepository {
                 "Lumbar rounding ('butt wink') at bottom of range"
             ),
             regression = "Assisted TRX Squat or Box Squat to parallel bench",
-            progression = "Front Squat with barbell or Zercher Squat"
+            progression = "Front Squat with barbell or Zercher Squat",
+            gifUrl = "https://v2.exercisedb.io/image/9Z1c0UHz0YmG8C"
         ),
         ExerciseDef(
             id = "sq-2",
@@ -45,7 +46,8 @@ object ExerciseRepository {
                 "Hyperextending lower back instead of hinging slightly at hip"
             ),
             regression = "Split squat with both feet on floor",
-            progression = "Deficit Bulgarian split squat or barbell loading"
+            progression = "Deficit Bulgarian split squat or barbell loading",
+            gifUrl = "https://v2.exercisedb.io/image/5xL1Zq8V2kNm0R"
         ),
 
         // HINGE PATTERN
@@ -67,7 +69,8 @@ object ExerciseRepository {
                 "Hyperextending spine at the top of the lift"
             ),
             regression = "Wall-touch hip hinge or Cable pull-through",
-            progression = "Single-leg Romanian Deadlift"
+            progression = "Single-leg Romanian Deadlift",
+            gifUrl = "https://v2.exercisedb.io/image/YVfB9RkLz5uL6Z"
         ),
         ExerciseDef(
             id = "hg-2",
@@ -86,7 +89,8 @@ object ExerciseRepository {
                 "Lifting bell with shoulders rather than hip snap"
             ),
             regression = "Banded kettlebell deadlift",
-            progression = "Single-arm kettlebell swing"
+            progression = "Single-arm kettlebell swing",
+            gifUrl = "https://v2.exercisedb.io/image/P4qN7YwL1oZ8rV"
         ),
 
         // PUSH PATTERN
@@ -108,7 +112,8 @@ object ExerciseRepository {
                 "Bouncing weights or losing shoulder retraction"
             ),
             regression = "Floor Press with dumbbells (limits shoulder extension range)",
-            progression = "Barbell bench press or incline press"
+            progression = "Barbell bench press or incline press",
+            gifUrl = "https://v2.exercisedb.io/image/LzNqE20F7UqT4D"
         ),
         ExerciseDef(
             id = "ps-2",
@@ -127,7 +132,8 @@ object ExerciseRepository {
                 "Pressing load forward instead of straight vertically"
             ),
             regression = "Half-kneeling landmine press",
-            progression = "Standing strict barbell military press"
+            progression = "Standing strict barbell military press",
+            gifUrl = "https://v2.exercisedb.io/image/M5qR8vN1yL4zX2"
         ),
 
         // PULL PATTERN
@@ -148,7 +154,8 @@ object ExerciseRepository {
                 "Shrugging shoulder up toward the ear"
             ),
             regression = "Incline chest-supported row",
-            progression = "Bent-over barbell row or meadow row"
+            progression = "Bent-over barbell row or meadow row",
+            gifUrl = "https://v2.exercisedb.io/image/Qc1L8BvY5wR3xZ"
         ),
         ExerciseDef(
             id = "pl-2",
@@ -167,7 +174,8 @@ object ExerciseRepository {
                 "Failing to achieve external rotation at finish"
             ),
             regression = "Band pull-apart or prone Y-raise",
-            progression = "Heavier cable load or rings face pull"
+            progression = "Heavier cable load or rings face pull",
+            gifUrl = "https://v2.exercisedb.io/image/F7yT1wL8rV4mZ2"
         ),
 
         // CARRY PATTERN
@@ -188,7 +196,8 @@ object ExerciseRepository {
                 "Rushing steps with erratic balance"
             ),
             regression = "Lighter dumbbells or static isometric carry hold",
-            progression = "Trap bar carry or offset weight carry"
+            progression = "Trap bar carry or offset weight carry",
+            gifUrl = "https://v2.exercisedb.io/image/P4qN7YwL1oZ8rV"
         ),
         ExerciseDef(
             id = "cr-2",
@@ -207,7 +216,8 @@ object ExerciseRepository {
                 "Shrugging one shoulder higher than the other"
             ),
             regression = "Lighter load with focus on vertical posture",
-            progression = "Heavy kettlebell or sandbag suitcase carry"
+            progression = "Heavy kettlebell or sandbag suitcase carry",
+            gifUrl = "https://v2.exercisedb.io/image/S9kM2vR7pL1wX5"
         ),
 
         // ROTATION / ANTI-ROTATION PATTERN
@@ -228,7 +238,8 @@ object ExerciseRepository {
                 "Holding breath instead of bracing with diaphragmatic breaths"
             ),
             regression = "Half-kneeling Pallof press or lighter band",
-            progression = "Pallof press with overhead raise or lateral walkout"
+            progression = "Pallof press with overhead raise or lateral walkout",
+            gifUrl = "https://v2.exercisedb.io/image/K3wT9PzR4mL7sB"
         ),
         ExerciseDef(
             id = "rt-2",
@@ -247,7 +258,8 @@ object ExerciseRepository {
                 "Allowing hips to drop or rotate toward the floor"
             ),
             regression = "Leg extension only, hands remaining on floor",
-            progression = "Bird dog with resistance band or isometric square holds"
+            progression = "Bird dog with resistance band or isometric square holds",
+            gifUrl = "https://v2.exercisedb.io/image/W4rN8yL2mZ9vQ1"
         )
     )
 
@@ -299,6 +311,14 @@ object ExerciseRepository {
             physioFocus = "Promote synovial fluid circulation, preserve motor patterns, and accelerate tissue recovery."
         )
     )
+
+    val exercises: List<ExerciseDef> get() = _exercises
+
+    fun registerExercise(def: ExerciseDef) {
+        if (_exercises.none { it.id == def.id }) {
+            _exercises.add(def)
+        }
+    }
 
     fun getExerciseById(id: String): ExerciseDef? {
         return exercises.find { it.id == id }

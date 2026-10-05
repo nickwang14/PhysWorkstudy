@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
@@ -15,6 +17,21 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        val envFile = rootProject.file(".env")
+        val envProperties = Properties()
+        if (envFile.exists()) {
+            envProperties.load(envFile.inputStream())
+        }
+        val exerciseDbApiKey = envProperties.getProperty("EXERCISE_DB_API_KEY")
+            ?: System.getenv("EXERCISE_DB_API_KEY")
+            ?: ""
+        val exerciseDbHost = envProperties.getProperty("EXERCISE_DB_API_HOST")
+            ?: System.getenv("EXERCISE_DB_API_HOST")
+            ?: "exercisedb.p.rapidapi.com"
+
+        buildConfigField("String", "EXERCISE_DB_API_KEY", "\"$exerciseDbApiKey\"")
+        buildConfigField("String", "EXERCISE_DB_API_HOST", "\"$exerciseDbHost\"")
     }
 
     signingConfigs {
@@ -44,6 +61,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -59,5 +77,8 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.coil.compose)
+    implementation(libs.coil.gif)
+    implementation(libs.okhttp)
     debugImplementation(libs.androidx.ui.tooling)
 }

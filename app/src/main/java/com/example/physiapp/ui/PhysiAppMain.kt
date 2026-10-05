@@ -21,12 +21,14 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.AltRoute
 import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Dashboard
 import androidx.compose.material.icons.filled.FitnessCenter
 import androidx.compose.material.icons.filled.LocalFireDepartment
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -49,16 +51,22 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.compose.SubcomposeAsyncImage
+import coil.request.ImageRequest
 import com.example.physiapp.data.model.ExerciseDef
 import com.example.physiapp.data.model.WorkoutTemplate
+import com.example.physiapp.data.repository.ActiveWorkoutManager
 import com.example.physiapp.data.repository.CurriculumRepository
 import com.example.physiapp.data.repository.ExerciseRepository
 import com.example.physiapp.data.repository.UserPreferencesRepository
+import com.example.physiapp.ui.components.ActiveWorkoutMiniBar
+import com.example.physiapp.ui.components.ExerciseMotionPlayer
 import com.example.physiapp.ui.components.ReadinessDialog
 import com.example.physiapp.ui.screens.ActiveWorkoutScreen
 import com.example.physiapp.ui.screens.CurriculumScreen
@@ -66,9 +74,9 @@ import com.example.physiapp.ui.screens.LessonDetailScreen
 import com.example.physiapp.ui.screens.ProgressionMapScreen
 import com.example.physiapp.ui.screens.SettingsAndBadgesDialog
 import com.example.physiapp.ui.screens.TodayScreen
+import com.example.physiapp.ui.screens.WorkoutSplitReviewDialog
 import com.example.physiapp.ui.screens.WorkoutsScreen
 import com.example.physiapp.ui.theme.AmberTertiary
-import com.example.physiapp.ui.theme.DeloadIndigo
 import com.example.physiapp.ui.theme.PhysiAppTheme
 import com.example.physiapp.ui.theme.TealPrimary
 
@@ -89,29 +97,36 @@ fun PhysiAppMain() {
     val preferences by repository.prefsFlow.collectAsState()
     val workoutHistory by repository.workoutHistoryFlow.collectAsState()
 
+    // Active session state from ActiveWorkoutManager
+    val activeSession by ActiveWorkoutManager.currentSession.collectAsState()
+    val isTimerRunning by ActiveWorkoutManager.isTimerRunning.collectAsState()
+    val elapsedSeconds by ActiveWorkoutManager.elapsedSeconds.collectAsState()
+    val isSessionMinimized by ActiveWorkoutManager.isMinimized.collectAsState()
+
     var currentDestination by remember { mutableStateOf(AppDestination.TODAY) }
 
-    // Active full-screen flows
-    var activeWorkoutTemplate by remember { mutableStateOf<WorkoutTemplate?>(null) }
-    var isCustomWorkoutActive by remember { mutableStateOf(false) }
+    // Screen sub-flows
     var selectedLessonId by remember { mutableStateOf<String?>(null) }
+    var reviewingSplitTemplate by remember { mutableStateOf<WorkoutTemplate?>(null) }
 
     // Dialogs
     var showSettingsDialog by remember { mutableStateOf(false) }
     var showReadinessDialog by remember { mutableStateOf(false) }
     var selectedExerciseDetails by remember { mutableStateOf<ExerciseDef?>(null) }
 
-    // Back handling for nested sub-screens
-    BackHandler(enabled = selectedLessonId != null || activeWorkoutTemplate != null || isCustomWorkoutActive) {
-        if (selectedLessonId != null) {
-            selectedLessonId = null
-        } else if (activeWorkoutTemplate != null || isCustomWorkoutActive) {
-            activeWorkoutTemplate = null
-            isCustomWorkoutActive = false
+    // Back handling: if workout is full screen, minimize it rather than discarding!
+    BackHandler(
+        enabled = selectedLessonId != null || (activeSession != null && !isSessionMinimized) || reviewingSplitTemplate != null
+    ) {
+        when {
+            selectedLessonId != null -> selectedLessonId = null
+            reviewingSplitTemplate != null -> reviewingSplitTemplate = null
+            activeSession != null && !isSessionMinimized -> ActiveWorkoutManager.minimize()
         }
     }
 
     PhysiAppTheme {
+        // Full screen Lesson detail flow
         if (selectedLessonId != null) {
             val lesson = CurriculumRepository.getLessonById(selectedLessonId!!)
             if (lesson != null) {
@@ -127,18 +142,13 @@ fun PhysiAppMain() {
             }
         }
 
-        if (activeWorkoutTemplate != null || isCustomWorkoutActive) {
+        // Full screen Active Workout flow (when not minimized)
+        if (activeSession != null && !isSessionMinimized) {
             ActiveWorkoutScreen(
-                template = activeWorkoutTemplate,
                 weightUnit = preferences.weightUnit,
-                onCancel = {
-                    activeWorkoutTemplate = null
-                    isCustomWorkoutActive = false
-                },
+                onMinimize = { ActiveWorkoutManager.minimize() },
                 onFinish = { session ->
                     repository.logWorkout(session)
-                    activeWorkoutTemplate = null
-                    isCustomWorkoutActive = false
                     currentDestination = AppDestination.WORKOUTS
                 }
             )
@@ -230,24 +240,37 @@ fun PhysiAppMain() {
                 )
             },
             bottomBar = {
-                NavigationBar(
-                    modifier = Modifier.navigationBarsPadding(),
-                    containerColor = MaterialTheme.colorScheme.surface,
-                    contentColor = MaterialTheme.colorScheme.primary
-                ) {
-                    AppDestination.entries.forEach { dest ->
-                        NavigationBarItem(
-                            selected = currentDestination == dest,
-                            onClick = { currentDestination = dest },
-                            icon = { Icon(dest.icon, contentDescription = dest.label) },
-                            label = { Text(dest.label) },
-                            colors = NavigationBarItemDefaults.colors(
-                                selectedIconColor = TealPrimary,
-                                selectedTextColor = TealPrimary,
-                                indicatorColor = TealPrimary.copy(alpha = 0.15f)
-                            ),
-                            modifier = Modifier.testTag("nav_${dest.name.lowercase()}")
+                Column(modifier = Modifier.navigationBarsPadding()) {
+                    // Minimized Active Workout Bar (allows user to revisit splits, resume, and pause)
+                    if (activeSession != null && isSessionMinimized) {
+                        ActiveWorkoutMiniBar(
+                            session = activeSession,
+                            elapsedSeconds = elapsedSeconds,
+                            isTimerRunning = isTimerRunning,
+                            onTogglePlayPause = { ActiveWorkoutManager.togglePlayPause() },
+                            onResumeFullScreen = { ActiveWorkoutManager.maximize() },
+                            onQuickComplete = { ActiveWorkoutManager.maximize() }
                         )
+                    }
+
+                    NavigationBar(
+                        containerColor = MaterialTheme.colorScheme.surface,
+                        contentColor = MaterialTheme.colorScheme.primary
+                    ) {
+                        AppDestination.entries.forEach { dest ->
+                            NavigationBarItem(
+                                selected = currentDestination == dest,
+                                onClick = { currentDestination = dest },
+                                icon = { Icon(dest.icon, contentDescription = dest.label) },
+                                label = { Text(dest.label) },
+                                colors = NavigationBarItemDefaults.colors(
+                                    selectedIconColor = TealPrimary,
+                                    selectedTextColor = TealPrimary,
+                                    indicatorColor = TealPrimary.copy(alpha = 0.15f)
+                                ),
+                                modifier = Modifier.testTag("nav_${dest.name.lowercase()}")
+                            )
+                        }
                     }
                 }
             }
@@ -259,7 +282,6 @@ fun PhysiAppMain() {
             ) {
                 when (currentDestination) {
                     AppDestination.TODAY -> {
-                        // Find first incomplete lesson for today's lesson spotlight
                         val todayLesson = CurriculumRepository.allLessons.find { !progress.completedLessonIds.contains(it.id) }
                             ?: CurriculumRepository.allLessons.firstOrNull()
 
@@ -275,11 +297,16 @@ fun PhysiAppMain() {
                             suggestedTemplate = suggestedTemplate,
                             workoutHistory = workoutHistory,
                             onOpenLesson = { selectedLessonId = it },
-                            onStartWorkout = { activeWorkoutTemplate = it },
+                            onReviewSplit = { reviewingSplitTemplate = it },
+                            onStartWorkout = { tmpl ->
+                                ActiveWorkoutManager.startWorkout(tmpl)
+                            },
                             onOpenDeloadDetails = { showSettingsDialog = true },
                             onAcknowledgeDeload = { repository.acknowledgeDeload() },
                             onOpenReadinessDialog = { showReadinessDialog = true },
-                            onLogCustomWorkout = { isCustomWorkoutActive = true }
+                            onLogCustomWorkout = {
+                                ActiveWorkoutManager.startWorkout(null)
+                            }
                         )
                     }
 
@@ -298,8 +325,16 @@ fun PhysiAppMain() {
                             exercises = ExerciseRepository.exercises,
                             workoutHistory = workoutHistory,
                             progress = progress,
-                            onStartTemplate = { activeWorkoutTemplate = it },
-                            onStartCustomWorkout = { isCustomWorkoutActive = true },
+                            onStartTemplate = { tmpl ->
+                                ActiveWorkoutManager.startWorkout(tmpl)
+                            },
+                            onManualCompleteTemplate = { tmpl, dur, rpe, notes ->
+                                val session = ActiveWorkoutManager.createManualCompletedSession(tmpl, dur, rpe, notes)
+                                repository.logWorkout(session)
+                            },
+                            onStartCustomWorkout = {
+                                ActiveWorkoutManager.startWorkout(null)
+                            },
                             onOpenExerciseDetails = { selectedExerciseDetails = it }
                         )
                     }
@@ -314,6 +349,25 @@ fun PhysiAppMain() {
                     }
                 }
             }
+        }
+
+        // Split Review Dialog
+        if (reviewingSplitTemplate != null) {
+            WorkoutSplitReviewDialog(
+                template = reviewingSplitTemplate!!,
+                onDismiss = { reviewingSplitTemplate = null },
+                onStartWorkout = { tmpl ->
+                    reviewingSplitTemplate = null
+                    ActiveWorkoutManager.startWorkout(tmpl)
+                },
+                onManualComplete = { tmpl, dur, rpe, notes ->
+                    reviewingSplitTemplate = null
+                    val session = ActiveWorkoutManager.createManualCompletedSession(tmpl, dur, rpe, notes)
+                    repository.logWorkout(session)
+                    currentDestination = AppDestination.WORKOUTS
+                },
+                onOpenExerciseDetails = { selectedExerciseDetails = it }
+            )
         }
 
         // Settings Dialog
@@ -374,13 +428,21 @@ fun PhysiAppMain() {
                         Text("Target: ${def.primaryMuscles}", style = MaterialTheme.typography.bodySmall)
 
                         Spacer(modifier = Modifier.height(4.dp))
+                        ExerciseMotionPlayer(
+                            exerciseName = def.name,
+                            pattern = def.pattern,
+                            gifUrl = def.gifUrl,
+                            modifier = Modifier.fillMaxWidth()
+                        )
+
+                        Spacer(modifier = Modifier.height(6.dp))
                         Text("Physio Coaching Cues:", fontWeight = FontWeight.Bold)
                         def.coachingCues.forEach { cue ->
                             Text("• $cue", style = MaterialTheme.typography.bodySmall)
                         }
 
                         Spacer(modifier = Modifier.height(4.dp))
-                        Text("Common Mistakes to Avoid:", fontWeight = FontWeight.Bold)
+                        Text("Common Compensations:", fontWeight = FontWeight.Bold)
                         def.commonMistakes.forEach { mistake ->
                             Text("• $mistake", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
                         }

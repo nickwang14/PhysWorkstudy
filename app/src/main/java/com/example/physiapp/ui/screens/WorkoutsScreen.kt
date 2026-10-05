@@ -22,7 +22,9 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.ChevronRight
+import androidx.compose.material.icons.filled.Cloud
 import androidx.compose.material.icons.filled.FitnessCenter
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.PlayArrow
@@ -57,6 +59,7 @@ import com.example.physiapp.data.model.ExerciseDef
 import com.example.physiapp.data.model.LoggedWorkoutSession
 import com.example.physiapp.data.model.MovementPattern
 import com.example.physiapp.data.model.WorkoutTemplate
+import com.example.physiapp.data.repository.ExerciseRepository
 import com.example.physiapp.ui.theme.DeloadIndigo
 import com.example.physiapp.ui.theme.TealPrimary
 import java.text.SimpleDateFormat
@@ -71,12 +74,15 @@ fun WorkoutsScreen(
     workoutHistory: List<LoggedWorkoutSession>,
     progress: DualTrackProgress,
     onStartTemplate: (WorkoutTemplate) -> Unit,
+    onManualCompleteTemplate: (WorkoutTemplate, durationMinutes: Int, rpe: Int, notes: String) -> Unit,
     onStartCustomWorkout: () -> Unit,
     onOpenExerciseDetails: (ExerciseDef) -> Unit,
     modifier: Modifier = Modifier
 ) {
     var selectedTab by remember { mutableIntStateOf(0) } // 0: Program Plans, 1: Exercise Library, 2: Logged History
     var selectedPatternFilter by remember { mutableStateOf<MovementPattern?>(null) }
+    var reviewingTemplate by remember { mutableStateOf<WorkoutTemplate?>(null) }
+    var showExerciseDbBrowser by remember { mutableStateOf(false) }
 
     Box(
         modifier = modifier
@@ -152,7 +158,7 @@ fun WorkoutsScreen(
                                             color = MaterialTheme.colorScheme.onSurface
                                         )
                                         Text(
-                                            text = "Flexible days • No penalty for rest days",
+                                            text = "Flexible days • Rest days build adaptations",
                                             style = MaterialTheme.typography.bodySmall,
                                             color = MaterialTheme.colorScheme.onSurfaceVariant
                                         )
@@ -171,17 +177,29 @@ fun WorkoutsScreen(
                         }
 
                         item {
-                            Text(
-                                text = "Curated Physio Programs",
-                                style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
-                                color = MaterialTheme.colorScheme.onSurface
-                            )
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text(
+                                    text = "Curated Workout Splits",
+                                    style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
+                                    color = MaterialTheme.colorScheme.onSurface
+                                )
+                                Text(
+                                    text = "Tap to review",
+                                    style = MaterialTheme.typography.labelSmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                                )
+                            }
                         }
 
                         items(templates) { template ->
                             Card(
                                 modifier = Modifier
                                     .fillMaxWidth()
+                                    .clickable { reviewingTemplate = template }
                                     .testTag("template_${template.id}"),
                                 shape = RoundedCornerShape(20.dp),
                                 colors = CardDefaults.cardColors(
@@ -197,7 +215,7 @@ fun WorkoutsScreen(
                                         verticalAlignment = Alignment.CenterVertically
                                     ) {
                                         Text(
-                                            text = if (template.isDeloadTemplate) "DELOAD RECOVERY SESSION" else "FOUNDATION SPLIT",
+                                            text = if (template.isDeloadTemplate) "DELOAD RECOVERY SPLIT" else "FOUNDATION SPLIT",
                                             style = MaterialTheme.typography.labelSmall.copy(
                                                 letterSpacing = 1.sp,
                                                 fontWeight = FontWeight.Bold
@@ -253,20 +271,35 @@ fun WorkoutsScreen(
 
                                     Spacer(modifier = Modifier.height(14.dp))
 
-                                    Button(
-                                        onClick = { onStartTemplate(template) },
+                                    // Actions: Review Split (Details) | Start Live
+                                    Row(
                                         modifier = Modifier.fillMaxWidth(),
-                                        colors = ButtonDefaults.buttonColors(
-                                            containerColor = if (template.isDeloadTemplate) DeloadIndigo else TealPrimary
-                                        )
+                                        horizontalArrangement = Arrangement.spacedBy(8.dp)
                                     ) {
-                                        Icon(
-                                            imageVector = if (template.isDeloadTemplate) Icons.Default.Spa else Icons.Default.PlayArrow,
-                                            contentDescription = null,
-                                            modifier = Modifier.size(18.dp)
-                                        )
-                                        Spacer(modifier = Modifier.width(8.dp))
-                                        Text(if (template.isDeloadTemplate) "Start Deload Workout" else "Start Workout Session")
+                                        OutlinedButton(
+                                            onClick = { reviewingTemplate = template },
+                                            modifier = Modifier.weight(1f)
+                                        ) {
+                                            Icon(Icons.Default.Info, contentDescription = null, modifier = Modifier.size(16.dp))
+                                            Spacer(modifier = Modifier.width(4.dp))
+                                            Text("Review Split")
+                                        }
+
+                                        Button(
+                                            onClick = { onStartTemplate(template) },
+                                            modifier = Modifier.weight(1.2f),
+                                            colors = ButtonDefaults.buttonColors(
+                                                containerColor = if (template.isDeloadTemplate) DeloadIndigo else TealPrimary
+                                            )
+                                        ) {
+                                            Icon(
+                                                imageVector = if (template.isDeloadTemplate) Icons.Default.Spa else Icons.Default.PlayArrow,
+                                                contentDescription = null,
+                                                modifier = Modifier.size(18.dp)
+                                            )
+                                            Spacer(modifier = Modifier.width(6.dp))
+                                            Text("Start Live")
+                                        }
                                     }
                                 }
                             }
@@ -281,6 +314,68 @@ fun WorkoutsScreen(
                             .fillMaxSize()
                             .padding(16.dp)
                     ) {
+                        // ExerciseDB Integration Banner Card
+                        Card(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { showExerciseDbBrowser = true }
+                                .testTag("exercisedb_banner_card"),
+                            shape = RoundedCornerShape(16.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = MaterialTheme.colorScheme.surfaceVariant
+                            ),
+                            elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)
+                        ) {
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(14.dp),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    modifier = Modifier.weight(1f)
+                                ) {
+                                    Box(
+                                        modifier = Modifier
+                                            .size(38.dp)
+                                            .clip(CircleShape)
+                                            .background(TealPrimary.copy(alpha = 0.15f)),
+                                        contentAlignment = Alignment.Center
+                                    ) {
+                                        Icon(
+                                            Icons.Default.Cloud,
+                                            contentDescription = null,
+                                            tint = TealPrimary,
+                                            modifier = Modifier.size(20.dp)
+                                        )
+                                    }
+                                    Spacer(modifier = Modifier.width(12.dp))
+                                    Column {
+                                        Text(
+                                            text = "ExerciseDB Online Library",
+                                            style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
+                                            color = MaterialTheme.colorScheme.onSurface
+                                        )
+                                        Text(
+                                            text = "Explore 11,000+ exercises with animated GIFs & instructions",
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                }
+
+                                Icon(
+                                    imageVector = Icons.Default.ChevronRight,
+                                    contentDescription = "Open ExerciseDB",
+                                    tint = MaterialTheme.colorScheme.onSurfaceVariant
+                                )
+                            }
+                        }
+
+                        Spacer(modifier = Modifier.height(14.dp))
+
                         Text(
                             text = "Filter by Movement Pattern:",
                             style = MaterialTheme.typography.labelMedium,
@@ -508,6 +603,36 @@ fun WorkoutsScreen(
                     }
                 }
             }
+        }
+
+        // Split Review Dialog
+        if (reviewingTemplate != null) {
+            WorkoutSplitReviewDialog(
+                template = reviewingTemplate!!,
+                onDismiss = { reviewingTemplate = null },
+                onStartWorkout = { tmpl ->
+                    reviewingTemplate = null
+                    onStartTemplate(tmpl)
+                },
+                onManualComplete = { tmpl, dur, rpe, notes ->
+                    reviewingTemplate = null
+                    onManualCompleteTemplate(tmpl, dur, rpe, notes)
+                },
+                onOpenExerciseDetails = onOpenExerciseDetails
+            )
+        }
+
+        // ExerciseDB Browser Dialog
+        if (showExerciseDbBrowser) {
+            ExerciseDbBrowserDialog(
+                onDismiss = { showExerciseDbBrowser = false },
+                onSelectExercise = { edbItem ->
+                    val def = edbItem.toExerciseDef()
+                    ExerciseRepository.registerExercise(def)
+                    showExerciseDbBrowser = false
+                    onOpenExerciseDetails(def)
+                }
+            )
         }
     }
 }

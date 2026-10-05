@@ -26,7 +26,8 @@ data class ExerciseDef(
     val coachingCues: List<String>,
     val commonMistakes: List<String>,
     val regression: String,
-    val progression: String
+    val progression: String,
+    val gifUrl: String = ""
 )
 
 data class ExerciseSet(
