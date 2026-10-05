@@ -1,0 +1,20 @@
+# Kinetics and Force
+
+## Overview
+Kinetics asks what causes motion. It focuses on forces, internal tension, external resistance, and the relationship between load and movement.
+
+## Key Ideas
+- force is a push or pull that can change motion or maintain position
+- muscles create internal force while external objects create resistance
+- balance between force and stability determines whether movement is controlled or compromised
+- not all force is equal: direction, timing, and tissue tolerance matter
+
+## Connection to Practice
+A learner who understands force can better explain why a heavy lift feels different from a controlled mobility drill or why a movement may need modification.
+
+## Knowledge Check
+How is a bodyweight squat different from a loaded squat in terms of force demands and tissue tolerance?
+
+## Scenario
+A learner works through a case involving subchapter 3 kinetics and force. They should explain what changes, why it matters, and what the next training decision should be.
+

@@ -1,0 +1,6 @@
+{
+  "name": "PhysiApp",
+  "description": "Evidence-based movement science learning curriculum and consistency-first workout tracking app with dual-track streaks and deload periodization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,4 @@
+# Source textbooks are large binary reference material kept local-only.
+# See theory-and-knowledge/knowledge/README.md for the list of source texts
+# and where to re-download them.
+theory-and-knowledge/knowledge/*.pdf
