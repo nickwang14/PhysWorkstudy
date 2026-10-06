@@ -36,12 +36,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.Coil
 import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
 import com.example.physiapp.data.model.ExerciseDbItem
@@ -94,28 +96,61 @@ fun ExerciseDbItemDialog(
             ) {
                 // Exercise Animated Visual / GIF
                 if (item.gifUrl.isNotBlank()) {
+                    val context = LocalContext.current
                     Card(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .height(180.dp),
+                            .height(190.dp),
                         shape = RoundedCornerShape(16.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
                     ) {
-                        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                        Box(modifier = Modifier.fillMaxSize()) {
                             SubcomposeAsyncImage(
-                                model = ImageRequest.Builder(LocalContext.current)
+                                model = ImageRequest.Builder(context)
                                     .data(item.gifUrl)
                                     .crossfade(true)
                                     .build(),
+                                imageLoader = Coil.imageLoader(context),
                                 contentDescription = item.name,
                                 contentScale = ContentScale.Fit,
-                                modifier = Modifier.fillMaxSize(),
+                                modifier = Modifier
+                                    .fillMaxSize()
+                                    .padding(vertical = 4.dp),
                                 loading = {
                                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                                         CircularProgressIndicator(modifier = Modifier.size(28.dp), color = TealPrimary)
                                     }
                                 }
                             )
+
+                            // Live Demo Tag
+                            Box(
+                                modifier = Modifier
+                                    .align(Alignment.TopStart)
+                                    .padding(8.dp)
+                                    .clip(RoundedCornerShape(8.dp))
+                                    .background(Color.Black.copy(alpha = 0.65f))
+                                    .padding(horizontal = 8.dp, vertical = 3.dp)
+                            ) {
+                                Row(verticalAlignment = Alignment.CenterVertically) {
+                                    Box(
+                                        modifier = Modifier
+                                            .size(6.dp)
+                                            .clip(CircleShape)
+                                            .background(TealPrimary)
+                                    )
+                                    Spacer(modifier = Modifier.width(4.dp))
+                                    Text(
+                                        text = "EXERCISEDB LIVE GIF",
+                                        style = MaterialTheme.typography.labelSmall.copy(
+                                            fontSize = 9.sp,
+                                            fontWeight = FontWeight.Bold,
+                                            letterSpacing = 0.6.sp
+                                        ),
+                                        color = Color.White
+                                    )
+                                }
+                            }
                         }
                     }
                 }

@@ -145,7 +145,7 @@ object ExerciseDbApiService {
             name = "barbell squat",
             bodyPart = "upper legs",
             equipment = "barbell",
-            gifUrl = "https://v2.exercisedb.io/image/9Z1c0UHz0YmG8C",
+            gifUrl = "https://static.exercisedb.dev/media/yn8yg1r.gif",
             target = "quads",
             secondaryMuscles = listOf("glutes", "hamstrings", "calves", "core"),
             instructions = listOf(
@@ -161,7 +161,7 @@ object ExerciseDbApiService {
             name = "barbell deadlift",
             bodyPart = "upper legs",
             equipment = "barbell",
-            gifUrl = "https://v2.exercisedb.io/image/YVfB9RkLz5uL6Z",
+            gifUrl = "https://static.exercisedb.dev/media/wQ2c4XD.gif",
             target = "glutes",
             secondaryMuscles = listOf("hamstrings", "lower back", "lats", "forearms"),
             instructions = listOf(
@@ -177,7 +177,7 @@ object ExerciseDbApiService {
             name = "barbell bench press",
             bodyPart = "chest",
             equipment = "barbell",
-            gifUrl = "https://v2.exercisedb.io/image/LzNqE20F7UqT4D",
+            gifUrl = "https://assets.exercisedb.dev/media/qU7GQpl.gif",
             target = "pectorals",
             secondaryMuscles = listOf("triceps", "anterior deltoids"),
             instructions = listOf(
@@ -193,7 +193,7 @@ object ExerciseDbApiService {
             name = "barbell bent over row",
             bodyPart = "back",
             equipment = "barbell",
-            gifUrl = "https://v2.exercisedb.io/image/Qc1L8BvY5wR3xZ",
+            gifUrl = "https://static.exercisedb.dev/media/BJ0Hz5L.gif",
             target = "upper back",
             secondaryMuscles = listOf("biceps", "lats", "posterior deltoids"),
             instructions = listOf(
@@ -208,7 +208,7 @@ object ExerciseDbApiService {
             name = "dumbbell farmer's carry",
             bodyPart = "cardio",
             equipment = "dumbbell",
-            gifUrl = "https://v2.exercisedb.io/image/P4qN7YwL1oZ8rV",
+            gifUrl = "https://static.exercisedb.dev/media/qPEzJjA.gif",
             target = "forearms",
             secondaryMuscles = listOf("traps", "abs", "glutes"),
             instructions = listOf(
@@ -223,7 +223,7 @@ object ExerciseDbApiService {
             name = "cable pallof press",
             bodyPart = "waist",
             equipment = "cable",
-            gifUrl = "https://v2.exercisedb.io/image/K3wT9PzR4mL7sB",
+            gifUrl = "https://static.exercisedb.dev/media/9pa4H5m.gif",
             target = "abs",
             secondaryMuscles = listOf("obliques", "glutes", "shoulders"),
             instructions = listOf(
