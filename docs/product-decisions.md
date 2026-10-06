@@ -165,4 +165,27 @@ The progression map should represent concept gates, not calendar periods. Curric
 
 ---
 
+### PD-007: Fuller Daily Updates with Lesson-Specific Optional Reading
+**Date:** 2026-10-05
+**Status:** Decided (content drafts; delivery preference not yet implemented)
+
+**Decision:**
+Daily updates contain substantive teaching rather than only a short summary: approximately 3–5 minutes of reading, with existing knowledge checks and application bringing the standard update to approximately eight minutes. Each authored lesson may link to its own distinct, optional extended reading. Target 15–20 minutes; relevant assignments may run up to about 30 minutes, while shorter source selections should offer additional optional material rather than filler. A genuinely short or transitional lesson may omit an extension.
+
+**Delivery:**
+- A lesson may offer a **Read more** link to its own optional reading assignment.
+- Optional readings can be skipped or resumed. Their contribution to progression and daily accounting is governed internally; those rules are not advertised in the educational reading copy.
+- Optional reading and its textbook assignments must not be built into the texting curriculum. No texting or longer-update UI is introduced by this decision.
+
+**Academic basis:**
+Use selected, verified sections from the four local textbooks in `docs` with original synthesis and worked cases. Specify inclusive PDF and printed page ranges and estimate the actual assigned reading, not just the guide's length. Preserve source rights and professional review boundaries.
+
+**Current coverage:**
+All 73 authored lessons in Chapters 1–4 have expanded daily-reading drafts. Optional extended reading is associated with the individual lesson, with distinct source selections. See the internal [reading source index](../theory-and-knowledge/knowledge/curriculum/foundations-of-movement/reading-options.md).
+
+**Rationale:**
+Increase depth and usefulness for everyday learning while preserving the 5–10-minute standard habit and allowing interested learners to go further without extra progression pressure.
+
+---
+
 *Add new decisions below this line in PD-NNN format.*

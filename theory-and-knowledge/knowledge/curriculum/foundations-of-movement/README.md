@@ -33,3 +33,10 @@ This program introduces the movement foundations that support safe, effective, a
 
 ## Organization Note
 The active curriculum uses a chapter-based structure. Older year-and-term material was removed to keep the live model clear and consistent with the current program design.
+
+## Daily and Optional Reading
+Daily lessons should teach a concept, not just summarize it. The authored lessons in Chapters 1–4 provide approximately 3–5 minutes of core reading, with an estimated eight-minute daily update including the existing checks and application prompt.
+
+Each authored lesson has its own optional **15–30-minute reading assignment**, with source sections selected to extend that lesson's particular topic. The precise sections, page links, and reading focus appear directly in the lesson. These content drafts are pending source, editorial, and domain review.
+
+See the internal [lesson reading index](reading-options.md) for the assignment registry and textbook editions.

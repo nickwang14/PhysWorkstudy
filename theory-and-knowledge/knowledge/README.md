@@ -15,7 +15,12 @@ Program (e.g., "Foundations of Movement")
 ```
 This is designed to feel like a Duolingo or Candy Crush progression map: users move through concept gates, not academic semesters. Each gate unlocks after enough mastery and completion signals.
 
-Each lesson file includes: title, learning objective, core concept, key terms, knowledge check questions, and "apply it" tip.
+Each lesson file includes: title, learning objective, core concept, key terms, knowledge check questions, and "apply it" tip. Authored lessons can include a topic-matched optional textbook reading. See the internal [lesson reading index](curriculum/foundations-of-movement/reading-options.md).
+
+Textbook PDFs are local-only source material and are ignored by Git. Optional reading content for the app is prepared as a separately attributed excerpt in `curriculum/foundations-of-movement/optional-readings/`; lessons link to those local files, not to the PDFs. Excerpts remain drafts until checked against the source pages and reviewed under `project-management/content-operations.md`.
+
+### `textbook-indices/`
+Start source-backed content work with the [textbook reference indices](textbook-indices/README.md). A&P is indexed by chapter, numbered subchapter, navigation aid, figure and table with PDF/printed pages. Its curated guide identifies useful teaching material, while its usage log tracks what was checked, created and needs another textbook visit. Other sources are queued. Use the repository `textbook-learning-material` skill to locate, read and compile material, then update these records alongside the content.
 
 ### `frameworks/`
 Reference documents from certified educational or exercise frameworks used as source material for curriculum and content accuracy reviews.
@@ -85,7 +90,11 @@ subchapter: "movement-terminology"
 lesson: 1
 title: "What Is Movement?"
 learning_objective: "Define movement and explain why movement terminology matters in exercise and training"
-estimated_duration_minutes: 5
+estimated_duration_minutes: 8
+estimated_reading_minutes: 4
+status: draft
 knowledge_check_count: 3
 ---
 ```
+
+`estimated_duration_minutes` estimates the whole standard daily update; `estimated_reading_minutes` estimates its core reading only. Each optional lesson assignment has a unique reading ID and an estimated duration in the internal reading registry. Its progression and delivery flags are tracked separately from learner-facing reading copy.

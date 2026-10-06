@@ -65,6 +65,15 @@ daily_learning_nodes
 
 **Daily completion threshold:** A learning node is `completed` when: lesson is finished AND knowledge check passed (or attempted) AND time_in_app ≥ configured minimum (default: 3 minutes).
 
+### Optional Lesson Reading and Progress Attribution (Design Specification)
+- Each lesson may link its own optional extended reading, identified by a unique `reading_id` and `lesson_id`. The internal registry derives `reading_id` as `{lesson_id}-optional` and records `content_type: optional_extended_reading`, `required_for_gate: false`, `include_in_texting_curriculum: false`, and estimated duration.
+- Proposed optional-reading progress is stored separately in `user_optional_reading_progress` (`user_id`, `reading_id`, `last_position`, `last_accessed_at`). It does not write lesson status, curriculum completion percentages, or daily learning-node state.
+- Keep optional-reader time separate from required lesson time and any configured daily threshold. Reading may be resumed; it does not create an additional required daily assignment.
+- Only the existing lesson-completion logic contributes to its current streak/gate effects. Optional-reading activity does not emit `lesson_completed` or `learning_streak_extended` and is excluded from lesson-time analytics.
+- Any future texting export filters out `content_type: optional_extended_reading`, regardless of the user's reading preference.
+
+These are internal tracking boundaries, not learner-facing copy, a new UI rule, or an implemented schema migration. See the internal [reading source index](../knowledge/curriculum/foundations-of-movement/reading-options.md).
+
 ---
 
 ## Analytics Events (PostHog)
