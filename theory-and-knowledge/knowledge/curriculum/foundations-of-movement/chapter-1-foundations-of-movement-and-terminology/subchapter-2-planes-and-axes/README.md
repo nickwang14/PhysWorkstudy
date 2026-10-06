@@ -3,6 +3,14 @@
 ## Overview
 This subchapter introduces the anatomical reference system used to describe movement. It gives the learner a language for talking about motion in a structured, repeatable way.
 
+## Lessons
+1. [Planes and Axes](./lesson-01-planes-and-axes.md)
+2. [Axes and Coupled Plane Motion](./lesson-02-axes-and-coupled-plane-motion.md)
+
+Each lesson links to its own optional reading assignment, selected to deepen that lesson's topic. Assignments use different textbook sections and take approximately 15–30 minutes.
+
+All content remains draft; source, editorial, and domain review are pending. These materials are educational, not diagnostic or individualized medical advice.
+
 ## Key Ideas
 - the body is described in three anatomical planes
 - movement occurs around axes

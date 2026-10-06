@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Anatomical planes and their perpendicular axes</title>
+  <desc id="desc">Three original schematic panels show sagittal, frontal, and transverse planes and the perpendicular axes around which movement is described. Captions state which body regions each plane separates.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7fafc}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2}.head{font:700 25px sans-serif;fill:#172554}.body{font:18px sans-serif;fill:#334155}.small{font:15px sans-serif;fill:#475569}.figure{fill:#e2e8f0;stroke:#334155;stroke-width:3}.plane{fill:#38bdf8;fill-opacity:.26;stroke:#0284c7;stroke-width:4}.axis{stroke:#ef4444;stroke-width:5;stroke-dasharray:10 7}.arrow{stroke:#0f766e;stroke-width:5;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#0f766e"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="520" rx="24"/>
+  <g transform="translate(20 20)"><rect class="card" width="370" height="480" rx="18"/>
+    <text class="head" x="24" y="42">Sagittal plane</text><text class="body" x="24" y="72">Separates left from right</text>
+    <circle class="figure" cx="185" cy="135" r="29"/><path class="figure" d="M150 172 Q185 158 220 172 L232 282 Q185 300 138 282 Z"/><path class="figure" d="M150 184 L98 259 L116 270 L166 224 M220 184 L272 259 L254 270 L204 224"/><path class="figure" d="M157 282 L150 390 L176 390 L185 300 L194 390 L220 390 L213 282 Z"/>
+    <path class="plane" d="M182 104 L190 104 L190 395 L182 395 Z"/><path class="axis" d="M115 270 L255 270"/><path class="arrow" d="M168 335 Q145 310 168 286"/>
+    <text class="small" x="24" y="428">Rotation is around a side-to-side</text><text class="small" x="24" y="450">(frontal / mediolateral) axis.</text>
+  </g>
+  <g transform="translate(415 20)"><rect class="card" width="370" height="480" rx="18"/>
+    <text class="head" x="24" y="42">Frontal plane</text><text class="body" x="24" y="72">Separates front from back</text>
+    <circle class="figure" cx="185" cy="135" r="29"/><path class="figure" d="M150 172 Q185 158 220 172 L232 282 Q185 300 138 282 Z"/><path class="figure" d="M150 184 L98 259 L116 270 L166 224 M220 184 L272 259 L254 270 L204 224"/><path class="figure" d="M157 282 L150 390 L176 390 L185 300 L194 390 L220 390 L213 282 Z"/>
+    <path class="plane" d="M119 176 L251 176 L251 291 L119 291 Z"/><path class="axis" d="M185 108 L185 395"/><path class="arrow" d="M185 260 Q218 232 245 260"/>
+    <text class="small" x="24" y="428">Rotation is around a front-to-back</text><text class="small" x="24" y="450">(sagittal / anteroposterior) axis.</text>
+  </g>
+  <g transform="translate(810 20)"><rect class="card" width="370" height="480" rx="18"/>
+    <text class="head" x="24" y="42">Transverse plane</text><text class="body" x="24" y="72">Separates upper from lower</text>
+    <circle class="figure" cx="185" cy="135" r="29"/><path class="figure" d="M150 172 Q185 158 220 172 L232 282 Q185 300 138 282 Z"/><path class="figure" d="M150 184 L98 259 L116 270 L166 224 M220 184 L272 259 L254 270 L204 224"/><path class="figure" d="M157 282 L150 390 L176 390 L185 300 L194 390 L220 390 L213 282 Z"/>
+    <path class="plane" d="M132 230 L238 230 L238 247 L132 247 Z"/><path class="axis" d="M185 105 L185 397"/><path class="arrow" d="M160 232 Q190 205 220 232"/>
+    <text class="small" x="24" y="428">Rotation is around a longitudinal</text><text class="small" x="24" y="450">axis (along the segment's length).</text>
+  </g>
+</svg>
