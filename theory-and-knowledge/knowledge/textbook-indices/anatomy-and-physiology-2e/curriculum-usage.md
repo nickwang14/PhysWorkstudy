@@ -4,7 +4,7 @@
 
 ## Scope and Meaning
 
-Scanned **73 authored lessons** across `theory-and-knowledge/knowledge/curriculum/`; **38 lessons have linked A&P optional-reading assignments**.
+Scanned **83 authored lessons** across `theory-and-knowledge/knowledge/curriculum/`; **38 lessons have linked A&P optional-reading assignments**.
 Source edition SHA-256: `aa2e577b2083c343f4d57b38f00dd935dd2d98befdb38c0f368d72d636d0ff46`; page mapping comes from [the textbook index](index.json).
 
 **Recorded use** means an A&P-attributed page range in the optional reading currently linked by a lesson. It does not mean the chapter is required for a gate, the excerpt is approved, or every topic on those pages is taught.

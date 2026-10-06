@@ -5,12 +5,18 @@ Minimum effective consistency means the user can stay in the system long enough 
 
 ## Key Ideas
 - consistency is a training skill, not just a personality trait
-- the minimum effective dose is often smaller than a high-intensity plan but more sustainable
-- a lower-pressure plan often produces more long-term success than an aggressive plan
+- a repeatable starting plan is a planning choice, not a scientifically established minimum dose
+- a plan should be reviewed against real availability rather than treated as a guarantee of results
 - habit strength matters as much as exercise mechanics
 
 ## Connection to Practice
-This subchapter becomes the product logic behind flexibility, weekly goals, and progress tracking. The app should reward showing up, not punishing a busy life.
+This subchapter connects flexible planning with consistency-first product principles while avoiding promises that a particular weekly dose guarantees an outcome.
+
+## Lessons
+1. [Build a Repeatable Minimum](./lesson-01-build-a-repeatable-minimum.md)
+2. [Review and Adjust a Weekly Plan](./lesson-02-review-and-adjust-a-weekly-plan.md)
+
+Here, “repeatable minimum” means a practical planning starting point, not a research-established minimum effective dose. Each lesson has its own optional reading excerpt in the internal [reading registry](../../reading-options.md).
 
 ## Knowledge Check
 Why is matching the training plan to the user's real schedule a better strategy than forcing a rigid ideal schedule?

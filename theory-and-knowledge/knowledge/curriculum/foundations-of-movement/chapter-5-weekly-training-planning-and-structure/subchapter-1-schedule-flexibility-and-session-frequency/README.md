@@ -4,10 +4,16 @@
 The app should support users who have variable schedules. A plan becomes more sustainable when it respects real life rather than assuming a perfect daily routine.
 
 ## Key Ideas
-- training frequency should match the user's life, not an abstract ideal
-- a minimum effective schedule can still produce progress if it is consistent and realistic
-- a well-structured week usually beats a perfect but unsustainable plan
-- training should be designed around repeatable habits and goal fit
+- frequency is the number of planned sessions in a stated time period, not a complete measure of weekly work
+- an initial target should fit the person's realistic availability, goal, and capacity to recover
+- a flexible plan can preserve its purpose when a time window changes
+- motor-skill practice scheduling and resistance-training frequency are related planning topics, but they are not interchangeable evidence
+
+## Lessons
+1. [Frequency Is a Planning Choice](./lesson-01-frequency-is-a-planning-choice.md)
+2. [Build a Flexible Week](./lesson-02-build-a-flexible-week.md)
+
+Both lessons include a topic-specific, optional local reading excerpt. The page-level source assignments are also listed in the internal [reading registry](../../reading-options.md).
 
 ## Connection to Practice
 This subchapter is a core product principle: the app should favor flexibility, consistency, and meaningful progress over rigid intensity rules.

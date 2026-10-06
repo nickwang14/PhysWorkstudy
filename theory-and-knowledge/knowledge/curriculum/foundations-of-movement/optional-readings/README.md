@@ -7,8 +7,9 @@ This folder contains per-lesson text excerpts generated from locally held source
 1. Place the four assigned, licensed PDF editions in the repository's `docs/` folder. These binary PDFs are ignored by Git.
 2. Install the content-extraction dependency with `python -m pip install -r tools/requirements-content.txt`.
 3. Validate every lesson, source mapping, and inclusive page range without writing files: `python tools/extract_optional_readings.py --dry-run`.
-4. Generate the excerpts: `python tools/extract_optional_readings.py`.
-5. Review each generated extract against its cited PDF pages. The text layer may have spacing, order, table, or equation defects. Correct or remove problematic passages before use. Re-run the generator only when intentionally replacing the generated drafts.
+4. To add or revise only selected readings, pass one `--lesson-id` per ID to both validation and generation (for example: `python tools/extract_optional_readings.py --lesson-id planning-05-01 --lesson-id planning-05-02 --dry-run`, then the same command without `--dry-run`).
+5. Generate every assignment only when intentionally rebuilding the entire bundle: `python tools/extract_optional_readings.py`.
+6. Review each generated extract against its cited PDF pages. The text layer may have spacing, order, table, or equation defects. Correct or remove problematic passages before use. Re-run the generator only when intentionally replacing the generated drafts.
 
 ## Scope and rights
 

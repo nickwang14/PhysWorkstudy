@@ -12,6 +12,12 @@ Exercise choices should fit the user's goal, the movement pattern being trained,
 ## Connection to Practice
 This subchapter connects the earlier movement and anatomy learning into a practical planning lens. The user should be able to explain why a movement is included in their program.
 
+## Lessons
+1. [Choose Exercises for a Purpose](./lesson-01-choose-exercises-for-a-purpose.md)
+2. [Match Exercise Options to Constraints](./lesson-02-match-options-to-constraints.md)
+
+Each lesson has its own optional reading excerpt in the internal [reading registry](../../reading-options.md).
+
 ## Knowledge Check
 Why should an exercise be selected for purpose rather than simply because it looks advanced or intense?
 

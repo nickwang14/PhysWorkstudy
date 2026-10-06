@@ -12,6 +12,12 @@ Rest days are not a sign of laziness or lost momentum. In a sustainable plan, re
 ## Connection to Practice
 This subchapter reinforces that the app is designed around consistency and sustainable performance rather than guilt-based daily pressure.
 
+## Lessons
+1. [Place Rest Days Intentionally](./lesson-01-place-rest-days-intentionally.md)
+2. [Balance Demands Across the Week](./lesson-02-balance-demands-across-the-week.md)
+
+Each lesson has its own optional reading excerpt in the internal [reading registry](../../reading-options.md).
+
 ## Knowledge Check
 Why might a user feel worse after a week with no rest day than after a week with a planned lighter day?
 

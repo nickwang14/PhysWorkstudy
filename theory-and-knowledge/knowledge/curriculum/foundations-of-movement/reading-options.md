@@ -82,6 +82,18 @@ This is an editorial and tracking index, not learner-facing copy. Each lesson co
 | load-04-11 | [Soreness Is Not a Scorecard](chapter-4-load-fatigue-and-recovery/subchapter-5-soreness-stress-and-risk-signals/lesson-01-soreness-is-not-a-scorecard.md) | load-04-11-optional | 27 |
 | load-04-12 | [Notice Patterns, Not Single Days](chapter-4-load-fatigue-and-recovery/subchapter-5-soreness-stress-and-risk-signals/lesson-02-notice-patterns-not-single-days.md) | load-04-12-optional | 19 |
 | load-04-13 | [When to Pause and Reassess](chapter-4-load-fatigue-and-recovery/subchapter-5-soreness-stress-and-risk-signals/lesson-03-when-to-pause-and-reassess.md) | load-04-13-optional | 24 |
+| planning-05-01 | [Frequency Is a Planning Choice](chapter-5-weekly-training-planning-and-structure/subchapter-1-schedule-flexibility-and-session-frequency/lesson-01-frequency-is-a-planning-choice.md) | planning-05-01-optional | 18 |
+| planning-05-02 | [Build a Flexible Week](chapter-5-weekly-training-planning-and-structure/subchapter-1-schedule-flexibility-and-session-frequency/lesson-02-build-a-flexible-week.md) | planning-05-02-optional | 16 |
+| planning-05-03 | [Choose Exercises for a Purpose](chapter-5-weekly-training-planning-and-structure/subchapter-2-exercise-selection-by-goal/lesson-01-choose-exercises-for-a-purpose.md) | planning-05-03-optional | 18 |
+| planning-05-04 | [Match Exercise Options to Constraints](chapter-5-weekly-training-planning-and-structure/subchapter-2-exercise-selection-by-goal/lesson-02-match-options-to-constraints.md) | planning-05-04-optional | 19 |
+| planning-05-05 | [Give Each Session a Clear Role](chapter-5-weekly-training-planning-and-structure/subchapter-3-session-design-and-weekly-structure/lesson-01-give-each-session-a-clear-role.md) | planning-05-05-optional | 24 |
+| planning-05-06 | [Distribute Work Across the Week](chapter-5-weekly-training-planning-and-structure/subchapter-3-session-design-and-weekly-structure/lesson-02-distribute-work-across-the-week.md) | planning-05-06-optional | 19 |
+| planning-05-07 | [Place Rest Days Intentionally](chapter-5-weekly-training-planning-and-structure/subchapter-4-rest-days-and-balance/lesson-01-place-rest-days-intentionally.md) | planning-05-07-optional | 19 |
+| planning-05-08 | [Balance Demands Across the Week](chapter-5-weekly-training-planning-and-structure/subchapter-4-rest-days-and-balance/lesson-02-balance-demands-across-the-week.md) | planning-05-08-optional | 23 |
+| planning-05-09 | [Build a Repeatable Minimum](chapter-5-weekly-training-planning-and-structure/subchapter-5-minimum-effective-consistency/lesson-01-build-a-repeatable-minimum.md) | planning-05-09-optional | 20 |
+| planning-05-10 | [Review and Adjust a Weekly Plan](chapter-5-weekly-training-planning-and-structure/subchapter-5-minimum-effective-consistency/lesson-02-review-and-adjust-a-weekly-plan.md) | planning-05-10-optional | 24 |
+| planning-05-01 | [Frequency Is a Planning Choice](chapter-5-weekly-training-planning-and-structure/subchapter-1-schedule-flexibility-and-session-frequency/lesson-01-frequency-is-a-planning-choice.md) | planning-05-01-optional | 18 |
+| planning-05-02 | [Build a Flexible Week](chapter-5-weekly-training-planning-and-structure/subchapter-1-schedule-flexibility-and-session-frequency/lesson-02-build-a-flexible-week.md) | planning-05-02-optional | 16 |
 
 ## Local Source Editions
 

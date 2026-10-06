@@ -9,7 +9,7 @@ Start here when planning, checking or compiling learning material. Indices locat
 | A&P — `anatomy-and-physiology-2e_-_WEB.pdf` | Indexed: 28 chapters, 169 numbered sections, 720 figures and 104 tables | [A&P guide](anatomy-and-physiology-2e/README.md) |
 | Biomechanics — `Biomechanics-of-Human-Movement-1600891203._print.pdf` | Queued; existing lesson assignments are not a full textbook index | [Existing reading registry](../curriculum/foundations-of-movement/reading-options.md) |
 | Body Physics — `Body-Physics-Motion-to-Metabolism-1571156906.pdf` | Queued | [Existing reading registry](../curriculum/foundations-of-movement/reading-options.md) |
-| Exercise Science — `Foundations-of-Exercise-Science-1748368639.pdf` | Queued | [Existing reading registry](../curriculum/foundations-of-movement/reading-options.md) |
+| Exercise Science — `Foundations-of-Exercise-Science-1748368639.pdf` | Focused Chapter 5 pages checked; full index queued | [Focused source map](foundations-of-exercise-science/README.md) |
 
 Only A&P has been indexed in this pass. Each additional textbook needs its own verified edition, page map and navigation/graphics audit. Do not reuse the A&P adapter or assume its offset applies elsewhere.
 

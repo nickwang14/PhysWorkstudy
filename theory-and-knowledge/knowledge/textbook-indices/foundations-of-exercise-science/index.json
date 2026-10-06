@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "source": {
+    "id": "foundations-of-exercise-science",
+    "filename": "Foundations-of-Exercise-Science-1748368639.pdf",
+    "title": "Foundations of Exercise Science",
+    "authors": ["Laura Ellingson-Sayen", "Jennifer Taylor Winney"],
+    "publication_year": 2025,
+    "pdf_pages": 75,
+    "sha256": "6ad942df776525fbc9f97935ca04f7bfbc0361f95a567aa8dede7070dca0bd21",
+    "citation": "Laura Ellingson-Sayen and Jennifer Taylor Winney, Foundations of Exercise Science (2025).",
+    "source_url": "https://openoregon.pressbooks.pub/exercisescience/",
+    "license": "CC BY-NC 4.0, except where otherwise noted",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "required_attribution": "Cite the authors and title; retain the CC BY-NC 4.0 license notice. Cover images have a separate Adobe Stock license and are not included in text excerpts.",
+    "license_notice_pdf_page": 4,
+    "printed_page_offset": 6,
+    "page_mapping_evidence": {
+      "method": "matched numbered printed footers to PDF viewer pages",
+      "verified_footer_count": 4,
+      "verified_pdf_pages": [11, 43, 60, 65],
+      "pdf_page_labels_are_printed_numbers": false
+    }
+  },
+  "coverage": {
+    "status": "focused chapter map; full book index queued",
+    "contents_pdf_page": 5,
+    "full_text_indexed": false,
+    "graphics_inventory_complete": false,
+    "notes": "Chapter starts are transcribed from the contents page and PDF viewer pages are calculated with the verified +6 offset. Verify each assigned passage in the source; this is not a complete section or graphic index."
+  },
+  "chapter_starts": [
+    {"number": 1, "title": "Public Health and Exercise Science", "printed_start": 5, "pdf_start": 11},
+    {"number": 2, "title": "History of Exercise Science (aka Kinesiology)", "printed_start": 8, "pdf_start": 14},
+    {"number": 3, "title": "Research in Exercise Science", "printed_start": 11, "pdf_start": 17},
+    {"number": 4, "title": "Bias in Exercise Science", "printed_start": 16, "pdf_start": 22},
+    {"number": 5, "title": "Professionalism in Exercise Science", "printed_start": 20, "pdf_start": 26},
+    {"number": 6, "title": "Sociology of Physical Activity", "printed_start": 31, "pdf_start": 37},
+    {"number": 7, "title": "Physiology of Exercise", "printed_start": 37, "pdf_start": 43},
+    {"number": 8, "title": "Motor Behavior", "printed_start": 48, "pdf_start": 54},
+    {"number": 9, "title": "Biomechanics", "printed_start": 54, "pdf_start": 60},
+    {"number": 10, "title": "Psychology of Physical Activity", "printed_start": 59, "pdf_start": 65},
+    {"number": 11, "title": "Adapted Physical Activity", "printed_start": 62, "pdf_start": 68},
+    {"number": 12, "title": "Physical Activity and Aging", "printed_start": 65, "pdf_start": 71}
+  ]
+}
