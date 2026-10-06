@@ -1,7 +1,7 @@
 # Curriculum Review: Chapters 1–4
 
-**Review date:** 2026-10-06  
-**Scope:** Authored lessons and lesson-level optional readings in *Foundations of Movement* Chapters 1–4  
+**Review date:** 2026-10-06
+**Scope:** Authored lessons and lesson-level optional readings in *Foundations of Movement* Chapters 1–4
 **Review type:** Structural, editorial-consistency, source-reference, and repository-link audit. This is not professional domain approval.
 
 ## Coverage
