@@ -10,6 +10,8 @@ Turn indexed source material into focused, usable learning resources with tracea
 
 ## Resources
 
+- [Canonical lesson-indexing, textbook-parsing and inclusion process](../../../theory-and-knowledge/knowledge/curriculum/foundations-of-movement/README.md) — read the **Content Indexing, Textbook Parsing, and Inclusion** section.
+- [Shared education/content-role instructions](../../instructions/textbook-content.instructions.md)
 - [Source registry](../../../theory-and-knowledge/knowledge/textbook-indices/README.md)
 - [A&P reference guide](../../../theory-and-knowledge/knowledge/textbook-indices/anatomy-and-physiology-2e/README.md)
 - [A&P visually reviewed graphics](../../../theory-and-knowledge/knowledge/textbook-indices/anatomy-and-physiology-2e/graphic-review.md)
@@ -21,6 +23,8 @@ Turn indexed source material into focused, usable learning resources with tracea
 ## Procedure
 
 ### 1. Select the objective and inspect existing indices
+
+For education, curriculum, content-authoring or review tasks, first read the canonical process linked above. Follow its lesson-index ownership, material-inclusion rules and role-appropriate review/handoff requirements; do not treat these as optional textbook-only conventions.
 
 Identify source, learner level, curriculum chapter/subchapter, objective and intended output: original brief/lesson, glossary cards, diagram-study prompts, a comparison table, or an explicitly licensed excerpt. Infer these from the task where possible; ask only about material ambiguity. Start with the source registry, relevant `chapters.md`, `graphics.md`, `curated-guide.md` and `usage-log.md`. Distinguish **textbook** chapter IDs from **curriculum** chapter IDs.
 
@@ -70,6 +74,8 @@ For existing optional reading assignments, follow `tools/extract_optional_readin
 Add human discoveries to `curated-guide.md`: useful subsection/box/graphic, stable ID, tags/teaching purpose, exact PDF and printed pages, evidence status, rights status and source-return reason. Record actual consultation/output in `usage-log.md`: date, source fingerprint, reviewer, section/figure IDs, inclusive pages, partial boundaries/exclusions, destination content ID/path, review status, uncertainty and next action. Add or resolve outstanding return questions with dated evidence; do not silently erase history.
 
 The generated A&P files (`index.json`, `chapters.md`, `graphics.md`) are machine-owned. Refresh with `python tools/index_anatomy_physiology.py --write` only when necessary; it preserves curated notes/logs. Continued table labels are listed under `caption_occurrences`; inspect all pages and locate the actual table start above the label. Unlabelled graphics need manual discovery entries, not an invented auto-detected ID.
+
+After changing a lesson-linked reading assignment, refresh the separate A&P `curriculum-usage.md` reverse map with `python tools/index_curriculum_usage.py --write`, then check freshness with `--check`. It indexes actual optional-reading metadata only: record core-lesson consultations, suggested graphics and included assets separately rather than presenting them as assigned use.
 
 ### 6. Validate and report
 
