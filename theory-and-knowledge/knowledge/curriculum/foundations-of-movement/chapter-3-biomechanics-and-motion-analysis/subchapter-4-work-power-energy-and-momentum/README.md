@@ -13,6 +13,13 @@ These concepts explain how effort is applied over time and how movement can be e
 ## Connection to Practice
 The learner should know that a movement can be hard because it is slow, heavy, long, or technically demanding. Power and work help explain why different training methods feel different even when the goal is similar.
 
+## Lessons
+1. [Work and Displacement](./lesson-01-work-and-displacement.md)
+2. [Kinetic and Potential Energy](./lesson-02-kinetic-and-potential-energy.md)
+3. [Power and Momentum](./lesson-03-power-and-momentum.md)
+
+Each lesson includes an optional textbook reading selected for that topic.
+
 ## Knowledge Check
 Why might a short, fast movement be more demanding in power than a slow, controlled movement with similar load?
 

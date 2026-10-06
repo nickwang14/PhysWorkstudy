@@ -12,6 +12,13 @@ Kinetics asks what causes motion. It focuses on forces, internal tension, extern
 ## Connection to Practice
 A learner who understands force can better explain why a heavy lift feels different from a controlled mobility drill or why a movement may need modification.
 
+## Lessons
+1. [Force and the System You Analyze](./lesson-01-force-and-system.md)
+2. [Net Force and Changes in Motion](./lesson-02-net-force-and-motion.md)
+3. [Force Direction and Support](./lesson-03-force-direction-and-support.md)
+
+Each lesson includes an optional textbook reading selected for that topic.
+
 ## Knowledge Check
 How is a bodyweight squat different from a loaded squat in terms of force demands and tissue tolerance?
 

@@ -12,6 +12,13 @@ This subchapter connects the earlier concepts back to coaching decisions. It hel
 ## Connection to Practice
 A trainee who knows how to describe a movement pattern and identify force demand is much more likely to follow a well-structured program without chasing random intensity.
 
+## Lessons
+1. [Observe, Describe, and Explain](./lesson-01-observe-describe-and-explain.md)
+2. [Leverage and Exercise Demands](./lesson-02-leverage-and-exercise-demands.md)
+3. [Choose a Useful Next Step](./lesson-03-choose-a-useful-next-step.md)
+
+Each lesson includes an optional textbook reading selected for that topic.
+
 ## Knowledge Check
 What is the main difference between analyzing a movement by feel and analyzing it by basic biomechanics? Which approach is more useful for a beginner learning plan design?
 

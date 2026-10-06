@@ -12,6 +12,13 @@ Kinematics describes motion without focusing on the forces that create it. It as
 ## Connection to Practice
 When a learner can describe movement in objective terms, they can reason more clearly about form, range, and progression decisions.
 
+## Lessons
+1. [Position, Displacement, and Reference Points](./lesson-01-position-displacement-and-reference-points.md)
+2. [Speed, Velocity, and Timing](./lesson-02-speed-velocity-and-timing.md)
+3. [Acceleration and Reading Movement Paths](./lesson-03-acceleration-and-reading-movement-paths.md)
+
+Each lesson includes an optional textbook reading selected for that topic.
+
 ## Knowledge Check
 If a rep slows down near the bottom of a squat, what kind of kinematic signal is that? What does it suggest about control or effort?
 
