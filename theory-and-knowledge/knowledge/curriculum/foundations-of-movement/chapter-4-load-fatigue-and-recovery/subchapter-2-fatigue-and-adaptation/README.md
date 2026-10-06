@@ -18,3 +18,8 @@ If fatigue is rising each week without improvement, what is the likely issue: th
 ## Scenario
 A learner works through a case involving subchapter 2 fatigue and adaptation. They should explain what changes, why it matters, and what the next training decision should be.
 
+## Lessons
+1. [Local and General Fatigue](./lesson-01-local-and-general-fatigue.md)
+2. [Short-Term Fatigue and Performance](./lesson-02-short-term-fatigue-and-performance.md)
+3. [Adaptation Needs Repetition and Recovery](./lesson-03-adaptation-needs-repetition-and-recovery.md)
+

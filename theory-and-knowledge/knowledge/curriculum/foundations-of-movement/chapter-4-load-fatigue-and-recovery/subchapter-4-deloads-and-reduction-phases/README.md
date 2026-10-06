@@ -18,3 +18,7 @@ Why is a planned reduction phase more useful than continuing to add work when fa
 ## Scenario
 A learner works through a case involving subchapter 4 deloads and reduction phases. They should explain what changes, why it matters, and what the next training decision should be.
 
+## Lessons
+1. [Purpose of a Reduction Phase](./lesson-01-purpose-of-a-reduction-phase.md)
+2. [Choose a Reduction and Return](./lesson-02-choose-a-reduction-and-return.md)
+

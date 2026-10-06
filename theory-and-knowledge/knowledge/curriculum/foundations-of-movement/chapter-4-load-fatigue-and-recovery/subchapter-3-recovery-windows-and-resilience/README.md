@@ -18,3 +18,7 @@ Why is a structured recovery window more useful than simply trying to push throu
 ## Scenario
 A learner works through a case involving subchapter 3 recovery windows and resilience. They should explain what changes, why it matters, and what the next training decision should be.
 
+## Lessons
+1. [Recovery Supports Training](./lesson-01-recovery-supports-training.md)
+2. [Spacing Demanding Sessions](./lesson-02-spacing-demanding-sessions.md)
+

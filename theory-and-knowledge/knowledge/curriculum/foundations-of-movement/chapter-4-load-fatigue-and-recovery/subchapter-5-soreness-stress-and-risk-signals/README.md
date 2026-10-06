@@ -18,3 +18,8 @@ What is the difference between a normal training adaptation signal and a signal 
 ## Scenario
 A learner works through a case involving subchapter 5 soreness stress and risk signals. They should explain what changes, why it matters, and what the next training decision should be.
 
+## Lessons
+1. [Soreness Is Not a Scorecard](./lesson-01-soreness-is-not-a-scorecard.md)
+2. [Notice Patterns, Not Single Days](./lesson-02-notice-patterns-not-single-days.md)
+3. [When to Pause and Reassess](./lesson-03-when-to-pause-and-reassess.md)
+

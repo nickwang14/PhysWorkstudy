@@ -18,3 +18,8 @@ How can the same exercise feel easy in one week and overwhelming in another week
 ## Scenario
 A learner works through a case involving subchapter 1 load and training stress. They should explain what changes, why it matters, and what the next training decision should be.
 
+## Lessons
+1. [Training Stress Is a Stimulus](./lesson-01-training-stress-is-a-stimulus.md)
+2. [Describing Training Load](./lesson-02-describing-training-load.md)
+3. [Accumulated Demand and Repeatability](./lesson-03-accumulated-demand-and-repeatability.md)
+
