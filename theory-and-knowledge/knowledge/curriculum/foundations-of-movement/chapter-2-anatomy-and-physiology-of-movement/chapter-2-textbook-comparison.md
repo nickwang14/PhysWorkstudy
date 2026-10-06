@@ -49,11 +49,11 @@ This source text supports the more applied parts of Chapter 2, especially tissue
 The chapter is now dense and broadly aligned with the textbooks, but it stays intentionally introductory. It does not go deep into advanced quantitative biomechanics or detailed musculoskeletal anatomy, which is appropriate for the foundations stage.
 
 ## Recommendation
-Keep the chapter at this depth for the foundations course. Save advanced topics for later chapters, including:
+Keep required teaching at the foundations level, but provide enough explanation and examples for a meaningful daily reading. The 2026-10-05 expansion adds approximately 3–5 minutes of core reading to each authored lesson and gives each lesson a distinct optional 15–20-minute textbook assignment. Save advanced topics for later chapters, including:
 - detailed force vectors and torque calculations
 - more formal mechanics of joints and equilibrium
 - advanced muscle physiology and specific fiber types
 - detailed rehab or pathology content beyond foundational training science
 
 ## Bottom line
-The chapter is now consistent with the major textbook sequence and appropriately scaled for a concept-gate learning path.
+The chapter's topic sequence aligns with the source texts, while daily and optional reading are associated with individual lessons. Page-level assignments for authored lessons are listed in the internal [lesson reading index](../reading-options.md) and in each lesson. Later outline-only subchapters are not completed reading material. Expanded content remains draft pending domain and editorial review; source alignment alone is not publication approval.

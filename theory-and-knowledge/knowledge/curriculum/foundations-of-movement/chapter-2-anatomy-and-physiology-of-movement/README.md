@@ -22,6 +22,13 @@ By the end of this chapter, the learner should be able to:
 8. Fascicle arrangement and joint trade-offs
 9. Joint-by-joint anatomical trade-offs
 
+## Additional Lesson Sequences
+The final four subchapters now have authored lessons as well as their outlines:
+6. [Muscle Fiber Types and Fatigue Characteristics](./subchapter-6-muscle-fiber-types-and-fatigue-characteristics/README.md)
+7. [Neuromuscular Control and Coordination](./subchapter-7-neuromuscular-control-and-coordination/README.md)
+8. [Fascicle Arrangement and Joint Trade-Offs](./subchapter-8-fascicle-arrangement-and-joint-trade-offs/README.md)
+9. [Joint-by-Joint Anatomical Trade-Offs](./subchapter-9-joint-by-joint-anatomical-trade-offs/README.md)
+
 ## Primary References
 - Anatomy and Physiology 2e
 - Body Physics

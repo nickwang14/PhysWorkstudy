@@ -1,4 +1,7 @@
 # Joint-by-Joint Anatomical Trade-Offs
+## Lessons
+1. [Joint Structure and Available Motion](./lesson-01-joint-Structure-and-Available-Motion.md)
+2. [Joint Contributions Change With the Task](./lesson-02-joint-contributions-change-with-task.md)
 
 ## Overview
 This lesson looks at how different joints are built for different jobs. Some joints trade mobility for stability, and that trade-off affects exercise choice and movement interpretation.
@@ -14,3 +17,7 @@ This lesson gives the learner a practical way to explain why a movement that wor
 
 ## Scenario
 Two users both squat, but one has more ankle demand while the other needs more hip control. The learner should explain how joint-by-joint trade-offs shape the plan.
+
+## Lessons
+1. [Joint Structure and Available Motion](./lesson-01-joint-Structure-and-Available-Motion.md)
+2. [Joint Contributions Change With the Task](./lesson-02-joint-contributions-change-with-task.md)

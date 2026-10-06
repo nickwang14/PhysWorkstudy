@@ -1,0 +1,491 @@
+---
+id: "anatomy-02-08b-optional"
+lesson_id: "anatomy-02-08b"
+content_type: "optional_extended_reading"
+required_for_gate: false
+include_in_texting_curriculum: false
+status: "draft"
+extraction_status: "machine_extracted_review_required"
+source_word_count: 4846
+estimated_reading_minutes: 25
+---
+# Coordination, Practice, and Fatigue — Optional Reading Excerpt
+
+> **Extraction status: draft.** This text was extracted from the cited local PDF pages. Line order, spacing, tables, or equations may be imperfect; compare it with the rendered source before relying on it or publishing it.
+
+> Optional material: this excerpt is separate from the core lesson, its knowledge check, and gate requirements.
+
+## Exercise Science: PDF pages 54–59 (printed pages 48–53)
+
+**Source:** Laura Ellingson-Sayen and Jennifer Taylor Winney, *Foundations of Exercise Science*, © 2025. Source PDF: `Foundations-of-Exercise-Science-1748368639.pdf`, PDF pages 54–59 (inclusive), printed pages 48–53.
+**License:** CC BY-NC 4.0, except where otherwise noted ([license terms](https://creativecommons.org/licenses/by-nc/4.0/)).
+
+### PDF page 54 (printed page 48)
+
+48 | CHAPTER 8: MOTOR BEHAVIOR
+CHAPTER 8: MOTOR BEHAVIOR
+
+By Brandon Claggett, EdD
+
+Learning Objectives:
+
+• Identify and categorize different types of motor skills based on task organization (discrete, serial,
+continuous) and environmental predictability (closed, open).
+
+• Describe the stages of information processing in motor control and demonstrate how feedback influences
+motor control.
+
+• Discuss the stages of motor learning and apply appropriate practice structures and feedback types to
+enhance skill acquisition and performance.
+
+Chapter Content
+
+You have all moved. Whether walking, talking, tying your shoes, or even reading your textbook right now,
+these everyday skills are often taken for granted. Some skills, like the ones just mentioned, are developed largely
+through trial and error. Other movements present a much greater challenge and require specific training and
+practice. Examples include performing brain surgery, driving a car, dribbling a basketball, and playing a musical
+instrument.
+Regardless of the complexity of the action, fundamental processes are happening behind the scenes to help
+you learn and develop those actions. This is the field of motor behavior, which examines the acquisition,
+performance, and retention of motor skills. Within motor behavior are three sub-disciplines: motor control,
+motor learning, and motor development. Each of these areas provides valuable information for the realms
+of teaching, coaching, and rehabilitation.
+
+Motor Skills
+
+The key to understanding motor behavior is being able to understand and classify motor skills. Skills can be
+classified in several ways, as listed below.
+Skills classified by task organization
+
+### PDF page 55 (printed page 49)
+
+CHAPTER 8: MOTOR BEHAVIOR | 49
+
+• Discrete – action is brief with a clear beginning and end (e.g. throwing a dart)
+• Serial – action consists of multiple discrete skills strung together in a specific order (e.g. typing on a
+keyboard)
+• Continuous – movements with no definable beginning or end, often repetitive/rhythmic (e.g. walking/
+running)
+
+Skills classified by environmental predictability
+
+• Closed – when the environment is predictable (e.g. shooting a basketball in an empty gym)
+• Open – when the environment is unpredictable (e.g. playing a game of basketball)
+
+* keep in mind that this is measured on a continuum, so semi-predictable environments can exist (e.g. shooting
+a basketball outdoors when it’s windy)
+
+Motor Control
+
+Motor control refers to the mechanisms and processes that govern voluntary movement. It is not as simple
+as simply “doing” a task. The nervous system is hard at work behind the scenes processing the incoming
+information from all our senses and processing the feedback we get from performing the movement.
+
+Information processing
+
+When information is presented to you, it is processed in three stages:
+
+1. Stimulus identification (what is going on?) – Analyzing environmental information from a variety of
+sources including: vision, audition, touch, kinesthesis, and smell
+1. Example: when driving in a car, the combination of edges and colors help us identify other cars in
+traffic, and the speed that objects around us are moving helps us identify how fast we are moving
+2. Response selection (decide what to do) – Analyzing sensory information from the situation/
+environment (gained from the previous stage) and deciding what response should be given
+1. Example: in heavy traffic, the decision to pass another car, slow down, or make an emergency stop,
+depending on the situation
+3. Movement programming (activate the body) – Taking the decision from the response selection stage and
+organizing the motor system to make the desired movement
+1. Example: in the car scenario, motor systems prepare the body to step on the gas/brake pedal, turn
+the steering wheel, or shift gears
+
+### PDF page 56 (printed page 50)
+
+50 | CHAPTER 8: MOTOR BEHAVIOR
+Feedback
+
+Once the body is activated and movement is initiated, the body receives feedback through sensory
+information. There are two main types of feedback:
+
+• Exteroception – information on the environment, most notably vision and hearing
+◦ Example: When shooting a free throw in basketball the player uses exteroception by visually
+focusing on the hoop and adjusting their aim based on the distance and position. They may also
+adjust their grip on the ball based on how it feels in their hands
+• Proprioception – information on the state of the body itself, such as force production (Golgi tendon
+organ), orientation (inner ear), and pressure/temperature (skin receptors)
+◦ Example: As the player raises the ball for the free throw, they use proprioception to ensure that
+their elbow is aligned correctly and that their knees are bent at the right angle. This internal
+feedback helps them feel balanced and ready to make the shot.
+
+Once feedback is given, two types of control systems can be used:
+
+• Open-loop – pre-planned movements executed without feedback (throwing a ball)
+• Closed-loop – movements that use feedback to determine error and make adjustments (walking through
+a busy hallway)
+
+While the above information outlines the main aspects of motor control, other factors are often considered
+depending on the situation. These include attention span, timing, speed, and accuracy.
+
+Motor Learning
+
+Motor learning is a set of processes associated with practice or experience leading to relatively permanent gains
+in the capability for skilled performance. The emphasis here should be on the “relatively permanent” part of
+the definition; when you learn something, it is not easily forgotten. Also important is the idea that ‘learning’ is
+different from ‘performance’:
+
+• Motor learning – changes in internal processes (e.g. adaptations to the central nervous system) that
+determine the capability for producing a motor task.
+• Motor performance – the observable attempt of a person to perform a motor task, often influenced by
+temporary factors such as motivation, arousal, fatigue, etc.
+
+### PDF page 57 (printed page 51)
+
+CHAPTER 8: MOTOR BEHAVIOR | 51
+Stages of motor learning
+
+A key aspect of motor learning is understanding the stages that one goes through when learning a new task.
+Fitts and Posner proposed one prominent perspective:
+
+1. Cognitive stage – understanding the goal, what to do/what not to do, when to do it, and how to do it.
+Verbal and cognitive abilities dominate. This stage typically involves a lot of self talk walking through
+each part of the new skill
+1. Example: When executing a slap shot in hockey, the player learns the basic mechanics of the slap
+shot, focusing on each part of the movement and often making errors.
+2. Fixation stage – focus shifts to organizing more effective movements. Consistency gradually increases.
+1. Example: The player refines the skill, focusing on making the shot more accurate and powerful,
+with improved coordination and reduced errors.
+3. Autonomous stage – decreased attention is needed to perform the action, allowing it to be performed
+while integrating other actions. Performance is typically very high.
+1. Example: The player performs the slap shot automatically and consistently, integrating it seamlessly
+into their gameplay with minimal conscious effort. Errors are rare.
+
+Factors influencing motor learning
+
+Learning isn’t static; it requires careful consideration in order to create the best learning environment possible.
+Some key factors that need to be considered:
+
+Practice structure
+
+• Massed practice – less rest, more trials (e.g. a soccer player spends 90 minutes continuously practicing
+their shot on goal without any significant breaks.
+• Distributed practice – more rest, less trials (e.g. The player practices their shot on goal for 15 minutes,
+then takes a 5-minute break to rest or do a different drill, and repeats this cycle multiple times over a
+90-minute session.)
+• Blocked practice – many trials of the same task (e.g. the player practices 50 shots in a row from the same
+spot on the field, such as the penalty spot, aiming for the top left corner of the goal.)
+• Random practice – trials of several different tasks mixed together (e.g. the player takes shots from
+different spots on the field, with varying distances and angles, and sometimes with a defender in the way.
+Each shot is different from the last.)
+• Mental practice – rehearse tasks mentally, without actual physical practice (e.g. before physically
+practicing their shots, the player spends 10 minutes visualizing themselves taking successful shots on goal
+in different scenarios.)
+
+### PDF page 58 (printed page 52)
+
+52 | CHAPTER 8: MOTOR BEHAVIOR
+Feedback types
+
+• Intrinsic/inherent feedback – sensory feedback from the body (e.g. a golfer feels the motion of their
+body during a swing, noticing the balance, the grip on the club, and the follow-through.)
+• Extrinsic/augmented feedback – feedback given back to the performer from outside themself (e.g. after a
+golfer hits a ball durin a practice session, the coach provides verbal feedback)
+• Knowledge of results – outcome-based feedback (was it successful or not) (e.g. the golfer takes a shot and
+observes whether the ball went in the hole or not.)
+• Knowledge of performance – process-based feedback (what was the body doing) (e.g. after taking the
+shot, the golfer reviews a video of their shot with their coach, the coach points out shoulder angles, leg
+extension, and where the golfer’s head was facing.)
+
+Transfer considerations
+
+• Positive transfer – practice of one skill improves a different skill (e.g. a pass in basketball and a pass in
+soccer, because both involve reading of teammates, timing, and force/direction control)
+• Negative transfer – practice of one skill degrades a different skill (e.g. a tennis forehand and a badminton
+forehand, because the tennis forehand is longer, and the badminton forehand is shorter and more wristfocused).
+• Near transfer – transfer between two similar skills (e.g. shooting a jump shot and a free throw in
+basketball)
+• Far transfer – transfer between two very different skills (e.g. shooting a free throw and an overhead throw
+in, in soccer)
+
+Motor Development
+
+Motor development is the progressive change in motor behavior throughout the lifespan. It examines the
+changes that occur as you grow up and the developmental milestones that are expected along the way.
+
+Lifespan perspective
+
+The following are some typical developmental expectations/milestones for humans:
+
+• Infancy – development of reflexes like Moro (startle) and stepping, crawling, walking
+• Childhood – acquisition of fundamental (running, jumping) and fine (drawing, writing) motor skills
+• Adolescence – refinement and specialization of motor skills, often seen in sports and other activities
+• Adulthood – maintenance of motor skills, strength, and coordination
+• Older Adulthood – Decline in motor abilities, with a focus on strategies to cope with this decline
+
+### PDF page 59 (printed page 53)
+
+CHAPTER 8: MOTOR BEHAVIOR | 53
+Factors influencing motor development
+
+The above milestones and expectations don’t just happen, there are several factors to consider:
+
+• Genetic factors – inherited physical and cognitive traits
+• Environmental factors – culture, socio-economic status, availability/access to physical activities
+• Perceived role of physical activity/play – emphasis on both encourages motor development
+
+Where Can You Apply Motor Behavior?
+
+Sport and performance settings: Motor learning principles are key to enhancing performance, whether in
+an athletic, medical, art, or any other high-stakes setting. Being aware of how practice variables and feedback
+strategies impact performers is important. For example: if you are a coach you will not only need to create
+effective practice schedules but also teach and correct different skills. Understanding specific aspects of motor
+behavior will help you be more effective.
+Rehabilitation and therapy settings: Motor control, development, and learning principles are key to
+physical therapists, occupational therapists, and athletic trainers. The understanding of what should be
+happening from a motor control perspective helps guide the therapeutic process for getting the individual back
+to a healthy state. For example: If you have a teenager come into your clinic to help rehab a shoulder you need
+to know what stage of development the teen is in so you have an understanding of what might change as they
+continue to develop (i.e a male is typically going to put on more muscle in that time and could impact recovery
+or long term ROM). For motor control and learning, as a physical therapist you might use a skill that your
+patient knows as a baseline and monitor improvement through the rehab process.
+Everyday life: Understanding motor behavior principles will help you recognize what is happening when
+you move and changes that happen over time. Understanding what is happening with your body can
+significantly impact one’s quality of life, including physical health and mental well-being. For example: if you
+haven’t played a sport for a couple years and you go out to play it again but you don’t perform nearly as well as
+you had years ago. Understanding motor behavior can help you to understand that you have not lost the ability
+to play, you just need to get reacquainted with the skills so the more you play the more it will come back to you.
+This also applies to motor movements like knitting, painting, and working with tools.
+
+## A&P: PDF pages 400–405 (printed pages 384–389)
+
+**Source:** OpenStax, *Anatomy and Physiology 2e*, © 2026 Rice University. Source PDF: `anatomy-and-physiology-2e_-_WEB.pdf`, PDF pages 400–405 (inclusive), printed pages 384–389.
+**License:** CC BY-NC-SA 4.0 ([license terms](https://creativecommons.org/licenses/by-nc-sa/4.0/)).
+**Required attribution:** Required source notice: “Access for free at openstax.org.”
+
+### PDF page 400 (printed page 384)
+
+384 10 • Muscle Tissue
+
+Because DMD is caused by a mutation in the gene that codes for dystrophin, it was thought that introducing
+healthy myoblasts into patients might be an effective treatment. Myoblasts are the embryonic cells responsible
+for muscle development, and ideally, they would carry healthy genes that could produce the dystrophin needed
+for normal muscle contraction. This approach has been largely unsuccessful in humans. A recent approach has
+involved attempting to boost the muscle’s production of utrophin, a protein similar to dystrophin that may be
+able to assume the role of dystrophin and prevent cellular damage from occurring.
+
+10.4 Nervous System Control of Muscle Tension
+
+LEARNING OBJECTIVES
+By the end of this section, you will be able to:
+• Explain concentric, isotonic, and eccentric contractions
+• Describe the length-tension relationship
+• Describe the three phases of a muscle twitch
+• Define wave summation, tetanus, and treppe
+
+To move an object, referred to as load, the sarcomeres in the muscle fibers of the skeletal muscle must shorten. The
+force generated by the contraction of the muscle (or shortening of the sarcomeres) is called muscle tension.
+However, muscle tension also is generated when the muscle is contracting against a load that does not move,
+resulting in two main types of skeletal muscle contractions: isotonic contractions and isometric contractions.
+
+In isotonic contractions, where the tension in the muscle stays constant, a load is moved as the length of the
+muscle changes (shortens). There are two types of isotonic contractions: concentric and eccentric. A concentric
+contraction involves the muscle shortening to move a load. An example of this is the biceps brachii muscle
+contracting when a hand weight is brought upward with increasing muscle tension. As the biceps brachii contract,
+the angle of the elbow joint decreases as the forearm is brought toward the body. Here, the biceps brachii contracts
+as sarcomeres in its muscle fibers are shortening and cross-bridges form; the myosin heads pull the actin. An
+eccentric contraction occurs as the muscle tension diminishes and the muscle lengthens. In this case, the hand
+weight is lowered in a slow and controlled manner as the amount of cross-bridges being activated by nervous
+system stimulation decreases. In this case, as tension is released from the biceps brachii, the angle of the elbow
+joint increases. Eccentric contractions are also used for movement and balance of the body.
+
+An isometric contraction occurs as the muscle produces tension without changing the angle of a skeletal joint.
+Isometric contractions involve sarcomere shortening and increasing muscle tension, but do not move a load, as the
+force produced cannot overcome the resistance provided by the load. For example, if one attempts to lift a hand
+weight that is too heavy, there will be sarcomere activation and shortening to a point, and ever-increasing muscle
+tension, but no change in the angle of the elbow joint. In everyday living, isometric contractions are active in
+maintaining posture and maintaining bone and joint stability. However, holding your head in an upright position
+occurs not because the muscles cannot move the head, but because the goal is to remain stationary and not
+produce movement. Most actions of the body are the result of a combination of isotonic and isometric contractions
+working together to produce a wide range of outcomes (Figure 10.13).
+
+Access for free at openstax.org
+
+### PDF page 401 (printed page 385)
+
+10.4 • Nervous System Control of Muscle Tension 385
+
+FIGURE 10.13 Types of Muscle Contractions During isotonic contractions, muscle length changes to move a load. During isometric
+contractions, muscle length does not change because the load exceeds the tension the muscle can generate.
+
+All of these muscle activities are under the exquisite control of the nervous system. Neural control regulates
+concentric, eccentric and isometric contractions, muscle fiber recruitment, and muscle tone. A crucial aspect of
+nervous system control of skeletal muscles is the role of motor units.
+Motor Units
+
+As you have learned, every skeletal muscle fiber must be innervated by the axon terminal of a motor neuron in order
+to contract. Each muscle fiber is innervated by only one motor neuron. The actual group of muscle fibers in a muscle
+innervated by a single motor neuron is called a motor unit. The size of a motor unit is variable depending on the
+nature of the muscle.
+
+A small motor unit is an arrangement where a single motor neuron supplies a small number of muscle fibers in a
+muscle. Small motor units permit very fine motor control of the muscle. The best example in humans is the small
+motor units of the extraocular eye muscles that move the eyeballs. There are thousands of muscle fibers in each
+muscle, but every six or so fibers are supplied by a single motor neuron, as the axons branch to form synaptic
+connections at their individual NMJs. This allows for exquisite control of eye movements so that both eyes can
+quickly focus on the same object. Small motor units are also involved in the many fine movements of the fingers and
+thumb of the hand for grasping, texting, etc.
+
+### PDF page 402 (printed page 386)
+
+386 10 • Muscle Tissue
+
+A large motor unit is an arrangement where a single motor neuron supplies a large number of muscle fibers in a
+muscle. Large motor units are concerned with simple, or “gross,” movements, such as powerfully extending the
+knee joint. The best example is the large motor units of the thigh muscles or back muscles, where a single motor
+neuron will supply thousands of muscle fibers in a muscle, as its axon splits into thousands of branches.
+
+There is a wide range of motor units within many skeletal muscles, which gives the nervous system a wide range of
+control over the muscle. The small motor units in the muscle will have smaller, lower-threshold motor neurons that
+are more excitable, firing first to their skeletal muscle fibers, which also tend to be the smallest. Activation of these
+smaller motor units, results in a relatively small degree of contractile strength (tension) generated in the muscle. As
+more strength is needed, larger motor units, with bigger, higher-threshold motor neurons are enlisted to activate
+larger muscle fibers. This increasing activation of motor units produces an increase in muscle contraction known as
+recruitment. As more motor units are recruited, the muscle contraction grows progressively stronger. In some
+muscles, the largest motor units may generate a contractile force of 50 times more than the smallest motor units in
+the muscle. This allows a feather to be picked up using the biceps brachii arm muscle with minimal force, and a
+heavy weight to be lifted by the same muscle by recruiting the largest motor units.
+
+When necessary, the maximal number of motor units in a muscle can be recruited simultaneously, producing the
+maximum force of contraction for that muscle, but this cannot last for very long because of the energy requirements
+to sustain the contraction. To prevent complete muscle fatigue, motor units are generally not all simultaneously
+active, but instead some motor units rest while others are active, which allows for longer muscle contractions. The
+nervous system uses recruitment as a mechanism to efficiently utilize a skeletal muscle.
+The Length-Tension Range of a Sarcomere
+
+When a skeletal muscle fiber contracts, myosin heads attach to actin to form cross-bridges followed by the thin
+filaments sliding over the thick filaments as the heads pull the actin, and this results in sarcomere shortening,
+creating the tension of the muscle contraction. The cross-bridges can only form where thin and thick filaments
+already overlap, so that the length of the sarcomere has a direct influence on the force generated when the
+sarcomere shortens. This is called the length-tension relationship.
+
+The ideal length of a sarcomere to produce maximal tension occurs at 80 percent to 120 percent of its resting
+length, with 100 percent being the state where the medial edges of the thin filaments are just at the most-medial
+myosin heads of the thick filaments (Figure 10.14). This length maximizes the overlap of actin-binding sites and
+myosin heads. If a sarcomere is stretched past this ideal length (beyond 120 percent), thick and thin filaments do
+not overlap sufficiently, which results in less tension produced. If a sarcomere is shortened beyond 80 percent, the
+zone of overlap is reduced with the thin filaments jutting beyond the last of the myosin heads and shrinks the H
+zone, which is normally composed of myosin tails. Eventually, there is nowhere else for the thin filaments to go and
+the amount of tension is diminished. If the muscle is stretched to the point where thick and thin filaments do not
+overlap at all, no cross-bridges can be formed, and no tension is produced in that sarcomere. This amount of
+stretching does not usually occur, as accessory proteins and connective tissue oppose extreme stretching.
+
+Access for free at openstax.org
+
+### PDF page 403 (printed page 387)
+
+10.4 • Nervous System Control of Muscle Tension 387
+
+FIGURE 10.14 The Ideal Length of a Sarcomere Sarcomeres produce maximal tension when thick and thin filaments overlap between
+about 80 percent to 120 percent.
+The Frequency of Motor Neuron Stimulation
+
+A single action potential from a motor neuron will produce a single contraction in the muscle fibers of its motor unit.
+This isolated contraction is called a twitch. A twitch can last for a few milliseconds or 100 milliseconds, depending
+on the muscle type. The tension produced by a single twitch can be measured by a myogram, an instrument that
+measures the amount of tension produced over time (Figure 10.15). Each twitch undergoes three phases. The first
+phase is the latent period, during which the action potential is being propagated along the sarcolemma and Ca++
+ions are released from the SR. This is the phase during which excitation and contraction are being coupled but
+contraction has yet to occur. The contraction phase occurs next. The Ca++ ions in the sarcoplasm have bound to
+troponin, tropomyosin has shifted away from myosin-binding sites on actin, cross-bridges have formed, and
+sarcomeres are actively shortening to the point of peak tension. The last phase is the relaxation phase, when
+tension decreases as contraction stops. Ca++ ions are pumped out of the sarcoplasm into the SR, and cross-bridge
+cycling stops, returning the muscle fibers to their resting state.
+
+FIGURE 10.15 A Myogram of a Muscle Twitch A single muscle twitch has a latent period, a contraction phase when tension increases,
+and a relaxation phase when tension decreases. During the latent period, the action potential is being propagated along the sarcolemma. ++
+During the contraction phase, Ca ions in the sarcoplasm bind to troponin, tropomyosin moves from actin-binding sites, cross-bridges ++
+between actin and myosin form, and sarcomeres shorten. During the relaxation phase, tension decreases as Ca ions are pumped out of
+the sarcoplasm and cross-bridge cycling stops.
+
+### PDF page 404 (printed page 388)
+
+388 10 • Muscle Tissue
+
+Although a person can experience a muscle “twitch,” a single twitch does not produce any significant muscle
+activity in a living body. A series of action potentials to the muscle fibers is necessary to produce a muscle
+contraction that can produce work. A normal muscle contraction is more sustained, and it can be modified by input
+from the nervous system to produce varying amounts of force; this is called a graded muscle response. The
+frequency of action potentials (nerve impulses) from a motor neuron and the number of motor neurons transmitting
+action potentials both affect the tension produced in skeletal muscle.
+
+The rate at which a motor neuron fires action potentials affects the tension produced in the skeletal muscle. If the
+fibers are stimulated while a previous twitch is still occurring, the second twitch will be stronger. This response is
+called wave summation, because the excitation-contraction coupling effects of successive motor neuron signaling
+are summed, or added together (Figure 10.16a). At the molecular level, summation occurs because the second
+stimulus triggers the release of more Ca++ ions, which become available to activate additional sarcomeres while the
+muscle is still contracting from the first stimulus. Summation results in greater contraction of the motor unit.
+
+FIGURE 10.16 Wave Summation and Tetanus (a) The excitation-contraction coupling effects of successive motor neuron signaling is
+added together which is referred to as wave summation. The bottom of each wave, the end of the relaxation phase, represents the point of
+stimulus. (b) When the stimulus frequency is so high that the relaxation phase disappears completely, the contractions become continuous;
+this is called tetanus.
+If the frequency of motor neuron signaling increases, summation and subsequent muscle tension in the motor unit
+continues to rise until it reaches a peak point. The tension at this point is about three to four times greater than the
+tension of a single twitch, a state referred to as incomplete tetanus. During incomplete tetanus, the muscle goes
+through quick cycles of contraction with a short relaxation phase for each. If the stimulus frequency is so high that
+the relaxation phase disappears completely, contractions become continuous in a process called complete tetanus
+(Figure 10.16b).
+During tetanus, the concentration of Ca++ ions in the sarcoplasm allows virtually all of the sarcomeres to form crossbridges and shorten, so that a contraction can continue uninterrupted (until the muscle fatigues and can no longer
+produce tension).
+Treppe
+
+When a skeletal muscle has been dormant for an extended period and then activated to contract, with all other
+things being equal, the initial contractions generate about one-half the force of later contractions. The muscle
+tension increases in a graded manner that to some looks like a set of stairs. This tension increase is called treppe, a
+condition where muscle contractions become more efficient. It’s also known as the “staircase effect” (Figure
+10.17).
+
+Access for free at openstax.org
+
+### PDF page 405 (printed page 389)
+
+10.5 • Types of Muscle Fibers 389
+
+FIGURE 10.17 Treppe When muscle tension increases in a graded manner that looks like a set of stairs, it is called treppe. The bottom of
+each wave represents the point of stimulus.
+It is believed that treppe results from a higher concentration of Ca++ in the sarcoplasm resulting from the steady
+stream of signals from the motor neuron. It can only be maintained with adequate ATP.
+Muscle Tone
+
+Skeletal muscles are rarely completely relaxed, or flaccid. Even if a muscle is not producing movement, it is
+contracted a small amount to maintain its contractile proteins and produce muscle tone. The tension produced by
+muscle tone allows muscles to continually stabilize joints and maintain posture.
+
+Muscle tone is accomplished by a complex interaction between the nervous system and skeletal muscles that
+results in the activation of a few motor units at a time, most likely in a cyclical manner. In this manner, muscles
+never fatigue completely, as some motor units can recover while others are active.
+
+The absence of the low-level contractions that lead to muscle tone is referred to as hypotonia, and can result from
+damage to parts of the central nervous system (CNS), such as the cerebellum, or from loss of innervations to a
+skeletal muscle, as in poliomyelitis. Hypotonic muscles have a flaccid appearance and display functional
+impairments, such as weak reflexes. Conversely, excessive muscle tone is referred to as hypertonia, accompanied
+by hyperreflexia (excessive reflex responses), often the result of damage to upper motor neurons in the CNS.
+Hypertonia can present with muscle rigidity (as seen in Parkinson’s disease) or spasticity, a phasic change in muscle
+tone, where a limb will “snap” back from passive stretching (as seen in some strokes).
+10.5 Types of Muscle Fibers
+
+LEARNING OBJECTIVES
+By the end of this section, you will be able to:
+• Describe the types of skeletal muscle fibers
+• Explain fast and slow muscle fibers
+
+Two criteria to consider when classifying the types of muscle fibers are how fast some fibers contract relative to
+others, and how fibers produce ATP. Using these criteria, there are three main types of skeletal muscle fibers. Slow
+oxidative (SO) fibers contract relatively slowly and use aerobic respiration (oxygen and glucose) to produce ATP.
+Fast oxidative (FO) fibers have fast contractions and primarily use aerobic respiration, but because they may switch
+to anaerobic respiration (glycolysis), can fatigue more quickly than SO fibers. Lastly, fast glycolytic (FG) fibers have
+fast contractions and primarily use anaerobic glycolysis. The FG fibers fatigue more quickly than the others. Most
+skeletal muscles in a human contain(s) all three types, although in varying proportions.
+
+The speed of contraction is dependent on how quickly myosin’s ATPase hydrolyzes ATP to produce cross-bridge
+action. Fast fibers hydrolyze ATP approximately twice as quickly as slow fibers, resulting in much quicker crossbridge cycling (which pulls the thin filaments toward the center of the sarcomeres at a faster rate). The primary
+metabolic pathway used by a muscle fiber determines whether the fiber is classified as oxidative or glycolytic. If a
+fiber primarily produces ATP through aerobic pathways it is oxidative. More ATP can be produced during each
