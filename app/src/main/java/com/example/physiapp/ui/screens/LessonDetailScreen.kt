@@ -54,6 +54,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.physiapp.data.model.CurriculumLesson
+import com.example.physiapp.ui.components.MarkdownContent
 import com.example.physiapp.ui.theme.AmberTertiary
 import com.example.physiapp.ui.theme.TealPrimary
 
@@ -162,10 +163,9 @@ fun LessonDetailScreen(
                     elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)
                 ) {
                     Column(modifier = Modifier.padding(18.dp)) {
-                        Text(
-                            text = lesson.fullMarkdownText,
-                            style = MaterialTheme.typography.bodyLarge.copy(lineHeight = 24.sp),
-                            color = MaterialTheme.colorScheme.onSurface
+                        MarkdownContent(
+                            markdown = lesson.fullMarkdownText,
+                            modifier = Modifier.testTag("lesson_markdown_body")
                         )
                     }
                 }
