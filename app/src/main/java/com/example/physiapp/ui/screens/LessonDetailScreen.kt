@@ -23,6 +23,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Bookmark
+import androidx.compose.material.icons.filled.BookmarkBorder
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Lightbulb
@@ -37,6 +39,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
@@ -54,6 +57,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.physiapp.data.model.CurriculumLesson
+import com.example.physiapp.data.model.CurriculumOptionalReading
 import com.example.physiapp.ui.components.MarkdownContent
 import com.example.physiapp.ui.theme.AmberTertiary
 import com.example.physiapp.ui.theme.TealPrimary
@@ -63,8 +67,11 @@ import com.example.physiapp.ui.theme.TealPrimary
 fun LessonDetailScreen(
     lesson: CurriculumLesson,
     isAlreadyCompleted: Boolean,
+    isFavorite: Boolean,
     onBack: () -> Unit,
     onCompleteLesson: () -> Unit,
+    onToggleFavorite: () -> Unit,
+    onOpenOptionalReading: (CurriculumOptionalReading) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val scrollState = rememberScrollState()
@@ -91,6 +98,18 @@ fun LessonDetailScreen(
                 navigationIcon = {
                     IconButton(onClick = onBack, modifier = Modifier.testTag("lesson_back_button")) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                    }
+                },
+                actions = {
+                    IconButton(
+                        onClick = onToggleFavorite,
+                        modifier = Modifier.testTag("toggle_lesson_favorite_${lesson.id}")
+                    ) {
+                        Icon(
+                            imageVector = if (isFavorite) Icons.Default.Bookmark else Icons.Default.BookmarkBorder,
+                            contentDescription = if (isFavorite) "Remove lesson from favorites" else "Save lesson to favorites",
+                            tint = MaterialTheme.colorScheme.primary
+                        )
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
@@ -167,6 +186,30 @@ fun LessonDetailScreen(
                             markdown = lesson.fullMarkdownText,
                             modifier = Modifier.testTag("lesson_markdown_body")
                         )
+                    }
+                }
+
+                lesson.optionalReading?.let { reading ->
+                    Card(
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(20.dp),
+                        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
+                    ) {
+                        Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                            Text(
+                                text = "Read more · Optional",
+                                style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
+                                color = MaterialTheme.colorScheme.primary
+                            )
+                            Text(reading.title, style = MaterialTheme.typography.titleSmall.copy(fontWeight = FontWeight.SemiBold))
+                            Text(reading.summary, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            TextButton(
+                                onClick = { onOpenOptionalReading(reading) },
+                                modifier = Modifier.testTag("open_optional_reading_${reading.id}")
+                            ) {
+                                Text("Open ${reading.durationMinutes}-minute reading")
+                            }
+                        }
                     }
                 }
 

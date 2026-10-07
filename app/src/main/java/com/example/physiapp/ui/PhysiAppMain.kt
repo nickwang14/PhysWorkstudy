@@ -21,6 +21,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.AltRoute
+import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Dashboard
 import androidx.compose.material.icons.filled.FitnessCenter
@@ -76,9 +77,11 @@ import com.example.physiapp.ui.components.ExerciseMotionPlayer
 import com.example.physiapp.ui.components.ReadinessDialog
 import com.example.physiapp.ui.screens.ActiveWorkoutScreen
 import com.example.physiapp.ui.screens.CurriculumScreen
+import com.example.physiapp.ui.screens.FavoritesScreen
 import com.example.physiapp.ui.screens.LessonDetailScreen
 import com.example.physiapp.ui.screens.LoginScreen
 import com.example.physiapp.ui.screens.ProfileScreen
+import com.example.physiapp.ui.screens.OptionalReadingDetailScreen
 import com.example.physiapp.ui.screens.ProgressionMapScreen
 import com.example.physiapp.ui.screens.SettingsAndBadgesDialog
 import com.example.physiapp.ui.screens.TodayScreen
@@ -94,6 +97,7 @@ enum class AppDestination(val label: String, val icon: ImageVector) {
     JOURNEY("Journey", Icons.Default.AltRoute),
     WORKOUTS("Workouts", Icons.Default.FitnessCenter),
     CURRICULUM("Curriculum", Icons.AutoMirrored.Filled.MenuBook),
+    FAVORITES("Saved", Icons.Default.Bookmark),
     PROFILE("Profile", Icons.Default.Person)
 }
 
@@ -120,6 +124,7 @@ fun PhysiAppMain() {
     val progress by repository.progressFlow.collectAsState()
     val preferences by repository.prefsFlow.collectAsState()
     val workoutHistory by repository.workoutHistoryFlow.collectAsState()
+    val favorites by repository.favoritesFlow.collectAsState()
 
     // Active session state from ActiveWorkoutManager
     val activeSession by ActiveWorkoutManager.currentSession.collectAsState()
@@ -131,6 +136,8 @@ fun PhysiAppMain() {
 
     // Screen sub-flows
     var selectedLessonId by remember { mutableStateOf<String?>(null) }
+    var selectedOptionalReadingId by remember { mutableStateOf<String?>(null) }
+    var readingReturnLessonId by remember { mutableStateOf<String?>(null) }
     var reviewingSplitTemplate by remember { mutableStateOf<WorkoutTemplate?>(null) }
 
     // Dialogs
@@ -140,12 +147,17 @@ fun PhysiAppMain() {
 
     // Back handling
     BackHandler(
-        enabled = selectedLessonId != null ||
+        enabled = selectedOptionalReadingId != null || selectedLessonId != null ||
             (activeSession != null && !isSessionMinimized) ||
             reviewingSplitTemplate != null ||
             currentDestination != AppDestination.TODAY
     ) {
         when {
+            selectedOptionalReadingId != null -> {
+                selectedOptionalReadingId = null
+                selectedLessonId = readingReturnLessonId
+                readingReturnLessonId = null
+            }
             selectedLessonId != null -> selectedLessonId = null
             reviewingSplitTemplate != null -> reviewingSplitTemplate = null
             activeSession != null && !isSessionMinimized -> ActiveWorkoutManager.minimize()
@@ -154,6 +166,26 @@ fun PhysiAppMain() {
     }
 
     PhysiAppTheme {
+        val selectedReadingOwner = selectedOptionalReadingId?.let { readingId ->
+            CurriculumRepository.allLessons.firstOrNull { it.optionalReading?.id == readingId }
+        }
+        val selectedReading = selectedReadingOwner?.optionalReading
+
+        if (selectedReading != null && selectedReadingOwner != null) {
+            OptionalReadingDetailScreen(
+                reading = selectedReading,
+                lessonTitle = selectedReadingOwner.title,
+                isFavorite = selectedReading.id in favorites.optionalReadingIds,
+                onBack = {
+                    selectedOptionalReadingId = null
+                    selectedLessonId = readingReturnLessonId
+                    readingReturnLessonId = null
+                },
+                onToggleFavorite = { repository.toggleFavoriteOptionalReading(selectedReading.id) }
+            )
+            return@PhysiAppTheme
+        }
+
         // Full screen Lesson detail flow
         if (selectedLessonId != null) {
             val lesson = CurriculumRepository.getLessonById(selectedLessonId!!)
@@ -161,9 +193,16 @@ fun PhysiAppMain() {
                 LessonDetailScreen(
                     lesson = lesson,
                     isAlreadyCompleted = progress.completedLessonIds.contains(lesson.id),
+                    isFavorite = lesson.id in favorites.lessonIds,
                     onBack = { selectedLessonId = null },
                     onCompleteLesson = {
                         repository.completeLesson(lesson.id)
+                    },
+                    onToggleFavorite = { repository.toggleFavoriteLesson(lesson.id) },
+                    onOpenOptionalReading = { reading ->
+                        readingReturnLessonId = lesson.id
+                        selectedLessonId = null
+                        selectedOptionalReadingId = reading.id
                     }
                 )
                 return@PhysiAppTheme
@@ -312,7 +351,7 @@ fun PhysiAppMain() {
                         containerColor = MaterialTheme.colorScheme.surface,
                         contentColor = MaterialTheme.colorScheme.primary
                     ) {
-                        AppDestination.entries.forEach { dest ->
+                        AppDestination.entries.filter { it != AppDestination.PROFILE }.forEach { dest ->
                             NavigationBarItem(
                                 selected = currentDestination == dest,
                                 onClick = { currentDestination = dest },
@@ -413,6 +452,20 @@ fun PhysiAppMain() {
                             allLessons = CurriculumRepository.allLessons,
                             progress = progress,
                             onOpenLesson = { selectedLessonId = it }
+                        )
+                    }
+
+                    AppDestination.FAVORITES -> {
+                        FavoritesScreen(
+                            allLessons = CurriculumRepository.allLessons,
+                            favorites = favorites,
+                            onOpenLesson = { selectedLessonId = it },
+                            onOpenOptionalReading = { readingId ->
+                                readingReturnLessonId = null
+                                selectedOptionalReadingId = readingId
+                            },
+                            onRemoveLesson = { repository.toggleFavoriteLesson(it) },
+                            onRemoveOptionalReading = { repository.toggleFavoriteOptionalReading(it) }
                         )
                     }
 

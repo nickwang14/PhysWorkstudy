@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import com.example.physiapp.data.model.ConsistencyBadge
 import com.example.physiapp.data.model.DualTrackProgress
 import com.example.physiapp.data.model.ExerciseSet
+import com.example.physiapp.data.model.FavoriteLearningItems
 import com.example.physiapp.data.model.LoggedExercise
 import com.example.physiapp.data.model.LoggedWorkoutSession
 import com.example.physiapp.data.model.MovementPattern
@@ -29,6 +30,32 @@ class UserPreferencesRepository(context: Context) {
 
     private val _workoutHistoryFlow = MutableStateFlow(loadWorkoutHistory())
     val workoutHistoryFlow: StateFlow<List<LoggedWorkoutSession>> = _workoutHistoryFlow.asStateFlow()
+
+    private val _favoritesFlow = MutableStateFlow(loadFavorites())
+    val favoritesFlow: StateFlow<FavoriteLearningItems> = _favoritesFlow.asStateFlow()
+
+    private fun loadFavorites(): FavoriteLearningItems = FavoriteLearningItems(
+        lessonIds = prefs.getStringSet("favorite_lesson_ids", emptySet())?.toSet() ?: emptySet(),
+        optionalReadingIds = prefs.getStringSet("favorite_optional_reading_ids", emptySet())?.toSet() ?: emptySet()
+    )
+
+    fun toggleFavoriteLesson(lessonId: String) {
+        val current = _favoritesFlow.value
+        val updatedIds = toggleFavoriteId("favorite_lesson_ids", current.lessonIds, lessonId)
+        _favoritesFlow.value = current.copy(lessonIds = updatedIds)
+    }
+
+    fun toggleFavoriteOptionalReading(readingId: String) {
+        val current = _favoritesFlow.value
+        val updatedIds = toggleFavoriteId("favorite_optional_reading_ids", current.optionalReadingIds, readingId)
+        _favoritesFlow.value = current.copy(optionalReadingIds = updatedIds)
+    }
+
+    private fun toggleFavoriteId(key: String, currentIds: Set<String>, id: String): Set<String> {
+        val updatedIds = if (id in currentIds) currentIds - id else currentIds + id
+        prefs.edit().putStringSet(key, HashSet(updatedIds)).apply()
+        return updatedIds
+    }
 
     private fun loadPreferences(): UserPreferences {
         val target = prefs.getInt("weekly_goal_target", 3).coerceAtLeast(2)

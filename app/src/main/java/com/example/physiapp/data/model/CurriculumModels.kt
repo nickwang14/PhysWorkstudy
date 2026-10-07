@@ -21,6 +21,14 @@ data class KnowledgeCheckQuestion(
     val options: List<KnowledgeCheckOption>
 )
 
+data class CurriculumOptionalReading(
+    val id: String,
+    val title: String,
+    val summary: String,
+    val durationMinutes: Int,
+    val fullMarkdownText: String
+)
+
 data class CurriculumLesson(
     val id: String,
     val chapterId: String,
@@ -35,7 +43,8 @@ data class CurriculumLesson(
     val keyTerms: List<String>,
     val practicalApplication: String,
     val questions: List<KnowledgeCheckQuestion>,
-    val isGateMilestone: Boolean = false
+    val isGateMilestone: Boolean = false,
+    val optionalReading: CurriculumOptionalReading? = null
 )
 
 data class CurriculumSubchapter(

@@ -49,8 +49,11 @@ class MarkdownContentTest {
                 LessonDetailScreen(
                     lesson = lesson,
                     isAlreadyCompleted = false,
+                    isFavorite = false,
                     onBack = {},
-                    onCompleteLesson = {}
+                    onCompleteLesson = {},
+                    onToggleFavorite = {},
+                    onOpenOptionalReading = {}
                 )
             }
         }

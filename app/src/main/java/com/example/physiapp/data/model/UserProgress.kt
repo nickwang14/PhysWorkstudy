@@ -38,3 +38,8 @@ data class DualTrackProgress(
     val totalLessonsCompleted: Int = 4,
     val lastReadinessCheckin: ReadinessEntry? = null
 )
+
+data class FavoriteLearningItems(
+    val lessonIds: Set<String> = emptySet(),
+    val optionalReadingIds: Set<String> = emptySet()
+)
