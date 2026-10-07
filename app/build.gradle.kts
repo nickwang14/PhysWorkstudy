@@ -1,4 +1,7 @@
+import java.io.FileOutputStream
 import java.util.Properties
+import java.util.zip.ZipEntry
+import java.util.zip.ZipOutputStream
 
 plugins {
     alias(libs.plugins.android.application)
@@ -102,4 +105,40 @@ dependencies {
 
 tasks.withType<Test> {
     failFast = true
+}
+
+val packageInstallerZip = tasks.register("packageInstallerZip") {
+    group = "distribution"
+    description = "Packages the debug APK into PhysiApp_installer.zip at the repository root."
+    dependsOn("packageDebug")
+
+    val apkFile = layout.buildDirectory.file("outputs/apk/debug/app-debug.apk")
+    inputs.file(apkFile)
+    outputs.file(rootProject.file("PhysiApp_installer.zip"))
+    outputs.file(rootProject.file("PhysiApp.apk"))
+
+    doLast {
+        val srcApk = apkFile.get().asFile
+        if (srcApk.exists()) {
+            val rootApk = rootProject.file("PhysiApp.apk")
+            srcApk.copyTo(rootApk, overwrite = true)
+
+            val zipFile = rootProject.file("PhysiApp_installer.zip")
+            if (zipFile.exists()) {
+                zipFile.delete()
+            }
+            ZipOutputStream(FileOutputStream(zipFile)).use { zipOut ->
+                val entry = ZipEntry("PhysiApp.apk")
+                zipOut.putNextEntry(entry)
+                srcApk.inputStream().use { input ->
+                    input.copyTo(zipOut)
+                }
+                zipOut.closeEntry()
+            }
+        }
+    }
+}
+
+tasks.matching { it.name in listOf("assembleDebug", "packageDebug") }.configureEach {
+    finalizedBy(packageInstallerZip)
 }

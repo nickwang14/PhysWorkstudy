@@ -42,6 +42,27 @@ service cloud.firestore {
         isValidTimestamp(data.createdAt);
     }
 
+    function isValidLessonProgress(data, userId, lessonId) {
+      return data.lessonId == lessonId &&
+        data.userId == userId &&
+        isValidTimestamp(data.completedAt);
+    }
+
+    function isValidLessonIndex(data, lessonId) {
+      return data.lessonId == lessonId &&
+        data.title is string && data.title.size() > 0 && data.title.size() <= 200 &&
+        data.chapterId is string && data.chapterId.size() > 0 && data.chapterId.size() <= 100 &&
+        data.chapterTitle is string && data.chapterTitle.size() > 0 && data.chapterTitle.size() <= 150 &&
+        data.chapterNumber is int && data.chapterNumber >= 1 && data.chapterNumber <= 20 &&
+        data.subchapterId is string && data.subchapterId.size() > 0 && data.subchapterId.size() <= 100 &&
+        data.subchapterTitle is string && data.subchapterTitle.size() > 0 && data.subchapterTitle.size() <= 150 &&
+        data.lessonIndex is int && data.lessonIndex >= 1 && data.lessonIndex <= 50 &&
+        data.durationMinutes is int && data.durationMinutes >= 1 && data.durationMinutes <= 120 &&
+        data.category is string && data.category.size() > 0 && data.category.size() <= 50 &&
+        data.summary is string && data.summary.size() > 0 && data.summary.size() <= 1000 &&
+        data.assetPath is string && data.assetPath.size() > 0 && data.assetPath.size() <= 300;
+    }
+
     match /users/{userId} {
       allow read: if isOwner(userId);
       allow create, update: if isOwner(userId) && isValidUserProfile(request.resource.data, userId);
@@ -52,6 +73,18 @@ service cloud.firestore {
         allow create, update: if isOwner(userId) && isValidWorkoutLog(request.resource.data, userId, logId);
         allow delete: if isOwner(userId);
       }
+
+      match /lesson_progress/{lessonId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidLessonProgress(request.resource.data, userId, lessonId);
+        allow delete: if isOwner(userId);
+      }
+    }
+
+    match /curriculum_lessons/{lessonId} {
+      allow read: if isAuthenticated();
+      allow create, update: if isAuthenticated() && isValidLessonIndex(request.resource.data, lessonId);
+      allow delete: if false;
     }
   }
 }

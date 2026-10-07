@@ -44,6 +44,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -62,6 +63,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
+import com.example.physiapp.R
 import com.example.physiapp.data.auth.AuthManager
 import com.example.physiapp.data.model.ExerciseDef
 import com.example.physiapp.data.model.WorkoutLogDoc
@@ -87,6 +89,7 @@ import com.example.physiapp.ui.screens.WorkoutsScreen
 import com.example.physiapp.ui.theme.AmberTertiary
 import com.example.physiapp.ui.theme.PhysiAppTheme
 import com.example.physiapp.ui.theme.TealPrimary
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.launch
 
 enum class AppDestination(val label: String, val icon: ImageVector) {
@@ -116,6 +119,27 @@ fun PhysiAppMain() {
 
     val repository = remember { UserPreferencesRepository(context) }
     val profileRepository = remember(user.uid) { UserProfileRepository(context) }
+
+    // Initialize CurriculumRepository with application context
+    LaunchedEffect(Unit) {
+        CurriculumRepository.init(context.applicationContext)
+    }
+
+    // Observe remote completed lessons from Cloud Firestore and merge into local progress
+    LaunchedEffect(user.uid) {
+        profileRepository.observeLessonProgress(user.uid).collect { remoteIds ->
+            repository.syncRemoteCompletedLessons(remoteIds)
+        }
+    }
+
+    // Index curriculum lessons into Firestore /curriculum_lessons for cloud reference
+    LaunchedEffect(user.uid) {
+        try {
+            val databaseId = context.getString(R.string.firestore_database_id)
+            val db = FirebaseFirestore.getInstance(databaseId)
+            CurriculumRepository.syncLessonsToFirestore(db)
+        } catch (_: Exception) {}
+    }
 
     val progress by repository.progressFlow.collectAsState()
     val preferences by repository.prefsFlow.collectAsState()
@@ -164,6 +188,9 @@ fun PhysiAppMain() {
                     onBack = { selectedLessonId = null },
                     onCompleteLesson = {
                         repository.completeLesson(lesson.id)
+                        coroutineScope.launch {
+                            profileRepository.saveLessonProgress(lesson.id)
+                        }
                     }
                 )
                 return@PhysiAppTheme

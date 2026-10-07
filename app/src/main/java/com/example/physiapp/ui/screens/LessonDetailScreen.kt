@@ -72,11 +72,13 @@ fun LessonDetailScreen(
     val userAnswers = remember { mutableStateMapOf<String, String>() }
     var hasCompletedJustNow by remember { mutableStateOf(false) }
 
-    val allQuestionsAnsweredCorrectly = lesson.questions.all { q ->
+    val allQuestionsAnsweredCorrectly = lesson.questions.isEmpty() || lesson.questions.all { q ->
         val selected = userAnswers[q.id]
         val correctOpt = q.options.find { it.isCorrect }
         selected == correctOpt?.id
     }
+    val allQuestionsAnswered = lesson.questions.isEmpty() || lesson.questions.all { q -> userAnswers.containsKey(q.id) }
+    val canComplete = allQuestionsAnsweredCorrectly || allQuestionsAnswered || isAlreadyCompleted || hasCompletedJustNow
 
     Scaffold(
         topBar = {
@@ -375,7 +377,7 @@ fun LessonDetailScreen(
                             // Completion CTA
                             Spacer(modifier = Modifier.height(10.dp))
 
-                            if (allQuestionsAnsweredCorrectly || isAlreadyCompleted) {
+                            if (canComplete) {
                                 Button(
                                     onClick = {
                                         hasCompletedJustNow = true

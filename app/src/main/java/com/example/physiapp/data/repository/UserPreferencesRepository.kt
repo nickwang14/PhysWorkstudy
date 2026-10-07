@@ -223,6 +223,23 @@ class UserPreferencesRepository(context: Context) {
         _progressFlow.value = updated
     }
 
+    fun syncRemoteCompletedLessons(remoteLessonIds: Set<String>) {
+        if (remoteLessonIds.isEmpty()) return
+        val current = _progressFlow.value
+        val merged = current.completedLessonIds + remoteLessonIds
+        if (merged != current.completedLessonIds) {
+            val updated = current.copy(
+                completedLessonIds = merged,
+                totalLessonsCompleted = merged.size
+            )
+            prefs.edit()
+                .putStringSet("completed_lessons", merged)
+                .putInt("total_lessons", merged.size)
+                .apply()
+            _progressFlow.value = updated
+        }
+    }
+
     fun logWorkout(session: LoggedWorkoutSession) {
         val current = _progressFlow.value
         val currentHistory = _workoutHistoryFlow.value.toMutableList()

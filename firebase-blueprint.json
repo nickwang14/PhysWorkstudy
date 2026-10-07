@@ -57,6 +57,54 @@
         "completedAt",
         "createdAt"
       ]
+    },
+    "CurriculumLessonIndex": {
+      "title": "CurriculumLessonIndex",
+      "description": "Indexed movement curriculum lesson referencing markdown asset location",
+      "type": "object",
+      "properties": {
+        "lessonId": { "type": "string", "description": "Unique lesson ID (e.g. terminology-01)" },
+        "title": { "type": "string", "description": "Title of the lesson" },
+        "chapterId": { "type": "string", "description": "Parent chapter slug" },
+        "chapterNumber": { "type": "integer", "description": "1-based chapter number" },
+        "chapterTitle": { "type": "string", "description": "Chapter display title" },
+        "subchapterId": { "type": "string", "description": "Parent subchapter slug" },
+        "subchapterTitle": { "type": "string", "description": "Subchapter display title" },
+        "lessonIndex": { "type": "integer", "description": "Index within subchapter" },
+        "durationMinutes": { "type": "integer", "description": "Estimated duration in minutes" },
+        "category": { "type": "string", "description": "Topic category name" },
+        "summary": { "type": "string", "description": "Learning objective or summary" },
+        "assetPath": { "type": "string", "description": "Relative asset location of markdown file" }
+      },
+      "required": [
+        "lessonId",
+        "title",
+        "chapterId",
+        "chapterNumber",
+        "chapterTitle",
+        "subchapterId",
+        "subchapterTitle",
+        "lessonIndex",
+        "durationMinutes",
+        "category",
+        "summary",
+        "assetPath"
+      ]
+    },
+    "LessonProgress": {
+      "title": "LessonProgress",
+      "description": "User completion status and timestamp for a curriculum lesson",
+      "type": "object",
+      "properties": {
+        "lessonId": { "type": "string", "description": "ID of the completed lesson" },
+        "userId": { "type": "string", "description": "User UID who completed the lesson" },
+        "completedAt": { "type": "string", "format": "date-time", "description": "Timestamp when lesson was completed" }
+      },
+      "required": [
+        "lessonId",
+        "userId",
+        "completedAt"
+      ]
     }
   },
   "firestore": {
@@ -67,6 +115,14 @@
     "/users/{userId}/workout_logs/{logId}": {
       "schema": "WorkoutLog",
       "description": "Subcollection of logged workout sessions for progress tracking"
+    },
+    "/users/{userId}/lesson_progress/{lessonId}": {
+      "schema": "LessonProgress",
+      "description": "Subcollection of completed lessons per user for progress tracking"
+    },
+    "/curriculum_lessons/{lessonId}": {
+      "schema": "CurriculumLessonIndex",
+      "description": "Indexed movement curriculum lessons referencing markdown file locations"
     }
   }
 }
