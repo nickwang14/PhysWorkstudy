@@ -27,6 +27,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -36,6 +38,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -54,6 +57,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.Coil
 import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
 import com.example.physiapp.data.model.MovementPattern
@@ -61,11 +65,14 @@ import com.example.physiapp.ui.theme.TealPrimary
 import kotlin.math.PI
 import kotlin.math.sin
 
+enum class MotionDisplayMode {
+    LIVE_GIF,
+    KINETIC_ANATOMY
+}
+
 /**
- * Robust animated motion player for exercises.
- * Attempts to play the animated GIF from ExerciseDB/remote URL with Coil.
- * If the URL is unavailable, offline, or returns 404, it immediately renders an
- * interactive animated biomechanical demonstrator that actively plays on any emulator!
+ * Robust exercise motion player with toggleable Live GIF Demo and Kinetic Anatomy.
+ * Seamlessly plays animated ExerciseDB GIFs while providing real-time biomechanical analysis.
  */
 @Composable
 fun ExerciseMotionPlayer(
@@ -74,13 +81,18 @@ fun ExerciseMotionPlayer(
     gifUrl: String = "",
     modifier: Modifier = Modifier
 ) {
+    val context = LocalContext.current
     var isPlaying by remember { mutableStateOf(true) }
-    var useFallbackMotion by remember { mutableStateOf(gifUrl.isBlank()) }
+    var currentMode by remember(gifUrl) {
+        mutableStateOf(if (gifUrl.isNotBlank()) MotionDisplayMode.LIVE_GIF else MotionDisplayMode.KINETIC_ANATOMY)
+    }
+    var hasError by remember(gifUrl) { mutableStateOf(false) }
+    var reloadTrigger by remember { mutableIntStateOf(0) }
 
     Card(
         modifier = modifier
             .fillMaxWidth()
-            .height(180.dp)
+            .height(210.dp)
             .testTag("motion_player_${exerciseName.lowercase().replace(" ", "_")}"),
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(
@@ -88,38 +100,109 @@ fun ExerciseMotionPlayer(
         )
     ) {
         Box(modifier = Modifier.fillMaxSize()) {
-            if (!useFallbackMotion && gifUrl.isNotBlank()) {
-                SubcomposeAsyncImage(
-                    model = ImageRequest.Builder(LocalContext.current)
-                        .data(gifUrl)
-                        .crossfade(true)
-                        .build(),
-                    contentDescription = "$exerciseName Form Demo",
-                    contentScale = ContentScale.Fit,
-                    modifier = Modifier.fillMaxSize(),
-                    loading = {
-                        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                            CircularProgressIndicator(modifier = Modifier.size(24.dp), color = TealPrimary)
-                        }
-                    },
-                    error = {
-                        // Automatically switch to animated biomechanical demonstrator if remote GIF fails
-                        useFallbackMotion = true
+            when (currentMode) {
+                MotionDisplayMode.LIVE_GIF -> {
+                    if (gifUrl.isNotBlank()) {
+                        SubcomposeAsyncImage(
+                            model = ImageRequest.Builder(context)
+                                .data(gifUrl)
+                                .setParameter("cache_bust", reloadTrigger)
+                                .crossfade(true)
+                                .build(),
+                            imageLoader = Coil.imageLoader(context),
+                            contentDescription = "$exerciseName Live Demo GIF",
+                            contentScale = ContentScale.Fit,
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(top = 38.dp, bottom = 4.dp),
+                            loading = {
+                                Box(
+                                    modifier = Modifier.fillMaxSize(),
+                                    contentAlignment = Alignment.Center
+                                ) {
+                                    Column(
+                                        horizontalAlignment = Alignment.CenterHorizontally,
+                                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                                    ) {
+                                        CircularProgressIndicator(
+                                            modifier = Modifier.size(28.dp),
+                                            color = TealPrimary,
+                                            strokeWidth = 3.dp
+                                        )
+                                        Text(
+                                            text = "Loading live demonstration GIF...",
+                                            style = MaterialTheme.typography.labelSmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                }
+                            },
+                            error = {
+                                hasError = true
+                                Box(
+                                    modifier = Modifier
+                                        .fillMaxSize()
+                                        .padding(16.dp),
+                                    contentAlignment = Alignment.Center
+                                ) {
+                                    Column(
+                                        horizontalAlignment = Alignment.CenterHorizontally,
+                                        verticalArrangement = Arrangement.spacedBy(6.dp)
+                                    ) {
+                                        Text(
+                                            text = "Live GIF demonstration unavailable offline",
+                                            style = MaterialTheme.typography.labelMedium,
+                                            color = MaterialTheme.colorScheme.error,
+                                            fontWeight = FontWeight.SemiBold
+                                        )
+                                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                            Button(
+                                                onClick = {
+                                                    hasError = false
+                                                    reloadTrigger++
+                                                },
+                                                modifier = Modifier.height(34.dp),
+                                                colors = ButtonDefaults.buttonColors(containerColor = TealPrimary)
+                                            ) {
+                                                Text("Retry GIF", fontSize = 11.sp)
+                                            }
+                                            Button(
+                                                onClick = { currentMode = MotionDisplayMode.KINETIC_ANATOMY },
+                                                modifier = Modifier.height(34.dp),
+                                                colors = ButtonDefaults.filledTonalButtonColors()
+                                            ) {
+                                                Text("View Kinetic Anatomy", fontSize = 11.sp)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        )
+                    } else {
+                        // Fall back to kinetic stick figure when no GIF URL is assigned
+                        BiomechanicalKineticVisualizer(
+                            exerciseName = exerciseName,
+                            pattern = pattern,
+                            isPlaying = isPlaying,
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(top = 38.dp)
+                        )
                     }
-                )
+                }
+                MotionDisplayMode.KINETIC_ANATOMY -> {
+                    BiomechanicalKineticVisualizer(
+                        exerciseName = exerciseName,
+                        pattern = pattern,
+                        isPlaying = isPlaying,
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(top = 38.dp)
+                    )
+                }
             }
 
-            // Animated Biomechanical Motion Demonstrator
-            if (useFallbackMotion || gifUrl.isBlank()) {
-                BiomechanicalKineticVisualizer(
-                    exerciseName = exerciseName,
-                    pattern = pattern,
-                    isPlaying = isPlaying,
-                    modifier = Modifier.fillMaxSize()
-                )
-            }
-
-            // Top Status Bar Overlay
+            // Top Status & Mode Toggle Overlay
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -127,46 +210,108 @@ fun ExerciseMotionPlayer(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Box(
+                // Segmented Toggle Tabs
+                Row(
                     modifier = Modifier
-                        .clip(RoundedCornerShape(8.dp))
-                        .background(Color.Black.copy(alpha = 0.6f))
-                        .padding(horizontal = 8.dp, vertical = 3.dp)
+                        .clip(RoundedCornerShape(20.dp))
+                        .background(Color.Black.copy(alpha = 0.7f))
+                        .padding(2.dp),
+                    horizontalArrangement = Arrangement.spacedBy(2.dp),
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Box(
-                            modifier = Modifier
-                                .size(6.dp)
-                                .clip(CircleShape)
-                                .background(if (isPlaying) TealPrimary else Color.Gray)
-                        )
-                        Spacer(modifier = Modifier.width(6.dp))
+                    // Live Demo Tab
+                    Box(
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(18.dp))
+                            .background(
+                                if (currentMode == MotionDisplayMode.LIVE_GIF) TealPrimary else Color.Transparent
+                            )
+                            .clickable { currentMode = MotionDisplayMode.LIVE_GIF }
+                            .padding(horizontal = 8.dp, vertical = 4.dp)
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Box(
+                                modifier = Modifier
+                                    .size(6.dp)
+                                    .clip(CircleShape)
+                                    .background(if (currentMode == MotionDisplayMode.LIVE_GIF) Color.Black else TealPrimary)
+                            )
+                            Spacer(modifier = Modifier.width(5.dp))
+                            Text(
+                                text = "LIVE GIF",
+                                style = MaterialTheme.typography.labelSmall.copy(
+                                    fontSize = 10.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    letterSpacing = 0.6.sp
+                                ),
+                                color = if (currentMode == MotionDisplayMode.LIVE_GIF) Color.Black else Color.White
+                            )
+                        }
+                    }
+
+                    // Kinetic Anatomy Tab
+                    Box(
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(18.dp))
+                            .background(
+                                if (currentMode == MotionDisplayMode.KINETIC_ANATOMY) TealPrimary else Color.Transparent
+                            )
+                            .clickable { currentMode = MotionDisplayMode.KINETIC_ANATOMY }
+                            .padding(horizontal = 8.dp, vertical = 4.dp)
+                    ) {
                         Text(
-                            text = if (isPlaying) "DEMO PLAYING" else "PAUSED",
+                            text = "ANATOMY & CUES",
                             style = MaterialTheme.typography.labelSmall.copy(
-                                fontSize = 9.sp,
+                                fontSize = 10.sp,
                                 fontWeight = FontWeight.Bold,
-                                letterSpacing = 0.8.sp
+                                letterSpacing = 0.6.sp
                             ),
-                            color = Color.White
+                            color = if (currentMode == MotionDisplayMode.KINETIC_ANATOMY) Color.Black else Color.White.copy(alpha = 0.85f)
                         )
                     }
                 }
 
-                // Play / Pause Control
-                Box(
-                    modifier = Modifier
-                        .clip(CircleShape)
-                        .background(Color.Black.copy(alpha = 0.5f))
-                        .clickable { isPlaying = !isPlaying }
-                        .padding(4.dp)
+                // Right controls: Reload (GIF) or Play/Pause (Anatomy)
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Icon(
-                        imageVector = if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow,
-                        contentDescription = if (isPlaying) "Pause animation" else "Play animation",
-                        tint = Color.White,
-                        modifier = Modifier.size(16.dp)
-                    )
+                    if (currentMode == MotionDisplayMode.LIVE_GIF && gifUrl.isNotBlank()) {
+                        Box(
+                            modifier = Modifier
+                                .clip(CircleShape)
+                                .background(Color.Black.copy(alpha = 0.55f))
+                                .clickable {
+                                    hasError = false
+                                    reloadTrigger++
+                                }
+                                .padding(5.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.Refresh,
+                                contentDescription = "Reload GIF",
+                                tint = Color.White,
+                                modifier = Modifier.size(14.dp)
+                            )
+                        }
+                    }
+
+                    if (currentMode == MotionDisplayMode.KINETIC_ANATOMY) {
+                        Box(
+                            modifier = Modifier
+                                .clip(CircleShape)
+                                .background(Color.Black.copy(alpha = 0.55f))
+                                .clickable { isPlaying = !isPlaying }
+                                .padding(5.dp)
+                        ) {
+                            Icon(
+                                imageVector = if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow,
+                                contentDescription = if (isPlaying) "Pause animation" else "Play animation",
+                                tint = Color.White,
+                                modifier = Modifier.size(14.dp)
+                            )
+                        }
+                    }
                 }
             }
         }

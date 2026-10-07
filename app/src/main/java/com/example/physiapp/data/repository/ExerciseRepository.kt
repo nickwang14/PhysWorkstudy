@@ -27,7 +27,7 @@ object ExerciseRepository {
             ),
             regression = "Assisted TRX Squat or Box Squat to parallel bench",
             progression = "Front Squat with barbell or Zercher Squat",
-            gifUrl = "https://v2.exercisedb.io/image/9Z1c0UHz0YmG8C"
+            gifUrl = "https://static.exercisedb.dev/media/yn8yg1r.gif"
         ),
         ExerciseDef(
             id = "sq-2",
@@ -47,7 +47,7 @@ object ExerciseRepository {
             ),
             regression = "Split squat with both feet on floor",
             progression = "Deficit Bulgarian split squat or barbell loading",
-            gifUrl = "https://v2.exercisedb.io/image/5xL1Zq8V2kNm0R"
+            gifUrl = "https://static.exercisedb.dev/media/arsYEd3.gif"
         ),
 
         // HINGE PATTERN
@@ -70,7 +70,7 @@ object ExerciseRepository {
             ),
             regression = "Wall-touch hip hinge or Cable pull-through",
             progression = "Single-leg Romanian Deadlift",
-            gifUrl = "https://v2.exercisedb.io/image/YVfB9RkLz5uL6Z"
+            gifUrl = "https://static.exercisedb.dev/media/wQ2c4XD.gif"
         ),
         ExerciseDef(
             id = "hg-2",
@@ -90,7 +90,7 @@ object ExerciseRepository {
             ),
             regression = "Banded kettlebell deadlift",
             progression = "Single-arm kettlebell swing",
-            gifUrl = "https://v2.exercisedb.io/image/P4qN7YwL1oZ8rV"
+            gifUrl = "https://static.exercisedb.dev/media/UHJlbu3.gif"
         ),
 
         // PUSH PATTERN
@@ -113,7 +113,7 @@ object ExerciseRepository {
             ),
             regression = "Floor Press with dumbbells (limits shoulder extension range)",
             progression = "Barbell bench press or incline press",
-            gifUrl = "https://v2.exercisedb.io/image/LzNqE20F7UqT4D"
+            gifUrl = "https://assets.exercisedb.dev/media/qU7GQpl.gif"
         ),
         ExerciseDef(
             id = "ps-2",
@@ -133,7 +133,7 @@ object ExerciseRepository {
             ),
             regression = "Half-kneeling landmine press",
             progression = "Standing strict barbell military press",
-            gifUrl = "https://v2.exercisedb.io/image/M5qR8vN1yL4zX2"
+            gifUrl = "https://static.exercisedb.dev/media/bBi35y3.gif"
         ),
 
         // PULL PATTERN
@@ -155,7 +155,7 @@ object ExerciseRepository {
             ),
             regression = "Incline chest-supported row",
             progression = "Bent-over barbell row or meadow row",
-            gifUrl = "https://v2.exercisedb.io/image/Qc1L8BvY5wR3xZ"
+            gifUrl = "https://static.exercisedb.dev/media/C0MA9bC.gif"
         ),
         ExerciseDef(
             id = "pl-2",
@@ -175,7 +175,7 @@ object ExerciseRepository {
             ),
             regression = "Band pull-apart or prone Y-raise",
             progression = "Heavier cable load or rings face pull",
-            gifUrl = "https://v2.exercisedb.io/image/F7yT1wL8rV4mZ2"
+            gifUrl = "https://static.exercisedb.dev/media/veXwo0D.gif"
         ),
 
         // CARRY PATTERN
@@ -197,7 +197,7 @@ object ExerciseRepository {
             ),
             regression = "Lighter dumbbells or static isometric carry hold",
             progression = "Trap bar carry or offset weight carry",
-            gifUrl = "https://v2.exercisedb.io/image/P4qN7YwL1oZ8rV"
+            gifUrl = "https://static.exercisedb.dev/media/qPEzJjA.gif"
         ),
         ExerciseDef(
             id = "cr-2",
@@ -217,7 +217,7 @@ object ExerciseRepository {
             ),
             regression = "Lighter load with focus on vertical posture",
             progression = "Heavy kettlebell or sandbag suitcase carry",
-            gifUrl = "https://v2.exercisedb.io/image/S9kM2vR7pL1wX5"
+            gifUrl = "https://static.exercisedb.dev/media/mWBtgmb.gif"
         ),
 
         // ROTATION / ANTI-ROTATION PATTERN
@@ -239,7 +239,7 @@ object ExerciseRepository {
             ),
             regression = "Half-kneeling Pallof press or lighter band",
             progression = "Pallof press with overhead raise or lateral walkout",
-            gifUrl = "https://v2.exercisedb.io/image/K3wT9PzR4mL7sB"
+            gifUrl = "https://static.exercisedb.dev/media/9pa4H5m.gif"
         ),
         ExerciseDef(
             id = "rt-2",
@@ -259,7 +259,7 @@ object ExerciseRepository {
             ),
             regression = "Leg extension only, hands remaining on floor",
             progression = "Bird dog with resistance band or isometric square holds",
-            gifUrl = "https://v2.exercisedb.io/image/W4rN8yL2mZ9vQ1"
+            gifUrl = "https://static.exercisedb.dev/media/iny3m5y.gif"
         )
     )
 
