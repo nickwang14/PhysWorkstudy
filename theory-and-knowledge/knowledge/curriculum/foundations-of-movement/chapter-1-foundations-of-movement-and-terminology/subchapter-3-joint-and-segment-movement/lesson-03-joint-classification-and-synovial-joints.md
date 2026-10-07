@@ -5,7 +5,7 @@ chapter: "foundations-of-movement-and-terminology"
 subchapter: "joint-and-segment-movement"
 lesson: 3
 title: "Joint Classification and Synovial Joints"
-learning_objective: "Describe the basic classes of joints and explain why synovial joints matter most in exercise movement"
+learning_objective: "Distinguish structural from functional joint classification and describe why synovial joints are relevant to exercise movement"
 estimated_duration_minutes: 8
 estimated_reading_minutes: 4
 status: draft
@@ -14,7 +14,7 @@ knowledge_check_count: 3
 
 # Joint Classification and Synovial Joints
 
-Not all joints move the same way. In basic anatomy, joints can be grouped by their structure or by how much movement they allow. Some joints are largely immovable, some allow only a small amount of movement, and some allow substantial movement. For exercise and human movement, synovial joints are especially important because they support many of the large, visible motions we train and analyze.
+Not all joints move the same way. In basic anatomy, joints can be grouped by their structure or by how much movement they allow. Some joints are largely immovable, some allow only a small amount of movement, and some allow substantial movement. For exercise and human movement, synovial joints are especially relevant because they permit many of the large, visible motions we train and analyze.
 
 Synovial joints have a joint capsule (an enclosing sleeve), synovial fluid (a lubricating liquid), and articular cartilage (smooth tissue covering the bone ends) that help the joint move. Shoulders, hips, knees, elbows, and ankles are common examples. These joints do not all move the same way, but they share the basic role of allowing controlled movement while managing load.
 
@@ -53,11 +53,11 @@ Synovial fluid does not replace muscular control, and a joint capsule is not a m
 - articular surface
 
 ## Knowledge Check
-1. Which type of joint is most important for visible exercise movement?
-   - A. Synovial joint
-   - B. Immovable joint
-   - C. Fixed skull joint
-   - D. None of the above
+1. What is the main difference between structural and functional joint classifications?
+   - A. Structural classification describes what connects the bones; functional classification describes how much movement is available.
+   - B. Structural classification describes movement; functional classification describes the tissue between bones.
+   - C. Both classifications identify only the joint's shape.
+   - D. Structural classification applies only to synovial joints.
 
 2. Why are synovial joints important?
    - A. They allow controlled movement while handling load
