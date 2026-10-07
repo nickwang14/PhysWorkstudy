@@ -1,6 +1,6 @@
-# Usage Log — Foundations of Exercise Science
+# Current Source Usage, Review and Open Questions — Foundations of Exercise Science
 
-Append new records; do not rewrite prior consultation history.
+Human-owned current material usage and consultation evidence; `usage-log.md` retains its filename for compatibility. Update relevant records when material use or review status changes, preserving exact pages/destinations, real consultation dates, actual reviewer/approval evidence and credit/rights limits. Git records routine edits, builds and tool runs; do not append a record for every operation. The consultation dates below establish source review, not publication approval. Source credit and license exceptions remain in [README](README.md), with the exact edition fingerprint in `index.json`.
 
 | Date | Source/version | Pages read (PDF / printed) | Destination | Status / limits |
 |---|---|---|---|---|

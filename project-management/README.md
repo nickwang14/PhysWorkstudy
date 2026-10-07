@@ -16,7 +16,6 @@ Use these markdown files to manage:
 - `roadmap.md` — milestones and phases
 - `backlog.md` — current work queue, priorities, and ordering
 - `epics.md` — epic breakdowns, objectives, and owners
-- `decisions.md` — technical/workflow decisions and references to authoritative product decisions
 - `mvp.md` — MVP scope, priorities, and exit criteria
 - `definition-of-done.md` — feature readiness and release criteria
 - `event-kpi-spec.md` — required analytics and KPI definitions
@@ -26,7 +25,6 @@ Use these markdown files to manage:
 - `risk-register.md` — triggers and response rules
 - `curriculum-backlog.md` — deferred curriculum topics and later content additions
 - `infrastructure-plan.md` — recommended stack, system boundaries, integrations, and delivery sequence
-- `consistency-audit.md` — agent/content/tooling alignment, validation evidence and remaining decisions
 
 ## Operating Rules
 1. Treat this folder as the living task/delivery guidance, subject to the authority hierarchy below.
@@ -40,18 +38,14 @@ Use these markdown files to manage:
 ## Authority and Shared Customizations
 - Read [root AGENTS.md](../AGENTS.md) for shared repository policy before role-specific work.
 - [Product decisions](../docs/product-decisions.md) are the product authority. This folder translates those decisions into tasks and delivery guidance; do not copy product policy into a competing decision log.
-- [Decisions](decisions.md) and [workflow](workflow.md) guide technical/workflow choices and execution. Raise conflicts explicitly rather than silently overriding product authority.
+- [Workflow](workflow.md) guide technical/workflow choices and execution. Raise conflicts explicitly rather than silently overriding product authority.
 - Canonical role profiles stay in `.claude/agents/*.agent.md`. `.github/agents` profiles are generated Copilot platform adapters, not independently maintained roles; preserve role restrictions when translating tools.
-- Shared skills live in `.agents/skills/`; use the canonical [textbook-learning-material skill](../.agents/skills/textbook-learning-material/SKILL.md). The former `.claude/skills/textbook-parsing` and `.github/skills/textbook-learning-material` copies are retired by the consolidation, not alternative authorities.
+- Shared skills live in `.agents/skills/`; use [textbook-learning-material](../.agents/skills/textbook-learning-material/SKILL.md) for content work. Run `python tools/setup_agent_platforms.py` after canonical agent/skill changes.
 
-## Current Implementation and Future Proposals
-The implemented app is native Android Kotlin/Jetpack Compose: `app/build.gradle.kts` enables Compose, and `app/src/main/java/com/example/physiapp/MainActivity.kt` launches the Compose UI. Current preference persistence uses `UserPreferencesRepository.kt` and Android SharedPreferences; this does not establish the proposed backend or offline synchronization as implemented.
+## Active Context and Records
+Use root `AGENTS.md` and the [development workflow](../docs/development-workflow.md) for the Kotlin/Compose app and VS Code/AI Studio handoffs. [Infrastructure planning](infrastructure-plan.md) identifies proposed services and open choices; do not infer implementation or approval from a plan.
 
-[PD-008](../docs/product-decisions.md#pd-008-kotlin-app-and-vs-code--google-ai-studio-workflow) records the owner's 2026-10-06 confirmation: Kotlin/Compose is the current app direction, and the Android technology choice is resolved. PD-005 retains Android-primary/web-companion boundaries. [Infrastructure planning](infrastructure-plan.md) separates the actual Android stack from proposed backend/cloud services and a future read-oriented web companion whose technology remains undecided.
-
-The owner orchestrates conversations, agents, review and Git in VS Code and builds/implements the app with Google AI Studio. Follow the [development and handoff workflow](../docs/development-workflow.md): prepare bounded Kotlin/Compose tasks, review returned changes here, and record only checks actually run. This user-provided working context does not imply autonomous AI Studio integration or build evidence.
-
-Audience segmentation and business-model hypotheses must be labeled as assumptions where undecided. Launch authentication methods, week start, streak/grace boundaries, offline edit conflict rules and MVP web-settings write scope remain open in the infrastructure plan; do not promote role defaults or prototype behavior into policy.
+Keep current priorities, owners and acceptance evidence in the backlog/specs. Product policy belongs in `docs/product-decisions.md`; routine changes and past workflows belong in Git history, not parallel audit/decision logs. Preserve necessary review/rights evidence and unresolved decisions without recording every work session.
 
 ## Status Model
 Use these labels in the backlog and roadmap:

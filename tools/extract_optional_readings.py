@@ -88,7 +88,6 @@ PAGE_RANGE = re.compile(
     re.IGNORECASE,
 )
 FRONTMATTER_ID = re.compile(r"^id:\s*[\"']?([^\"'\n]+)", re.MULTILINE)
-FRONTMATTER_TITLE = re.compile(r"^title:\s*[\"'](.*?)[\"']\s*$", re.MULTILINE)
 
 
 def source_from_mention(mention: str) -> Source:

@@ -21,7 +21,7 @@ Use this before every major work session or milestone review.
 - [ ] Dependencies are visible and not implicit
 
 ## 4. Decision Hygiene
-- [ ] Product decisions are recorded in `docs/product-decisions.md`; technical/workflow decisions in `project-management/decisions.md` link to that authority
+- [ ] Approved product policy is in `docs/product-decisions.md`; active specs/backlog contain relevant acceptance criteria and open choices, while Git records routine history
 - [ ] Product decisions align with core principles: consistency over intensity, flexible schedules, academic grounding
 - [ ] Platform boundary is respected: Android primary, web companion only
 

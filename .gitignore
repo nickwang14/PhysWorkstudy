@@ -1,13 +1,27 @@
 # Source textbooks are large binary reference material kept local-only.
 # Keep local PDFs in docs/ and curriculum staging folders; commit only approved,
 # attributed text excerpts and assets. See the knowledge README for source titles.
-docs/*.pdf
+/docs/**/*.pdf
 # Rendered textbook pages/contact sheets are local inspection aids, not app assets.
 docs/graphics-review/
-theory-and-knowledge/knowledge/*.pdf
+/theory-and-knowledge/knowledge/**/*.pdf
 *.py[cod]
 __pycache__/
 .env
 # Local native skill-discovery aliases; author only .agents/skills/.
 /.claude/skills/
 /.github/skills/
+# Local build, interpreter and editor state.
+.gradle/
+.kotlin/
+build/
+.venv/
+.idea/
+/.vscode/
+/local.properties
+.cxx/
+.externalNativeBuild/
+# Standalone Android build outputs stay local.
+*.apk
+*.aab
+# PhysiApp_installer.zip stays tracked at the root for the owner's workflow.

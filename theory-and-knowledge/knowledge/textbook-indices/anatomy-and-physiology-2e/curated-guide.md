@@ -1,6 +1,6 @@
 # A&P — Useful Learning Material and Source-Return Guide
 
-Human-owned: add discoveries here; the indexer never overwrites this file. Initial pass: 2026-10-06, supplied PDF fingerprint recorded in [README](README.md).
+Human-owned current teaching-use notes and source-return questions; the indexer never overwrites this file. Update relevant notes when material use or review status changes, preserving actual review/approval evidence; Git records routine history. The supplied PDF fingerprint is recorded in [README](README.md).
 
 Source: J. Gordon Betts et al. / OpenStax, *Anatomy and Physiology 2e*, © 2026 Rice University (original publication 2022). [Source](https://openstax.org/details/books/anatomy-and-physiology-2e), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); check separately credited material. Access for free at openstax.org. Teaching-use notes below are original planning notes, not copied explanations or captions.
 
@@ -29,7 +29,7 @@ These are **navigation** spans; inspect the heading boundaries and select only t
 
 ## Selected Useful Graphics
 
-**Initial shortlist:** these 25 rows began as caption/text-located candidates. **14 now have visual-review records** in [graphic-review.md](graphic-review.md), which also adds seven bone/muscle candidates; the remaining **11** are visually unreviewed. Figure-specific intended-use clearance remains separate. No final graphic asset or build approval has been created. Links below point to caption starts; the visual catalogue records artwork/panels and Figure 9.12's cross-page caption. Stable IDs resolve in `index.json` and `graphics.md`.
+These are teaching candidates, not included or approved assets. Consult [graphic-review.md](graphic-review.md) for each item's current visual review, artwork/panel details and credit/rights holds. Entries without a visual-review record remain unreviewed. Links below point to caption starts; complete captions may continue onto another page. Stable IDs resolve in `index.json` and `graphics.md`.
 
 | Stable ID | Section | PDF / printed | Suggested teaching use | Source-return check |
 |---|---|---|---|---|
@@ -76,9 +76,9 @@ Use the index alone to locate material, select candidate sources or inspect reco
 
 | Item | Next action | Status |
 |---|---|---|
-| Remaining 11 of the original 25 graphics | Review rendered panels, artwork pages, complete captions and credits | Open; 14 original candidates plus seven additions reviewed in `graphic-review.md` |
-| 21 visually reviewed graphics | Approve intended-use rights, selected crop, final readability/alt text and domain/editorial fit | Open; visual location/panel review done, no final assets approved |
+| Candidates without a visual-review record | Review rendered panels, artwork pages, complete captions and credits | Open; use `graphic-review.md` to check coverage |
+| Visually reviewed graphics | Approve intended-use rights, selected crop, final readability/alt text and domain/editorial fit | Open; visual review does not approve final assets |
 | Chapter 11 muscle tables | Verify table starts/continuations; add small, topic-specific useful-table notes | Open |
 | Unlabelled diagrams and embedded learning boxes | Identify while reading selected sections; record exact heading/page and purpose | Open: outside automated coverage |
-| Existing 73 optional assignments across four sources | Backfill A&P use records when each assignment is revisited; verify partial-page boundaries | Open: not retrospectively reviewed |
+| Current optional assignments | Verify source and partial-page boundaries when readings are revised; update current use/review evidence | Open where source review is still pending |
 | Other three textbooks | Apply the source-specific navigation/license/page-map audit | Queued after A&P |

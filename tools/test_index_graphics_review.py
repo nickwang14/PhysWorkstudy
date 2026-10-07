@@ -68,8 +68,10 @@ class CatalogueTests(unittest.TestCase):
             cls.text, re.MULTILINE | re.DOTALL,
         ))
 
-    def test_all_21_graphics_resolve_to_correct_caption_pages(self):
-        self.assertEqual(len(self.blocks), 21)
+    def test_reviewed_graphics_resolve_to_correct_caption_pages(self):
+        self.assertTrue(self.blocks, "Visual catalogue should contain reviewed entries")
+        headings = re.findall(r"^### (ap-figure-[\d.]+) —", self.text, re.MULTILINE)
+        self.assertEqual(len(headings), len(set(headings)), "Review IDs must be unique")
         graphics = {g["id"]: g for g in self.index["graphics"]}
         for key, block in self.blocks.items():
             self.assertIn(key, graphics)
@@ -91,12 +93,13 @@ class CatalogueTests(unittest.TestCase):
         self.assertIn("Regents of University of Michigan Medical School", self.blocks["ap-figure-6.12"])
         self.assertIn("micrograph", self.blocks["ap-figure-6.12"])
 
-    def test_original_shortlist_review_count_is_honest(self):
+    def test_proposed_graphics_have_valid_unique_source_ids(self):
         curated = (SOURCE / "curated-guide.md").read_text(encoding="utf-8")
-        original = set(re.findall(r"^\| `(ap-figure-[\d.]+)`", curated, re.MULTILINE))
-        self.assertEqual(len(original), 25)
-        self.assertEqual(len(original & self.blocks.keys()), 14)
-        self.assertEqual(len(original - self.blocks.keys()), 11)
+        proposed = re.findall(r"^\| `(ap-figure-[\d.]+)`", curated, re.MULTILINE)
+        source_ids = {graphic["id"] for graphic in self.index["graphics"]}
+        self.assertTrue(proposed)
+        self.assertEqual(len(proposed), len(set(proposed)))
+        self.assertTrue(set(proposed) <= source_ids)
 
     def test_lesson_matches_reference_real_ids(self):
         for label, target in re.findall(r"^- \[([^\]]+ — [^\]]+)\]\(([^)]+)\)", self.text, re.MULTILINE):

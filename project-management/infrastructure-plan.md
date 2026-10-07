@@ -53,15 +53,11 @@ Reconsider a visual CMS only when non-technical publishing volume makes the Git 
 ```text
 Kotlin/Compose Android -- planned local store/outbox --\
                                                        >-- Proposed Fastify API -- PostgreSQL
-Future web (stack TBD) -- read-oriented requests ------/           |            -- Object storage
-                                                                  |            -- Background worker
-                                                                  |
-                                                                  +-- Provider gateway
-                                                                      |-- Wikimedia APIs
-                                                                      +-- MuscleWiki API, if licensed
+Future web (stack TBD) -- read-oriented requests ------/                        -- Object storage
+                                                                                -- Background worker
 ```
 
-The proposed Android/web integration routes credentialed supplemental-provider requests through a backend provider gateway to protect credentials, normalize data, enforce licensing rules and isolate provider failures. This is not current implementation evidence: the Android app's ExerciseDB BuildConfig credential packaging still requires review; an ignored `.env` does not protect a secret compiled into a client.
+The proposed Android/web integration routes credentialed supplemental-provider requests through a backend provider gateway to protect credentials, normalize data, and isolate provider failures. This is not current implementation evidence: the Android app's ExerciseDB BuildConfig credential packaging still requires review; an ignored `.env` does not protect a secret compiled into a client.
 
 ## Proposed Backend Modules
 
@@ -88,7 +84,7 @@ Define stable IDs and schemas for:
 - program enrollment, weekly goals, sessions, workout logs, and exercise entries
 - cycle weeks, deload decisions, and adaptive split recommendations
 - sync mutations, server cursors, versions, and rejection reasons
-- media assets, source provenance, licenses, attribution, approval, and retention rules
+- media assets, source provenance, attribution, approval, and retention rules
 
 Use client-generated UUIDs for offline mutations and workout logs. Store the user's IANA timezone and the event's local date so later timezone changes do not rewrite historical streak or weekly-goal boundaries.
 
@@ -105,29 +101,6 @@ Keep lesson authoring in the existing repository for MVP:
 This separates editorial source files from the runtime format while preserving review history.
 
 ## External API Strategy
-
-### Wikimedia
-
-Use official Wikimedia APIs for curated educational enrichment:
-- Wikimedia Commons Action API for file search and `imageinfo`/extended metadata
-- Wikimedia REST or Action APIs for page summaries when a lesson needs a reviewed reference
-- Wikidata for structured CC0 facts where useful
-
-Ingest through a background job with a descriptive User-Agent. Start with Public Domain, CC0, and CC BY assets. Store per-asset provenance and attribution, copy approved reusable assets to controlled storage, and never publish an asset before editorial and license review. A live Wikimedia request must not be required to open a published lesson.
-
-### MuscleWiki
-
-MuscleWiki currently offers an official commercial API for exercises and media. Routines, workouts, and body maps require an eligible paid tier. Treat it as an optional licensed provider:
-- complete legal, cost, quota, language, and product-fit review before implementation
-- keep the API key on the backend
-- use the provider's short-lived media-token flow for mobile video
-- respect the documented metadata and image cache limits
-- do not download, permanently store, re-host, or expose reusable MuscleWiki video URLs
-- include required provider attribution/disclosure
-- map provider exercise IDs to PhysiApp exercise IDs; do not replace canonical IDs
-- require physio and editorial review before using a provider routine in a curated plan
-
-If the subscription ends or the provider is unavailable, first-party exercise descriptions and fallback media must preserve all core workflows.
 
 ## Delivery Sequence
 
@@ -167,11 +140,6 @@ These are planned delivery slices, not a claim that services, web or CI already 
 - complete accessibility, privacy, disclaimer, backup-restore, and release checks
 - validate MVP KPIs with an internal or closed test cohort
 
-### Stage 5 - Supplemental provider pilots
-- run a small Wikimedia ingestion pilot and measure editorial effort and lesson value
-- complete the MuscleWiki commercial-license and product-fit spike
-- implement MuscleWiki only after approval and only behind the provider gateway
-
 ## Decisions Required Before Implementation
 
 - future web-companion implementation technology
@@ -184,7 +152,6 @@ These are planned delivery slices, not a claim that services, web or CI already 
 - conflict rules for edits to offline workout logs
 - whether web settings are writable or strictly read-only for MVP
 - approved Wikimedia license allowlist and attribution presentation
-- MuscleWiki subscription tier, budget, languages, quota, and fallback scope
 - hosting regions and data residency requirements
 
 ## Explicitly Deferred
@@ -196,4 +163,3 @@ These are planned delivery slices, not a claim that services, web or CI already 
 - user-uploaded media and moderation
 - a full visual CMS
 - public milestone pages and social features
-- MuscleWiki integration before commercial and legal approval

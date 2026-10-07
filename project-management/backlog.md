@@ -1,6 +1,6 @@
 # PhysiApp Backlog
 
-**Execution context:** [PD-008](../docs/product-decisions.md#pd-008-kotlin-app-and-vs-code--google-ai-studio-workflow) confirms the existing Kotlin/Compose app as the current Android direction. Use the owner-mediated [VS Code / Google AI Studio handoff](../docs/development-workflow.md) for app changes. Unchecked items remain delivery/validation work, not evidence that backend/cloud services or the future web companion exist; web technology is undecided. Preserve item status until acceptance evidence is recorded.
+Use [shared guidance](../AGENTS.md) and the [development workflow](../docs/development-workflow.md). Unchecked items are pending scope/validation, not implemented features; update status only with acceptance evidence.
 
 ## Current Priority Order
 
@@ -54,25 +54,3 @@
   - curriculum expansion before lesson completion and retention is validated
   - blended learning and training signals that confuse the product model
   - third-party content becoming the source of truth for curated lessons or workout plans
-
-## External API Acceptance Criteria
-
-### Wikimedia API ingestion pilot
-- Owner: Backend Engineer + Content Strategist; Legal Compliance reviews the license policy.
-- Depends on: versioned content pipeline and provider-neutral media catalog.
-- Query Wikimedia Commons through official APIs from a backend ingestion job, not directly from the app.
-- Limit the pilot to reviewed Public Domain, CC0, and CC BY assets; require legal approval before accepting ShareAlike content.
-- Persist source URL, revision, creator, license, attribution text, retrieval date, checksum, and editorial approval.
-- Copy approved reusable media to controlled storage and serve it through the app media layer; a Wikimedia outage must not break a published lesson.
-- Validate the pilot with a small set of MVP lessons before broad ingestion.
-
-### MuscleWiki API feasibility and integration
-- Owner: Product Manager + Solutions Architect; Legal Compliance approves terms before implementation.
-- Depends on: canonical exercise library and provider-neutral media catalog.
-- Confirm the official paid plan supports the required exercises, routines, workouts, body maps, languages, request volume, and commercial use.
-- Record the recurring cost, quota behavior, attribution language, caching limits, termination risk, and fallback behavior.
-- Use only the official API; do not scrape MuscleWiki or use an unofficial scraped API.
-- Keep the API key server-side. Use the backend proxy and short-lived media tokens required for mobile playback.
-- Do not permanently store or re-host MuscleWiki videos. Respect provider-specific metadata and image cache limits.
-- Require internal physio/editorial approval before provider content is mapped into a curated program.
-- The core workout, learning, logging, and progression flows must continue to work when MuscleWiki is unavailable.

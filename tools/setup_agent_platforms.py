@@ -57,7 +57,7 @@ def make_alias(alias: Path, target: Path) -> None:
     if same_target(alias, target):
         return
     if alias.exists() or alias.is_symlink():
-        # Retired definitions can leave empty directories after file migration.
+        # An empty directory can be replaced; existing content must be preserved.
         if not alias.is_dir() or alias.is_symlink():
             raise ValueError(f"Refusing to replace existing alias/file: {alias}")
         children = list(alias.rglob("*"))

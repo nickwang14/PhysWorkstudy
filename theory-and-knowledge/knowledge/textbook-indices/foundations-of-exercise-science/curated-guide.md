@@ -2,6 +2,8 @@
 
 This is a focused human-maintained guide for Chapter 5 use, not a complete textbook index. See [`index.json`](index.json) for the supplied edition fingerprint and verified page offset.
 
+Update current use notes and the relevant evidence in [`usage-log.md`](usage-log.md) when material use or review status changes. Preserve actual consultation/review dates, source credits and pending approvals; Git records routine edit and tool-run history.
+
 ## Relevant material and limits
 
 - **Chapter 1, Public Health and Exercise Science — PDF 11–13 / printed 5–7:** frames exercise prescription with frequency, intensity, duration, and type, and situates recommendations in different populations and access contexts. Use it to introduce variables and context, not to claim a universal weekly target.

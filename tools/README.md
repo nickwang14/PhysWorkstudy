@@ -1,6 +1,6 @@
 # Content and Agent Tools
 
-Run from the repository root using the configured Python environment. Install `requirements-content.txt` for PDF reading/rendering; metadata-only and agent setup helpers use the standard library. Existing CLI names are retained rather than forced into one ambiguous “parse everything” command.
+Run from the repository root using the configured Python environment. Install `requirements-content.txt` for PDF reading/rendering. Curriculum-map and agent-setup operations use the standard library. `content_common.py` holds shared validation; each CLI owns its task-specific parsing/output.
 
 | Entry point | Single responsibility | Safe inspection / selected work |
 |---|---|---|
@@ -12,8 +12,8 @@ Run from the repository root using the configured Python environment. Install `r
 | `setup_agent_platforms.py` | Skill discovery aliases and Copilot profile adapters | `--check`; default configures aliases/refreshes adapters, refuses nonempty real skill directories |
 | `content_common.py` | Shared paths, scalar frontmatter, fingerprints and page validation | Library, not another CLI; task-specific parsers remain in their tools |
 
-Natural-language assignment ranges, excerpt metadata headings and CLI page selections have different semantics; do not combine their regexes. The 12/32 page caps are intentional. Source attribution for the four local editions stays in the extraction source registry, not duplicated into platform skills. The old skill-bundled reader moved to `tools/read_pdf_pages.py`; update scripts/bookmarks to that command.
+Natural-language assignment ranges, excerpt headings and CLI page selections have different semantics; keep their parsers separate. The 12/32 page caps are intentional. Source attribution belongs in the extraction source registry, not duplicated into skills. Git records tool history; routine validation does not need an additional activity log.
 
-Test everything with `python -m unittest discover -s tools -p "test_*.py"`. The legacy `test_index_*.py` selection still runs the existing index tests, but excludes new shared-helper/platform tests. PDF integration checks may skip when local-only sources are absent; skill aliases must be configured in the checkout for platform discovery checks.
+Test with `python -m unittest discover -s tools -p "test_*.py"`. PDF integration checks may skip when local sources are absent; configure skill aliases before platform discovery checks.
 
 **No tool result alone clears publication.** Never commit full-page previews or source PDFs, silently erase reviewed text, or treat parsing/rendering as scientific/editorial/rights approval. See [shared policy](../AGENTS.md) and the [content workflow](../theory-and-knowledge/knowledge/curriculum/foundations-of-movement/README.md).

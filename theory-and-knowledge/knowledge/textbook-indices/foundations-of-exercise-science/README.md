@@ -28,6 +28,6 @@ These passages support general reasoning about activity, movement, practice, and
 ## Human-owned records
 
 - [`curated-guide.md`](curated-guide.md) records the limited source relevance and boundaries.
-- [`usage-log.md`](usage-log.md) records actual page consultation and destinations.
+- [`usage-log.md`](usage-log.md) retains its filename for compatibility and records current material usage, actual page consultation/destinations, review evidence and open questions. Update it when material use or review status changes, preserving actual review dates/reviewers and credit/rights evidence; Git records routine edits and tool runs.
 
 Full contents, glossary, reference, and graphics indexing remains queued; do not treat the chapter-start map as comprehensive coverage.

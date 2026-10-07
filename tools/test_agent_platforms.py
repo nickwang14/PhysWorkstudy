@@ -20,7 +20,6 @@ class PlatformTests(unittest.TestCase):
         self.assertEqual(fields["name"], skill.parent.name)
         self.assertTrue(set(fields) <= {"name", "description", "license", "compatibility", "metadata", "allowed-tools"})
         self.assertLessEqual(len(fields["description"]), 1024)
-        self.assertFalse((REPO_ROOT / ".claude/skills/textbook-parsing/SKILL.md").exists())
 
     def test_all_adapter_bodies_and_names_match_canonical_profiles(self):
         for agent in (REPO_ROOT / AGENTS).glob("*.agent.md"):

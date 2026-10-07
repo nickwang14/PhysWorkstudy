@@ -10,7 +10,7 @@
 | [graphic-review.md](graphic-review.md) | 21 visually inspected bone/joint/muscle graphics; priorities, panels, crop guidance, credits, alt text and lesson matches | Human maintained; reuse/domain approval separate |
 | [index.json](index.json) | Searchable metadata, edition fingerprint, mapping evidence, continuation pages and coverage limits | Generated |
 | [curated-guide.md](curated-guide.md) | Useful teaching routes, selected graphics, source-return triggers and discovery backlog | Human maintained |
-| [usage-log.md](usage-log.md) | What was consulted, used, verified, deferred or needs another source visit | Human maintained; append corrections |
+| [usage-log.md](usage-log.md) | Current material usage, actual review/rights evidence and open source-return questions | Human maintained; update when material use or review status changes; Git records routine history |
 
 ## Where This Textbook Is Used in Our Curriculum
 
@@ -18,7 +18,7 @@ Use the [textbook-to-curriculum usage map](curriculum-usage.md) to see where eve
 
 The map records **actual linked optional-reading assignments**, not inferred topic matches. A lesson can use more than one textbook chapter. Chapters without assignments are explicitly listed, but this does not mean they have never been consulted during drafting. [Suggested graphics](graphic-review.md) remain separate from assigned readings and embedded assets.
 
-Refresh after changing assignments with `python tools/index_curriculum_usage.py --write`; check freshness without writing with `python tools/index_curriculum_usage.py --check`. This reads the saved textbook index and Markdown readings only; it does not regenerate excerpts or require the local PDFs. Record new source consultation or graphic reuse in `usage-log.md` as usual.
+Refresh after changing assignments with `python tools/index_curriculum_usage.py --write`; check freshness without writing with `python tools/index_curriculum_usage.py --check`. This reads the saved textbook index and Markdown readings only; it does not regenerate excerpts or require the local PDFs. Update current source consultation or graphic-reuse evidence in `usage-log.md` when material use or review status changes; preserve actual review dates/reviewers and approvals, not routine refresh logs.
 
 ## Edition and Page Map
 

@@ -7,7 +7,7 @@ description: 'Use when indexing or comparing textbook PDFs with curriculum lesso
 
 Input: source/topic, target curriculum path or lesson ID, and desired output (gap analysis, lesson, study brief, glossary cards, optional reading or figure-study prompt). Commands run from the repository root with the configured Python environment. Source PDFs remain local-only.
 
-This is the single shared skill replacing the former `textbook-parsing` and `textbook-learning-material` copies. It combines focused curriculum comparison with indexed retrieval/inclusion; never parse an entire book for a small lesson request.
+Use focused curriculum comparison and indexed retrieval; never parse an entire book for a small lesson request.
 
 ## Required References
 
@@ -42,7 +42,7 @@ Inspect rendered pages for multi-column order, equations, tables, panels/labels 
 
 Start with the human-owned `graphic-review.md`, not just generated caption locators. Prefer labelled teaching diagrams over context/decorative photos. Preview a selected batch with `python tools/review_textbook_graphics.py --ids ap-figure-9.8 ap-figure-9.19 --extra-pages 366`; `--dry-run` validates without writing. It checks the fingerprint, caps batches at 32 pages and writes full-page PNGs/contact sheets/manifest only to ignored `docs/graphics-review/`. Cache files may be replaced by later batches; keep lasting evidence in the review catalogue/log.
 
-Visually inspect every selected graphic, its actual artwork page, complete caption/continuation, panel markers, view orientation, graph axes/units, credit and crop boundaries. Caption pages can differ from artwork pages. A&P 9.12 needs caption pages 354–355; 6.2 is a Benjamin J. DeLong photograph; 6.12(b) is a Regents of University of Michigan Medical School micrograph. Keep unresolved credits panel-specific.
+Visually inspect each selected graphic, artwork page, complete caption/continuation, panels, orientation, graph axes/units, credit and crop boundaries. Caption and artwork pages can differ. Consult the source's visual-review catalogue for item-specific page/credit findings; keep unresolved rights panel-specific.
 
 Maintain distinct states: **located → visually inspected → intended-use rights assessed → cropped/exported → domain/editorial approved**. Rendering alone is not inspection; inspection is not permission. No visible separate credit is not public-domain/commercial clearance. For actual requested extraction, approve rights first, preserve necessary panels/caption/attribution, record precise crop/conversion and meaningful alt text in `assets/README.md`, and validate final-size readability. Never commit whole-page review previews, trace artwork as “original,” or inject suggested graphics automatically.
 
@@ -56,7 +56,7 @@ Learner-facing optional readings link to `optional-readings/{lesson_id}-optional
 
 ## 6. Maintain Records and Validate
 
-Update lesson metadata/guide links, reading/asset registries and source curated/visual-review notes alongside actual changes. Append dated usage evidence: source fingerprint, reviewer, exact sections/pages/material IDs, boundaries, destination lesson/reading paths, actual status, limits and next return task. Never erase human history or mark unperformed checks complete. A read-only/non-executing agent hands off proposed edits/commands rather than widening its permissions.
+Update lesson/guide links, reading/asset registries and source curated/visual-review records when material changes. Keep current source fingerprint, exact locations/IDs, destinations, review/rights evidence and unresolved return tasks. Record dates/reviewers where needed to establish actual approval or source review, not as a journal of routine tool runs. Git records edit history; never invent approval or erase required credits/evidence. Read-only/non-executing agents hand off edits/commands rather than widening permissions.
 
 Generated `index.json`, `chapters.md` and `graphics.md` refresh with `python tools/index_anatomy_physiology.py --write` when needed; human records are preserved. Continued table labels retain their pages in `caption_occurrences`; unlabelled artwork needs a manual discovery record.
 
