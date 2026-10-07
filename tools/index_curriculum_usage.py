@@ -13,29 +13,15 @@ import os
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-CURRICULUM = Path("theory-and-knowledge/knowledge/curriculum")
-SOURCE_DIR = Path("theory-and-knowledge/knowledge/textbook-indices/anatomy-and-physiology-2e")
-READ_MORE = re.compile(r"^## Read More \(Optional\)\s*(.*?)(?=^## |\Z)", re.MULTILINE | re.DOTALL)
+from content_common import AP_INDEX_DIR, CURRICULUM, READ_MORE, REPO_ROOT, metadata
+
+ROOT = REPO_ROOT
+SOURCE_DIR = AP_INDEX_DIR
 LINK = re.compile(r"\]\(([^)]+)\)")
 SOURCE_HEADING = re.compile(
     r"^## ([^\n]+): PDF pages (\d+)[\u2013\u2014-](\d+) "
     r"\(printed pages (\d+)[\u2013\u2014-](\d+)\)\s*$", re.MULTILINE,
 )
-
-
-def metadata(text: str) -> dict[str, str]:
-    """Read the flat scalar frontmatter used by lesson/excerpt reference fields."""
-    text = text.removeprefix("\ufeff")
-    match = re.match(r"\A---\s*\n(.*?)\n---(?:\n|$)", text, re.DOTALL)
-    if not match:
-        raise ValueError("Missing frontmatter")
-    result = {}
-    for key, value in re.findall(r"^([\w-]+):[ \t]*(.*?)\s*$", match.group(1), re.MULTILINE):
-        if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
-            value = value[1:-1]
-        result[key] = value
-    return result
 
 
 def ap_ranges(text: str, source: dict) -> list[tuple[int, int]]:

@@ -1,0 +1,19 @@
+# Content and Agent Tools
+
+Run from the repository root using the configured Python environment. Install `requirements-content.txt` for PDF reading/rendering; metadata-only and agent setup helpers use the standard library. Existing CLI names are retained rather than forced into one ambiguous “parse everything” command.
+
+| Entry point | Single responsibility | Safe inspection / selected work |
+|---|---|---|
+| `index_anatomy_physiology.py` | A&P-specific full-book metadata adapter | `--query`, `--check-source`; default validates a scan; `--write` refreshes generated metadata |
+| `index_curriculum_usage.py` | Lesson-linked A&P readings → curriculum reverse map | `--check`; `--write` refreshes only the map, no PDFs needed |
+| `read_pdf_pages.py` | At most 12 selected PDF pages → stdout | `--pdf-pages "350" --metadata-only`; no files/images exported |
+| `review_textbook_graphics.py` | Selected source pages → ignored local visual previews | `--ids ap-figure-9.8 --dry-run`; 32-page batch cap, not final assets or visual/rights approval |
+| `extract_optional_readings.py` | Attributed draft excerpts from lesson assignments | `--lesson-id planning-05-01 --dry-run`; repeat IDs to scope a write; unfiltered writes affect every authored assignment |
+| `setup_agent_platforms.py` | Skill discovery aliases and Copilot profile adapters | `--check`; default configures aliases/refreshes adapters, refuses nonempty real skill directories |
+| `content_common.py` | Shared paths, scalar frontmatter, fingerprints and page validation | Library, not another CLI; task-specific parsers remain in their tools |
+
+Natural-language assignment ranges, excerpt metadata headings and CLI page selections have different semantics; do not combine their regexes. The 12/32 page caps are intentional. Source attribution for the four local editions stays in the extraction source registry, not duplicated into platform skills. The old skill-bundled reader moved to `tools/read_pdf_pages.py`; update scripts/bookmarks to that command.
+
+Test everything with `python -m unittest discover -s tools -p "test_*.py"`. The legacy `test_index_*.py` selection still runs the existing index tests, but excludes new shared-helper/platform tests. PDF integration checks may skip when local-only sources are absent; skill aliases must be configured in the checkout for platform discovery checks.
+
+**No tool result alone clears publication.** Never commit full-page previews or source PDFs, silently erase reviewed text, or treat parsing/rendering as scientific/editorial/rights approval. See [shared policy](../AGENTS.md) and the [content workflow](../theory-and-knowledge/knowledge/curriculum/foundations-of-movement/README.md).

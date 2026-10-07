@@ -2,6 +2,8 @@
 
 Run from the repository root after placing the assigned source PDFs in docs/:
     python tools/extract_optional_readings.py
+For a focused addition, select only its lesson IDs:
+    python tools/extract_optional_readings.py --lesson-id planning-05-01
 
 The output is machine-extracted draft text and must be checked against the PDF.
 This script deliberately extracts text only; it does not package PDF pages/images.
@@ -15,6 +17,8 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from pypdf import PdfReader
+
+from content_common import AP_FILENAME, AP_OFFSET, READ_MORE, REPO_ROOT, metadata
 
 
 @dataclass(frozen=True)
@@ -30,12 +34,12 @@ class Source:
 
 SOURCES = (
     Source(
-        filename="anatomy-and-physiology-2e_-_WEB.pdf",
+        filename=AP_FILENAME,
         short_name="A&P",
         citation="OpenStax, *Anatomy and Physiology 2e*, © 2026 Rice University.",
         license_name="CC BY-NC-SA 4.0",
         license_url="https://creativecommons.org/licenses/by-nc-sa/4.0/",
-        printed_offset=16,
+        printed_offset=AP_OFFSET,
         additional_attribution="Required source notice: “Access for free at openstax.org.”",
     ),
     Source(
@@ -101,18 +105,13 @@ def source_from_mention(mention: str) -> Source:
 
 
 def parse_reading_block(lesson_path: Path, text: str) -> tuple[str, str, str]:
-    lesson_id_match = FRONTMATTER_ID.search(text)
-    title_match = FRONTMATTER_TITLE.search(text)
-    reading_match = re.search(
-        r"^## Read More \(Optional\)\s*(.*?)(?=^## |\Z)",
-        text,
-        flags=re.MULTILINE | re.DOTALL,
-    )
-    if not lesson_id_match or not title_match or not reading_match:
+    fields = metadata(text)
+    reading_match = READ_MORE.search(text)
+    if not fields.get("id") or not fields.get("title") or not reading_match:
         raise ValueError(f"Missing lesson id, title, or optional reading block: {lesson_path}")
 
-    reading_id = f"{lesson_id_match.group(1).strip()}-optional"
-    title = title_match.group(1).strip()
+    reading_id = f"{fields['id'].strip()}-optional"
+    title = fields["title"].strip()
     block = reading_match.group(1).replace("\n", " ")
     return reading_id, title, block
 
@@ -154,11 +153,14 @@ def parse_ranges(block: str, pdf_dir: Path) -> list[tuple[Source, int, int]]:
     if not ranges:
         raise ValueError("Optional reading contains no inclusive PDF page ranges")
 
+    page_counts: dict[str, int] = {}
     for source, first, last in ranges:
         pdf_path = pdf_dir / source.filename
         if not pdf_path.is_file():
             raise FileNotFoundError(f"Source PDF is missing: {pdf_path}")
-        page_count = len(PdfReader(pdf_path).pages)
+        if source.filename not in page_counts:
+            page_counts[source.filename] = len(PdfReader(pdf_path).pages)
+        page_count = page_counts[source.filename]
         if last > page_count:
             raise ValueError(
                 f"Page range {first}-{last} exceeds {source.filename} ({page_count} pages)"
@@ -260,7 +262,7 @@ def render_excerpt(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--repo-root", type=Path, default=Path.cwd())
+    parser.add_argument("--repo-root", type=Path, default=REPO_ROOT)
     parser.add_argument("--pdf-dir", type=Path, default=Path("docs"))
     parser.add_argument(
         "--output-dir",
@@ -272,6 +274,12 @@ def main() -> int:
         action="store_true",
         help="Validate all assignments and report page totals without writing excerpts.",
     )
+    parser.add_argument(
+        "--lesson-id",
+        action="append",
+        default=[],
+        help="Select one lesson ID to validate/write; may be repeated. Defaults to all authored lessons.",
+    )
     args = parser.parse_args()
     repo_root = args.repo_root.resolve()
     pdf_dir = (repo_root / args.pdf_dir).resolve()
@@ -280,12 +288,27 @@ def main() -> int:
     registry_path = curriculum / "reading-options.md"
 
     readers: dict[str, PdfReader] = {}
-    lessons: list[Path] = []
-    for chapter_number in range(1, 5):
-        chapter_dirs = list(curriculum.glob(f"chapter-{chapter_number}-*"))
-        if len(chapter_dirs) != 1:
-            raise FileNotFoundError(f"Expected one chapter {chapter_number} directory under {curriculum}")
-        lessons.extend(sorted(chapter_dirs[0].rglob("lesson-*.md")))
+    lessons = sorted(
+        lesson_path
+        for chapter_dir in curriculum.glob("chapter-*-*")
+        for lesson_path in chapter_dir.rglob("lesson-*.md")
+    )
+    if args.lesson_id:
+        requested = set(args.lesson_id)
+        lessons = [
+            lesson_path
+            for lesson_path in lessons
+            if (match := FRONTMATTER_ID.search(lesson_path.read_text(encoding="utf-8")))
+            and match.group(1).strip() in requested
+        ]
+        found = {
+            match.group(1).strip()
+            for lesson_path in lessons
+            if (match := FRONTMATTER_ID.search(lesson_path.read_text(encoding="utf-8")))
+        }
+        missing_ids = requested - found
+        if missing_ids:
+            raise ValueError(f"Lesson IDs not found: {', '.join(sorted(missing_ids))}")
 
     prepared: list[tuple[Path, str, str, str, int | None, list[tuple[Source, int, int]]]] = []
     page_total = 0

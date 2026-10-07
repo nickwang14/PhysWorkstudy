@@ -9,16 +9,17 @@ Other textbooks need their own verified adapter, not an assumed page offset.
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import re
 from pathlib import Path
 
 from pypdf import PdfReader
 
-FILENAME = "anatomy-and-physiology-2e_-_WEB.pdf"
-OFFSET = 16
-OUTPUT = Path("theory-and-knowledge/knowledge/textbook-indices/anatomy-and-physiology-2e")
+from content_common import AP_FILENAME, AP_INDEX_DIR, AP_OFFSET, sha256_file, verify_source
+
+FILENAME = AP_FILENAME
+OFFSET = AP_OFFSET
+OUTPUT = AP_INDEX_DIR
 CHAPTER = re.compile(r"^Chapter (\d+) (.+)$")
 SECTION = re.compile(r"^(\d+\.\d+) (.+)$")
 # Uppercase FIGURE/TABLE distinguishes caption labels from in-text references.
@@ -205,7 +206,7 @@ def build_index(pdf: Path) -> dict:
         "source": {
             "id": "anatomy-and-physiology-2e", "filename": FILENAME,
             "title": str(reader.metadata.title), "pdf_pages": len(reader.pages),
-            "sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
+            "sha256": sha256_file(pdf),
             "pdf_creation_date": str(reader.metadata.get("/CreationDate", "")),
             "citation": "J. Gordon Betts et al., OpenStax, Anatomy and Physiology 2e, © 2026 Rice University (original publication 2022).",
             "source_url": "https://openstax.org/details/books/anatomy-and-physiology-2e",
@@ -324,8 +325,7 @@ def main() -> int:
     if args.query is not None or args.check_source:
         index = json.loads((output / "index.json").read_text(encoding="utf-8"))
         if args.check_source:
-            if hashlib.sha256(pdf.read_bytes()).hexdigest() != index["source"]["sha256"]:
-                raise ValueError("Source PDF changed: regenerate and re-review curated/usage references.")
+            verify_source(pdf, index)
             print("Source fingerprint matches the index.")
         if args.query is not None:
             print(json.dumps(lookup(index, args.query), ensure_ascii=False, indent=2))

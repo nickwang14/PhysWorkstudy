@@ -8,3 +8,6 @@ theory-and-knowledge/knowledge/*.pdf
 *.py[cod]
 __pycache__/
 .env
+# Local native skill-discovery aliases; author only .agents/skills/.
+/.claude/skills/
+/.github/skills/

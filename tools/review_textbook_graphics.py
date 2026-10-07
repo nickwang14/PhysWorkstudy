@@ -7,15 +7,16 @@ app assets. Human visual/credit review is recorded separately in the source cata
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 from pathlib import Path
 
 import pypdfium2 as pdfium
 from PIL import Image, ImageDraw
 
-ROOT = Path(__file__).resolve().parents[1]
-INDEX = Path("theory-and-knowledge/knowledge/textbook-indices/anatomy-and-physiology-2e/index.json")
+from content_common import AP_INDEX, REPO_ROOT, bounded_pages, verify_page_count, verify_source
+
+ROOT = REPO_ROOT
+INDEX = AP_INDEX
 MAX_PAGES = 32
 
 
@@ -33,11 +34,7 @@ def review_pages(graphics: list[dict], extra_pages: list[int], page_count: int) 
     pages = set(extra_pages)
     for g in graphics:
         pages.update(o["pdf_page"] for o in g["caption_occurrences"])
-    if not all(1 <= page <= page_count for page in pages):
-        raise ValueError("Review pages must be within the indexed PDF.")
-    if len(pages) > MAX_PAGES:
-        raise ValueError(f"Review at most {MAX_PAGES} pages in one batch.")
-    return sorted(pages)
+    return bounded_pages(pages, page_count, MAX_PAGES)
 
 
 def contact_sheet(paths: list[Path], labels: list[str], destination: Path) -> None:
@@ -74,10 +71,8 @@ def main() -> int:
         if not 72 <= args.dpi <= 180:
             raise ValueError("Use a review resolution between 72 and 180 dpi.")
         index = json.loads((ROOT / INDEX).read_text(encoding="utf-8"))
-        source = index["source"]
-        pdf = ROOT / "docs" / source["filename"]
-        if hashlib.sha256(pdf.read_bytes()).hexdigest() != source["sha256"]:
-            raise ValueError("PDF fingerprint changed. Regenerate/revalidate its index first.")
+        pdf = ROOT / "docs" / index["source"]["filename"]
+        source = verify_source(pdf, index)
         graphics = select_graphics(index, args.ids)
         pages = review_pages(graphics, args.extra_pages, source["pdf_pages"])
     except (OSError, ValueError, KeyError) as error:
@@ -94,8 +89,7 @@ def main() -> int:
     previews: list[Path] = []
     labels: list[str] = []
     with pdfium.PdfDocument(str(pdf)) as document:
-        if len(document) != source["pdf_pages"]:
-            raise ValueError("Rendered page count differs from the indexed source.")
+        verify_page_count(len(document), source)
         for number in pages:
             page = document[number - 1]
             bitmap = page.render(scale=args.dpi / 72)

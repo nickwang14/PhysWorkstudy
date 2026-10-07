@@ -117,7 +117,7 @@ class IndexTests(unittest.TestCase):
     def test_local_markdown_links_resolve(self):
         files = list((ROOT / OUTPUT).glob("*.md"))
         files += [ROOT / OUTPUT.parent / "README.md"]
-        files += list((ROOT / ".github/skills/textbook-learning-material").rglob("*.md"))
+        files += list((ROOT / ".agents/skills/textbook-learning-material").rglob("*.md"))
         for path in files:
             for target in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
                 if target.startswith(("http:", "https:", "#")):
@@ -145,7 +145,7 @@ class IndexTests(unittest.TestCase):
 class ReaderTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.reader_functions = runpy.run_path(str(ROOT / ".github/skills/textbook-learning-material/scripts/read_pdf_pages.py"))
+        cls.reader_functions = runpy.run_path(str(ROOT / "tools/read_pdf_pages.py"))
 
     def test_page_selection_is_inclusive_sorted_and_deduplicated(self):
         parse = self.reader_functions["parse_pages"]
@@ -158,7 +158,7 @@ class ReaderTests(unittest.TestCase):
                 parse(spec, 1347)
 
     def test_skill_frontmatter_and_resources(self):
-        skill = ROOT / ".github/skills/textbook-learning-material/SKILL.md"
+        skill = ROOT / ".agents/skills/textbook-learning-material/SKILL.md"
         text = skill.read_text(encoding="utf-8")
         front = text.split("---", 2)[1]
         name = re.search(r"^name:\s*(.+)$", front, re.MULTILINE).group(1)
@@ -166,7 +166,7 @@ class ReaderTests(unittest.TestCase):
         self.assertEqual(name, skill.parent.name)
         self.assertRegex(name, r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
         self.assertTrue(0 < len(description) <= 1024)
-        self.assertIn("./scripts/read_pdf_pages.py", text)
+        self.assertIn("../../../tools/read_pdf_pages.py", text)
         self.assertIn("./assets/learning-brief-template.md", text)
 
 
