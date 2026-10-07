@@ -17,6 +17,7 @@ A feature is not done until all required checks are complete.
 
 ### Engineering and logic
 - [ ] The implementation matches the spec or documented deviation
+- [ ] App changes follow PD-008's Kotlin/Compose direction and the owner-mediated [development handoff workflow](../docs/development-workflow.md); future web/services are not treated as implemented by assumption
 - [ ] Validation around state transitions is written or at least planned
 - [ ] Error handling, retry behavior, and offline behavior are considered
 - [ ] No duplicate logic or copy-paste code was introduced without justification
@@ -24,6 +25,7 @@ A feature is not done until all required checks are complete.
 
 ### QA and validation
 - [ ] Core happy path is tested
+- [ ] Actual Gradle/Android checks and device/AI Studio evidence are recorded separately; unavailable SDK/toolchain, unconfigured tests and unrun checks remain explicit blockers
 - [ ] Edge cases are reviewed
 - [ ] Regression risk is noted
 - [ ] Any bug fix includes a specific validation check

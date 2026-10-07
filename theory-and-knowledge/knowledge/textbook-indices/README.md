@@ -11,7 +11,7 @@ Start here when planning, checking or compiling learning material. Indices locat
 | Body Physics — `Body-Physics-Motion-to-Metabolism-1571156906.pdf` | Queued | [Existing reading registry](../curriculum/foundations-of-movement/reading-options.md) |
 | Exercise Science — `Foundations-of-Exercise-Science-1748368639.pdf` | Focused Chapter 5 pages checked; full index queued | [Focused source map](foundations-of-exercise-science/README.md) |
 
-Only A&P has been indexed in this pass. Each additional textbook needs its own verified edition, page map and navigation/graphics audit. Do not reuse the A&P adapter or assume its offset applies elsewhere.
+Only A&P has a full textbook index. FES has a focused source map for curriculum Chapter 5; full indexing remains queued. Each additional textbook needs its own verified edition, page map and navigation/graphics audit. Do not reuse the A&P adapter or assume its offset applies elsewhere.
 
 ## Index-First, Source-Verified Workflow
 
@@ -22,7 +22,7 @@ Only A&P has been indexed in this pass. Each additional textbook needs its own v
 5. Record exact section, inclusive PDF and printed pages, partial-page boundaries, stable figure/table IDs, destination content IDs/paths, review/rights status, and outstanding source-return questions.
 6. Update the curated guide and usage log in the same change as the learning material. Regenerate only machine-owned files; never erase human notes or usage history.
 
-Use the repository [textbook-learning-material skill](../../../.github/skills/textbook-learning-material/SKILL.md) for the detailed procedure, bounded local-page reader and learning-brief template. It can be invoked as `/textbook-learning-material` in Copilot.
+Follow the canonical [curriculum workflow](../curriculum/foundations-of-movement/README.md#content-indexing-textbook-parsing-and-inclusion) and [textbook-learning-material skill](../../../.agents/skills/textbook-learning-material/SKILL.md) for the detailed procedure and learning-brief template. Executable page reading lives in [tools/read_pdf_pages.py](../../../tools/read_pdf_pages.py), not in a skill bundle.
 
 ## Storage and Rights
 

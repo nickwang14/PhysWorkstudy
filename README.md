@@ -1,6 +1,16 @@
 # PhysiApp - Evidence-Based Movement Science & Training Planner
 
-PhysiApp is a native Android application built with Kotlin and Jetpack Compose. It translates academic physiotherapy, biomechanics, and exercise physiology into a daily learning habit and a weekly training planner governed by the **Consistency Over Intensity** philosophy.
+PhysiApp is already built as a **Kotlin/Jetpack Compose Android application**, supporting movement-science learning and weekly training under the **Consistency Over Intensity** philosophy. The owner **orchestrates in VS Code and builds/implements the app with Google AI Studio**; see the [development workflow](docs/development-workflow.md) and owner-confirmed [PD-008](docs/product-decisions.md). This workflow does not imply automatic integration or a successful Android build without actual evidence.
+
+## Repository Status and Guidance
+
+- Current application source/build: `app/` and Gradle. Use Kotlin/Compose and the native Android stack; backend/cloud services remain proposed, and future web-companion technology is undecided.
+- Product policy: [product decisions](docs/product-decisions.md). Execution/scope: [project management](project-management/README.md). Agent role defaults are subordinate to those records.
+- Academic content: [knowledge repository](theory-and-knowledge/knowledge/README.md) and [curriculum workflow](theory-and-knowledge/knowledge/curriculum/foundations-of-movement/README.md). Authored material remains draft until actual reviews are recorded; use the live reading registry for coverage.
+- Agent setup: [AGENTS.md](AGENTS.md) and [shared skills](.agents/skills/README.md). Run `python tools/setup_agent_platforms.py` after cloning. Skills are authored once in `.agents/skills/`; Copilot profiles are generated from canonical Claude profiles.
+- Content utilities: [tools/README.md](tools/README.md). Source PDFs and review previews are local-only, not distributed app assets.
+
+The feature outline below describes the app's product intentions, not a production-readiness, scientific-validation or completeness checklist; actual acceptance/release status belongs in project-management records.
 
 ## Core Features & Architecture
 
@@ -17,29 +27,32 @@ PhysiApp is a native Android application built with Kotlin and Jetpack Compose. 
 
 ### 2. Continuous Concept Progression Path (PD-006)
 - Gamified visual progression journey with concept gates (similar to Duolingo/Candy Crush).
-- Lessons organized across 5 core academic modules:
+- The content repository plans **seven foundation chapters and five advanced chapters**, under Program → Chapter → Subchapter → Lesson gates. Foundation topics:
   1. Foundations of Movement & Terminology
   2. Anatomy & Physiology of Movement
   3. Biomechanics & Motion Analysis (Torque, Moment Arms, Levers)
   4. Load, Fatigue & Periodization
   5. Weekly Training Planning & Split Architecture
+  6. Goal-Based Progression and Deloads
+  7. Applied Exercise Decision-Making and Coaching Logic
+- See the [curriculum overview](theory-and-knowledge/knowledge/curriculum/foundations-of-movement/chapter-overview.md) for the advanced continuation and live guides for draft/outline coverage. In-app content is not automatically synchronized with every authored Markdown lesson.
 - Sequential unlocking as prerequisite knowledge checks are mastered.
 
 ### 3. Planned Deload Periodization (PD-002)
 - Every 6th week of training is automatically designated as an active recovery (deload) week.
 - Volume reduced by ~40-50% while preserving motor patterns at moderate RPE (5-6).
-- Positive framing: active recovery facilitates connective tissue remodeling, central nervous system rejuvenation, and supercompensation.
+- Use positive, non-medical planned-recovery framing. The six-week cadence is product policy, not a universal physiological guarantee; retain explicit defer/acknowledgment behavior from PD-002 and obtain domain review for explanatory claims.
 
 ### 4. Six Fundamental Movement Patterns
-- Complete exercise library organized around the 6 core functional pillars:
+- Exercise-library organization follows six core movement patterns:
   - **Squat**: Goblet Squat, Bulgarian Split Squat
   - **Hinge**: Romanian Deadlift, Kettlebell Swing
   - **Push**: Dumbbell Bench Press, Standing Overhead Press
   - **Pull**: Single-Arm Dumbbell Row, Cable Face Pull
   - **Carry**: Farmer's Walk, Suitcase Carry
   - **Rotate / Anti-Rotate**: Pallof Press, Bird Dog
-- Detailed clinical cues, common compensations to avoid, regressions, and progressions for every exercise.
-- Kinetic Pattern Balance visualizer to ensure symmetrical joint loading.
+- Educational cues, regressions and progressions require source/domain review and must not imply individualized diagnosis or treatment.
+- Pattern-balance visualization is an educational aid, not a guarantee of symmetrical joint loading or a clinical assessment.
 
 ### 5. In-Session Workout Runner & Rest Timer
 - Real-time workout session logging for sets, reps, weight, and RPE.
@@ -48,12 +61,12 @@ PhysiApp is a native Android application built with Kotlin and Jetpack Compose. 
 
 ### 6. Autoregulated Readiness Check-In
 - Daily 1-minute survey for Sleep, Soreness, and Energy.
-- Instant clinical coaching advice based on fatigue metrics.
+- Non-medical educational guidance based on self-reported readiness; not diagnosis, treatment, or automated clinical advice.
 
 ### 7. Consistency-Based Gamification (PD-004)
 - Badges and milestone celebrations are strictly anchored to consistency, showing up, and deload compliance, never load ego or injury-inducing intensity.
 
-## Technical Details
+## Current Android Technical Details
 - **UI Framework**: Jetpack Compose with Material 3 (M3)
 - **Architecture**: MVVM with Kotlin StateFlow & Coroutines
 - **Target SDK**: Android 36, Min SDK 26

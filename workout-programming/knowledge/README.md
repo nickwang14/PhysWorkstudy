@@ -2,10 +2,12 @@
 
 This folder contains the **workout program templates, training frameworks, exercise definitions, and programming rules** for PhysiApp's training track.
 
+Follow [shared repository guidance](../../AGENTS.md) and authoritative [product decisions](../../docs/product-decisions.md). These are content/design specifications, not proof of implemented training features or completed domain review. Training goals remain separate from [learning progress](../../theory-and-knowledge/tracking/README.md). For source-backed educational copy, use the canonical [curriculum workflow](../../theory-and-knowledge/knowledge/curriculum/foundations-of-movement/README.md#content-indexing-textbook-parsing-and-inclusion) and [textbook-learning-material skill](../../.agents/skills/textbook-learning-material/SKILL.md).
+
 ## What Goes Here
 
 ### `programs/`
-Curated workout program definitions authored and validated by the Physio Consultant:
+Curated workout program definitions for Physio Consultant authoring and domain review; approval must be recorded, not inferred from folder placement:
 ```
 Program Template
 ├── name
@@ -17,7 +19,7 @@ Program Template
 └── progression_rules     -- how volume/intensity changes week to week
 ```
 
-### `splits/`
+### `splits/` (planned; folder not yet present)
 Training split templates for each goal and frequency combination:
 - 2x/week: Full Body A / Full Body B
 - 3x/week: Full Body A / B / C or Push / Pull / Legs
@@ -25,16 +27,18 @@ Training split templates for each goal and frequency combination:
 - 5x/week: PPL + Upper + Lower
 - Deload variants for each split (reduced volume, maintained movement patterns)
 
-### `exercises/`
+### `exercises/` (planned; folder not yet present)
 Exercise definitions from a programming perspective:
 - Exercise name, category (compound/isolation), primary muscles, secondary muscles
 - Default rep ranges by goal (strength: 3–5, hypertrophy: 6–12, endurance: 15–20)
 - Progression options: load, volume, density, range of motion
 - Substitution list (equipment-free and travel alternatives)
 
-### `adaptation-rules/`
+### `adaptation-rules/` (planned; folder not yet present)
 The rules the adaptive split engine uses to modify next week's plan.
 Defined by the Physio Consultant; implemented as configurable rule sets by the Backend Engineer.
+
+The fixed deload cadence below is product policy (PD-002), not a universal physiological guarantee.
 
 ---
 

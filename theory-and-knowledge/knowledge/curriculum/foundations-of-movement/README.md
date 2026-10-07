@@ -10,6 +10,8 @@ This program introduces the movement foundations that support safe, effective, a
 - Connect learning to realistic training decisions across a flexible weekly schedule
 
 ## Curriculum Structure
+The plan contains seven foundation chapters (1–7) and five advanced chapters (8–12). Authored drafts and outline-only modules coexist; chapter placement does not imply review or publication. Consult the [chapter overview](chapter-overview.md), chapter/subchapter guides and [reading registry](reading-options.md) for current status.
+
 - Chapter 1: Foundations of Movement and Terminology
 - Chapter 2: Anatomy and Physiology of Movement
 - Chapter 3: Biomechanics and Motion Analysis
@@ -35,9 +37,9 @@ This program introduces the movement foundations that support safe, effective, a
 The active curriculum uses a chapter-based structure. Older year-and-term material was removed to keep the live model clear and consistent with the current program design.
 
 ## Daily and Optional Reading
-Daily lessons should teach a concept, not just summarize it. The authored lessons in Chapters 1–4 provide approximately 3–5 minutes of core reading, with an estimated eight-minute daily update including the existing checks and application prompt.
+Daily lessons should teach a concept, not just summarize it. Standard daily lessons target approximately 3–5 minutes of core reading, with an estimated eight-minute daily update including the existing checks and application prompt. See the [lesson reading index](reading-options.md) and lesson records for current coverage and draft status.
 
-Each authored lesson has its own optional **15–30-minute reading assignment**, with source sections selected to extend that lesson's particular topic. The precise sections, page links, and reading focus appear directly in the lesson. These content drafts are pending source, editorial, and domain review.
+Authored lessons may link their own optional reading assignment, targeting **15–20 minutes**, or up to about **30 minutes** where relevant material warrants it; short/transitional lessons may omit an extension with a documented reason. The precise sections, page links, and reading focus appear directly in the lesson. These content drafts remain subject to source, rights, editorial, and domain review; optional readings stay outside required checks, prerequisites, gates, daily streak requirements and texting exports.
 
 See the internal [lesson reading index](reading-options.md) for the assignment registry and textbook editions.
 
@@ -70,7 +72,7 @@ For each authored lesson:
 
 ### 2. Parse and Index the Textbook Before Selecting Material
 
-Start with the [textbook-learning-material skill](../../../../.github/skills/textbook-learning-material/SKILL.md) and the source registry. For each new source or edition:
+Start with the canonical [textbook-learning-material skill](../../../../.agents/skills/textbook-learning-material/SKILL.md) and the source registry, following [shared repository guidance](../../../../AGENTS.md). For each new source or edition:
 - Record author/title/edition, local filename, ISBN where available, source fingerprint, license notice and required attribution. PDFs remain local-only in `docs/`.
 - Check Contents, PDF bookmarks, glossary/Key Terms, alphabetical index, references, appendices, objectives, summaries, review questions, answer keys and interactive links. Record exact locations and whether each aid is present, absent or unverified.
 - Verify PDF viewer versus printed page numbering from actual footers; detect numbering changes rather than assuming a universal offset or trusting PDF page labels.
@@ -81,7 +83,7 @@ For the current A&P source, use [the indexer](../../../../tools/index_anatomy_ph
 
 ### 3. Read, Review, and Compile a Focused Selection
 
-Search the source index and existing lesson records first, then read the relevant textbook pages and their qualifications. Use the skill's bounded page reader for text and [local graphics previews](../../../../tools/review_textbook_graphics.py) for visual inspection. Check exact first/last paragraph boundaries, captions, panels, labels, graph axes/units, tables and item-specific credits.
+Search the source index and existing lesson records first, then read the relevant textbook pages and their qualifications. Use the shared [bounded page reader](../../../../tools/read_pdf_pages.py) for text and [local graphics previews](../../../../tools/review_textbook_graphics.py) for visual inspection. Check exact first/last paragraph boundaries, captions, panels, labels, graph axes/units, tables and item-specific credits.
 
 Write original teaching explanations, worked examples, misconception corrections and learning checks. Keep a claim-to-source record with exact sections, inclusive PDF/printed pages and partial-page exclusions. A contents entry, summary or diagram alone does not establish a new factual or quantitative claim.
 
@@ -103,7 +105,7 @@ Verify the local edition's license and figure/page-specific exceptions before re
 - Update lesson metadata/links, the reading registry and relevant asset records in the same change as the content. Append actual consultation/inclusion evidence to the source usage log; update curated and visual-review notes when new useful material or limits are found.
 - Keep **consulted for a core explanation**, **assigned optional reading**, **suggested graphic**, and **included asset** distinct. The A&P reverse map records linked optional-reading assignments only; it does not prove that every core claim is sourced or every suggested graphic has been used.
 - After reading assignment changes, refresh `curriculum-usage.md` with `python tools/index_curriculum_usage.py --write`. Refresh the textbook's generated index only when the source/index needs it. Neither operation should erase human notes, usage history or review decisions.
-- For existing optional excerpts, validate first with `python tools/extract_optional_readings.py --dry-run`. Its default run regenerates all assigned readings, not one selected lesson; do not casually overwrite reviewed material. Machine extraction takes full assigned pages, so check and trim partial-page boundaries and skipped/unrelated content manually before approval.
+- For existing optional excerpts, validate first with `python tools/extract_optional_readings.py --dry-run`; use repeated `--lesson-id` flags to limit validation or regeneration to selected lessons. An unfiltered write regenerates all assigned readings; do not casually overwrite reviewed material. Machine extraction takes full assigned pages, so check and trim partial-page boundaries and skipped/unrelated content manually before approval.
 
 ### 6. Validate and Know When to Return to the Source
 
@@ -116,7 +118,7 @@ Run commands from the repository root using the configured Python environment:
 | Validate reading assignments without regenerating excerpts | `python tools/extract_optional_readings.py --dry-run` |
 | Refresh the A&P chapter-to-curriculum map | `python tools/index_curriculum_usage.py --write` |
 | Detect a stale curriculum usage map | `python tools/index_curriculum_usage.py --check` |
-| Run index, graphics and curriculum-mapping checks | `python -m unittest discover -s tools -p "test_index_*.py"` |
+| Run content-tool regression checks, including shared-helper and platform tests | `python -m unittest discover -s tools -p "test_*.py"` |
 
 Also check lesson/reading IDs, local links, exact page spans, source/asset credits, optional-content flags and whether recorded review states reflect work actually completed. The automated usage map can be refreshed without PDFs; source verification, source parsing, extraction and rendered-page inspection require the relevant local source files.
 

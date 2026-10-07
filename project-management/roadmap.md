@@ -33,7 +33,9 @@ Build a consistency-first workout and human kinetics learning app that rewards s
 - Optimization for retention and long-term engagement
 
 ## Current Phase
-`Phase 0 / Phase 1` — project setup and planning is underway; product and repo workflow are being organized.
+`Phase 0 / Phase 1` — product planning and foundation delivery/validation continue alongside the implemented Kotlin/Compose Android app. This phase label does not imply that the app is absent or that all MVP features are complete.
+
+**Owner-confirmed context (2026-10-06):** [PD-008](../docs/product-decisions.md#pd-008-kotlin-app-and-vs-code--google-ai-studio-workflow) confirms Kotlin/Compose as the current Android direction. Extend the current app using the [VS Code orchestration / Google AI Studio handoff](../docs/development-workflow.md). Future web technology is undecided and backend/cloud/provider plans remain proposed; phase bullets are delivery targets, not implementation or build evidence.
 
 ## Guidelines
 - Keep scope lean and focused on the core differentiators

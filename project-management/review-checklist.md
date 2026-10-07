@@ -21,12 +21,14 @@ Use this before every major work session or milestone review.
 - [ ] Dependencies are visible and not implicit
 
 ## 4. Decision Hygiene
-- [ ] Any product or architecture decision is recorded in `project-management/decisions.md`
+- [ ] Product decisions are recorded in `docs/product-decisions.md`; technical/workflow decisions in `project-management/decisions.md` link to that authority
 - [ ] Product decisions align with core principles: consistency over intensity, flexible schedules, academic grounding
 - [ ] Platform boundary is respected: Android primary, web companion only
 
 ## 5. Repository and Technical Health
 - [ ] The repo is not showing unreviewed drift or confusion
+- [ ] PD-008's current Kotlin/Compose Android direction is applied and distinguished from proposed services and undecided future web technology
+- [ ] Owner-mediated VS Code / Google AI Studio changes follow the [development handoff workflow](../docs/development-workflow.md), with actual build/test evidence and toolchain blockers recorded rather than inferred
 - [ ] Large tasks have a logic plan before implementation begins
 - [ ] Helper utilities or shared abstractions are considered before duplicate logic grows
 - [ ] Refactors are narrow and justified

@@ -1,6 +1,6 @@
 # Workout Programming — Progress & Tracking
 
-This folder defines the **data schemas, tracking logic, and progress models** for the training track.
+This folder describes **proposed data schemas, tracking logic, and progress models** for the training track, not evidence of implemented schemas or backend features. Follow [shared repository guidance](../../AGENTS.md) and authoritative [product decisions](../../docs/product-decisions.md); fixed deload cadence is product policy, not a universal physiological guarantee.
 
 ## Tracking Domains
 
@@ -19,7 +19,7 @@ user_training_goals
 
 weekly_training_progress
 ├── user_id
-├── iso_week                   -- e.g., "2026-W32"
+├── week_key                   -- boundary/timezone policy pending; ISO encoding is a proposal
 ├── workouts_logged            -- count of logged workouts this week
 ├── workouts_goal              -- snapshot of goal at week start
 ├── goal_met                   -- bool
@@ -27,8 +27,10 @@ weekly_training_progress
 └── busyness_signal            -- 1–5, user self-reported at week start
 ```
 
-**Streak (training):** Consecutive ISO weeks where `workouts_logged >= workouts_goal`.
+**Streak (training):** Consecutive policy-defined weeks where `workouts_logged >= workouts_goal`. Week start, timezone attribution and grace/makeup boundaries need explicit decisions; ISO weeks are a proposal, not established policy.
 This is a *weekly* streak, displayed separately from the learning daily streak.
+
+See [learning tracking](../../theory-and-knowledge/tracking/README.md) for the independent daily system. Lesson and optional-reading activity do not count as logged workouts or satisfy the weekly training goal.
 
 ---
 
@@ -58,7 +60,7 @@ workout_logs
 ├── id
 ├── user_id
 ├── logged_at                  -- timestamp (timezone-aware)
-├── iso_week                   -- derived from logged_at
+├── week_key                   -- derived from logged_at using approved week/timezone rules
 ├── workout_type               -- push | pull | legs | upper | lower | full_body | custom
 ├── is_deload                  -- bool
 ├── source                     -- program | custom | user_entry
@@ -97,8 +99,8 @@ All inputs and outputs are logged for debugging, physio review, and future ML tr
 | Event | Properties |
 |---|---|
 | `workout_logged` | workout_type, duration, is_deload, source |
-| `weekly_goal_met` | workouts_logged, workouts_goal, iso_week |
-| `weekly_goal_missed` | workouts_logged, workouts_goal, iso_week |
+| `weekly_goal_met` | workouts_logged, workouts_goal, week_key |
+| `weekly_goal_missed` | workouts_logged, workouts_goal, week_key |
 | `deload_week_started` | week_number, program_id |
 | `adaptive_split_accepted` | suggested_split, rule_version |
 | `adaptive_split_modified` | suggested_split, user_split, modification_type |

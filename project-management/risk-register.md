@@ -17,6 +17,10 @@ This is the set of conditions that should trigger a pause, reassessment, or back
 - A third-party API becomes a runtime dependency for logging, learning completion, or progression
 - Mobile or web clients contain provider secrets
 - Offline mutations cannot be applied idempotently after retry
+- App work deviates from PD-008's owner-confirmed Kotlin/Compose Android direction without an explicit decision; Android Developer + Solutions Architect must align work with the current Kotlin/Compose/Gradle app
+- Proposed backend/cloud services or future web technology are reported as implemented or decided without evidence; keep these distinct from the current Android app
+- Missing Gradle/JDK/Android SDK, signing prerequisites or test configuration is reported as a passing Android check; QA + DevOps record blockers and exact evidence instead
+- Google AI Studio work is claimed as autonomous integration or an agent-run build without actual output; Android Developer follows the owner-mediated [development handoff workflow](../docs/development-workflow.md)
 
 ### UX and accessibility risk triggers
 - Key interaction patterns are not testable or readable on mobile

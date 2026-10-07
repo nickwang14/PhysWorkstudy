@@ -2,6 +2,8 @@
 
 This folder contains the **curriculum content, academic syllabuses, and educational resource library** for PhysiApp's learning track.
 
+Follow [shared repository guidance](../../AGENTS.md) and the canonical [curriculum indexing and inclusion workflow](curriculum/foundations-of-movement/README.md#content-indexing-textbook-parsing-and-inclusion).
+
 ## What Goes Here
 
 ### `curriculum/`
@@ -17,22 +19,22 @@ This is designed to feel like a Duolingo or Candy Crush progression map: users m
 
 Each lesson file includes: title, learning objective, core concept, key terms, knowledge check questions, and "apply it" tip. Authored lessons can include a topic-matched optional textbook reading. See the internal [lesson reading index](curriculum/foundations-of-movement/reading-options.md).
 
-Textbook PDFs are local-only source material and are ignored by Git. Optional reading content for the app is prepared as a separately attributed excerpt in `curriculum/foundations-of-movement/optional-readings/`; lessons link to those local files, not to the PDFs. Excerpts remain drafts until checked against the source pages and reviewed under `project-management/content-operations.md`.
+Textbook PDFs in the repository-root `docs/` are local-only source material and are ignored by Git. Optional reading content for the app is prepared as a separately attributed excerpt in `curriculum/foundations-of-movement/optional-readings/`; lessons link to those local files, not to the PDFs. Excerpts remain drafts until checked against the source pages and reviewed under [content operations](../../project-management/content-operations.md). Optional readings stay outside required checks, prerequisites, gates, daily streak requirements and texting exports.
 
 ### `textbook-indices/`
-Start source-backed content work with the [textbook reference indices](textbook-indices/README.md). A&P is indexed by chapter, numbered subchapter, navigation aid, figure and table with PDF/printed pages. Its curated guide identifies useful teaching material, while its usage log tracks what was checked, created and needs another textbook visit. Other sources are queued. Use the repository `textbook-learning-material` skill to locate, read and compile material, then update these records alongside the content.
+Start source-backed content work with the [textbook reference indices](textbook-indices/README.md). A&P is fully indexed by chapter, numbered subchapter, navigation aid, figure and table with PDF/printed pages. Its curated guide identifies useful teaching material, while its usage log tracks what was checked, created and needs another textbook visit. FES has a focused source map, not a full index; other sources are queued. Use the canonical [textbook-learning-material skill](../../.agents/skills/textbook-learning-material/SKILL.md) to locate, read and compile material, then update these records alongside the content.
 
-### `frameworks/`
+### `frameworks/` (planned; folder not yet present)
 Reference documents from certified educational or exercise frameworks used as source material for curriculum and content accuracy reviews.
 
-### `exercise-library/`
+### `exercise-library/` (planned; folder not yet present)
 Definitions of individual exercises as educational content (not programming):
 - Movement pattern classification (hinge, squat, push, pull, carry)
 - Muscle group involvement
 - Common errors and cues
 - Learning prerequisite (what the user should understand before this exercise)
 
-### `glossary/`
+### `glossary/` (planned; folder not yet present)
 Canonical terminology maintained by the Content Strategist:
 - Term, user-facing definition (Grade 9–10 reading level), technical definition, first-use context
 
@@ -41,7 +43,7 @@ Canonical terminology maintained by the Content Strategist:
 ## Source Textbooks and Curriculum Direction
 We are using a layered academic approach: start with human movement foundations, then move into anatomy and physiology, then biomechanics and kinetics, then program design and adaptation.
 
-### Key source texts in the repo
+### Key source texts held locally in `docs/` (not included in clones)
 - `Biomechanics-of-Human-Movement-1600891203._print.pdf`
   - Major themes: prerequisite skills, anatomy basics, linear and angular kinematics, kinetics, work, power, and energy
   - Best fit for: biomechanics concepts, movement analysis, force and motion reasoning
@@ -66,6 +68,8 @@ The textbook review suggests a strong sequence, but it should be delivered as a 
 7. Applied coaching and intervention logic
 
 This aligns with the current `Foundations of Movement` program and supports a continuous learning ladder: foundations first, then applied training science, then periodization and progression logic. The app should present these as chapter and subchapter gates that unlock progressively, not as semester blocks.
+
+The curriculum plan contains seven foundation chapters and five advanced chapters. See the [program guide](curriculum/foundations-of-movement/README.md) and [reading registry](curriculum/foundations-of-movement/reading-options.md) for current authored drafts and assignments; outline-only modules are not completed lessons or readings.
 
 Deferred curriculum additions that do not fit the current gate should be tracked in `project-management/curriculum-backlog.md`.
 

@@ -2,6 +2,8 @@
 
 This folder contains per-lesson text excerpts generated from locally held source textbooks. Each lesson links to its own `{lesson_id}-optional.md` file; the app must not link to the ignored textbook PDFs.
 
+Follow the canonical [curriculum indexing and inclusion workflow](../README.md#content-indexing-textbook-parsing-and-inclusion) and [textbook-learning-material skill](../../../../../.agents/skills/textbook-learning-material/SKILL.md). Current assignments and coverage are recorded in the [reading registry](../reading-options.md), not inferred from outlines.
+
 ## Regenerate
 
 1. Place the four assigned, licensed PDF editions in the repository's `docs/` folder. These binary PDFs are ignored by Git.
@@ -13,7 +15,7 @@ This folder contains per-lesson text excerpts generated from locally held source
 
 ## Scope and rights
 
-- Excerpts contain text from the specifically assigned PDF pages, not embedded page images. Figure images are omitted and follow the separate asset workflow in `assets/README.md` and `project-management/content-operations.md`.
+- Excerpts contain text from the specifically assigned PDF pages, not embedded page images. Figure images are omitted and follow the separate [asset workflow](../assets/README.md) and [content operations](../../../../../project-management/content-operations.md).
 - Each file records its lesson and optional-reading IDs, source title/creator, exact PDF and printed pages, extracted source word count, estimated reading time, license, attribution, and draft extraction status.
 - A&P and *Body Physics* content is CC BY-NC-SA 4.0; *Foundations of Exercise Science* is CC BY-NC 4.0; *Biomechanics of Human Movement* is CC BY 4.0 except where otherwise noted. Preserve all source notices and ShareAlike requirements. Do not redistribute or use NC-licensed excerpts in commercial builds without separate permission.
 - These files remain optional and separate from the core lesson, required checks, gate completion, streaks, and texting exports. They are draft source extracts, not reviewed teaching copy.

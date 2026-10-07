@@ -1,5 +1,7 @@
 # PhysiApp Epics
 
+**Implementation context:** [PD-008](../docs/product-decisions.md#pd-008-kotlin-app-and-vs-code--google-ai-studio-workflow) confirms the existing Kotlin/Compose Android app. Android Developer prepares and reviews owner-mediated Google AI Studio work through the [VS Code handoff workflow](../docs/development-workflow.md). Backend/cloud work remains proposed; future web technology is undecided, not a shared-framework requirement.
+
 ## Epic 1: Learning and Knowledge System
 **Goal:** Build a structured learning loop that teaches human kinetics and movement reasoning.
 
@@ -10,7 +12,7 @@
 - learning streaks
 - time-in-app logic
 
-**Owner:** Content Strategist + Physio Consultant + Flutter Developer + Backend Engineer
+**Owner:** Content Strategist + Physio Consultant + Android Developer + Backend Engineer
 
 **Acceptance criteria:**
 - Users can complete daily learning content and track progress
@@ -29,7 +31,7 @@
 - deload weeks
 - adaptive split rules
 
-**Owner:** Physio Consultant + Backend Engineer + Flutter Developer + QA Engineer
+**Owner:** Physio Consultant + Backend Engineer + Android Developer + QA Engineer
 
 **Acceptance criteria:**
 - Users can set x workouts/week as a minimum goal
@@ -47,7 +49,7 @@
 - celebration and rest-day handling
 - learning + training node combinations
 
-**Owner:** Gamification Designer + UX Designer + Flutter Developer
+**Owner:** Gamification Designer + UX Designer + Android Developer
 
 **Acceptance criteria:**
 - Daily map reflects actual learning and training progress
@@ -65,7 +67,9 @@
 - curriculum browsing
 - shareable milestone cards
 
-**Owner:** Flutter Developer + UX Designer + Solutions Architect
+**Owner:** Android Developer (Android data/interface handoff) + UX Designer + Solutions Architect; assign the web implementation owner when its technology is decided.
+
+**Technology:** Undecided future web stack; preserve the companion's read-oriented role. Milestone sharing remains post-MVP, not a new MVP requirement.
 
 **Acceptance criteria:**
 - Web experience is read-only for active progress tasks

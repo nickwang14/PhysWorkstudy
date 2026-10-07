@@ -1,5 +1,7 @@
 # PhysiApp Backlog
 
+**Execution context:** [PD-008](../docs/product-decisions.md#pd-008-kotlin-app-and-vs-code--google-ai-studio-workflow) confirms the existing Kotlin/Compose app as the current Android direction. Use the owner-mediated [VS Code / Google AI Studio handoff](../docs/development-workflow.md) for app changes. Unchecked items remain delivery/validation work, not evidence that backend/cloud services or the future web companion exist; web technology is undecided. Preserve item status until acceptance evidence is recorded.
+
 ## Current Priority Order
 
 ### P0 — Must Have for MVP
@@ -14,7 +16,7 @@
 - [ ] Build workout logging and weekly goal tracking
 - [ ] Build curriculum and daily learning flow
 - [ ] Implement deload cycle logic
-- [ ] Implement Android app shell and mobile-first UI
+- [ ] Extend and validate the existing Kotlin/Compose Android app shell and mobile-first UI
 - [ ] Build companion web dashboard for review and progress visibility
 - [ ] Define QA and accessibility validation gates
 - [ ] Establish CI/CD, development/staging/production environments, secrets management, backups, crash reporting, and baseline product analytics

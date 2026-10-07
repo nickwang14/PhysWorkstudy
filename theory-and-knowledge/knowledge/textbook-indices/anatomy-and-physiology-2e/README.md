@@ -49,8 +49,8 @@ Refresh after changing assignments with `python tools/index_curriculum_usage.py 
 - Check edition freshness: `python tools/index_anatomy_physiology.py --check-source`.
 - Validate a fresh scan without writing: `python tools/index_anatomy_physiology.py`.
 - Refresh only generated files: `python tools/index_anatomy_physiology.py --write`.
-- Run regression checks: `python -m unittest discover -s tools -p "test_index_*.py" -v`.
-- Read a bounded page selection: use the reader documented in the [skill](../../../../.github/skills/textbook-learning-material/SKILL.md).
+- Run regression checks, including shared-helper and platform tests: `python -m unittest discover -s tools -p "test_*.py"`.
+- Read a bounded page selection: `python tools/read_pdf_pages.py --pdf-pages "346-350" --layout`; see the canonical [skill](../../../../.agents/skills/textbook-learning-material/SKILL.md) for limits and the [curriculum workflow](../../curriculum/foundations-of-movement/README.md#content-indexing-textbook-parsing-and-inclusion) for inclusion rules.
 - Preview selected graphics: `python tools/review_textbook_graphics.py --ids ap-figure-9.8 ap-figure-9.19 --extra-pages 366`. Use `--dry-run` for selection/source validation only. Page previews/contact sheets go to ignored `docs/graphics-review/`, never the app asset folder.
 
 Dependencies: `tools/requirements-content.txt` (`pypdf`, `pypdfium2` and Pillow). No API keys or external service are needed.

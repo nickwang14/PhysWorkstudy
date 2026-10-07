@@ -1,6 +1,6 @@
 # Theory & Knowledge — Progress & Tracking
 
-This folder defines the **data schemas, tracking logic, and progress models** for the learning track.
+This folder describes **proposed data schemas, tracking logic, and progress models** for the learning track, not evidence of implemented schemas or delivery features. Follow [shared repository guidance](../../AGENTS.md) and authoritative [product decisions](../../docs/product-decisions.md).
 
 ## Tracking Domains
 
@@ -23,9 +23,9 @@ learning_streak_history
 └── streak_intact              -- bool
 ```
 
-**Grace period rule:** 1 missed day per week does not break the learning streak (configurable). This is distinct from the training weekly goal — these are parallel, independent systems.
+**Grace-period proposal (not decided):** The fields above accommodate a possible grace/freeze design; “one missed day per week” is a candidate, not approved policy or implemented behavior. Confirm learning-streak grace, timezone and week-boundary rules through the product/project decision records before implementation. Learning streaks remain independent of the training weekly goal.
 
-**Friend poke:** Enabled on the learning streak. A friend can send an encouragement nudge when a user's learning streak is at risk (has not yet completed a lesson today and it's evening). See `docs/product-decisions.md` for rationale.
+**Friend poke:** Planned for the learning streak only, post-MVP under PD-001. A friend could send an encouragement nudge when a user's learning streak is at risk (has not yet completed a lesson today and it's evening); this is not a current implementation claim.
 
 ---
 
@@ -43,12 +43,12 @@ user_lesson_progress
 user_curriculum_progress
 ├── user_id
 ├── program_id
-├── course_id
-├── topic_id
-├── module_id
+├── chapter_id
+├── subchapter_id
 ├── current_lesson_id
-├── module_completion_pct
-├── course_completion_pct
+├── subchapter_completion_pct
+├── chapter_completion_pct
+├── program_completion_pct
 └── last_accessed_at
 ```
 
@@ -63,7 +63,7 @@ daily_learning_nodes
 └── time_in_app_seconds        -- counts toward daily completion threshold
 ```
 
-**Daily completion threshold:** A learning node is `completed` when: lesson is finished AND knowledge check passed (or attempted) AND time_in_app ≥ configured minimum (default: 3 minutes).
+**Completion-rule proposal (unconfirmed):** Required lesson completion, knowledge-check qualification and any minimum-time rule need explicit acceptance criteria. The earlier “passed (or attempted)” wording and three-minute default are not approved equivalents or implementation guarantees. PD-007's reading estimate is not itself a completion threshold; optional-reader time cannot satisfy a required lesson/gate condition.
 
 ### Optional Lesson Reading and Progress Attribution (Design Specification)
 - Each lesson may link its own optional extended reading, identified by a unique `reading_id` and `lesson_id`. The internal registry derives `reading_id` as `{lesson_id}-optional` and records `content_type: optional_extended_reading`, `required_for_gate: false`, `include_in_texting_curriculum: false`, and estimated duration.
@@ -79,7 +79,7 @@ These are internal tracking boundaries, not learner-facing copy, a new UI rule, 
 ## Analytics Events (PostHog)
 | Event | Properties |
 |---|---|
-| `lesson_started` | lesson_id, course_id, source |
+| `lesson_started` | lesson_id, program_id, chapter_id, subchapter_id, source |
 | `lesson_completed` | lesson_id, time_spent, score |
 | `knowledge_check_attempted` | lesson_id, score, attempt_number |
 | `learning_streak_extended` | streak_days |
