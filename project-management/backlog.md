@@ -11,6 +11,7 @@ Use [shared guidance](../AGENTS.md) and the [development workflow](../docs/devel
 - [ ] Build the backend foundation for authentication, PostgreSQL persistence, API validation, and environment configuration
 - [ ] Build offline-first mobile persistence and idempotent outbox synchronization
 - [ ] Build a versioned content pipeline that validates the Git-backed curriculum and publishes app-ready bundles
+- [ ] Connect authored YAML/Markdown lessons to Android runtime loading and verify formatted, accessible reading — Android Developer / Solutions Architect / QA Engineer; reader source is updated, source-file ingestion and Android validation remain pending; acceptance in [Content Delivery](infrastructure-plan.md#android-reader-status-and-next-slice)
 - [ ] Create the curated MVP exercise library with stable IDs, movement tags, coaching cues, substitutions, and media references
 - [ ] Build progression map state model and daily node logic
 - [ ] Build workout logging and weekly goal tracking

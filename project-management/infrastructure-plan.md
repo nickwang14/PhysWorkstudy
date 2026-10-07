@@ -92,11 +92,12 @@ Use client-generated UUIDs for offline mutations and workout logs. Store the use
 
 Keep lesson authoring in the existing repository for MVP:
 
-1. Validate front matter, stable IDs, hierarchy, prerequisites, references, and publish state in CI.
-2. Compile approved Markdown into immutable, versioned JSON content bundles.
+1. Parse YAML frontmatter with a YAML parser and validate typed metadata, stable IDs, hierarchy, prerequisites, references, and publish state in CI. Reject invalid content with its source path; do not use regex to interpret YAML fields.
+2. Compile approved metadata and the preserved Markdown body into immutable, versioned JSON content bundles. Resolve repository-relative links and approved asset references for the client; package attribution alongside media. Keep internal editorial/rights records out of learner-facing bundles.
 3. Publish bundles and media to object storage.
 4. Have Android cache bundles in the selected native persistence layer and request updates by version or ETag; the cache/outbox implementation is not yet established by current preference storage.
 5. Project the same published content through read-only web endpoints.
+6. Render the Markdown body through the shared Android `MarkdownContent` reader. YAML supplies catalog metadata, not visible reading text. Headers must be real styled, accessible headings, not literal `# Chapter 1` strings.
 
 This separates editorial source files from the runtime format while preserving review history.
 
@@ -123,7 +124,6 @@ These are planned delivery slices, not a claim that services, web or CI already 
 - establish CI/CD, backups, Sentry, PostHog, and secrets management
 
 ### Stage 2 - Vertical learning slice
-- compile and publish a small curriculum bundle
 - deliver one chapter path with lessons and a knowledge check
 - persist completion, gate state, and learning streak
 - render progress in Android and the read-only web dashboard

@@ -31,6 +31,7 @@ Use this before every major work session or milestone review.
 - [ ] Owner-mediated VS Code / Google AI Studio changes follow the [development handoff workflow](../docs/development-workflow.md), with actual build/test evidence and toolchain blockers recorded rather than inferred
 - [ ] Large tasks have a logic plan before implementation begins
 - [ ] Helper utilities or shared abstractions are considered before duplicate logic grows
+- [ ] Learning content reaches the Android UI through validated YAML metadata and a shared formatted Markdown reader; headings are styled/accessible, YAML is hidden, and links/assets resolve
 - [ ] Refactors are narrow and justified
 - [ ] Required CI checks pass per `project-management/engineering-standards.md` (format, lint, typecheck, tests, coverage) before merge
 - [ ] Pipeline and environment changes follow `project-management/ci-cd.md` (no direct production changes without staging validation)
