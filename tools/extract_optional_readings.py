@@ -1,6 +1,7 @@
 """Generate local, attributed optional-reading excerpts from ignored source PDFs.
 
-Run from the repository root after placing the assigned source PDFs in docs/:
+Run from the repository root after placing the assigned source PDFs in
+theory-and-knowledge/knowledge/textbooks/:
     python tools/extract_optional_readings.py
 For a focused addition, select only its lesson IDs:
     python tools/extract_optional_readings.py --lesson-id planning-05-01
@@ -18,7 +19,7 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
-from content_common import AP_FILENAME, AP_OFFSET, READ_MORE, REPO_ROOT, metadata
+from content_common import AP_FILENAME, AP_OFFSET, READ_MORE, REPO_ROOT, TEXTBOOKS_DIR, metadata
 
 
 @dataclass(frozen=True)
@@ -262,7 +263,7 @@ def render_excerpt(
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=REPO_ROOT)
-    parser.add_argument("--pdf-dir", type=Path, default=Path("docs"))
+    parser.add_argument("--pdf-dir", type=Path, default=TEXTBOOKS_DIR)
     parser.add_argument(
         "--output-dir",
         type=Path,

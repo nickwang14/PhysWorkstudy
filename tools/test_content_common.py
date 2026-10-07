@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from content_common import AP_FILENAME, AP_OFFSET, bounded_pages, metadata, parse_pages, sha256_file, verify_page_count, verify_source
+from content_common import AP_FILENAME, AP_OFFSET, AP_PDF, TEXTBOOKS_DIR, bounded_pages, metadata, parse_pages, sha256_file, verify_page_count, verify_source
 from extract_optional_readings import parse_ranges, parse_reading_block
 
 
@@ -66,6 +66,10 @@ class CommonTests(unittest.TestCase):
     def test_ap_source_offset_has_one_shared_value(self):
         from extract_optional_readings import SOURCE_BY_FILENAME
         self.assertEqual(SOURCE_BY_FILENAME[AP_FILENAME.lower()].printed_offset, AP_OFFSET)
+
+    def test_local_textbook_directory_is_shared_by_tools(self):
+        self.assertEqual(AP_PDF, TEXTBOOKS_DIR / AP_FILENAME)
+        self.assertEqual(TEXTBOOKS_DIR, Path("theory-and-knowledge/knowledge/textbooks"))
 
 
 if __name__ == "__main__":

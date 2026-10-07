@@ -178,7 +178,7 @@ Daily updates contain substantive teaching rather than only a short summary: app
 - Optional reading and its textbook assignments must not be built into the texting curriculum. No texting or longer-update UI is introduced by this decision.
 
 **Academic basis:**
-Use selected, verified sections from the four local textbooks in `docs` with original synthesis and worked cases. Specify inclusive PDF and printed page ranges and estimate the actual assigned reading, not just the guide's length. Preserve source rights and professional review boundaries.
+Use selected, verified sections from the four local textbooks in `theory-and-knowledge/knowledge/textbooks/` with original synthesis and worked cases. Specify inclusive PDF and printed page ranges and estimate the actual assigned reading, not just the guide's length. Preserve source rights and professional review boundaries.
 
 **Current coverage:**
 All 73 authored lessons in Chapters 1–4 have expanded daily-reading drafts. Optional extended reading is associated with the individual lesson, with distinct source selections. See the internal [reading source index](../theory-and-knowledge/knowledge/curriculum/foundations-of-movement/reading-options.md).

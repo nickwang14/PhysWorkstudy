@@ -5,6 +5,7 @@ Run from the repository root using the configured Python environment. Install `r
 | Entry point | Single responsibility | Safe inspection / selected work |
 |---|---|---|
 | `index_anatomy_physiology.py` | A&P-specific full-book metadata adapter | `--query`, `--check-source`; default validates a scan; `--write` refreshes generated metadata |
+| `index_biomechanics.py` | Biomechanics-specific chapter, section and caption-line locator index | `--query`, `--check-source`; default validates a scan; `--write` refreshes generated metadata |
 | `index_curriculum_usage.py` | Lesson-linked A&P readings → curriculum reverse map | `--check`; `--write` refreshes only the map, no PDFs needed |
 | `read_pdf_pages.py` | At most 12 selected PDF pages → stdout | `--pdf-pages "350" --metadata-only`; no files/images exported |
 | `review_textbook_graphics.py` | Selected source pages → ignored local visual previews | `--ids ap-figure-9.8 --dry-run`; 32-page batch cap, not final assets or visual/rights approval |

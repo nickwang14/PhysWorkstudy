@@ -4,7 +4,7 @@
 
 ## Source edition
 
-- Local PDF: `docs/Foundations-of-Exercise-Science-1748368639.pdf` (kept offline and ignored by Git)
+- Local PDF: `theory-and-knowledge/knowledge/textbooks/Foundations-of-Exercise-Science-1748368639.pdf` (kept offline and ignored by Git)
 - Authors: Laura Ellingson-Sayen and Jennifer Taylor Winney
 - Edition copyright: 2025
 - License: CC BY-NC 4.0, except where otherwise noted; cover art has a separate Adobe Stock license.

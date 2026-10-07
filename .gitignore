@@ -1,5 +1,5 @@
 # Source textbooks are large binary reference material kept local-only.
-# Keep local PDFs in docs/ and curriculum staging folders; commit only approved,
+# Keep local PDFs in theory-and-knowledge/knowledge/textbooks/; commit only approved,
 # attributed text excerpts and assets. See the knowledge README for source titles.
 /docs/**/*.pdf
 # Rendered textbook pages/contact sheets are local inspection aids, not app assets.

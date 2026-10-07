@@ -22,25 +22,25 @@ Refresh after changing assignments with `python tools/index_curriculum_usage.py 
 
 ## Edition and Page Map
 
-- Local file: `docs/anatomy-and-physiology-2e_-_WEB.pdf`, 1,347 PDF viewer pages.
+- Local file: `theory-and-knowledge/knowledge/textbooks/anatomy-and-physiology-2e_-_WEB.pdf`, 1,347 PDF viewer pages.
 - Title: *Anatomy and Physiology 2e*, J. Gordon Betts and fellow contributing authors / OpenStax, Rice University. Original publication 2022; supplied PDF copyright 2026, creation date 2026-04-20. Digital ISBN 978-1-951693-42-8.
 - SHA-256: `aa2e577b2083c343f4d57b38f00dd935dd2d98befdb38c0f368d72d636d0ff46`.
 - **Printed page + 16 = PDF viewer page**, verified against 1,297 recognized printed footers. PDF page labels themselves are viewer numbers. Front matter before PDF 17 is not mapped to printed numbers.
-- Source/rights notice: [PDF 4](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=4); author list: [PDF 3](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=3).
+- Source/rights notice: [PDF 4](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=4); author list: [PDF 3](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=3).
 - Source: [OpenStax book details](https://openstax.org/details/books/anatomy-and-physiology-2e). This local edition is **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, with separately credited exceptions. Required notice: **Access for free at openstax.org.** Do not infer this edition's rights from older OpenStax editions or assume the live web edition has identical pagination.
 
 ## Navigation Audit
 
 | Reference | Exact location | How to use |
 |---|---|---|
-| Contents | [PDF 7–16](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=7); unnumbered | All indexed section/study-aid starts corroborate the printed TOC |
+| Contents | [PDF 7–16](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=7); unnumbered | All indexed section/study-aid starts corroborate the printed TOC |
 | PDF bookmarks | Viewer outline pane | Chapters, numbered sections, chapter study aids; References has section-specific child bookmarks |
-| Preface | [PDF 17–22](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=17), printed 1–6 | Book organization, learning features, scope and contributor information |
+| Preface | [PDF 17–22](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=17), printed 1–6 | Book organization, learning features, scope and contributor information |
 | Chapter glossaries | Each chapter's **Key Terms**, linked in `chapters.md` | Check exact terminology before making learner-friendly definitions; no standalone glossary entry found in contents/bookmarks |
 | Objectives / summaries | Chapter opening (Chapter Objectives), Introduction and Chapter Review | Scope/prerequisites first; summaries are a preview, not sufficient evidence for a new claim |
 | Practice and interactive references | Interactive Link Questions where present, Review Questions and Critical Thinking Questions in each chapter | Find learning checks and linked activities; do not copy question banks or treat optional material as gate content |
-| References | [PDF 1321–1324](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1321), printed 1305–1308 | Follow section-specific evidence to original sources when more depth is needed |
-| Alphabetical Index | [PDF 1325–1347](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1325), printed 1309–1331 | Find cross-chapter terms; its page references are **printed**, so add 16 when opening the PDF |
+| References | [PDF 1321–1324](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1321), printed 1305–1308 | Follow section-specific evidence to original sources when more depth is needed |
+| Alphabetical Index | [PDF 1325–1347](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1325), printed 1309–1331 | Find cross-chapter terms; its page references are **printed**, so add 16 when opening the PDF |
 | Appendices / standalone answer key | No entry found in contents/bookmarks | Do not assume these exist or infer correct answers from a question alone |
 
 ## Commands from the Repository Root

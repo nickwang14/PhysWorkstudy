@@ -30,7 +30,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-6.2 — Bones Support Movement
 
-- **Location:** textbook §6.1; artwork and caption [PDF 214](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=214), printed 198.
+- **Location:** textbook §6.1; artwork and caption [PDF 214](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=214), printed 198.
 - **Visual / priority:** **photograph**, person using a leg-press machine; **Hold** as a leverage teaching diagram. It does not label bones, force arrows or a fulcrum.
 - **Credit / reuse:** caption credits **Benjamin J. DeLong**. Photo-specific terms/permissions unresolved; do not extract for a lesson on the assumption that it is an original OpenStax schematic.
 - **Crop guidance:** if rights are established, keep the whole action/context and credit; do not convert the photo into purported evidence of a specific lever class. Prefer an original schematic for force-path teaching.
@@ -39,7 +39,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-6.6 — Classifications of Bones
 
-- **Location:** textbook §6.2; artwork and caption [PDF 217](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=217), printed 201.
+- **Location:** textbook §6.2; artwork and caption [PDF 217](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=217), printed 201.
 - **Visual / priority:** skeleton linked to five labelled shape examples: flat, irregular, long, short and sesamoid; **P2**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** retain all five categories and their anatomical examples; keep arrows or make an explicitly labelled adaptation rather than isolated ambiguous bone fragments.
@@ -48,7 +48,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-6.7 — Anatomy of a Long Bone
 
-- **Location:** textbook §6.3; artwork and caption [PDF 219](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=219), printed 203.
+- **Location:** textbook §6.3; artwork and caption [PDF 219](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=219), printed 203.
 - **Visual / priority:** longitudinal cutaway with end/shaft brackets, cartilage, marrow, compact/spongy bone, periosteum and nutrient artery; **P1**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** preserve the full bone, both articular ends, shaft brackets and all leader lines. A narrow shaft-only crop loses the comparison between compact and spongy regions.
@@ -57,7 +57,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-6.8 — Periosteum and Endosteum
 
-- **Location:** textbook §6.3; artwork and caption [PDF 220](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=220), printed 204.
+- **Location:** textbook §6.3; artwork and caption [PDF 220](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=220), printed 204.
 - **Visual / priority:** bone overview branches into two labelled magnifications of its outer covering and inner lining; **P2**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** retain the overview and both magnification arrows. Exclude the separate Figure 6.9 below it; do not crop its labels into this figure.
@@ -66,7 +66,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-6.12 — Diagram of Compact Bone
 
-- **Location:** textbook §6.3; both artwork panels and caption [PDF 225](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=225), printed 209.
+- **Location:** textbook §6.3; both artwork panels and caption [PDF 225](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=225), printed 209.
 - **Visual / priority:** **(a)** densely labelled osteon/compact-bone cutaway; **(b)** histology micrograph; **P3**, with a rights hold on panel (b).
 - **Credit / reuse:** panel (b) caption states **Regents of University of Michigan Medical School © 2012**. Do not treat the micrograph as blanket-licensed OpenStax artwork. Panel (a) has no separate visible credit, but any diagram-only use still requires a panel-specific rights decision and explicit omission note.
 - **Crop guidance:** never silently detach the micrograph from its credit. If only panel (a) is approved, retain its labels/panel marker and label the adaptation “panel (a) only; micrograph omitted.”
@@ -75,7 +75,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-6.13 — Diagram of Spongy Bone
 
-- **Location:** textbook §6.3; artwork and caption [PDF 226](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=226), printed 210.
+- **Location:** textbook §6.3; artwork and caption [PDF 226](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=226), printed 210.
 - **Visual / priority:** bone→trabecular network→cellular-detail magnifications; **P2**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** keep the trabecular overview and the scale-transition arrows. Exclude the separate Paget's-disease box and Figure 6.14 below; pathology is not required for the structural comparison.
@@ -86,7 +86,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-9.8 — Synovial Joints
 
-- **Location:** textbook §9.4; artwork and caption [PDF 347](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=347), printed 331.
+- **Location:** textbook §9.4; artwork and caption [PDF 347](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=347), printed 331.
 - **Visual / priority:** single joint cross-section, with bone, cartilage, capsule layers and fluid-containing cavity; **P1**, best first visual for the active lesson.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** keep both bone ends and every capsule/cartilage/cavity label. Do not substitute a capsule-layer label for a tendon/ligament label that this drawing does not provide.
@@ -95,7 +95,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-9.10 — Types of Synovial Joints
 
-- **Location:** textbook §9.4; artwork and caption [PDF 350](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=350), printed 334.
+- **Location:** textbook §9.4; artwork and caption [PDF 350](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=350), printed 334.
 - **Visual / priority:** six mechanical schematics **(a–f)** connected to anatomical locations on a skeleton; **P1**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** keep each selected panel's type, anatomical example and motion arrows; retain all six for a comparison sheet. Do not drop the distinction between a plane joint and a movement plane.
@@ -104,7 +104,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-9.12 — Movements of the Body, Part 1
 
-- **Location:** textbook §9.5; artwork and caption start [PDF 354](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=354), printed 338; **caption continuation [PDF 355](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=355), printed 339**.
+- **Location:** textbook §9.5; artwork and caption start [PDF 354](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=354), printed 338; **caption continuation [PDF 355](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=355), printed 339**.
 - **Visual / priority:** panels **(a–f)** compare flexion/extension, abduction/adduction, circumduction and rotation at named body regions; **P1**.
 - **Credit / reuse:** no separate credit visible in the inspected caption and continuation; **source-license conditional**.
 - **Crop guidance:** select named action pairs with their arrows/panel labels. Preserve the relevant caption explanation from both pages; PDF 354 alone is not a complete caption capture. Exclude the unrelated interactive-link box above.
@@ -113,7 +113,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-9.13 — Movements of the Body, Part 2
 
-- **Location:** textbook §9.5; artwork and caption [PDF 355](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=355), printed 339.
+- **Location:** textbook §9.5; artwork and caption [PDF 355](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=355), printed 339.
 - **Visual / priority:** panels **(g–l)** cover pronation/supination, ankle/foot actions, jaw actions and thumb opposition; **P1**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** preserve paired directions, anatomical landmarks and panel letters. Keep radius/ulna orientation for forearm actions, and soles/arrows for inversion/eversion; avoid a hand-only crop that hides the mechanism.
@@ -122,7 +122,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-9.16 — Glenohumeral Joint
 
-- **Location:** textbook §9.6; artwork and caption [PDF 361](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=361), printed 345.
+- **Location:** textbook §9.6; artwork and caption [PDF 361](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=361), printed 345.
 - **Visual / priority:** labelled shoulder cutaway, including labrum, capsule, bursa and named tendons/ligaments; **P2**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** retain humeral head, glenoid and supporting labels; do not crop out the labrum or surrounding support structures when comparing socket shape. Figure 9.15 on PDF 360 is a separate jaw figure, not part of this graphic.
@@ -131,7 +131,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-9.18 — Hip Joint
 
-- **Location:** textbook §9.6; all artwork panels and caption [PDF 365](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=365), printed 349; surrounding anatomical explanation on PDF 364.
+- **Location:** textbook §9.6; all artwork panels and caption [PDF 365](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=365), printed 349; surrounding anatomical explanation on PDF 364.
 - **Visual / priority:** **(a)** frontal section, **(b)** anterior capsule view, **(c)** posterior capsule view of the right hip; **P2**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** retain explicit view labels and selected panel letters. Comparing anterior and posterior ligament arrangements needs panels (b) and (c); comparing socket structure needs (a).
@@ -140,7 +140,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-9.19 — Knee Joint
 
-- **Location:** textbook §9.6; all artwork panels and caption [PDF 367](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=367), printed 351; surrounding explanation on PDF 366.
+- **Location:** textbook §9.6; all artwork panels and caption [PDF 367](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=367), printed 351; surrounding explanation on PDF 366.
 - **Visual / priority:** **(a)** sagittal section, **(b)** superior tibial view, **(c)** anterior right-knee view; **P2**, especially panel (c) for the active lesson.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** retain view labels and all leader lines. Panel (c) is suitable for locating quadriceps tendon, patella and patellar ligament; panel (b) is needed for menisci/cruciate orientation. Do not present an unlabelled cutout as an injury diagram.
@@ -151,7 +151,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-10.3 — The Three Connective Tissue Layers
 
-- **Location:** textbook §10.2; artwork and caption [PDF 388](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=388), printed 372.
+- **Location:** textbook §10.2; artwork and caption [PDF 388](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=388), printed 372.
 - **Visual / priority:** nested whole-muscle→fascicle→fiber→myofibril diagram with three connective-tissue labels; **P1**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** keep all magnification arrows and sheath labels; retain the distinction between endomysium and sarcolemma. A fiber-only crop removes the organization hierarchy.
@@ -160,7 +160,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-10.5 — The Sarcomere
 
-- **Location:** textbook §10.2; artwork and caption [PDF 390](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=390), printed 374.
+- **Location:** textbook §10.2; artwork and caption [PDF 390](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=390), printed 374.
 - **Visual / priority:** sarcomere overview plus thick/thin filament and protein magnifications; **P2**, prerequisite for Figure 10.10.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** keep Z-line boundaries and the filament key/labels. If omitting molecular magnifications, state this explicitly rather than leaving unexplained arrows or implying that the enlarged structures are to scale.
@@ -169,7 +169,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-10.6 — Motor End-Plate and Innervation
 
-- **Location:** textbook §10.2; artwork and caption [PDF 391](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=391), printed 375.
+- **Location:** textbook §10.2; artwork and caption [PDF 391](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=391), printed 375.
 - **Visual / priority:** three nested scales from motor axon/fiber to synaptic region and receptor/channel detail; **P2**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** preserve scale-transition arrows and the cleft/end-plate labels. A receptor-only crop is not a complete explanation of neuromuscular signaling or excitation–contraction coupling.
@@ -178,7 +178,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-10.10 — Sliding Filament Model of Muscle Contraction
 
-- **Location:** textbook §10.3; artwork and caption [PDF 395](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=395), printed 379.
+- **Location:** textbook §10.3; artwork and caption [PDF 395](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=395), printed 379.
 - **Visual / priority:** two states compare sarcomere boundaries and filament overlap; **P1**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** retain both states, inward arrows and Z/I/A/H/M labels. A single state cannot demonstrate sliding, and the schematic is not a quantitative scale model.
@@ -187,7 +187,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-10.13 — Types of Muscle Contractions
 
-- **Location:** textbook §10.4; artwork and caption [PDF 401](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=401), printed 385.
+- **Location:** textbook §10.4; artwork and caption [PDF 401](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=401), printed 385.
 - **Visual / priority:** three rows contrast shortening, lengthening and holding with arm/load examples; **P1**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** keep all three rows, movement arrows and contraction-type labels for the comparison. Do not omit the eccentric row or equate “no visible movement” with “no muscle force.”
@@ -196,7 +196,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-10.14 — The Ideal Length of a Sarcomere
 
-- **Location:** textbook §10.4; artwork and caption [PDF 403](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=403), printed 387.
+- **Location:** textbook §10.4; artwork and caption [PDF 403](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=403), printed 387.
 - **Visual / priority:** normalized tension-versus-percentage-sarcomere-length graph with filament-overlap sketches; **P3**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** keep both axes, percentage labels and overlap sketches; exclude the separate Figure 10.15 twitch graph below. Do not crop away the normalization or relabel this as joint angle.
@@ -205,7 +205,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-11.2 — Prime Movers and Synergists
 
-- **Location:** textbook §11.1; artwork and caption [PDF 426](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=426), printed 410.
+- **Location:** textbook §11.1; artwork and caption [PDF 426](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=426), printed 410.
 - **Visual / priority:** two arm views compare visible muscles and a dissected view while holding a cup; **P2**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** retain both views, the cup/task context and the dissected-view label. Do not turn task-specific role labels into permanent muscle classifications.
@@ -214,7 +214,7 @@ These are recommendations only: the existing lesson has not been changed and its
 
 ### ap-figure-11.3 — Muscle Shapes and Fiber Alignment
 
-- **Location:** textbook §11.1; artwork and caption [PDF 428](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=428), printed 412.
+- **Location:** textbook §11.1; artwork and caption [PDF 428](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=428), printed 412.
 - **Visual / priority:** body-location overview with seven labelled muscle-shape/fascicle-arrangement examples; **P2**.
 - **Credit / reuse:** no separate credit visible; **source-license conditional**.
 - **Crop guidance:** retain arrangement names, example muscle names and overview arrows. A comparison should keep the selected pennate/parallel categories and clearly state which other examples were omitted.

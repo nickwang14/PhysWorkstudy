@@ -16,12 +16,12 @@ These are navigation ranges, not approved extraction ranges. Inspect first/last 
 
 | Aid | PDF viewer pages | Printed pages |
 |---|---|---|
-| Contents | [7–16](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=7) | unnumbered |
-| Preface | [17–22](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=17) | 1–6 |
-| References | [1321–1324](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1321) | 1305–1308 |
-| Index | [1325–1347](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1325) | 1309–1331 |
+| Contents | [7–16](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=7) | unnumbered |
+| Preface | [17–22](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=17) | 1–6 |
+| References | [1321–1324](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1321) | 1305–1308 |
+| Index | [1325–1347](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1325) | 1309–1331 |
 
-License/edition notice: [4](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=4); author list: [3](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=3).
+License/edition notice: [4](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=4); author list: [3](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=3).
 No standalone glossary, appendix or answer key was found in the bookmarks/contents. Use each chapter's **Key Terms** as its glossary; use the alphabetical **Index** for cross-chapter terms.
 Chapter Objectives/Introduction, Chapter Review, Interactive Link Questions (where present), Review Questions and Critical Thinking Questions are indexed below. Question banks require independent answer checks; optional material cannot become a gate requirement.
 References are grouped by source section inside the book's References bookmark; start there for deeper evidence. This index does not copy definitions, question banks or bibliography entries.
@@ -30,532 +30,532 @@ References are grouped by source section inside the book's References bookmark; 
 
 | Chapter | PDF viewer pages | Printed pages |
 |---|---|---|
-| [1. An Introduction to the Human Body](#chapter-1) | [23–56](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=23) | 7–40 |
-| [2. The Chemical Level of Organization](#chapter-2) | [57–100](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=57) | 41–84 |
-| [3. The Cellular Level of Organization](#chapter-3) | [101–144](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=101) | 85–128 |
-| [4. The Tissue Level of Organization](#chapter-4) | [145–182](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=145) | 129–166 |
-| [5. The Integumentary System](#chapter-5) | [183–212](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=183) | 167–196 |
-| [6. Bone Tissue and the Skeletal System](#chapter-6) | [213–250](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=213) | 197–234 |
-| [7. Axial Skeleton](#chapter-7) | [251–298](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=251) | 235–282 |
-| [8. The Appendicular Skeleton](#chapter-8) | [299–338](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=299) | 283–322 |
-| [9. Joints](#chapter-9) | [339–384](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=339) | 323–368 |
-| [10. Muscle Tissue](#chapter-10) | [385–424](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=385) | 369–408 |
-| [11. The Muscular System](#chapter-11) | [425–482](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=425) | 409–466 |
-| [12. The Nervous System and Nervous Tissue](#chapter-12) | [483–524](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=483) | 467–508 |
-| [13. Anatomy of the Nervous System](#chapter-13) | [525–570](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=525) | 509–554 |
-| [14. The Somatic Nervous System](#chapter-14) | [571–620](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=571) | 555–604 |
-| [15. The Autonomic Nervous System](#chapter-15) | [621–656](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=621) | 605–640 |
-| [16. The Neurological Exam](#chapter-16) | [657–694](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=657) | 641–678 |
-| [17. The Endocrine System](#chapter-17) | [695–746](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=695) | 679–730 |
-| [18. The Cardiovascular System: Blood](#chapter-18) | [747–788](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=747) | 731–772 |
-| [19. The Cardiovascular System: The Heart](#chapter-19) | [789–848](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=789) | 773–832 |
-| [20. The Cardiovascular System: Blood Vessels and Circulation](#chapter-20) | [849–932](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=849) | 833–916 |
-| [21. The Lymphatic and Immune System](#chapter-21) | [933–988](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=933) | 917–972 |
-| [22. The Respiratory System](#chapter-22) | [989–1038](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=989) | 973–1022 |
-| [23. The Digestive System](#chapter-23) | [1039–1100](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1039) | 1023–1084 |
-| [24. Metabolism and Nutrition](#chapter-24) | [1101–1152](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1101) | 1085–1136 |
-| [25. The Urinary System](#chapter-25) | [1153–1200](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1153) | 1137–1184 |
-| [26. Fluid, Electrolyte, and Acid-Base Balance](#chapter-26) | [1201–1230](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1201) | 1185–1214 |
-| [27. The Reproductive System](#chapter-27) | [1231–1268](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1231) | 1215–1252 |
-| [28. Development and Inheritance](#chapter-28) | [1269–1320](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1269) | 1253–1304 |
+| [1. An Introduction to the Human Body](#chapter-1) | [23–56](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=23) | 7–40 |
+| [2. The Chemical Level of Organization](#chapter-2) | [57–100](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=57) | 41–84 |
+| [3. The Cellular Level of Organization](#chapter-3) | [101–144](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=101) | 85–128 |
+| [4. The Tissue Level of Organization](#chapter-4) | [145–182](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=145) | 129–166 |
+| [5. The Integumentary System](#chapter-5) | [183–212](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=183) | 167–196 |
+| [6. Bone Tissue and the Skeletal System](#chapter-6) | [213–250](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=213) | 197–234 |
+| [7. Axial Skeleton](#chapter-7) | [251–298](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=251) | 235–282 |
+| [8. The Appendicular Skeleton](#chapter-8) | [299–338](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=299) | 283–322 |
+| [9. Joints](#chapter-9) | [339–384](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=339) | 323–368 |
+| [10. Muscle Tissue](#chapter-10) | [385–424](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=385) | 369–408 |
+| [11. The Muscular System](#chapter-11) | [425–482](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=425) | 409–466 |
+| [12. The Nervous System and Nervous Tissue](#chapter-12) | [483–524](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=483) | 467–508 |
+| [13. Anatomy of the Nervous System](#chapter-13) | [525–570](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=525) | 509–554 |
+| [14. The Somatic Nervous System](#chapter-14) | [571–620](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=571) | 555–604 |
+| [15. The Autonomic Nervous System](#chapter-15) | [621–656](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=621) | 605–640 |
+| [16. The Neurological Exam](#chapter-16) | [657–694](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=657) | 641–678 |
+| [17. The Endocrine System](#chapter-17) | [695–746](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=695) | 679–730 |
+| [18. The Cardiovascular System: Blood](#chapter-18) | [747–788](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=747) | 731–772 |
+| [19. The Cardiovascular System: The Heart](#chapter-19) | [789–848](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=789) | 773–832 |
+| [20. The Cardiovascular System: Blood Vessels and Circulation](#chapter-20) | [849–932](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=849) | 833–916 |
+| [21. The Lymphatic and Immune System](#chapter-21) | [933–988](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=933) | 917–972 |
+| [22. The Respiratory System](#chapter-22) | [989–1038](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=989) | 973–1022 |
+| [23. The Digestive System](#chapter-23) | [1039–1100](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1039) | 1023–1084 |
+| [24. Metabolism and Nutrition](#chapter-24) | [1101–1152](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1101) | 1085–1136 |
+| [25. The Urinary System](#chapter-25) | [1153–1200](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1153) | 1137–1184 |
+| [26. Fluid, Electrolyte, and Acid-Base Balance](#chapter-26) | [1201–1230](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1201) | 1185–1214 |
+| [27. The Reproductive System](#chapter-27) | [1231–1268](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1231) | 1215–1252 |
+| [28. Development and Inheritance](#chapter-28) | [1269–1320](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1269) | 1253–1304 |
 
 <a id="chapter-1"></a>
 ## Chapter 1: An Introduction to the Human Body
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [23–24](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=23) | 7–8 | yes |
-| 1.1 Overview of Anatomy and Physiology | [24–25](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=24) | 8–9 | yes |
-| 1.2 Structural Organization of the Human Body | [25–30](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=25) | 9–14 | yes |
-| 1.3 Functions of Human Life | [30–32](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=30) | 14–16 | yes |
-| 1.4 Requirements for Human Life | [32–36](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=32) | 16–20 | yes |
-| 1.5 Homeostasis | [36–39](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=36) | 20–23 | yes |
-| 1.6 Anatomical Terminology | [39–45](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=39) | 23–29 | yes |
-| 1.7 Medical Imaging | [45–49](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=45) | 29–33 | yes |
-| Key Terms | [49–50](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=49) | 33–34 | yes |
-| Chapter Review | [50–51](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=50) | 34–35 | yes |
-| Interactive Link Questions | [51–52](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=51) | 35–36 | yes |
-| Review Questions | [52–54](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=52) | 36–38 | yes |
-| Critical Thinking Questions | [54–56](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=54) | 38–40 | yes |
+| Introduction | [23–24](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=23) | 7–8 | yes |
+| 1.1 Overview of Anatomy and Physiology | [24–25](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=24) | 8–9 | yes |
+| 1.2 Structural Organization of the Human Body | [25–30](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=25) | 9–14 | yes |
+| 1.3 Functions of Human Life | [30–32](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=30) | 14–16 | yes |
+| 1.4 Requirements for Human Life | [32–36](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=32) | 16–20 | yes |
+| 1.5 Homeostasis | [36–39](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=36) | 20–23 | yes |
+| 1.6 Anatomical Terminology | [39–45](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=39) | 23–29 | yes |
+| 1.7 Medical Imaging | [45–49](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=45) | 29–33 | yes |
+| Key Terms | [49–50](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=49) | 33–34 | yes |
+| Chapter Review | [50–51](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=50) | 34–35 | yes |
+| Interactive Link Questions | [51–52](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=51) | 35–36 | yes |
+| Review Questions | [52–54](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=52) | 36–38 | yes |
+| Critical Thinking Questions | [54–56](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=54) | 38–40 | yes |
 
 <a id="chapter-2"></a>
 ## Chapter 2: The Chemical Level of Organization
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [57–58](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=57) | 41–42 | yes |
-| 2.1 Elements and Atoms: The Building Blocks of Matter | [58–65](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=58) | 42–49 | yes |
-| 2.2 Chemical Bonds | [65–69](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=65) | 49–53 | yes |
-| 2.3 Chemical Reactions | [69–72](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=69) | 53–56 | yes |
-| 2.4 Inorganic Compounds Essential to Human Functioning | [72–79](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=72) | 56–63 | yes |
-| 2.5 Organic Compounds Essential to Human Functioning | [79–93](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=79) | 63–77 | yes |
-| Key Terms | [93–94](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=93) | 77–78 | yes |
-| Chapter Review | [94–96](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=94) | 78–80 | yes |
-| Interactive Link Questions | [96](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=96) | 80–80 | yes |
-| Review Questions | [96–99](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=96) | 80–83 | yes |
-| Critical Thinking Questions | [99–100](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=99) | 83–84 | yes |
+| Introduction | [57–58](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=57) | 41–42 | yes |
+| 2.1 Elements and Atoms: The Building Blocks of Matter | [58–65](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=58) | 42–49 | yes |
+| 2.2 Chemical Bonds | [65–69](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=65) | 49–53 | yes |
+| 2.3 Chemical Reactions | [69–72](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=69) | 53–56 | yes |
+| 2.4 Inorganic Compounds Essential to Human Functioning | [72–79](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=72) | 56–63 | yes |
+| 2.5 Organic Compounds Essential to Human Functioning | [79–93](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=79) | 63–77 | yes |
+| Key Terms | [93–94](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=93) | 77–78 | yes |
+| Chapter Review | [94–96](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=94) | 78–80 | yes |
+| Interactive Link Questions | [96](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=96) | 80–80 | yes |
+| Review Questions | [96–99](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=96) | 80–83 | yes |
+| Critical Thinking Questions | [99–100](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=99) | 83–84 | yes |
 
 <a id="chapter-3"></a>
 ## Chapter 3: The Cellular Level of Organization
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [101–102](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=101) | 85–86 | yes |
-| 3.1 The Cell Membrane | [102–111](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=102) | 86–95 | yes |
-| 3.2 The Cytoplasm and Cellular Organelles | [111–118](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=111) | 95–102 | yes |
-| 3.3 The Nucleus and DNA Replication | [118–123](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=118) | 102–107 | yes |
-| 3.4 Protein Synthesis | [123–127](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=123) | 107–111 | yes |
-| 3.5 Cell Growth and Division | [127–132](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=127) | 111–116 | yes |
-| 3.6 Cellular Differentiation | [132–136](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=132) | 116–120 | yes |
-| Key Terms | [136–138](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=136) | 120–122 | yes |
-| Chapter Review | [138–140](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=138) | 122–124 | yes |
-| Interactive Link Questions | [140](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=140) | 124–124 | yes |
-| Review Questions | [140–143](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=140) | 124–127 | yes |
-| Critical Thinking Questions | [143–144](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=143) | 127–128 | yes |
+| Introduction | [101–102](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=101) | 85–86 | yes |
+| 3.1 The Cell Membrane | [102–111](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=102) | 86–95 | yes |
+| 3.2 The Cytoplasm and Cellular Organelles | [111–118](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=111) | 95–102 | yes |
+| 3.3 The Nucleus and DNA Replication | [118–123](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=118) | 102–107 | yes |
+| 3.4 Protein Synthesis | [123–127](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=123) | 107–111 | yes |
+| 3.5 Cell Growth and Division | [127–132](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=127) | 111–116 | yes |
+| 3.6 Cellular Differentiation | [132–136](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=132) | 116–120 | yes |
+| Key Terms | [136–138](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=136) | 120–122 | yes |
+| Chapter Review | [138–140](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=138) | 122–124 | yes |
+| Interactive Link Questions | [140](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=140) | 124–124 | yes |
+| Review Questions | [140–143](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=140) | 124–127 | yes |
+| Critical Thinking Questions | [143–144](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=143) | 127–128 | yes |
 
 <a id="chapter-4"></a>
 ## Chapter 4: The Tissue Level of Organization
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [145–146](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=145) | 129–130 | yes |
-| 4.1 Types of Tissues | [146–150](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=146) | 130–134 | yes |
-| 4.2 Epithelial Tissue | [150–160](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=150) | 134–144 | yes |
-| 4.3 Connective Tissue Supports and Protects | [160–167](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=160) | 144–151 | yes |
-| 4.4 Muscle Tissue and Motion | [167–169](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=167) | 151–153 | yes |
-| 4.5 Nervous Tissue Mediates Perception and Response | [169–171](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=169) | 153–155 | yes |
-| 4.6 Tissue Injury and Aging | [171–175](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=171) | 155–159 | yes |
-| Key Terms | [175–177](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=175) | 159–161 | yes |
-| Chapter Review | [177–178](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=177) | 161–162 | yes |
-| Interactive Link Questions | [178–179](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=178) | 162–163 | yes |
-| Review Questions | [179–182](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=179) | 163–166 | yes |
-| Critical Thinking Questions | [182](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=182) | 166–166 | yes |
+| Introduction | [145–146](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=145) | 129–130 | yes |
+| 4.1 Types of Tissues | [146–150](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=146) | 130–134 | yes |
+| 4.2 Epithelial Tissue | [150–160](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=150) | 134–144 | yes |
+| 4.3 Connective Tissue Supports and Protects | [160–167](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=160) | 144–151 | yes |
+| 4.4 Muscle Tissue and Motion | [167–169](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=167) | 151–153 | yes |
+| 4.5 Nervous Tissue Mediates Perception and Response | [169–171](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=169) | 153–155 | yes |
+| 4.6 Tissue Injury and Aging | [171–175](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=171) | 155–159 | yes |
+| Key Terms | [175–177](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=175) | 159–161 | yes |
+| Chapter Review | [177–178](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=177) | 161–162 | yes |
+| Interactive Link Questions | [178–179](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=178) | 162–163 | yes |
+| Review Questions | [179–182](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=179) | 163–166 | yes |
+| Critical Thinking Questions | [182](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=182) | 166–166 | yes |
 
 <a id="chapter-5"></a>
 ## Chapter 5: The Integumentary System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [183](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=183) | 167–167 | yes |
-| 5.1 Layers of the Skin | [183–192](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=183) | 167–176 | yes |
-| 5.2 Accessory Structures of the Skin | [192–196](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=192) | 176–180 | yes |
-| 5.3 Functions of the Integumentary System | [196–200](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=196) | 180–184 | yes |
-| 5.4 Diseases, Disorders, and Injuries of the Integumentary System | [200–206](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=200) | 184–190 | yes |
-| Key Terms | [206–207](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=206) | 190–191 | yes |
-| Chapter Review | [207–208](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=207) | 191–192 | yes |
-| Interactive Link Questions | [208](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=208) | 192–192 | yes |
-| Review Questions | [208–211](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=208) | 192–195 | yes |
-| Critical Thinking Questions | [211–212](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=211) | 195–196 | yes |
+| Introduction | [183](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=183) | 167–167 | yes |
+| 5.1 Layers of the Skin | [183–192](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=183) | 167–176 | yes |
+| 5.2 Accessory Structures of the Skin | [192–196](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=192) | 176–180 | yes |
+| 5.3 Functions of the Integumentary System | [196–200](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=196) | 180–184 | yes |
+| 5.4 Diseases, Disorders, and Injuries of the Integumentary System | [200–206](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=200) | 184–190 | yes |
+| Key Terms | [206–207](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=206) | 190–191 | yes |
+| Chapter Review | [207–208](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=207) | 191–192 | yes |
+| Interactive Link Questions | [208](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=208) | 192–192 | yes |
+| Review Questions | [208–211](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=208) | 192–195 | yes |
+| Critical Thinking Questions | [211–212](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=211) | 195–196 | yes |
 
 <a id="chapter-6"></a>
 ## Chapter 6: Bone Tissue and the Skeletal System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [213](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=213) | 197–197 | yes |
-| 6.1 The Functions of the Skeletal System | [213–216](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=213) | 197–200 | yes |
-| 6.2 Bone Classification | [216–218](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=216) | 200–202 | yes |
-| 6.3 Bone Structure | [218–228](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=218) | 202–212 | yes |
-| 6.4 Bone Formation and Development | [228–234](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=228) | 212–218 | yes |
-| 6.5 Fractures: Bone Repair | [234–237](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=234) | 218–221 | yes |
-| 6.6 Exercise, Nutrition, Hormones, and Bone Tissue | [237–241](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=237) | 221–225 | yes |
-| 6.7 Calcium Homeostasis: Interactions of the Skeletal System and Other Organ Systems | [241–243](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=241) | 225–227 | yes |
-| Key Terms | [243–244](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=243) | 227–228 | yes |
-| Chapter Review | [244–245](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=244) | 228–229 | yes |
-| Review Questions | [245–250](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=245) | 229–234 | yes |
-| Critical Thinking Questions | [250](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=250) | 234–234 | yes |
+| Introduction | [213](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=213) | 197–197 | yes |
+| 6.1 The Functions of the Skeletal System | [213–216](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=213) | 197–200 | yes |
+| 6.2 Bone Classification | [216–218](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=216) | 200–202 | yes |
+| 6.3 Bone Structure | [218–228](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=218) | 202–212 | yes |
+| 6.4 Bone Formation and Development | [228–234](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=228) | 212–218 | yes |
+| 6.5 Fractures: Bone Repair | [234–237](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=234) | 218–221 | yes |
+| 6.6 Exercise, Nutrition, Hormones, and Bone Tissue | [237–241](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=237) | 221–225 | yes |
+| 6.7 Calcium Homeostasis: Interactions of the Skeletal System and Other Organ Systems | [241–243](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=241) | 225–227 | yes |
+| Key Terms | [243–244](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=243) | 227–228 | yes |
+| Chapter Review | [244–245](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=244) | 228–229 | yes |
+| Review Questions | [245–250](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=245) | 229–234 | yes |
+| Critical Thinking Questions | [250](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=250) | 234–234 | yes |
 
 <a id="chapter-7"></a>
 ## Chapter 7: Axial Skeleton
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [251–252](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=251) | 235–236 | yes |
-| 7.1 Divisions of the Skeletal System | [252–253](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=252) | 236–237 | yes |
-| 7.2 The Skull | [253–272](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=253) | 237–256 | yes |
-| 7.3 The Vertebral Column | [272–283](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=272) | 256–267 | yes |
-| 7.4 The Thoracic Cage | [283–284](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=283) | 267–268 | yes |
-| 7.5 Embryonic Development of the Axial Skeleton | [284–287](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=284) | 268–271 | yes |
-| Key Terms | [287–291](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=287) | 271–275 | yes |
-| Chapter Review | [291–294](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=291) | 275–278 | yes |
-| Interactive Link Questions | [294](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=294) | 278–278 | yes |
-| Review Questions | [294–296](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=294) | 278–280 | yes |
-| Critical Thinking Questions | [296–298](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=296) | 280–282 | yes |
+| Introduction | [251–252](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=251) | 235–236 | yes |
+| 7.1 Divisions of the Skeletal System | [252–253](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=252) | 236–237 | yes |
+| 7.2 The Skull | [253–272](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=253) | 237–256 | yes |
+| 7.3 The Vertebral Column | [272–283](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=272) | 256–267 | yes |
+| 7.4 The Thoracic Cage | [283–284](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=283) | 267–268 | yes |
+| 7.5 Embryonic Development of the Axial Skeleton | [284–287](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=284) | 268–271 | yes |
+| Key Terms | [287–291](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=287) | 271–275 | yes |
+| Chapter Review | [291–294](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=291) | 275–278 | yes |
+| Interactive Link Questions | [294](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=294) | 278–278 | yes |
+| Review Questions | [294–296](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=294) | 278–280 | yes |
+| Critical Thinking Questions | [296–298](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=296) | 280–282 | yes |
 
 <a id="chapter-8"></a>
 ## Chapter 8: The Appendicular Skeleton
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [299](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=299) | 283–283 | yes |
-| 8.1 The Pectoral Girdle | [299–303](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=299) | 283–287 | yes |
-| 8.2 Bones of the Upper Limb | [303–311](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=303) | 287–295 | yes |
-| 8.3 The Pelvic Girdle and Pelvis | [311–316](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=311) | 295–300 | yes |
-| 8.4 Bones of the Lower Limb | [316–323](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=316) | 300–307 | yes |
-| 8.5 Development of the Appendicular Skeleton | [323–327](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=323) | 307–311 | yes |
-| Key Terms | [327–332](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=327) | 311–316 | yes |
-| Chapter Review | [332–335](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=332) | 316–319 | yes |
-| Interactive Link Questions | [335](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=335) | 319–319 | yes |
-| Review Questions | [335–338](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=335) | 319–322 | yes |
-| Critical Thinking Questions | [338](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=338) | 322–322 | yes |
+| Introduction | [299](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=299) | 283–283 | yes |
+| 8.1 The Pectoral Girdle | [299–303](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=299) | 283–287 | yes |
+| 8.2 Bones of the Upper Limb | [303–311](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=303) | 287–295 | yes |
+| 8.3 The Pelvic Girdle and Pelvis | [311–316](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=311) | 295–300 | yes |
+| 8.4 Bones of the Lower Limb | [316–323](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=316) | 300–307 | yes |
+| 8.5 Development of the Appendicular Skeleton | [323–327](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=323) | 307–311 | yes |
+| Key Terms | [327–332](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=327) | 311–316 | yes |
+| Chapter Review | [332–335](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=332) | 316–319 | yes |
+| Interactive Link Questions | [335](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=335) | 319–319 | yes |
+| Review Questions | [335–338](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=335) | 319–322 | yes |
+| Critical Thinking Questions | [338](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=338) | 322–322 | yes |
 
 <a id="chapter-9"></a>
 ## Chapter 9: Joints
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [339–340](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=339) | 323–324 | yes |
-| 9.1 Classification of Joints | [340–342](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=340) | 324–326 | yes |
-| 9.2 Fibrous Joints | [342–345](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=342) | 326–329 | yes |
-| 9.3 Cartilaginous Joints | [345–346](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=345) | 329–330 | yes |
-| 9.4 Synovial Joints | [346–353](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=346) | 330–337 | yes |
-| 9.5 Types of Body Movements | [353–358](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=353) | 337–342 | yes |
-| 9.6 Anatomy of Selected Synovial Joints | [358–370](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=358) | 342–354 | yes |
-| 9.7 Development of Joints | [370–372](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=370) | 354–356 | yes |
-| Key Terms | [372–375](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=372) | 356–359 | yes |
-| Chapter Review | [375–378](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=375) | 359–362 | yes |
-| Interactive Link Questions | [378–380](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=378) | 362–364 | yes |
-| Review Questions | [380–383](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=380) | 364–367 | yes |
-| Critical Thinking Questions | [383–384](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=383) | 367–368 | yes |
+| Introduction | [339–340](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=339) | 323–324 | yes |
+| 9.1 Classification of Joints | [340–342](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=340) | 324–326 | yes |
+| 9.2 Fibrous Joints | [342–345](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=342) | 326–329 | yes |
+| 9.3 Cartilaginous Joints | [345–346](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=345) | 329–330 | yes |
+| 9.4 Synovial Joints | [346–353](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=346) | 330–337 | yes |
+| 9.5 Types of Body Movements | [353–358](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=353) | 337–342 | yes |
+| 9.6 Anatomy of Selected Synovial Joints | [358–370](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=358) | 342–354 | yes |
+| 9.7 Development of Joints | [370–372](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=370) | 354–356 | yes |
+| Key Terms | [372–375](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=372) | 356–359 | yes |
+| Chapter Review | [375–378](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=375) | 359–362 | yes |
+| Interactive Link Questions | [378–380](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=378) | 362–364 | yes |
+| Review Questions | [380–383](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=380) | 364–367 | yes |
+| Critical Thinking Questions | [383–384](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=383) | 367–368 | yes |
 
 <a id="chapter-10"></a>
 ## Chapter 10: Muscle Tissue
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [385](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=385) | 369–369 | yes |
-| 10.1 Overview of Muscle Tissues | [385–387](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=385) | 369–371 | yes |
-| 10.2 Skeletal Muscle | [387–392](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=387) | 371–376 | yes |
-| 10.3 Muscle Fiber Contraction and Relaxation | [392–400](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=392) | 376–384 | yes |
-| 10.4 Nervous System Control of Muscle Tension | [400–405](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=400) | 384–389 | yes |
-| 10.5 Types of Muscle Fibers | [405–406](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=405) | 389–390 | yes |
-| 10.6 Exercise and Muscle Performance | [406–409](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=406) | 390–393 | yes |
-| 10.7 Cardiac Muscle Tissue | [409–411](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=409) | 393–395 | yes |
-| 10.8 Smooth Muscle | [411–414](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=411) | 395–398 | yes |
-| 10.9 Development and Regeneration of Muscle Tissue | [414–416](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=414) | 398–400 | yes |
-| Key Terms | [416–417](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=416) | 400–401 | yes |
-| Chapter Review | [417–419](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=417) | 401–403 | yes |
-| Interactive Link Questions | [419](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=419) | 403–403 | yes |
-| Review Questions | [419–422](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=419) | 403–406 | yes |
-| Critical Thinking Questions | [422–424](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=422) | 406–408 | yes |
+| Introduction | [385](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=385) | 369–369 | yes |
+| 10.1 Overview of Muscle Tissues | [385–387](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=385) | 369–371 | yes |
+| 10.2 Skeletal Muscle | [387–392](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=387) | 371–376 | yes |
+| 10.3 Muscle Fiber Contraction and Relaxation | [392–400](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=392) | 376–384 | yes |
+| 10.4 Nervous System Control of Muscle Tension | [400–405](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=400) | 384–389 | yes |
+| 10.5 Types of Muscle Fibers | [405–406](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=405) | 389–390 | yes |
+| 10.6 Exercise and Muscle Performance | [406–409](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=406) | 390–393 | yes |
+| 10.7 Cardiac Muscle Tissue | [409–411](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=409) | 393–395 | yes |
+| 10.8 Smooth Muscle | [411–414](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=411) | 395–398 | yes |
+| 10.9 Development and Regeneration of Muscle Tissue | [414–416](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=414) | 398–400 | yes |
+| Key Terms | [416–417](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=416) | 400–401 | yes |
+| Chapter Review | [417–419](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=417) | 401–403 | yes |
+| Interactive Link Questions | [419](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=419) | 403–403 | yes |
+| Review Questions | [419–422](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=419) | 403–406 | yes |
+| Critical Thinking Questions | [422–424](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=422) | 406–408 | yes |
 
 <a id="chapter-11"></a>
 ## Chapter 11: The Muscular System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [425](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=425) | 409–409 | yes |
-| 11.1 Interactions of Skeletal Muscles, Their Fascicle Arrangement, and Their Lever Systems | [425–430](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=425) | 409–414 | yes |
-| 11.2 Naming Skeletal Muscles | [430–433](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=430) | 414–417 | yes |
-| 11.3 Axial Muscles of the Head, Neck, and Back | [433–444](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=433) | 417–428 | yes |
-| 11.4 Axial Muscles of the Abdominal Wall, and Thorax | [444–451](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=444) | 428–435 | yes |
-| 11.5 Muscles of the Pectoral Girdle and Upper Limbs | [451–462](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=451) | 435–446 | yes |
-| 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs | [462–471](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=462) | 446–455 | yes |
-| Key Terms | [471–475](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=471) | 455–459 | yes |
-| Chapter Review | [475–477](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=475) | 459–461 | yes |
-| Review Questions | [477–480](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=477) | 461–464 | yes |
-| Critical Thinking Questions | [480–482](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=480) | 464–466 | yes |
+| Introduction | [425](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=425) | 409–409 | yes |
+| 11.1 Interactions of Skeletal Muscles, Their Fascicle Arrangement, and Their Lever Systems | [425–430](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=425) | 409–414 | yes |
+| 11.2 Naming Skeletal Muscles | [430–433](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=430) | 414–417 | yes |
+| 11.3 Axial Muscles of the Head, Neck, and Back | [433–444](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=433) | 417–428 | yes |
+| 11.4 Axial Muscles of the Abdominal Wall, and Thorax | [444–451](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=444) | 428–435 | yes |
+| 11.5 Muscles of the Pectoral Girdle and Upper Limbs | [451–462](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=451) | 435–446 | yes |
+| 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs | [462–471](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=462) | 446–455 | yes |
+| Key Terms | [471–475](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=471) | 455–459 | yes |
+| Chapter Review | [475–477](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=475) | 459–461 | yes |
+| Review Questions | [477–480](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=477) | 461–464 | yes |
+| Critical Thinking Questions | [480–482](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=480) | 464–466 | yes |
 
 <a id="chapter-12"></a>
 ## Chapter 12: The Nervous System and Nervous Tissue
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [483–484](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=483) | 467–468 | yes |
-| 12.1 Basic Structure and Function of the Nervous System | [484–490](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=484) | 468–474 | yes |
-| 12.2 Nervous Tissue | [490–497](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=490) | 474–481 | yes |
-| 12.3 The Function of Nervous Tissue | [497–500](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=497) | 481–484 | yes |
-| 12.4 The Action Potential | [500–508](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=500) | 484–492 | yes |
-| 12.5 Communication Between Neurons | [508–515](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=508) | 492–499 | yes |
-| Key Terms | [515–518](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=515) | 499–502 | yes |
-| Chapter Review | [518–519](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=518) | 502–503 | yes |
-| Interactive Link Questions | [519–521](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=519) | 503–505 | yes |
-| Review Questions | [521–524](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=521) | 505–508 | yes |
-| Critical Thinking Questions | [524](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=524) | 508–508 | yes |
+| Introduction | [483–484](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=483) | 467–468 | yes |
+| 12.1 Basic Structure and Function of the Nervous System | [484–490](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=484) | 468–474 | yes |
+| 12.2 Nervous Tissue | [490–497](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=490) | 474–481 | yes |
+| 12.3 The Function of Nervous Tissue | [497–500](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=497) | 481–484 | yes |
+| 12.4 The Action Potential | [500–508](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=500) | 484–492 | yes |
+| 12.5 Communication Between Neurons | [508–515](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=508) | 492–499 | yes |
+| Key Terms | [515–518](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=515) | 499–502 | yes |
+| Chapter Review | [518–519](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=518) | 502–503 | yes |
+| Interactive Link Questions | [519–521](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=519) | 503–505 | yes |
+| Review Questions | [521–524](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=521) | 505–508 | yes |
+| Critical Thinking Questions | [524](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=524) | 508–508 | yes |
 
 <a id="chapter-13"></a>
 ## Chapter 13: Anatomy of the Nervous System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [525–526](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=525) | 509–510 | yes |
-| 13.1 The Embryologic Perspective | [526–531](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=526) | 510–515 | yes |
-| 13.2 The Central Nervous System | [531–543](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=531) | 515–527 | yes |
-| 13.3 Circulation and the Central Nervous System | [543–551](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=543) | 527–535 | yes |
-| 13.4 The Peripheral Nervous System | [551–560](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=551) | 535–544 | yes |
-| Key Terms | [560–564](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=560) | 544–548 | yes |
-| Chapter Review | [564–566](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=564) | 548–550 | yes |
-| Interactive Link Questions | [566–567](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=566) | 550–551 | yes |
-| Review Questions | [567–569](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=567) | 551–553 | yes |
-| Critical Thinking Questions | [569–570](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=569) | 553–554 | yes |
+| Introduction | [525–526](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=525) | 509–510 | yes |
+| 13.1 The Embryologic Perspective | [526–531](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=526) | 510–515 | yes |
+| 13.2 The Central Nervous System | [531–543](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=531) | 515–527 | yes |
+| 13.3 Circulation and the Central Nervous System | [543–551](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=543) | 527–535 | yes |
+| 13.4 The Peripheral Nervous System | [551–560](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=551) | 535–544 | yes |
+| Key Terms | [560–564](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=560) | 544–548 | yes |
+| Chapter Review | [564–566](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=564) | 548–550 | yes |
+| Interactive Link Questions | [566–567](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=566) | 550–551 | yes |
+| Review Questions | [567–569](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=567) | 551–553 | yes |
+| Critical Thinking Questions | [569–570](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=569) | 553–554 | yes |
 
 <a id="chapter-14"></a>
 ## Chapter 14: The Somatic Nervous System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [571–572](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=571) | 555–556 | yes |
-| 14.1 Sensory Perception | [572–591](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=572) | 556–575 | yes |
-| 14.2 Central Processing | [591–603](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=591) | 575–587 | yes |
-| 14.3 Motor Responses | [603–611](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=603) | 587–595 | yes |
-| Key Terms | [611–615](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=611) | 595–599 | yes |
-| Chapter Review | [615–617](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=615) | 599–601 | yes |
-| Interactive Link Questions | [617–618](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=617) | 601–602 | yes |
-| Review Questions | [618–620](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=618) | 602–604 | yes |
-| Critical Thinking Questions | [620](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=620) | 604–604 | yes |
+| Introduction | [571–572](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=571) | 555–556 | yes |
+| 14.1 Sensory Perception | [572–591](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=572) | 556–575 | yes |
+| 14.2 Central Processing | [591–603](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=591) | 575–587 | yes |
+| 14.3 Motor Responses | [603–611](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=603) | 587–595 | yes |
+| Key Terms | [611–615](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=611) | 595–599 | yes |
+| Chapter Review | [615–617](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=615) | 599–601 | yes |
+| Interactive Link Questions | [617–618](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=617) | 601–602 | yes |
+| Review Questions | [618–620](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=618) | 602–604 | yes |
+| Critical Thinking Questions | [620](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=620) | 604–604 | yes |
 
 <a id="chapter-15"></a>
 ## Chapter 15: The Autonomic Nervous System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [621–622](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=621) | 605–606 | yes |
-| 15.1 Divisions of the Autonomic Nervous System | [622–631](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=622) | 606–615 | yes |
-| 15.2 Autonomic Reflexes and Homeostasis | [631–639](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=631) | 615–623 | yes |
-| 15.3 Central Control | [639–642](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=639) | 623–626 | yes |
-| 15.4 Drugs that Affect the Autonomic System | [642–648](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=642) | 626–632 | yes |
-| Key Terms | [648–650](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=648) | 632–634 | yes |
-| Chapter Review | [650–652](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=650) | 634–636 | yes |
-| Interactive Link Questions | [652–653](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=652) | 636–637 | yes |
-| Review Questions | [653–655](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=653) | 637–639 | yes |
-| Critical Thinking Questions | [655–656](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=655) | 639–640 | yes |
+| Introduction | [621–622](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=621) | 605–606 | yes |
+| 15.1 Divisions of the Autonomic Nervous System | [622–631](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=622) | 606–615 | yes |
+| 15.2 Autonomic Reflexes and Homeostasis | [631–639](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=631) | 615–623 | yes |
+| 15.3 Central Control | [639–642](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=639) | 623–626 | yes |
+| 15.4 Drugs that Affect the Autonomic System | [642–648](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=642) | 626–632 | yes |
+| Key Terms | [648–650](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=648) | 632–634 | yes |
+| Chapter Review | [650–652](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=650) | 634–636 | yes |
+| Interactive Link Questions | [652–653](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=652) | 636–637 | yes |
+| Review Questions | [653–655](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=653) | 637–639 | yes |
+| Critical Thinking Questions | [655–656](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=655) | 639–640 | yes |
 
 <a id="chapter-16"></a>
 ## Chapter 16: The Neurological Exam
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [657–658](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=657) | 641–642 | yes |
-| 16.1 Overview of the Neurological Exam | [658–661](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=658) | 642–645 | yes |
-| 16.2 The Mental Status Exam | [661–667](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=661) | 645–651 | yes |
-| 16.3 The Cranial Nerve Exam | [667–676](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=667) | 651–660 | yes |
-| 16.4 The Sensory and Motor Exams | [676–681](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=676) | 660–665 | yes |
-| 16.5 The Coordination and Gait Exams | [681–686](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=681) | 665–670 | yes |
-| Key Terms | [686–688](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=686) | 670–672 | yes |
-| Chapter Review | [688–690](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=688) | 672–674 | yes |
-| Interactive Link Questions | [690–691](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=690) | 674–675 | yes |
-| Review Questions | [691–694](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=691) | 675–678 | yes |
-| Critical Thinking Questions | [694](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=694) | 678–678 | yes |
+| Introduction | [657–658](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=657) | 641–642 | yes |
+| 16.1 Overview of the Neurological Exam | [658–661](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=658) | 642–645 | yes |
+| 16.2 The Mental Status Exam | [661–667](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=661) | 645–651 | yes |
+| 16.3 The Cranial Nerve Exam | [667–676](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=667) | 651–660 | yes |
+| 16.4 The Sensory and Motor Exams | [676–681](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=676) | 660–665 | yes |
+| 16.5 The Coordination and Gait Exams | [681–686](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=681) | 665–670 | yes |
+| Key Terms | [686–688](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=686) | 670–672 | yes |
+| Chapter Review | [688–690](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=688) | 672–674 | yes |
+| Interactive Link Questions | [690–691](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=690) | 674–675 | yes |
+| Review Questions | [691–694](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=691) | 675–678 | yes |
+| Critical Thinking Questions | [694](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=694) | 678–678 | yes |
 
 <a id="chapter-17"></a>
 ## Chapter 17: The Endocrine System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [695](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=695) | 679–679 | yes |
-| 17.1 An Overview of the Endocrine System | [695–698](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=695) | 679–682 | yes |
-| 17.2 Hormones | [698–707](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=698) | 682–691 | yes |
-| 17.3 The Pituitary Gland and Hypothalamus | [707–714](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=707) | 691–698 | yes |
-| 17.4 The Thyroid Gland | [714–719](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=714) | 698–703 | yes |
-| 17.5 The Parathyroid Glands | [719–722](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=719) | 703–706 | yes |
-| 17.6 The Adrenal Glands | [722–725](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=722) | 706–709 | yes |
-| 17.7 The Pineal Gland | [725–726](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=725) | 709–710 | yes |
-| 17.8 Gonadal and Placental Hormones | [726–727](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=726) | 710–711 | yes |
-| 17.9 The Endocrine Pancreas | [727–731](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=727) | 711–715 | yes |
-| 17.10 Organs with Secondary Endocrine Functions | [731–734](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=731) | 715–718 | yes |
-| 17.11 Development and Aging of the Endocrine System | [734–736](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=734) | 718–720 | yes |
-| Key Terms | [736–738](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=736) | 720–722 | yes |
-| Chapter Review | [738–740](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=738) | 722–724 | yes |
-| Interactive Link Questions | [740](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=740) | 724–724 | yes |
-| Review Questions | [740–744](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=740) | 724–728 | yes |
-| Critical Thinking Questions | [744–746](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=744) | 728–730 | yes |
+| Introduction | [695](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=695) | 679–679 | yes |
+| 17.1 An Overview of the Endocrine System | [695–698](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=695) | 679–682 | yes |
+| 17.2 Hormones | [698–707](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=698) | 682–691 | yes |
+| 17.3 The Pituitary Gland and Hypothalamus | [707–714](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=707) | 691–698 | yes |
+| 17.4 The Thyroid Gland | [714–719](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=714) | 698–703 | yes |
+| 17.5 The Parathyroid Glands | [719–722](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=719) | 703–706 | yes |
+| 17.6 The Adrenal Glands | [722–725](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=722) | 706–709 | yes |
+| 17.7 The Pineal Gland | [725–726](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=725) | 709–710 | yes |
+| 17.8 Gonadal and Placental Hormones | [726–727](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=726) | 710–711 | yes |
+| 17.9 The Endocrine Pancreas | [727–731](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=727) | 711–715 | yes |
+| 17.10 Organs with Secondary Endocrine Functions | [731–734](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=731) | 715–718 | yes |
+| 17.11 Development and Aging of the Endocrine System | [734–736](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=734) | 718–720 | yes |
+| Key Terms | [736–738](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=736) | 720–722 | yes |
+| Chapter Review | [738–740](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=738) | 722–724 | yes |
+| Interactive Link Questions | [740](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=740) | 724–724 | yes |
+| Review Questions | [740–744](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=740) | 724–728 | yes |
+| Critical Thinking Questions | [744–746](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=744) | 728–730 | yes |
 
 <a id="chapter-18"></a>
 ## Chapter 18: The Cardiovascular System: Blood
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [747](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=747) | 731–731 | yes |
-| 18.1 An Overview of Blood | [747–752](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=747) | 731–736 | yes |
-| 18.2 Production of the Formed Elements | [752–755](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=752) | 736–739 | yes |
-| 18.3 Erythrocytes | [755–763](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=755) | 739–747 | yes |
-| 18.4 Leukocytes and Platelets | [763–769](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=763) | 747–753 | yes |
-| 18.5 Hemostasis | [769–775](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=769) | 753–759 | yes |
-| 18.6 Blood Typing | [775–780](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=775) | 759–764 | yes |
-| Key Terms | [780–782](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=780) | 764–766 | yes |
-| Chapter Review | [782–783](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=782) | 766–767 | yes |
-| Interactive Link Questions | [783–784](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=783) | 767–768 | yes |
-| Review Questions | [784–786](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=784) | 768–770 | yes |
-| Critical Thinking Questions | [786–788](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=786) | 770–772 | yes |
+| Introduction | [747](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=747) | 731–731 | yes |
+| 18.1 An Overview of Blood | [747–752](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=747) | 731–736 | yes |
+| 18.2 Production of the Formed Elements | [752–755](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=752) | 736–739 | yes |
+| 18.3 Erythrocytes | [755–763](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=755) | 739–747 | yes |
+| 18.4 Leukocytes and Platelets | [763–769](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=763) | 747–753 | yes |
+| 18.5 Hemostasis | [769–775](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=769) | 753–759 | yes |
+| 18.6 Blood Typing | [775–780](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=775) | 759–764 | yes |
+| Key Terms | [780–782](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=780) | 764–766 | yes |
+| Chapter Review | [782–783](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=782) | 766–767 | yes |
+| Interactive Link Questions | [783–784](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=783) | 767–768 | yes |
+| Review Questions | [784–786](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=784) | 768–770 | yes |
+| Critical Thinking Questions | [786–788](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=786) | 770–772 | yes |
 
 <a id="chapter-19"></a>
 ## Chapter 19: The Cardiovascular System: The Heart
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [789–790](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=789) | 773–774 | yes |
-| 19.1 Heart Anatomy | [790–810](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=790) | 774–794 | yes |
-| 19.2 Cardiac Muscle and Electrical Activity | [810–822](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=810) | 794–806 | yes |
-| 19.3 Cardiac Cycle | [822–826](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=822) | 806–810 | yes |
-| 19.4 Cardiac Physiology | [826–837](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=826) | 810–821 | yes |
-| 19.5 Development of the Heart | [837–839](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=837) | 821–823 | yes |
-| Key Terms | [839–843](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=839) | 823–827 | yes |
-| Chapter Review | [843–844](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=843) | 827–828 | yes |
-| Interactive Link Questions | [844](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=844) | 828–828 | yes |
-| Review Questions | [844–847](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=844) | 828–831 | yes |
-| Critical Thinking Questions | [847–848](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=847) | 831–832 | yes |
+| Introduction | [789–790](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=789) | 773–774 | yes |
+| 19.1 Heart Anatomy | [790–810](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=790) | 774–794 | yes |
+| 19.2 Cardiac Muscle and Electrical Activity | [810–822](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=810) | 794–806 | yes |
+| 19.3 Cardiac Cycle | [822–826](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=822) | 806–810 | yes |
+| 19.4 Cardiac Physiology | [826–837](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=826) | 810–821 | yes |
+| 19.5 Development of the Heart | [837–839](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=837) | 821–823 | yes |
+| Key Terms | [839–843](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=839) | 823–827 | yes |
+| Chapter Review | [843–844](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=843) | 827–828 | yes |
+| Interactive Link Questions | [844](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=844) | 828–828 | yes |
+| Review Questions | [844–847](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=844) | 828–831 | yes |
+| Critical Thinking Questions | [847–848](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=847) | 831–832 | yes |
 
 <a id="chapter-20"></a>
 ## Chapter 20: The Cardiovascular System: Blood Vessels and Circulation
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [849–850](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=849) | 833–834 | yes |
-| 20.1 Structure and Function of Blood Vessels | [850–861](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=850) | 834–845 | yes |
-| 20.2 Blood Flow, Blood Pressure, and Resistance | [861–870](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=861) | 845–854 | yes |
-| 20.3 Capillary Exchange | [870–872](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=870) | 854–856 | yes |
-| 20.4 Homeostatic Regulation of the Vascular System | [872–882](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=872) | 856–866 | yes |
-| 20.5 Circulatory Pathways | [882–918](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=882) | 866–902 | yes |
-| 20.6 Development of Blood Vessels and Fetal Circulation | [918–921](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=918) | 902–905 | yes |
-| Key Terms | [921–927](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=921) | 905–911 | yes |
-| Chapter Review | [927–929](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=927) | 911–913 | yes |
-| Interactive Link Questions | [929](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=929) | 913–913 | yes |
-| Review Questions | [929–932](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=929) | 913–916 | yes |
-| Critical Thinking Questions | [932](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=932) | 916–916 | yes |
+| Introduction | [849–850](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=849) | 833–834 | yes |
+| 20.1 Structure and Function of Blood Vessels | [850–861](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=850) | 834–845 | yes |
+| 20.2 Blood Flow, Blood Pressure, and Resistance | [861–870](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=861) | 845–854 | yes |
+| 20.3 Capillary Exchange | [870–872](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=870) | 854–856 | yes |
+| 20.4 Homeostatic Regulation of the Vascular System | [872–882](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=872) | 856–866 | yes |
+| 20.5 Circulatory Pathways | [882–918](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=882) | 866–902 | yes |
+| 20.6 Development of Blood Vessels and Fetal Circulation | [918–921](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=918) | 902–905 | yes |
+| Key Terms | [921–927](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=921) | 905–911 | yes |
+| Chapter Review | [927–929](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=927) | 911–913 | yes |
+| Interactive Link Questions | [929](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=929) | 913–913 | yes |
+| Review Questions | [929–932](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=929) | 913–916 | yes |
+| Critical Thinking Questions | [932](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=932) | 916–916 | yes |
 
 <a id="chapter-21"></a>
 ## Chapter 21: The Lymphatic and Immune System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [933–934](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=933) | 917–918 | yes |
-| 21.1 Anatomy of the Lymphatic and Immune Systems | [934–945](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=934) | 918–929 | yes |
-| 21.2 Barrier Defenses and the Innate Immune Response | [945–952](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=945) | 929–936 | yes |
-| 21.3 The Adaptive Immune Response: T lymphocytes and Their Functional Types | [952–960](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=952) | 936–944 | yes |
-| 21.4 The Adaptive Immune Response: B-lymphocytes and Antibodies | [960–966](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=960) | 944–950 | yes |
-| 21.5 The Immune Response against Pathogens | [966–970](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=966) | 950–954 | yes |
-| 21.6 Diseases Associated with Depressed or Overactive Immune Responses | [970–974](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=970) | 954–958 | yes |
-| 21.7 Transplantation and Cancer Immunology | [974–980](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=974) | 958–964 | yes |
-| Key Terms | [980–982](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=980) | 964–966 | yes |
-| Chapter Review | [982–983](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=982) | 966–967 | yes |
-| Interactive Link Questions | [983–984](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=983) | 967–968 | yes |
-| Review Questions | [984–988](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=984) | 968–972 | yes |
-| Critical Thinking Questions | [988](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=988) | 972–972 | yes |
+| Introduction | [933–934](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=933) | 917–918 | yes |
+| 21.1 Anatomy of the Lymphatic and Immune Systems | [934–945](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=934) | 918–929 | yes |
+| 21.2 Barrier Defenses and the Innate Immune Response | [945–952](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=945) | 929–936 | yes |
+| 21.3 The Adaptive Immune Response: T lymphocytes and Their Functional Types | [952–960](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=952) | 936–944 | yes |
+| 21.4 The Adaptive Immune Response: B-lymphocytes and Antibodies | [960–966](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=960) | 944–950 | yes |
+| 21.5 The Immune Response against Pathogens | [966–970](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=966) | 950–954 | yes |
+| 21.6 Diseases Associated with Depressed or Overactive Immune Responses | [970–974](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=970) | 954–958 | yes |
+| 21.7 Transplantation and Cancer Immunology | [974–980](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=974) | 958–964 | yes |
+| Key Terms | [980–982](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=980) | 964–966 | yes |
+| Chapter Review | [982–983](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=982) | 966–967 | yes |
+| Interactive Link Questions | [983–984](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=983) | 967–968 | yes |
+| Review Questions | [984–988](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=984) | 968–972 | yes |
+| Critical Thinking Questions | [988](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=988) | 972–972 | yes |
 
 <a id="chapter-22"></a>
 ## Chapter 22: The Respiratory System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [989–990](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=989) | 973–974 | yes |
-| 22.1 Organs and Structures of the Respiratory System | [990–1001](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=990) | 974–985 | yes |
-| 22.2 The Lungs | [1001–1003](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1001) | 985–987 | yes |
-| 22.3 The Process of Breathing | [1003–1012](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1003) | 987–996 | yes |
-| 22.4 Gas Exchange | [1012–1017](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1012) | 996–1001 | yes |
-| 22.5 Transport of Gases | [1017–1023](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1017) | 1001–1007 | yes |
-| 22.6 Modifications in Respiratory Functions | [1023–1025](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1023) | 1007–1009 | yes |
-| 22.7 Embryonic Development of the Respiratory System | [1025–1028](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1025) | 1009–1012 | yes |
-| Key Terms | [1028–1030](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1028) | 1012–1014 | yes |
-| Chapter Review | [1030–1033](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1030) | 1014–1017 | yes |
-| Interactive Link Questions | [1033–1034](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1033) | 1017–1018 | yes |
-| Review Questions | [1034–1037](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1034) | 1018–1021 | yes |
-| Critical Thinking Questions | [1037–1038](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1037) | 1021–1022 | yes |
+| Introduction | [989–990](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=989) | 973–974 | yes |
+| 22.1 Organs and Structures of the Respiratory System | [990–1001](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=990) | 974–985 | yes |
+| 22.2 The Lungs | [1001–1003](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1001) | 985–987 | yes |
+| 22.3 The Process of Breathing | [1003–1012](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1003) | 987–996 | yes |
+| 22.4 Gas Exchange | [1012–1017](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1012) | 996–1001 | yes |
+| 22.5 Transport of Gases | [1017–1023](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1017) | 1001–1007 | yes |
+| 22.6 Modifications in Respiratory Functions | [1023–1025](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1023) | 1007–1009 | yes |
+| 22.7 Embryonic Development of the Respiratory System | [1025–1028](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1025) | 1009–1012 | yes |
+| Key Terms | [1028–1030](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1028) | 1012–1014 | yes |
+| Chapter Review | [1030–1033](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1030) | 1014–1017 | yes |
+| Interactive Link Questions | [1033–1034](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1033) | 1017–1018 | yes |
+| Review Questions | [1034–1037](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1034) | 1018–1021 | yes |
+| Critical Thinking Questions | [1037–1038](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1037) | 1021–1022 | yes |
 
 <a id="chapter-23"></a>
 ## Chapter 23: The Digestive System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [1039](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1039) | 1023–1023 | yes |
-| 23.1 Overview of the Digestive System | [1039–1045](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1039) | 1023–1029 | yes |
-| 23.2 Digestive System Processes and Regulation | [1045–1050](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1045) | 1029–1034 | yes |
-| 23.3 The Mouth, Pharynx, and Esophagus | [1050–1060](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1050) | 1034–1044 | yes |
-| 23.4 The Stomach | [1060–1066](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1060) | 1044–1050 | yes |
-| 23.5 The Small and Large Intestines | [1066–1076](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1066) | 1050–1060 | yes |
-| 23.6 Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder | [1076–1081](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1076) | 1060–1065 | yes |
-| 23.7 Chemical Digestion and Absorption: A Closer Look | [1081–1092](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1081) | 1065–1076 | yes |
-| Key Terms | [1092–1095](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1092) | 1076–1079 | yes |
-| Chapter Review | [1095–1096](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1095) | 1079–1080 | yes |
-| Interactive Link Questions | [1096–1097](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1096) | 1080–1081 | yes |
-| Review Questions | [1097–1100](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1097) | 1081–1084 | yes |
-| Critical Thinking Questions | [1100](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1100) | 1084–1084 | yes |
+| Introduction | [1039](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1039) | 1023–1023 | yes |
+| 23.1 Overview of the Digestive System | [1039–1045](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1039) | 1023–1029 | yes |
+| 23.2 Digestive System Processes and Regulation | [1045–1050](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1045) | 1029–1034 | yes |
+| 23.3 The Mouth, Pharynx, and Esophagus | [1050–1060](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1050) | 1034–1044 | yes |
+| 23.4 The Stomach | [1060–1066](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1060) | 1044–1050 | yes |
+| 23.5 The Small and Large Intestines | [1066–1076](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1066) | 1050–1060 | yes |
+| 23.6 Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder | [1076–1081](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1076) | 1060–1065 | yes |
+| 23.7 Chemical Digestion and Absorption: A Closer Look | [1081–1092](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1081) | 1065–1076 | yes |
+| Key Terms | [1092–1095](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1092) | 1076–1079 | yes |
+| Chapter Review | [1095–1096](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1095) | 1079–1080 | yes |
+| Interactive Link Questions | [1096–1097](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1096) | 1080–1081 | yes |
+| Review Questions | [1097–1100](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1097) | 1081–1084 | yes |
+| Critical Thinking Questions | [1100](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1100) | 1084–1084 | yes |
 
 <a id="chapter-24"></a>
 ## Chapter 24: Metabolism and Nutrition
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [1101–1102](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1101) | 1085–1086 | yes |
-| 24.1 Overview of Metabolic Reactions | [1102–1107](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1102) | 1086–1091 | yes |
-| 24.2 Carbohydrate Metabolism | [1107–1119](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1107) | 1091–1103 | yes |
-| 24.3 Lipid Metabolism | [1119–1125](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1119) | 1103–1109 | yes |
-| 24.4 Protein Metabolism | [1125–1131](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1125) | 1109–1115 | yes |
-| 24.5 Metabolic States of the Body | [1131–1135](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1131) | 1115–1119 | yes |
-| 24.6 Energy and Heat Balance | [1135–1137](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1135) | 1119–1121 | yes |
-| 24.7 Nutrition and Diet | [1137–1145](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1137) | 1121–1129 | yes |
-| Key Terms | [1145–1146](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1145) | 1129–1130 | yes |
-| Chapter Review | [1146–1148](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1146) | 1130–1132 | yes |
-| Review Questions | [1148–1152](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1148) | 1132–1136 | yes |
-| Critical Thinking Questions | [1152](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1152) | 1136–1136 | yes |
+| Introduction | [1101–1102](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1101) | 1085–1086 | yes |
+| 24.1 Overview of Metabolic Reactions | [1102–1107](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1102) | 1086–1091 | yes |
+| 24.2 Carbohydrate Metabolism | [1107–1119](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1107) | 1091–1103 | yes |
+| 24.3 Lipid Metabolism | [1119–1125](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1119) | 1103–1109 | yes |
+| 24.4 Protein Metabolism | [1125–1131](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1125) | 1109–1115 | yes |
+| 24.5 Metabolic States of the Body | [1131–1135](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1131) | 1115–1119 | yes |
+| 24.6 Energy and Heat Balance | [1135–1137](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1135) | 1119–1121 | yes |
+| 24.7 Nutrition and Diet | [1137–1145](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1137) | 1121–1129 | yes |
+| Key Terms | [1145–1146](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1145) | 1129–1130 | yes |
+| Chapter Review | [1146–1148](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1146) | 1130–1132 | yes |
+| Review Questions | [1148–1152](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1148) | 1132–1136 | yes |
+| Critical Thinking Questions | [1152](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1152) | 1136–1136 | yes |
 
 <a id="chapter-25"></a>
 ## Chapter 25: The Urinary System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [1153–1154](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1153) | 1137–1138 | yes |
-| 25.1 Physical Characteristics of Urine | [1154–1157](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1154) | 1138–1141 | yes |
-| 25.2 Gross Anatomy of Urine Transport | [1157–1161](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1157) | 1141–1145 | yes |
-| 25.3 Gross Anatomy of the Kidney | [1161–1165](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1161) | 1145–1149 | yes |
-| 25.4 Microscopic Anatomy of the Kidney | [1165–1169](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1165) | 1149–1153 | yes |
-| 25.5 Physiology of Urine Formation | [1169–1172](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1169) | 1153–1156 | yes |
-| 25.6 Tubular Reabsorption | [1172–1181](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1172) | 1156–1165 | yes |
-| 25.7 Regulation of Renal Blood Flow | [1181–1183](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1181) | 1165–1167 | yes |
-| 25.8 Endocrine Regulation of Kidney Function | [1183–1185](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1183) | 1167–1169 | yes |
-| 25.9 Regulation of Fluid Volume and Composition | [1185–1187](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1185) | 1169–1171 | yes |
-| 25.10 The Urinary System and Homeostasis | [1187–1191](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1187) | 1171–1175 | yes |
-| Key Terms | [1191–1193](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1191) | 1175–1177 | yes |
-| Chapter Review | [1193–1195](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1193) | 1177–1179 | yes |
-| Review Questions | [1195–1198](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1195) | 1179–1182 | yes |
-| Critical Thinking Questions | [1198–1200](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1198) | 1182–1184 | yes |
+| Introduction | [1153–1154](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1153) | 1137–1138 | yes |
+| 25.1 Physical Characteristics of Urine | [1154–1157](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1154) | 1138–1141 | yes |
+| 25.2 Gross Anatomy of Urine Transport | [1157–1161](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1157) | 1141–1145 | yes |
+| 25.3 Gross Anatomy of the Kidney | [1161–1165](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1161) | 1145–1149 | yes |
+| 25.4 Microscopic Anatomy of the Kidney | [1165–1169](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1165) | 1149–1153 | yes |
+| 25.5 Physiology of Urine Formation | [1169–1172](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1169) | 1153–1156 | yes |
+| 25.6 Tubular Reabsorption | [1172–1181](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1172) | 1156–1165 | yes |
+| 25.7 Regulation of Renal Blood Flow | [1181–1183](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1181) | 1165–1167 | yes |
+| 25.8 Endocrine Regulation of Kidney Function | [1183–1185](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1183) | 1167–1169 | yes |
+| 25.9 Regulation of Fluid Volume and Composition | [1185–1187](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1185) | 1169–1171 | yes |
+| 25.10 The Urinary System and Homeostasis | [1187–1191](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1187) | 1171–1175 | yes |
+| Key Terms | [1191–1193](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1191) | 1175–1177 | yes |
+| Chapter Review | [1193–1195](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1193) | 1177–1179 | yes |
+| Review Questions | [1195–1198](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1195) | 1179–1182 | yes |
+| Critical Thinking Questions | [1198–1200](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1198) | 1182–1184 | yes |
 
 <a id="chapter-26"></a>
 ## Chapter 26: Fluid, Electrolyte, and Acid-Base Balance
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [1201](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1201) | 1185–1185 | yes |
-| 26.1 Body Fluids and Fluid Compartments | [1201–1209](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1201) | 1185–1193 | yes |
-| 26.2 Water Balance | [1209–1212](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1209) | 1193–1196 | yes |
-| 26.3 Electrolyte Balance | [1212–1217](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1212) | 1196–1201 | yes |
-| 26.4 Acid-Base Balance | [1217–1222](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1217) | 1201–1206 | yes |
-| 26.5 Disorders of Acid-Base Balance | [1222–1226](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1222) | 1206–1210 | yes |
-| Key Terms | [1226](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1226) | 1210–1210 | yes |
-| Chapter Review | [1226–1227](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1226) | 1210–1211 | yes |
-| Interactive Link Questions | [1227](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1227) | 1211–1211 | yes |
-| Review Questions | [1227–1230](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1227) | 1211–1214 | yes |
-| Critical Thinking Questions | [1230](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1230) | 1214–1214 | yes |
+| Introduction | [1201](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1201) | 1185–1185 | yes |
+| 26.1 Body Fluids and Fluid Compartments | [1201–1209](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1201) | 1185–1193 | yes |
+| 26.2 Water Balance | [1209–1212](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1209) | 1193–1196 | yes |
+| 26.3 Electrolyte Balance | [1212–1217](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1212) | 1196–1201 | yes |
+| 26.4 Acid-Base Balance | [1217–1222](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1217) | 1201–1206 | yes |
+| 26.5 Disorders of Acid-Base Balance | [1222–1226](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1222) | 1206–1210 | yes |
+| Key Terms | [1226](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1226) | 1210–1210 | yes |
+| Chapter Review | [1226–1227](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1226) | 1210–1211 | yes |
+| Interactive Link Questions | [1227](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1227) | 1211–1211 | yes |
+| Review Questions | [1227–1230](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1227) | 1211–1214 | yes |
+| Critical Thinking Questions | [1230](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1230) | 1214–1214 | yes |
 
 <a id="chapter-27"></a>
 ## Chapter 27: The Reproductive System
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [1231–1232](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1231) | 1215–1216 | yes |
-| 27.1 Anatomy and Physiology of the Testicular Reproductive System | [1232–1242](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1232) | 1216–1226 | yes |
-| 27.2 Anatomy and Physiology of the Ovarian Reproductive System | [1242–1258](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1242) | 1226–1242 | yes |
-| 27.3 Development of the Male and Female Reproductive Systems | [1258–1262](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1258) | 1242–1246 | yes |
-| Key Terms | [1262–1264](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1262) | 1246–1248 | yes |
-| Chapter Review | [1264–1265](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1264) | 1248–1249 | yes |
-| Interactive Link Questions | [1265](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1265) | 1249–1249 | yes |
-| Review Questions | [1265–1267](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1265) | 1249–1251 | yes |
-| Critical Thinking Questions | [1267–1268](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1267) | 1251–1252 | yes |
+| Introduction | [1231–1232](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1231) | 1215–1216 | yes |
+| 27.1 Anatomy and Physiology of the Testicular Reproductive System | [1232–1242](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1232) | 1216–1226 | yes |
+| 27.2 Anatomy and Physiology of the Ovarian Reproductive System | [1242–1258](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1242) | 1226–1242 | yes |
+| 27.3 Development of the Male and Female Reproductive Systems | [1258–1262](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1258) | 1242–1246 | yes |
+| Key Terms | [1262–1264](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1262) | 1246–1248 | yes |
+| Chapter Review | [1264–1265](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1264) | 1248–1249 | yes |
+| Interactive Link Questions | [1265](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1265) | 1249–1249 | yes |
+| Review Questions | [1265–1267](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1265) | 1249–1251 | yes |
+| Critical Thinking Questions | [1267–1268](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1267) | 1251–1252 | yes |
 
 <a id="chapter-28"></a>
 ## Chapter 28: Development and Inheritance
 
 | Section / study aid | PDF navigation span | Printed span | TOC corroborated |
 |---|---|---|---|
-| Introduction | [1269](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1269) | 1253–1253 | yes |
-| 28.1 Fertilization | [1269–1274](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1269) | 1253–1258 | yes |
-| 28.2 Embryonic Development | [1274–1285](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1274) | 1258–1269 | yes |
-| 28.3 Fetal Development | [1285–1289](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1285) | 1269–1273 | yes |
-| 28.4 Changes During Pregnancy, Labor, and Birth | [1289–1296](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1289) | 1273–1280 | yes |
-| 28.5 Adjustments of the Infant at Birth and Postnatal Stages | [1296–1298](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1296) | 1280–1282 | yes |
-| 28.6 Lactation | [1298–1302](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1298) | 1282–1286 | yes |
-| 28.7 Patterns of Inheritance | [1302–1312](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1302) | 1286–1296 | yes |
-| Key Terms | [1312–1314](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1312) | 1296–1298 | yes |
-| Chapter Review | [1314–1316](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1314) | 1298–1300 | yes |
-| Interactive Link Questions | [1316](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1316) | 1300–1300 | yes |
-| Review Questions | [1316–1319](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1316) | 1300–1303 | yes |
-| Critical Thinking Questions | [1319–1320](../../../../docs/anatomy-and-physiology-2e_-_WEB.pdf#page=1319) | 1303–1304 | yes |
+| Introduction | [1269](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1269) | 1253–1253 | yes |
+| 28.1 Fertilization | [1269–1274](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1269) | 1253–1258 | yes |
+| 28.2 Embryonic Development | [1274–1285](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1274) | 1258–1269 | yes |
+| 28.3 Fetal Development | [1285–1289](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1285) | 1269–1273 | yes |
+| 28.4 Changes During Pregnancy, Labor, and Birth | [1289–1296](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1289) | 1273–1280 | yes |
+| 28.5 Adjustments of the Infant at Birth and Postnatal Stages | [1296–1298](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1296) | 1280–1282 | yes |
+| 28.6 Lactation | [1298–1302](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1298) | 1282–1286 | yes |
+| 28.7 Patterns of Inheritance | [1302–1312](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1302) | 1286–1296 | yes |
+| Key Terms | [1312–1314](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1312) | 1296–1298 | yes |
+| Chapter Review | [1314–1316](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1314) | 1298–1300 | yes |
+| Interactive Link Questions | [1316](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1316) | 1300–1300 | yes |
+| Review Questions | [1316–1319](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1316) | 1300–1303 | yes |
+| Critical Thinking Questions | [1319–1320](../../textbooks/anatomy-and-physiology-2e_-_WEB.pdf#page=1319) | 1303–1304 | yes |

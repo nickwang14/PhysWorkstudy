@@ -8,6 +8,7 @@ import unittest
 from pathlib import Path
 
 from pypdf import PdfReader
+from content_common import TEXTBOOKS_DIR
 
 from index_anatomy_physiology import (
     FILENAME, OFFSET, OUTPUT, add_spans, lookup, merge_captions, parse_captions, pdf_link,
@@ -63,6 +64,7 @@ class ParserTests(unittest.TestCase):
 
     def test_pdf_links_use_one_based_viewer_pages(self):
         self.assertIn("#page=39", pdf_link(39, 45))
+        self.assertIn("../../textbooks/", pdf_link(39, 45))
 
 
 @unittest.skipUnless((ROOT / OUTPUT / "index.json").is_file(), "Generate the index first")
@@ -110,26 +112,32 @@ class IndexTests(unittest.TestCase):
         rows = [line for line in text.splitlines() if line.startswith("| `ap-figure-")]
         self.assertTrue(rows, "Curated graphics should contain source references")
         for row in rows:
-            graphic_id = re.search(r"`(ap-figure-[\d.]+)`", row).group(1)
-            page = int(re.search(r"#page=(\d+)", row).group(1))
+            graphic_match = re.search(r"`(ap-figure-[\d.]+)`", row)
+            page_match = re.search(r"#page=(\d+)", row)
+            self.assertIsNotNone(graphic_match)
+            self.assertIsNotNone(page_match)
+            assert graphic_match is not None and page_match is not None
+            graphic_id = graphic_match.group(1)
+            page = int(page_match.group(1))
             self.assertEqual(graphics[graphic_id]["pdf_page"], page)
 
     def test_local_markdown_links_resolve(self):
         files = list((ROOT / OUTPUT).glob("*.md"))
         files += [ROOT / OUTPUT.parent / "README.md"]
+        files += [ROOT / OUTPUT / "README.md", ROOT / OUTPUT / "curated-guide.md", ROOT / OUTPUT / "graphic-review.md"]
         files += list((ROOT / ".agents/skills/textbook-learning-material").rglob("*.md"))
         for path in files:
             for target in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
                 if target.startswith(("http:", "https:", "#")):
                     continue
                 resolved = (path.parent / target.split("#")[0]).resolve()
-                if resolved.suffix == ".pdf" and not (ROOT / "docs" / FILENAME).is_file():
+                if resolved.suffix == ".pdf" and not (ROOT / TEXTBOOKS_DIR / FILENAME).is_file():
                     continue  # Source PDFs are deliberately local-only.
                 self.assertTrue(resolved.is_file(), f"Broken link in {path}: {target}")
 
-    @unittest.skipUnless((ROOT / "docs" / FILENAME).is_file(), "Local PDF absent")
+    @unittest.skipUnless((ROOT / TEXTBOOKS_DIR / FILENAME).is_file(), "Local PDF absent")
     def test_source_fingerprint_and_caption_samples(self):
-        pdf = ROOT / "docs" / FILENAME
+        pdf = ROOT / TEXTBOOKS_DIR / FILENAME
         self.assertEqual(hashlib.sha256(pdf.read_bytes()).hexdigest(), self.index["source"]["sha256"])
         reader = PdfReader(pdf)
         self.assertEqual(len(reader.pages), self.index["source"]["pdf_pages"])
@@ -161,8 +169,13 @@ class ReaderTests(unittest.TestCase):
         skill = ROOT / ".agents/skills/textbook-learning-material/SKILL.md"
         text = skill.read_text(encoding="utf-8")
         front = text.split("---", 2)[1]
-        name = re.search(r"^name:\s*(.+)$", front, re.MULTILINE).group(1)
-        description = re.search(r"^description:\s*'(.+)'$", front, re.MULTILINE).group(1)
+        name_match = re.search(r"^name:\s*(.+)$", front, re.MULTILINE)
+        description_match = re.search(r"^description:\s*'(.+)'$", front, re.MULTILINE)
+        self.assertIsNotNone(name_match)
+        self.assertIsNotNone(description_match)
+        assert name_match is not None and description_match is not None
+        name = name_match.group(1)
+        description = description_match.group(1)
         self.assertEqual(name, skill.parent.name)
         self.assertRegex(name, r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
         self.assertTrue(0 < len(description) <= 1024)

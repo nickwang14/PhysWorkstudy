@@ -97,7 +97,7 @@ This is an editorial and tracking index, not learner-facing copy. Each lesson co
 
 ## Local Source Editions
 
-Source PDFs are kept offline in `docs/` and are not committed or linked from the app. The assigned editions and page offsets are:
+Source PDFs are kept offline in `theory-and-knowledge/knowledge/textbooks/` and are not committed or linked from the app. The assigned editions and page offsets are:
 - OpenStax, *Anatomy and Physiology 2e* (`anatomy-and-physiology-2e_-_WEB.pdf`; CC BY-NC-SA 4.0). Printed page + 16 = PDF page.
 - Karine Hamm / OpenStax, *Biomechanics of Human Movement* (`Biomechanics-of-Human-Movement-1600891203._print.pdf`; CC BY 4.0 except where otherwise noted). Printed page + 12 = PDF page.
 - Lawrence Davis, *Body Physics: Motion to Metabolism* (`Body-Physics-Motion-to-Metabolism-1571156906.pdf`; CC BY-NC-SA 4.0 except where otherwise noted). Printed page + 26 = PDF page.

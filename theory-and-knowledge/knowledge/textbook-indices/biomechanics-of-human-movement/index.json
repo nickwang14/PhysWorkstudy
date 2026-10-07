@@ -1,0 +1,4176 @@
+{
+  "schema_version": 1,
+  "source": {
+    "id": "biomechanics-of-human-movement",
+    "filename": "Biomechanics-of-Human-Movement-1600891203._print.pdf",
+    "title": "Biomechanics of Human Movement",
+    "authors": [
+      "Karine Hamm"
+    ],
+    "publication_year": 2016,
+    "pdf_pages": 747,
+    "sha256": "4bb936aa15a0ba2a02f4d794608b3a6c296f09828786ded1bdf7cfdfa0eda77d",
+    "pdf_creation_date": "D:20200923200041Z",
+    "citation": "Karine Hamm, Biomechanics of Human Movement (2016; title-page attribution).",
+    "source_url": "https://cnx.org/contents/Ax2o07Ul@9.73:HR_VN3f7@3/Introduction-to-Science-and-th",
+    "source_url_status": "Transcribed from the PDF license notice; appears incomplete and names a different source title. Verify before reuse.",
+    "license": "CC BY 4.0, except where otherwise noted; see item-specific credits and exceptions.",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "required_attribution": "The PDF license notice names OpenStax, College Physics and specifies a CNX download attribution; verify the exact source URL and attribution before redistribution.",
+    "license_notice_pdf_pages": [
+      4,
+      5
+    ],
+    "printed_page_offset": 12,
+    "page_mapping_evidence": {
+      "method": "Printed numbers read from footer lines on every extractable page; offset derived from and consistent across recognized footers.",
+      "verified_footer_count": 729,
+      "first_verified_pdf_page": 13,
+      "last_verified_pdf_page": 747,
+      "unmapped_pdf_pages_within_content": [
+        56,
+        160,
+        238,
+        290,
+        556,
+        732
+      ],
+      "pdf_page_labels_are_printed_numbers": false
+    }
+  },
+  "coverage": {
+    "status": "full navigation and caption-line locator scan; human source, domain, editorial and rights review remain separate",
+    "all_pdf_pages_scanned_for_text_and_footer": true,
+    "empty_text_pdf_pages": [
+      2,
+      6,
+      12,
+      56,
+      160,
+      238,
+      290,
+      556,
+      732
+    ],
+    "chapter_count": 10,
+    "numbered_section_count": 71,
+    "caption_line_candidate_count": 220,
+    "graphics_method": "Text lines beginning Figure N. or Table N.; page-based IDs prevent collisions when book numbering repeats. Caption lines are candidates, not verified titles or complete captions.",
+    "unlabelled_artwork": "Not indexed; discover during rendered-page review.",
+    "standalone_glossary_index_references_appendices_and_answer_keys": "Not fully audited in this indexing pass; check the source before relying on their presence or absence."
+  },
+  "navigation": [
+    {
+      "title": "Cover and title pages",
+      "pdf_start": 1,
+      "pdf_end": 3,
+      "printed_start": null,
+      "printed_end": null
+    },
+    {
+      "title": "License and attribution notice",
+      "pdf_start": 4,
+      "pdf_end": 5,
+      "printed_start": null,
+      "printed_end": null
+    },
+    {
+      "title": "Contents",
+      "pdf_start": 7,
+      "pdf_end": 10,
+      "printed_start": null,
+      "printed_end": null
+    },
+    {
+      "title": "Introduction to Open Textbooks",
+      "pdf_start": 11,
+      "pdf_end": 12,
+      "printed_start": null,
+      "printed_end": null
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Prerequisite Skills for Biomechanics",
+      "pdf_start": 13,
+      "pdf_end": 54,
+      "printed_start": 1,
+      "printed_end": 42,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 13,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 15,
+          "printed_start": 1,
+          "printed_end": 3,
+          "boundary_review_required": true
+        },
+        {
+          "id": "1.0",
+          "title": "1.0 Introduction to Biomechanics",
+          "kind": "section",
+          "pdf_start": 15,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 17,
+          "printed_start": 3,
+          "printed_end": 5,
+          "boundary_review_required": true
+        },
+        {
+          "id": "1.1",
+          "title": "1.1 Understanding Equations and Basic Math",
+          "kind": "section",
+          "pdf_start": 17,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 21,
+          "printed_start": 5,
+          "printed_end": 9,
+          "boundary_review_required": true
+        },
+        {
+          "id": "1.2",
+          "title": "1.2 Physical Quantities and Units.",
+          "kind": "section",
+          "pdf_start": 21,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 31,
+          "printed_start": 9,
+          "printed_end": 19,
+          "boundary_review_required": true
+        },
+        {
+          "id": "1.3",
+          "title": "1.3 Converting Units",
+          "kind": "section",
+          "pdf_start": 31,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 43,
+          "printed_start": 19,
+          "printed_end": 31,
+          "boundary_review_required": true
+        },
+        {
+          "id": "1.4",
+          "title": "1.4 Accuracy and Precision of Measurements",
+          "kind": "section",
+          "pdf_start": 43,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 52,
+          "printed_start": 31,
+          "printed_end": 40,
+          "boundary_review_required": true
+        },
+        {
+          "id": "1.5",
+          "title": "1.5 Graphing Introduction",
+          "kind": "section",
+          "pdf_start": 52,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 54,
+          "printed_start": 40,
+          "printed_end": 42,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Anatomy Basics",
+      "pdf_start": 55,
+      "pdf_end": 160,
+      "printed_start": 43,
+      "printed_end": 148,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 55,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 57,
+          "printed_start": 43,
+          "printed_end": 45,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.0",
+          "title": "2.0 The Bio in Biomechanics",
+          "kind": "section",
+          "pdf_start": 57,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 58,
+          "printed_start": 45,
+          "printed_end": 46,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.1",
+          "title": "2.1. The Skeleton",
+          "kind": "section",
+          "pdf_start": 58,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 64,
+          "printed_start": 46,
+          "printed_end": 52,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.2",
+          "title": "2.2 Joints",
+          "kind": "section",
+          "pdf_start": 64,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 66,
+          "printed_start": 52,
+          "printed_end": 54,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.2.1",
+          "title": "2.2.1 Classification of Joints",
+          "kind": "section",
+          "pdf_start": 66,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 75,
+          "printed_start": 54,
+          "printed_end": 63,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.2.2",
+          "title": "2.2.2 Synovial Joints",
+          "kind": "section",
+          "pdf_start": 75,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 91,
+          "printed_start": 63,
+          "printed_end": 79,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.2.3",
+          "title": "2.2.3 Types of Body Movements",
+          "kind": "section",
+          "pdf_start": 91,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 109,
+          "printed_start": 79,
+          "printed_end": 97,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.2.4",
+          "title": "2.2.4 Anatomy of Selected Synovial Joints",
+          "kind": "section",
+          "pdf_start": 109,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 147,
+          "printed_start": 97,
+          "printed_end": 135,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.3",
+          "title": "2.3 Muscular Anatomy",
+          "kind": "section",
+          "pdf_start": 147,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 149,
+          "printed_start": 135,
+          "printed_end": 137,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.3.1",
+          "title": "2.3.1 Naming Skeletal Muscles",
+          "kind": "section",
+          "pdf_start": 149,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 157,
+          "printed_start": 137,
+          "printed_end": 145,
+          "boundary_review_required": true
+        },
+        {
+          "id": "2.4",
+          "title": "2.4 Human Dimensions and Joint Angles",
+          "kind": "section",
+          "pdf_start": 157,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 160,
+          "printed_start": 145,
+          "printed_end": 148,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Linear Kinematics in One-dimension",
+      "pdf_start": 161,
+      "pdf_end": 236,
+      "printed_start": 149,
+      "printed_end": 224,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 161,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 163,
+          "printed_start": 149,
+          "printed_end": 151,
+          "boundary_review_required": true
+        },
+        {
+          "id": "3.0",
+          "title": "3.0 Introduction",
+          "kind": "section",
+          "pdf_start": 163,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 165,
+          "printed_start": 151,
+          "printed_end": 153,
+          "boundary_review_required": true
+        },
+        {
+          "id": "3.1",
+          "title": "3.1 Displacement",
+          "kind": "section",
+          "pdf_start": 165,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 177,
+          "printed_start": 153,
+          "printed_end": 165,
+          "boundary_review_required": true
+        },
+        {
+          "id": "3.2",
+          "title": "3.2 Vectors, Scalars, and Coordinate Systems",
+          "kind": "section",
+          "pdf_start": 177,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 183,
+          "printed_start": 165,
+          "printed_end": 171,
+          "boundary_review_required": true
+        },
+        {
+          "id": "3.3",
+          "title": "3.3 Time, Velocity, and Speed",
+          "kind": "section",
+          "pdf_start": 183,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 194,
+          "printed_start": 171,
+          "printed_end": 182,
+          "boundary_review_required": true
+        },
+        {
+          "id": "3.4",
+          "title": "3.4 Acceleration",
+          "kind": "section",
+          "pdf_start": 194,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 206,
+          "printed_start": 182,
+          "printed_end": 194,
+          "boundary_review_required": true
+        },
+        {
+          "id": "3.5",
+          "title": "3.5 Graphical Analysis of One-Dimensional Motion",
+          "kind": "section",
+          "pdf_start": 206,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 235,
+          "printed_start": 194,
+          "printed_end": 223,
+          "boundary_review_required": true
+        },
+        {
+          "id": "3.6",
+          "title": "3.6 Applications to Human Movement Analysis",
+          "kind": "section",
+          "pdf_start": 235,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 236,
+          "printed_start": 223,
+          "printed_end": 224,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Linear Kinematics in Two-dimensions",
+      "pdf_start": 237,
+      "pdf_end": 288,
+      "printed_start": 225,
+      "printed_end": 276,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 237,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 239,
+          "printed_start": 225,
+          "printed_end": 227,
+          "boundary_review_required": true
+        },
+        {
+          "id": "4.0",
+          "title": "4.0 Introduction - Trigonometry",
+          "kind": "section",
+          "pdf_start": 239,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 241,
+          "printed_start": 227,
+          "printed_end": 229,
+          "boundary_review_required": true
+        },
+        {
+          "id": "4.1",
+          "title": "4.1 Vectors in Two Dimensions",
+          "kind": "section",
+          "pdf_start": 241,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 249,
+          "printed_start": 229,
+          "printed_end": 237,
+          "boundary_review_required": true
+        },
+        {
+          "id": "4.2",
+          "title": "4.2 Vector Addition and Subtraction",
+          "kind": "section",
+          "pdf_start": 249,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 262,
+          "printed_start": 237,
+          "printed_end": 250,
+          "boundary_review_required": true
+        },
+        {
+          "id": "4.3",
+          "title": "4.3 Processing Data in Biomechanics",
+          "kind": "section",
+          "pdf_start": 262,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 263,
+          "printed_start": 250,
+          "printed_end": 251,
+          "boundary_review_required": true
+        },
+        {
+          "id": "4.4",
+          "title": "4.4 Projectile Motion",
+          "kind": "section",
+          "pdf_start": 263,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 282,
+          "printed_start": 251,
+          "printed_end": 270,
+          "boundary_review_required": true
+        },
+        {
+          "id": "4.5",
+          "title": "4.5 Problem-Solving Basics",
+          "kind": "section",
+          "pdf_start": 282,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 288,
+          "printed_start": 270,
+          "printed_end": 276,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Angular Kinematics",
+      "pdf_start": 289,
+      "pdf_end": 326,
+      "printed_start": 277,
+      "printed_end": 314,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 289,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 291,
+          "printed_start": 277,
+          "printed_end": 279,
+          "boundary_review_required": true
+        },
+        {
+          "id": "5.0",
+          "title": "5.0 Introduction",
+          "kind": "section",
+          "pdf_start": 291,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 293,
+          "printed_start": 279,
+          "printed_end": 281,
+          "boundary_review_required": true
+        },
+        {
+          "id": "5.1",
+          "title": "5.1 Angular Position and Displacement",
+          "kind": "section",
+          "pdf_start": 293,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 300,
+          "printed_start": 281,
+          "printed_end": 288,
+          "boundary_review_required": true
+        },
+        {
+          "id": "5.2",
+          "title": "5.2 Angular Velocity",
+          "kind": "section",
+          "pdf_start": 300,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 306,
+          "printed_start": 288,
+          "printed_end": 294,
+          "boundary_review_required": true
+        },
+        {
+          "id": "5.3",
+          "title": "5.3 Angular Acceleration",
+          "kind": "section",
+          "pdf_start": 306,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 316,
+          "printed_start": 294,
+          "printed_end": 304,
+          "boundary_review_required": true
+        },
+        {
+          "id": "5.4",
+          "title": "5.4 Linear Accelerations",
+          "kind": "section",
+          "pdf_start": 316,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 326,
+          "printed_start": 304,
+          "printed_end": 314,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Linear Kinetics",
+      "pdf_start": 327,
+      "pdf_end": 476,
+      "printed_start": 315,
+      "printed_end": 464,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 327,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 329,
+          "printed_start": 315,
+          "printed_end": 317,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.0",
+          "title": "6.0 Introduction",
+          "kind": "section",
+          "pdf_start": 329,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 331,
+          "printed_start": 317,
+          "printed_end": 319,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.1",
+          "title": "6.1 Development of Force Concept",
+          "kind": "section",
+          "pdf_start": 331,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 336,
+          "printed_start": 319,
+          "printed_end": 324,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.2",
+          "title": "6.2 Newton’s First Law of Motion: Inertia",
+          "kind": "section",
+          "pdf_start": 336,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 341,
+          "printed_start": 324,
+          "printed_end": 329,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.3",
+          "title": "6.3 Newton’s Second Law of Motion: Concept of a System",
+          "kind": "section",
+          "pdf_start": 341,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 359,
+          "printed_start": 329,
+          "printed_end": 347,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.4",
+          "title": "6.4 Newton’s Third Law of Motion: Symmetry in Forces",
+          "kind": "section",
+          "pdf_start": 359,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 370,
+          "printed_start": 347,
+          "printed_end": 358,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.5",
+          "title": "6.5 Normal, Tension, and Other Examples of Forces",
+          "kind": "section",
+          "pdf_start": 370,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 397,
+          "printed_start": 358,
+          "printed_end": 385,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.6",
+          "title": "6.6 Friction",
+          "kind": "section",
+          "pdf_start": 397,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 416,
+          "printed_start": 385,
+          "printed_end": 404,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.7",
+          "title": "6.7 Problem-Solving Strategies",
+          "kind": "section",
+          "pdf_start": 416,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 427,
+          "printed_start": 404,
+          "printed_end": 415,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.8",
+          "title": "6.8 Further Applications of Newton’s Laws of Motion",
+          "kind": "section",
+          "pdf_start": 427,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 436,
+          "printed_start": 415,
+          "printed_end": 424,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.9",
+          "title": "6.9 Introduction to momentum",
+          "kind": "section",
+          "pdf_start": 436,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 437,
+          "printed_start": 424,
+          "printed_end": 425,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.10",
+          "title": "6.10 Linear Momentum and Force",
+          "kind": "section",
+          "pdf_start": 437,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 446,
+          "printed_start": 425,
+          "printed_end": 434,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.11",
+          "title": "6.11 Impulse",
+          "kind": "section",
+          "pdf_start": 446,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 459,
+          "printed_start": 434,
+          "printed_end": 447,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.12",
+          "title": "6.12 Conservation of Momentum",
+          "kind": "section",
+          "pdf_start": 459,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 468,
+          "printed_start": 447,
+          "printed_end": 456,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.13",
+          "title": "6.13 The Impulse-Momentum Theorem",
+          "kind": "section",
+          "pdf_start": 468,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 473,
+          "printed_start": 456,
+          "printed_end": 461,
+          "boundary_review_required": true
+        },
+        {
+          "id": "6.15",
+          "title": "6.15 Safety Technology as Related to Impulse",
+          "kind": "section",
+          "pdf_start": 473,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 476,
+          "printed_start": 461,
+          "printed_end": 464,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Work, Power, and Energy",
+      "pdf_start": 477,
+      "pdf_end": 556,
+      "printed_start": 465,
+      "printed_end": 544,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 477,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 479,
+          "printed_start": 465,
+          "printed_end": 467,
+          "boundary_review_required": true
+        },
+        {
+          "id": "7.0",
+          "title": "7.0 Introduction",
+          "kind": "section",
+          "pdf_start": 479,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 481,
+          "printed_start": 467,
+          "printed_end": 469,
+          "boundary_review_required": true
+        },
+        {
+          "id": "7.1",
+          "title": "7.1 Work: The Scientific Definition",
+          "kind": "section",
+          "pdf_start": 481,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 492,
+          "printed_start": 469,
+          "printed_end": 480,
+          "boundary_review_required": true
+        },
+        {
+          "id": "7.2",
+          "title": "7.2 Kinetic Energy and the Work-Energy Theorem",
+          "kind": "section",
+          "pdf_start": 492,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 508,
+          "printed_start": 480,
+          "printed_end": 496,
+          "boundary_review_required": true
+        },
+        {
+          "id": "7.3",
+          "title": "7.3 Gravitational Potential Energy",
+          "kind": "section",
+          "pdf_start": 508,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 524,
+          "printed_start": 496,
+          "printed_end": 512,
+          "boundary_review_required": true
+        },
+        {
+          "id": "7.6",
+          "title": "7.6 Conservation of Energy",
+          "kind": "section",
+          "pdf_start": 524,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 532,
+          "printed_start": 512,
+          "printed_end": 520,
+          "boundary_review_required": true
+        },
+        {
+          "id": "7.7",
+          "title": "7.7 Power",
+          "kind": "section",
+          "pdf_start": 532,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 539,
+          "printed_start": 520,
+          "printed_end": 527,
+          "boundary_review_required": true
+        },
+        {
+          "id": "7.8",
+          "title": "7.8 Work, Energy, and Power in Human Physiology",
+          "kind": "section",
+          "pdf_start": 539,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 556,
+          "printed_start": 527,
+          "printed_end": 544,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Angular Kinetics",
+      "pdf_start": 557,
+      "pdf_end": 638,
+      "printed_start": 545,
+      "printed_end": 626,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 557,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 559,
+          "printed_start": 545,
+          "printed_end": 547,
+          "boundary_review_required": true
+        },
+        {
+          "id": "8.0",
+          "title": "8.0 Introduction",
+          "kind": "section",
+          "pdf_start": 559,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 561,
+          "printed_start": 547,
+          "printed_end": 549,
+          "boundary_review_required": true
+        },
+        {
+          "id": "8.1",
+          "title": "8.1 The First Condition for Equilibrium",
+          "kind": "section",
+          "pdf_start": 561,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 567,
+          "printed_start": 549,
+          "printed_end": 555,
+          "boundary_review_required": true
+        },
+        {
+          "id": "8.2",
+          "title": "8.2 The Second Condition for Equilibrium",
+          "kind": "section",
+          "pdf_start": 567,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 582,
+          "printed_start": 555,
+          "printed_end": 570,
+          "boundary_review_required": true
+        },
+        {
+          "id": "8.3",
+          "title": "8.3 Stability",
+          "kind": "section",
+          "pdf_start": 582,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 595,
+          "printed_start": 570,
+          "printed_end": 583,
+          "boundary_review_required": true
+        },
+        {
+          "id": "8.4",
+          "title": "8.4 Applications of Statics, Including Problem-Solving Strategies",
+          "kind": "section",
+          "pdf_start": 595,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 605,
+          "printed_start": 583,
+          "printed_end": 593,
+          "boundary_review_required": true
+        },
+        {
+          "id": "8.5",
+          "title": "8.5 Mechanical Advantage",
+          "kind": "section",
+          "pdf_start": 605,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 614,
+          "printed_start": 593,
+          "printed_end": 602,
+          "boundary_review_required": true
+        },
+        {
+          "id": "8.6",
+          "title": "8.6 Forces and Torques in Muscles and Joints",
+          "kind": "section",
+          "pdf_start": 614,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 638,
+          "printed_start": 602,
+          "printed_end": 626,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Mechanics of Human Tissues",
+      "pdf_start": 639,
+      "pdf_end": 732,
+      "printed_start": 627,
+      "printed_end": 720,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 639,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 641,
+          "printed_start": 627,
+          "printed_end": 629,
+          "boundary_review_required": true
+        },
+        {
+          "id": "9.1",
+          "title": "9.1 Overview of Muscle Tissues",
+          "kind": "section",
+          "pdf_start": 641,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 647,
+          "printed_start": 629,
+          "printed_end": 635,
+          "boundary_review_required": true
+        },
+        {
+          "id": "9.2",
+          "title": "9.2 Skeletal Muscle",
+          "kind": "section",
+          "pdf_start": 647,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 666,
+          "printed_start": 635,
+          "printed_end": 654,
+          "boundary_review_required": true
+        },
+        {
+          "id": "9.3",
+          "title": "9.3 Muscle Fiber Contraction and Relaxation",
+          "kind": "section",
+          "pdf_start": 666,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 685,
+          "printed_start": 654,
+          "printed_end": 673,
+          "boundary_review_required": true
+        },
+        {
+          "id": "9.4",
+          "title": "9.4 Nervous System Control of Muscle Tension",
+          "kind": "section",
+          "pdf_start": 685,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 700,
+          "printed_start": 673,
+          "printed_end": 688,
+          "boundary_review_required": true
+        },
+        {
+          "id": "9.5",
+          "title": "9.5 Types of Muscle Fibers",
+          "kind": "section",
+          "pdf_start": 700,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 706,
+          "printed_start": 688,
+          "printed_end": 694,
+          "boundary_review_required": true
+        },
+        {
+          "id": "9.6",
+          "title": "9.6 Exercise and Muscle Performance",
+          "kind": "section",
+          "pdf_start": 706,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 717,
+          "printed_start": 694,
+          "printed_end": 705,
+          "boundary_review_required": true
+        },
+        {
+          "id": "9.7",
+          "title": "9.7 Interactions of Skeletal Muscles, Their Fascicle Arrangement, and Their Lever Systems",
+          "kind": "section",
+          "pdf_start": 717,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 732,
+          "printed_start": 705,
+          "printed_end": 720,
+          "boundary_review_required": true
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Mechanism of Injury",
+      "pdf_start": 733,
+      "pdf_end": 747,
+      "printed_start": 721,
+      "printed_end": 735,
+      "entries": [
+        {
+          "id": "chapter-objectives",
+          "title": "Chapter Objectives",
+          "kind": "navigation",
+          "pdf_start": 733,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 735,
+          "printed_start": 721,
+          "printed_end": 723,
+          "boundary_review_required": true
+        },
+        {
+          "id": "10.1",
+          "title": "10.1 Force-Deformation Curve",
+          "kind": "section",
+          "pdf_start": 735,
+          "location_evidence": "pdf_bookmark",
+          "pdf_end": 747,
+          "printed_start": 723,
+          "printed_end": 735,
+          "boundary_review_required": true
+        }
+      ]
+    }
+  ],
+  "graphics": [
+    {
+      "id": "bhm-figure-pdf22-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 22,
+      "printed_page": 10,
+      "caption_lead": "Distances given in unknown units are",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 1,
+      "section_candidates": [
+        "1.2"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf23-1",
+      "kind": "table",
+      "number": "1",
+      "pdf_page": 23,
+      "printed_page": 11,
+      "caption_lead": "Fundamental SI Units.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 1,
+      "section_candidates": [
+        "1.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf25-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 25,
+      "printed_page": 13,
+      "caption_lead": "The meter is defined to be the distance light",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 1,
+      "section_candidates": [
+        "1.2"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf28-1",
+      "kind": "table",
+      "number": "2",
+      "pdf_page": 28,
+      "printed_page": 16,
+      "caption_lead": "Select Metric Prefixes for Powers of 10 and their Symbols.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 1,
+      "section_candidates": [
+        "1.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf45-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 45,
+      "printed_page": 33,
+      "caption_lead": "A GPS system attempts to locate a runner at the center of",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 1,
+      "section_candidates": [
+        "1.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf46-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 46,
+      "printed_page": 34,
+      "caption_lead": "In this figure, the dots are concentrated rather closely to",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 1,
+      "section_candidates": [
+        "1.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf58-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 58,
+      "printed_page": 46,
+      "caption_lead": "Lateral View of the Human Skull.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.0",
+        "2.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf61-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 61,
+      "printed_page": 49,
+      "caption_lead": "Axial and Appendicular Skeleton. The axial skeleton supports",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf64-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 64,
+      "printed_page": 52,
+      "caption_lead": "Girl Kayaking. Without joints, body movements would be",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.1",
+        "2.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf68-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 68,
+      "printed_page": 56,
+      "caption_lead": "Suture Joints of Skull. The suture joints of the skull are",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf69-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 69,
+      "printed_page": 57,
+      "caption_lead": "Intervertebral Disc. An intervertebral disc unites the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf71-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 71,
+      "printed_page": 59,
+      "caption_lead": "Multiaxial Joint. A multiaxial joint, such as the hip joint,",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf76-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 76,
+      "printed_page": 64,
+      "caption_lead": "Synovial Joints. Synovial joints allow for smooth movements",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf80-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 80,
+      "printed_page": 68,
+      "caption_lead": "Bursae. Bursae are fluid-filled sacs that serve to prevent",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf81-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 81,
+      "printed_page": 69,
+      "caption_lead": "Types of Synovial Joints. The six types of synovial joints allow",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf93-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 93,
+      "printed_page": 81,
+      "caption_lead": "Movements of the Body, Part 1. Synovial joints give the body",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf95-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 95,
+      "printed_page": 83,
+      "caption_lead": "Movements of the Body, Part 2. (g) Supination of the forearm",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf110-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 110,
+      "printed_page": 98,
+      "caption_lead": "Glenohumeral Joint. The glenohumeral (shoulder) joint is a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf114-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 114,
+      "printed_page": 102,
+      "caption_lead": "Elbow Joint. (a) The elbow is a hinge joint that allows only for",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf118-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 118,
+      "printed_page": 106,
+      "caption_lead": "Hip Joint. (a) The ball-and-socket joint of the hip is a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf123-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 123,
+      "printed_page": 111,
+      "caption_lead": "Knee Joint. (a) The knee joint is the largest joint of the body.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf127-1",
+      "kind": "figure",
+      "number": "7",
+      "pdf_page": 127,
+      "printed_page": 115,
+      "caption_lead": "Knee Injury. A strong blow to the lateral side of the extended",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf130-1",
+      "kind": "figure",
+      "number": "8",
+      "pdf_page": 130,
+      "printed_page": 118,
+      "caption_lead": "Ankle Joint. The talocrural (ankle) joint is a uniaxial hinge",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf147-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 147,
+      "printed_page": 135,
+      "caption_lead": "A Body in Motion. The muscular system allows us to move,",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.2.4",
+        "2.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf151-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 151,
+      "printed_page": 139,
+      "caption_lead": "Overview of the Muscular System. On the anterior and",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.3.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf151-2",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 151,
+      "printed_page": 139,
+      "caption_lead": "Understanding a Muscle Name from the Latin",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 2,
+      "section_candidates": [
+        "2.3.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf163-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 163,
+      "printed_page": 151,
+      "caption_lead": "The results of many track and field events are the outcome",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.0"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf165-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 165,
+      "printed_page": 153,
+      "caption_lead": "These cyclists can be described by their position relative to",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.0",
+        "3.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf168-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 168,
+      "printed_page": 156,
+      "caption_lead": "A professor paces left and right while lecturing. Her position",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf169-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 169,
+      "printed_page": 157,
+      "caption_lead": "A passenger moves from his seat to the back of the plane.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf175-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 175,
+      "printed_page": 163,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf177-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 177,
+      "printed_page": 165,
+      "caption_lead": "The motion of this skateboarder can be described in terms",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.1",
+        "3.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf180-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 180,
+      "printed_page": 168,
+      "caption_lead": "It is usually convenient to consider",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf183-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 183,
+      "printed_page": 171,
+      "caption_lead": "The motion of these racing longboarders can be described",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.2",
+        "3.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf186-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 186,
+      "printed_page": 174,
+      "caption_lead": "A more detailed record of an airplane passenger",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf188-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 188,
+      "printed_page": 176,
+      "caption_lead": "During a 30-minute round trip to the store, the total",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf191-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 191,
+      "printed_page": 179,
+      "caption_lead": "Position vs. time, velocity vs. time, and speed",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf197-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 197,
+      "printed_page": 185,
+      "caption_lead": "(a) This car is speeding up as it moves toward the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf199-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 199,
+      "printed_page": 187,
+      "caption_lead": "(credit: Jon Sullivan, PD Photo.org).",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf200-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 200,
+      "printed_page": 188,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf202-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 202,
+      "printed_page": 190,
+      "caption_lead": "Graphs of instantaneous acceleration versus time for two",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf204-1",
+      "kind": "figure",
+      "number": "13",
+      "pdf_page": 204,
+      "printed_page": 192,
+      "caption_lead": "Moving Man.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf207-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 207,
+      "printed_page": 195,
+      "caption_lead": "A straight-line graph. The equation for a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf208-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 208,
+      "printed_page": 196,
+      "caption_lead": "Graph of displacement versus time for a jet-powered car on",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf213-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 213,
+      "printed_page": 201,
+      "caption_lead": "Graphs of motion of a jet-powered car during",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf214-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 214,
+      "printed_page": 202,
+      "caption_lead": "The slope of anpxvs.tgraph is velocity. This is",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf219-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 219,
+      "printed_page": 207,
+      "caption_lead": "Graphs of motion of a jet-powered car as it reaches its",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf221-1",
+      "kind": "figure",
+      "number": "8",
+      "pdf_page": 221,
+      "printed_page": 209,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf222-1",
+      "kind": "figure",
+      "number": "9",
+      "pdf_page": 222,
+      "printed_page": 210,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf223-1",
+      "kind": "figure",
+      "number": "10",
+      "pdf_page": 223,
+      "printed_page": 211,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf224-1",
+      "kind": "figure",
+      "number": "11",
+      "pdf_page": 224,
+      "printed_page": 212,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf225-1",
+      "kind": "figure",
+      "number": "12",
+      "pdf_page": 225,
+      "printed_page": 213,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf226-1",
+      "kind": "figure",
+      "number": "13",
+      "pdf_page": 226,
+      "printed_page": 214,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf226-2",
+      "kind": "figure",
+      "number": "14",
+      "pdf_page": 226,
+      "printed_page": 214,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf227-1",
+      "kind": "figure",
+      "number": "15",
+      "pdf_page": 227,
+      "printed_page": 215,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf228-1",
+      "kind": "figure",
+      "number": "16",
+      "pdf_page": 228,
+      "printed_page": 216,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf229-1",
+      "kind": "figure",
+      "number": "17",
+      "pdf_page": 229,
+      "printed_page": 217,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf229-2",
+      "kind": "figure",
+      "number": "18",
+      "pdf_page": 229,
+      "printed_page": 217,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf230-1",
+      "kind": "figure",
+      "number": "19",
+      "pdf_page": 230,
+      "printed_page": 218,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf231-1",
+      "kind": "figure",
+      "number": "20",
+      "pdf_page": 231,
+      "printed_page": 219,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf232-1",
+      "kind": "figure",
+      "number": "21",
+      "pdf_page": 232,
+      "printed_page": 220,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf233-1",
+      "kind": "figure",
+      "number": "23",
+      "pdf_page": 233,
+      "printed_page": 221,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 3,
+      "section_candidates": [
+        "3.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf241-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 241,
+      "printed_page": 229,
+      "caption_lead": "Walkers and drivers in a city like New York are",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.0",
+        "4.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf242-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 242,
+      "printed_page": 230,
+      "caption_lead": "A road runner runs a two-dimensional path between two",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf243-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 243,
+      "printed_page": 231,
+      "caption_lead": "The Pythagorean theorem",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf243-2",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 243,
+      "printed_page": 231,
+      "caption_lead": "The straight-line path followed by a helicopter between",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf246-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 246,
+      "printed_page": 234,
+      "caption_lead": "This shows the motions of two identical",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf251-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 251,
+      "printed_page": 239,
+      "caption_lead": "A person runs 9 blocks east and 5 blocks north. The",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf252-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 252,
+      "printed_page": 240,
+      "caption_lead": "Tip-to-Tail Method: (a) Draw a vector representing the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf253-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 253,
+      "printed_page": 241,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf254-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 254,
+      "printed_page": 242,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf255-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 255,
+      "printed_page": 243,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf258-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 258,
+      "printed_page": 246,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf259-1",
+      "kind": "figure",
+      "number": "7",
+      "pdf_page": 259,
+      "printed_page": 247,
+      "caption_lead": "The two displacementsAandBadd to",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf264-1",
+      "kind": "figure",
+      "number": "7",
+      "pdf_page": 264,
+      "printed_page": 252,
+      "caption_lead": "Projectile Motion",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf266-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 266,
+      "printed_page": 254,
+      "caption_lead": "The total displacementdof a soccer ball at a point",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf269-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 269,
+      "printed_page": 257,
+      "caption_lead": "(a) We analyze two-dimensional projectile motion by",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf272-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 272,
+      "printed_page": 260,
+      "caption_lead": "Trajectories of projectiles on level ground. (a) The greater",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf282-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 282,
+      "printed_page": 270,
+      "caption_lead": "Problem-solving skills are essential to your",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 4,
+      "section_candidates": [
+        "4.4",
+        "4.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf291-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 291,
+      "printed_page": 279,
+      "caption_lead": "The body of a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.0"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf295-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 295,
+      "printed_page": 283,
+      "caption_lead": "A radianΔθ is defined as the angle ifThe arc",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.1"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf296-1",
+      "kind": "table",
+      "number": "1",
+      "pdf_page": 296,
+      "printed_page": 284,
+      "caption_lead": "Comparison of Angular Units.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf302-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 302,
+      "printed_page": 290,
+      "caption_lead": "As an object moves in a circle, here a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf303-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 303,
+      "printed_page": 291,
+      "caption_lead": "Ladybug Revolution",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf310-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 310,
+      "printed_page": 298,
+      "caption_lead": "In circular motion, linear accelerationa, occurs",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf311-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 311,
+      "printed_page": 299,
+      "caption_lead": "Centripetal accelerationac occurs as the direction of",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.3"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf313-1",
+      "kind": "table",
+      "number": "1",
+      "pdf_page": 313,
+      "printed_page": 301,
+      "caption_lead": "Rotational and Translational Quantities.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf318-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 318,
+      "printed_page": 306,
+      "caption_lead": "The directions of the velocity of an",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf322-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 322,
+      "printed_page": 310,
+      "caption_lead": "(a) The car following a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 5,
+      "section_candidates": [
+        "5.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf329-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 329,
+      "printed_page": 317,
+      "caption_lead": "Newton’s laws of motion describe the motion of the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.0"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf330-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 330,
+      "printed_page": 318,
+      "caption_lead": "Isaac Newton’s monumental work, Philosophiae",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.0"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf332-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 332,
+      "printed_page": 320,
+      "caption_lead": "Part (a) shows an overhead view of two ice",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf333-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 333,
+      "printed_page": 321,
+      "caption_lead": "The force exerted by a stretched spring can be used as a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf343-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 343,
+      "printed_page": 331,
+      "caption_lead": "Different forces exerted on the same mass",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf345-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 345,
+      "printed_page": 333,
+      "caption_lead": "The same force exerted on systems of different",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf352-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 352,
+      "printed_page": 340,
+      "caption_lead": "The net force on a lawn mower is 51 N to the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf358-1",
+      "kind": "figure",
+      "number": "8",
+      "pdf_page": 358,
+      "printed_page": 346,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf361-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 361,
+      "printed_page": 349,
+      "caption_lead": "When the swimmer exerts a forceFfeet on wall on the wall, she",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf363-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 363,
+      "printed_page": 351,
+      "caption_lead": "A professor pushes a cart of demonstration",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf372-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 372,
+      "printed_page": 360,
+      "caption_lead": "(a) The person holding the bag of dog food must supply an",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf374-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 374,
+      "printed_page": 362,
+      "caption_lead": "Since motion and friction are parallel to the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf378-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 378,
+      "printed_page": 366,
+      "caption_lead": "An object rests on an incline that makes an",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf380-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 380,
+      "printed_page": 368,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf381-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 381,
+      "printed_page": 369,
+      "caption_lead": "When a perfectly flexible",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf383-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 383,
+      "printed_page": 371,
+      "caption_lead": "(a) Tendons in the finger carry forceTfrom the muscles to",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf384-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 384,
+      "printed_page": 372,
+      "caption_lead": "The weight of a tightrope walker causes a wire to",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf386-1",
+      "kind": "figure",
+      "number": "7",
+      "pdf_page": 386,
+      "printed_page": 374,
+      "caption_lead": "When the vectors are projected onto vertical and",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf390-1",
+      "kind": "figure",
+      "number": "8",
+      "pdf_page": 390,
+      "printed_page": 378,
+      "caption_lead": "We can create a very large tension in the chain by pushing",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf391-1",
+      "kind": "figure",
+      "number": "10",
+      "pdf_page": 391,
+      "printed_page": 379,
+      "caption_lead": "Forces in 1 Dimension",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf393-1",
+      "kind": "figure",
+      "number": "11",
+      "pdf_page": 393,
+      "printed_page": 381,
+      "caption_lead": "A leg is suspended by a traction system in which",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf393-2",
+      "kind": "figure",
+      "number": "11",
+      "pdf_page": 393,
+      "printed_page": 381,
+      "caption_lead": ") (Note that the tibia is the shin bone shown in",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf395-1",
+      "kind": "figure",
+      "number": "12",
+      "pdf_page": 395,
+      "printed_page": 383,
+      "caption_lead": "A baby is weighed using a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf399-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 399,
+      "printed_page": 387,
+      "caption_lead": "Frictional forces, such asf, always oppose motion or",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf402-1",
+      "kind": "table",
+      "number": "1",
+      "pdf_page": 402,
+      "printed_page": 390,
+      "caption_lead": "Coefficients of Static and Kinetic Friction.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf404-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 404,
+      "printed_page": 392,
+      "caption_lead": "Artificial knee replacement is a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf406-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 406,
+      "printed_page": 394,
+      "caption_lead": "The motion of the skier and friction are parallel",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf408-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 408,
+      "printed_page": 396,
+      "caption_lead": "Forces and Motion",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf411-1",
+      "kind": "figure",
+      "number": "7",
+      "pdf_page": 411,
+      "printed_page": 399,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf413-1",
+      "kind": "figure",
+      "number": "8",
+      "pdf_page": 413,
+      "printed_page": 401,
+      "caption_lead": "Part of the climber’s weight",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf414-1",
+      "kind": "figure",
+      "number": "9",
+      "pdf_page": 414,
+      "printed_page": 402,
+      "caption_lead": "Which method of sliding a block",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf417-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 417,
+      "printed_page": 405,
+      "caption_lead": "(a) A sketch of Tarzan hanging from a vine. (b) Arrows are",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf421-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 421,
+      "printed_page": 409,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf421-2",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 421,
+      "printed_page": 409,
+      "caption_lead": "Find the acceleration of the 49.00-kg sled and",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf422-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 422,
+      "printed_page": 410,
+      "caption_lead": "An overhead view of the horizontal forces",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf423-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 423,
+      "printed_page": 411,
+      "caption_lead": "Superhero and",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf425-1",
+      "kind": "figure",
+      "number": "8",
+      "pdf_page": 425,
+      "printed_page": 413,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf432-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 432,
+      "printed_page": 420,
+      "caption_lead": "Achilles tendon",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf433-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 433,
+      "printed_page": 421,
+      "caption_lead": "The forceT2 needed to hold steady the person being",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf435-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 435,
+      "printed_page": 423,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf436-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 436,
+      "printed_page": 424,
+      "caption_lead": "Each rugby player has great momentum, which will affect",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.8",
+        "6.9"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf451-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 451,
+      "printed_page": 439,
+      "caption_lead": "A graph of force versus time with time along",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.11"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf460-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 460,
+      "printed_page": 448,
+      "caption_lead": "A car of massm1 moving with a velocity ofv1 bumps into",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.12"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf463-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 463,
+      "printed_page": 451,
+      "caption_lead": "The horizontal component of a projectile’s momentum is",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 6,
+      "section_candidates": [
+        "6.12"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf483-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 483,
+      "printed_page": 471,
+      "caption_lead": "Examples of work. (a) The work done by the forceFon this",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf488-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 488,
+      "printed_page": 476,
+      "caption_lead": "A man pushes a crate up a ramp.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf489-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 489,
+      "printed_page": 477,
+      "caption_lead": "The boy does work on the system of the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf490-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 490,
+      "printed_page": 478,
+      "caption_lead": "A rescue sled",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf494-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 494,
+      "printed_page": 482,
+      "caption_lead": "(a) A graph ofFcosθ vs.d, whenF",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf495-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 495,
+      "printed_page": 483,
+      "caption_lead": "A package on a roller belt is pushed horizontally through a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf505-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 505,
+      "printed_page": 493,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf510-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 510,
+      "printed_page": 498,
+      "caption_lead": "(a) The work done to lift the weight is stored in the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf512-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 512,
+      "printed_page": 500,
+      "caption_lead": "The change in",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf515-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 515,
+      "printed_page": 503,
+      "caption_lead": "The work done by the ground upon the kangaroo reduces its",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf516-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 516,
+      "printed_page": 504,
+      "caption_lead": "The speed of a roller coaster increases as gravity",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf521-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 521,
+      "printed_page": 509,
+      "caption_lead": "A marble rolls down a ruler, and its speed on the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.3"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf528-1",
+      "kind": "table",
+      "number": "2",
+      "pdf_page": 528,
+      "printed_page": 516,
+      "caption_lead": "Efficiency of the Human Body and Mechanical Devices.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf534-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 534,
+      "printed_page": 522,
+      "caption_lead": "When this woman runs upstairs starting from",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf540-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 540,
+      "printed_page": 528,
+      "caption_lead": "Energy consumed by humans is",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf541-1",
+      "kind": "table",
+      "number": "4",
+      "pdf_page": 541,
+      "printed_page": 529,
+      "caption_lead": "Basal Metabolic Rates (BMR).",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf543-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 543,
+      "printed_page": 531,
+      "caption_lead": "A pulse oxymeter is an apparatus that",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf544-1",
+      "kind": "table",
+      "number": "5",
+      "pdf_page": 544,
+      "printed_page": 532,
+      "caption_lead": "Energy and Oxygen Consumption Rates1 (Power).",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf545-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 545,
+      "printed_page": 533,
+      "caption_lead": "This fMRI scan shows an increased",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf548-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 548,
+      "printed_page": 536,
+      "caption_lead": "Shot putter at the Dornoch",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-table-pdf549-1",
+      "kind": "table",
+      "number": "5",
+      "pdf_page": 549,
+      "printed_page": 537,
+      "caption_lead": ")",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf551-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 551,
+      "printed_page": 539,
+      "caption_lead": "The Daedalus 88 in flight. (credit: NASA photo",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf552-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 552,
+      "printed_page": 540,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf553-1",
+      "kind": "figure",
+      "number": "7",
+      "pdf_page": 553,
+      "printed_page": 541,
+      "caption_lead": "Ancient pyramids were probably constructed",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 7,
+      "section_candidates": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf562-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 562,
+      "printed_page": 550,
+      "caption_lead": "This motionless person is in",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf562-2",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 562,
+      "printed_page": 550,
+      "caption_lead": "This car is in dynamic equilibrium because it is moving at",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf563-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 563,
+      "printed_page": 551,
+      "caption_lead": "An ice hockey stick lying flat on",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf564-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 564,
+      "printed_page": 552,
+      "caption_lead": "The same forces are applied at other",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf565-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 565,
+      "printed_page": 553,
+      "caption_lead": "Torque",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf569-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 569,
+      "printed_page": 557,
+      "caption_lead": "Torque is the turning or twisting effectiveness of a force,",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf571-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 571,
+      "printed_page": 559,
+      "caption_lead": "A force applied to an object can produce a torque,",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf573-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 573,
+      "printed_page": 561,
+      "caption_lead": "Two children balancing a seesaw satisfy both",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf583-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 583,
+      "printed_page": 571,
+      "caption_lead": "A man balances a toy doll",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf584-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 584,
+      "printed_page": 572,
+      "caption_lead": "This pencil is in the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf585-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 585,
+      "printed_page": 573,
+      "caption_lead": "If the pencil is displaced",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf585-2",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 585,
+      "printed_page": 573,
+      "caption_lead": "If the pencil is displaced",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf586-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 586,
+      "printed_page": 574,
+      "caption_lead": "This figure shows unstable",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf587-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 587,
+      "printed_page": 575,
+      "caption_lead": "If the pencil is displaced",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf588-1",
+      "kind": "figure",
+      "number": "7",
+      "pdf_page": 588,
+      "printed_page": 576,
+      "caption_lead": "(a) The center of gravity of an adult is above the hip joints",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf589-1",
+      "kind": "figure",
+      "number": "8",
+      "pdf_page": 589,
+      "printed_page": 577,
+      "caption_lead": "The center of gravity of a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf591-1",
+      "kind": "figure",
+      "number": "9",
+      "pdf_page": 591,
+      "printed_page": 579,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf593-1",
+      "kind": "figure",
+      "number": "10",
+      "pdf_page": 593,
+      "printed_page": 581,
+      "caption_lead": "A gymnast performs full split. The center of",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf598-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 598,
+      "printed_page": 586,
+      "caption_lead": "A pole vaulter holds a pole horizontally with",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf598-2",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 598,
+      "printed_page": 586,
+      "caption_lead": "A pole vaulter is holding a pole horizontally",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf599-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 599,
+      "printed_page": 587,
+      "caption_lead": "A pole vaulter is holding a pole horizontally",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf603-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 603,
+      "printed_page": 591,
+      "caption_lead": "Balancing Act",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf606-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 606,
+      "printed_page": 594,
+      "caption_lead": "A nail puller is a lever with a large",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf609-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 609,
+      "printed_page": 597,
+      "caption_lead": "(a) In the case of the wheelbarrow, the output force or",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf612-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 612,
+      "printed_page": 600,
+      "caption_lead": "(a) A crank is a type of lever",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.5"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf615-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 615,
+      "printed_page": 603,
+      "caption_lead": "(a) The figure shows the forearm of a person holding a book.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf620-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 620,
+      "printed_page": 608,
+      "caption_lead": "(a) Good posture places the upper body’s cg",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf621-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 621,
+      "printed_page": 609,
+      "caption_lead": "People adjust their stance to maintain",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf625-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 625,
+      "printed_page": 613,
+      "caption_lead": "This figure shows that large forces are exerted",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf628-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 628,
+      "printed_page": 616,
+      "caption_lead": "The Achilles",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf629-1",
+      "kind": "figure",
+      "number": "6",
+      "pdf_page": 629,
+      "printed_page": 617,
+      "caption_lead": "The knee joint",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf630-1",
+      "kind": "figure",
+      "number": "7",
+      "pdf_page": 630,
+      "printed_page": 618,
+      "caption_lead": "A mass is connected by pulleys and wires to",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf631-1",
+      "kind": "figure",
+      "number": "8",
+      "pdf_page": 631,
+      "printed_page": 619,
+      "caption_lead": "",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf632-1",
+      "kind": "figure",
+      "number": "9",
+      "pdf_page": 632,
+      "printed_page": 620,
+      "caption_lead": "The center of mass of the head",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf633-1",
+      "kind": "figure",
+      "number": "10",
+      "pdf_page": 633,
+      "printed_page": 621,
+      "caption_lead": "The muscles in the back of",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf634-1",
+      "kind": "figure",
+      "number": "11",
+      "pdf_page": 634,
+      "printed_page": 622,
+      "caption_lead": "A child being lifted by a father’s lower leg.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf635-1",
+      "kind": "figure",
+      "number": "12",
+      "pdf_page": 635,
+      "printed_page": 623,
+      "caption_lead": "A person clenching a bullet",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf636-1",
+      "kind": "figure",
+      "number": "13",
+      "pdf_page": 636,
+      "printed_page": 624,
+      "caption_lead": "A woman doing pushups.",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 8,
+      "section_candidates": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf642-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 642,
+      "printed_page": 630,
+      "caption_lead": "The Three Types of Muscle Tissue. The body",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf648-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 648,
+      "printed_page": 636,
+      "caption_lead": "The Three Connective Tissue Layers. Bundles of muscle fibers,",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf651-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 651,
+      "printed_page": 639,
+      "caption_lead": "Muscle Fiber. A skeletal muscle fiber is surrounded by a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf653-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 653,
+      "printed_page": 641,
+      "caption_lead": "The Sarcomere. The sarcomere, the region from one Z-line to",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf656-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 656,
+      "printed_page": 644,
+      "caption_lead": "Motor End-Plate and Innervation. At the NMJ, the axon",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf659-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 659,
+      "printed_page": 647,
+      "caption_lead": "The T-tubule. Narrow T-tubules permit the conduction",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.2"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf667-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 667,
+      "printed_page": 655,
+      "caption_lead": "Contraction of a Muscle Fiber. A cross-bridge forms between",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf668-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 668,
+      "printed_page": 656,
+      "caption_lead": "Relaxation of a Muscle Fiber. Ca++ ions are pumped back",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf670-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 670,
+      "printed_page": 658,
+      "caption_lead": "The Sliding Filament Model of Muscle Contraction. When a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf672-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 672,
+      "printed_page": 660,
+      "caption_lead": "Skeletal Muscle Contraction. (a) The active site on actin is",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf675-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 675,
+      "printed_page": 663,
+      "caption_lead": "Muscle Metabolism. (a) Some ATP is stored in a resting",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.3"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf687-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 687,
+      "printed_page": 675,
+      "caption_lead": "Types of Muscle Contractions. During isotonic contractions,",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf691-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 691,
+      "printed_page": 679,
+      "caption_lead": "The Ideal Length of a Sarcomere. Sarcomeres produce",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf692-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 692,
+      "printed_page": 680,
+      "caption_lead": "A Myogram of a Muscle Twitch. A single muscle twitch has a",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf693-1",
+      "kind": "figure",
+      "number": "4",
+      "pdf_page": 693,
+      "printed_page": 681,
+      "caption_lead": "Wave Summation and Tetanus. (a) The",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf695-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 695,
+      "printed_page": 683,
+      "caption_lead": "Treppe. When muscle tension increases in",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.4"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf708-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 708,
+      "printed_page": 696,
+      "caption_lead": "Marathoners. Long-distance runners have a large number of",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf709-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 709,
+      "printed_page": 697,
+      "caption_lead": "Hypertrophy. Body builders have a large number of FG",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf712-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 712,
+      "printed_page": 700,
+      "caption_lead": "Atrophy. Muscle mass is reduced as muscles",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.6"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf718-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 718,
+      "printed_page": 706,
+      "caption_lead": "Prime Movers and Synergists. The biceps brachii flex the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf722-1",
+      "kind": "figure",
+      "number": "2",
+      "pdf_page": 722,
+      "printed_page": 710,
+      "caption_lead": "Muscle Shapes and Fiber Alignment. The skeletal muscles of",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf723-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 723,
+      "printed_page": 711,
+      "caption_lead": "Biceps Brachii Muscle Contraction. The large mass at the",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 9,
+      "section_candidates": [
+        "9.7"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf737-1",
+      "kind": "figure",
+      "number": "1",
+      "pdf_page": 737,
+      "printed_page": 725,
+      "caption_lead": "A graph of deformationΔL",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 10,
+      "section_candidates": [
+        "10.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf738-1",
+      "kind": "figure",
+      "number": "3",
+      "pdf_page": 738,
+      "printed_page": 726,
+      "caption_lead": "(a) Tension. The",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 10,
+      "section_candidates": [
+        "10.1"
+      ]
+    },
+    {
+      "id": "bhm-figure-pdf740-1",
+      "kind": "figure",
+      "number": "5",
+      "pdf_page": 740,
+      "printed_page": 728,
+      "caption_lead": "Typical stress-strain curve for",
+      "status": "caption_line_candidate_visual_review_required",
+      "rights_status": "item_specific_credit_and_exception_review_required",
+      "chapter": 10,
+      "section_candidates": [
+        "10.1"
+      ]
+    }
+  ]
+}

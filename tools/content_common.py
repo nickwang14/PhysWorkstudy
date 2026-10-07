@@ -15,9 +15,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 CURRICULUM = Path("theory-and-knowledge/knowledge/curriculum")
 AP_FILENAME = "anatomy-and-physiology-2e_-_WEB.pdf"
 AP_OFFSET = 16
+TEXTBOOKS_DIR = Path("theory-and-knowledge/knowledge/textbooks")
 AP_INDEX_DIR = Path("theory-and-knowledge/knowledge/textbook-indices/anatomy-and-physiology-2e")
 AP_INDEX = AP_INDEX_DIR / "index.json"
-AP_PDF = Path("docs") / AP_FILENAME
+AP_PDF = TEXTBOOKS_DIR / AP_FILENAME
 READ_MORE = re.compile(r"^## Read More \(Optional\)\s*(.*?)(?=^## |\Z)", re.MULTILINE | re.DOTALL)
 
 

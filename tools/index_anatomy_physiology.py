@@ -15,7 +15,7 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
-from content_common import AP_FILENAME, AP_INDEX_DIR, AP_OFFSET, sha256_file, verify_source
+from content_common import AP_FILENAME, AP_INDEX_DIR, AP_OFFSET, TEXTBOOKS_DIR, sha256_file, verify_source
 
 FILENAME = AP_FILENAME
 OFFSET = AP_OFFSET
@@ -24,7 +24,7 @@ CHAPTER = re.compile(r"^Chapter (\d+) (.+)$")
 SECTION = re.compile(r"^(\d+\.\d+) (.+)$")
 # Uppercase FIGURE/TABLE distinguishes caption labels from in-text references.
 CAPTION = re.compile(r"^[ \t]*(FIGURE|TABLE)[ \t]+(\d+\.\d+)\b[ \t]*(.*)$", re.MULTILINE)
-PDF_LINK = "../../../../docs/" + FILENAME
+PDF_LINK = "../../textbooks/" + FILENAME
 ATTRIBUTION = (
     "Source: J. Gordon Betts et al. / OpenStax, *Anatomy and Physiology 2e*, "
     "© 2026 Rice University; original publication 2022. "
@@ -313,7 +313,7 @@ def lookup(index: dict, query: str) -> list[dict]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--pdf", type=Path, default=Path("docs") / FILENAME)
+    parser.add_argument("--pdf", type=Path, default=TEXTBOOKS_DIR / FILENAME)
     parser.add_argument("--output-dir", type=Path, default=OUTPUT)
     parser.add_argument("--write", action="store_true", help="Refresh generated index files only.")
     parser.add_argument("--query", help="Search an existing index without opening the PDF.")

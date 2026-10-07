@@ -19,7 +19,7 @@ This is designed to feel like a Duolingo or Candy Crush progression map: users m
 
 Each lesson file includes: title, learning objective, core concept, key terms, knowledge check questions, and "apply it" tip. Authored lessons can include a topic-matched optional textbook reading. See the internal [lesson reading index](curriculum/foundations-of-movement/reading-options.md).
 
-Textbook PDFs in the repository-root `docs/` are local-only source material and are ignored by Git. Optional reading content for the app is prepared as a separately attributed excerpt in `curriculum/foundations-of-movement/optional-readings/`; lessons link to those local files, not to the PDFs. Excerpts remain drafts until checked against the source pages and reviewed under [content operations](../../project-management/content-operations.md). Optional readings stay outside required checks, prerequisites, gates, daily streak requirements and texting exports.
+Textbook PDFs in `textbooks/` are local-only source material and are ignored by Git. Optional reading content for the app is prepared as a separately attributed excerpt in `curriculum/foundations-of-movement/optional-readings/`; lessons link to those local files, not to the PDFs. Excerpts remain drafts until checked against the source pages and reviewed under [content operations](../../project-management/content-operations.md). Optional readings stay outside required checks, prerequisites, gates, daily streak requirements and texting exports.
 
 ### `textbook-indices/`
 Start source-backed content work with the [textbook reference indices](textbook-indices/README.md). A&P is fully indexed by chapter, numbered subchapter, navigation aid, figure and table with PDF/printed pages. Its curated guide identifies useful teaching material, while its usage log tracks what was checked, created and needs another textbook visit. FES has a focused source map, not a full index; other sources are queued. Use the canonical [textbook-learning-material skill](../../.agents/skills/textbook-learning-material/SKILL.md) to locate, read and compile material, then update these records alongside the content.
@@ -43,7 +43,7 @@ Canonical terminology maintained by the Content Strategist:
 ## Source Textbooks and Curriculum Direction
 We are using a layered academic approach: start with human movement foundations, then move into anatomy and physiology, then biomechanics and kinetics, then program design and adaptation.
 
-### Key source texts held locally in `docs/` (not included in clones)
+### Key source texts held locally in `textbooks/` (not included in clones)
 - `Biomechanics-of-Human-Movement-1600891203._print.pdf`
   - Major themes: prerequisite skills, anatomy basics, linear and angular kinematics, kinetics, work, power, and energy
   - Best fit for: biomechanics concepts, movement analysis, force and motion reasoning

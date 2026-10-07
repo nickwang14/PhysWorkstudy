@@ -13,7 +13,7 @@ from pathlib import Path
 import pypdfium2 as pdfium
 from PIL import Image, ImageDraw
 
-from content_common import AP_INDEX, REPO_ROOT, bounded_pages, verify_page_count, verify_source
+from content_common import AP_INDEX, AP_PDF, REPO_ROOT, bounded_pages, verify_page_count, verify_source
 
 ROOT = REPO_ROOT
 INDEX = AP_INDEX
@@ -71,7 +71,7 @@ def main() -> int:
         if not 72 <= args.dpi <= 180:
             raise ValueError("Use a review resolution between 72 and 180 dpi.")
         index = json.loads((ROOT / INDEX).read_text(encoding="utf-8"))
-        pdf = ROOT / "docs" / index["source"]["filename"]
+        pdf = ROOT / AP_PDF
         source = verify_source(pdf, index)
         graphics = select_graphics(index, args.ids)
         pages = review_pages(graphics, args.extra_pages, source["pdf_pages"])

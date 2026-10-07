@@ -70,7 +70,7 @@ For each authored lesson:
 ### 2. Parse and Index the Textbook Before Selecting Material
 
 Start with the canonical [textbook-learning-material skill](../../../../.agents/skills/textbook-learning-material/SKILL.md) and the source registry, following [shared repository guidance](../../../../AGENTS.md). For each new source or edition:
-- Record author/title/edition, local filename, ISBN where available, source fingerprint, license notice and required attribution. PDFs remain local-only in `docs/`.
+- Record author/title/edition, local filename, ISBN where available, source fingerprint, license notice and required attribution. PDFs remain local-only in `theory-and-knowledge/knowledge/textbooks/`.
 - Check Contents, PDF bookmarks, glossary/Key Terms, alphabetical index, references, appendices, objectives, summaries, review questions, answer keys and interactive links. Record exact locations and whether each aid is present, absent or unverified.
 - Verify PDF viewer versus printed page numbering from actual footers; detect numbering changes rather than assuming a universal offset or trusting PDF page labels.
 - Index chapters, numbered subchapters/sections, labelled figures and tables with stable IDs and both page-number systems. Record continuation pages, shared-page boundaries and unlabelled-artwork/OCR coverage gaps.

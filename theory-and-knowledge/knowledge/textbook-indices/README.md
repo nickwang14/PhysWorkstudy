@@ -4,14 +4,14 @@ Start here when planning, checking or compiling learning material. Indices locat
 
 ## Source Registry
 
-| Source / local filename in `docs/` | Index status | Start here |
+| Source / local filename in `theory-and-knowledge/knowledge/textbooks/` | Index status | Start here |
 |---|---|---|
 | A&P — `anatomy-and-physiology-2e_-_WEB.pdf` | Indexed: 28 chapters, 169 numbered sections, 720 figures and 104 tables | [A&P guide](anatomy-and-physiology-2e/README.md) |
-| Biomechanics — `Biomechanics-of-Human-Movement-1600891203._print.pdf` | Queued; existing lesson assignments are not a full textbook index | [Existing reading registry](../curriculum/foundations-of-movement/reading-options.md) |
+| Biomechanics — `Biomechanics-of-Human-Movement-1600891203._print.pdf` | Indexed: 10 chapters, 71 numbered sections, 220 caption-line candidates; navigation-aid and rights audit remain open | [Biomechanics guide](biomechanics-of-human-movement/README.md) |
 | Body Physics — `Body-Physics-Motion-to-Metabolism-1571156906.pdf` | Queued | [Existing reading registry](../curriculum/foundations-of-movement/reading-options.md) |
 | Exercise Science — `Foundations-of-Exercise-Science-1748368639.pdf` | Focused Chapter 5 pages checked; full index queued | [Focused source map](foundations-of-exercise-science/README.md) |
 
-Only A&P has a full textbook index. FES has a focused source map for curriculum Chapter 5; full indexing remains queued. Each additional textbook needs its own verified edition, page map and navigation/graphics audit. Do not reuse the A&P adapter or assume its offset applies elsewhere.
+Only A&P currently has a full navigation-and-graphics index. Biomechanics now has a source-specific chapter/section and caption-line locator index; its full navigation-aid, visual, citation and rights reviews remain open. FES has a focused source map for curriculum Chapter 5; full indexing remains queued. Each additional textbook needs its own verified edition, page map and navigation/graphics audit. Do not reuse the A&P adapter or assume its offset applies elsewhere.
 
 ## Index-First, Source-Verified Workflow
 
@@ -26,7 +26,7 @@ Follow the canonical [curriculum workflow](../curriculum/foundations-of-movement
 
 ## Storage and Rights
 
-- PDFs remain local-only in `docs/`, covered by `.gitignore`; indexes link to them with one-based `#page=` viewer anchors. A clone without the PDFs can still search the metadata.
+- PDFs remain local-only in `theory-and-knowledge/knowledge/textbooks/`, covered by `.gitignore`; indexes link to them with one-based `#page=` viewer anchors. A clone without the PDFs can still search the metadata.
 - Commit navigation metadata, original usefulness notes, source citations and review records—not whole-book text dumps, source PDF pages or an unreviewed gallery of images.
 - A figure locator is **not** permission to reproduce it. Verify its caption, credit, license exception, crop/panels and alt text before extraction or publication.
 - Follow [content operations](../../../project-management/content-operations.md). NC/SA restrictions and third-party credits remain applicable; there is no automatic commercial-build clearance.
