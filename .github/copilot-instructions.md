@@ -1,0 +1,5 @@
+# Copilot Entry Point
+
+Read the repository-root [shared agent guidance](../AGENTS.md) before substantial work. PhysiApp is a **Kotlin/Jetpack Compose Android app**. The owner orchestrates conversations, agents and repository work in **VS Code**, and builds/implements the app with **Google AI Studio**. Follow PD-008 and the [development workflow](../docs/development-workflow.md); never claim unperformed AI Studio/Android validation. Product decisions and project-management records override role defaults.
+
+Skills are authored only in `.agents/skills/`. Agent definitions in `.github/agents/` are generated from canonical `.claude/agents/` profiles by `python tools/setup_agent_platforms.py`; do not edit them independently. See [.agents/skills/README.md](../.agents/skills/README.md) for discovery and clone setup.

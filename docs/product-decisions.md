@@ -107,7 +107,7 @@ Intensity-based rewards create incentive misalignment. They encourage overtraini
 
 ### PD-005: Platform Roles - Android Primary, Web Companion
 **Date:** 2026-08-06
-**Status:** Decided
+**Status:** Decided; Kotlin/Compose Android direction confirmed by PD-008 on 2026-10-06; future web technology TBD
 
 **Decision:**
 PhysiApp has two platform surfaces with distinct roles:
@@ -115,29 +115,29 @@ PhysiApp has two platform surfaces with distinct roles:
 | Platform | Role | Features |
 |---|---|---|
 | **Android** | Primary product | Full feature set over time: progression map, workout logging, learning modules, adaptive splits, streaks, notifications, and later social surfaces |
-| **Flutter Web** | Companion dashboard | Progress review, curriculum browsing, account settings, and later shareable milestone pages - no workout logging |
+| **Web companion (future; technology undecided)** | Companion dashboard | Progress review, curriculum browsing, account settings, and later shareable milestone pages - no workout logging |
 
-Both are built from a single Flutter codebase. Flutter Web is not a separate product or a marketing landing page - it is a read-oriented companion that lets users check in from a desktop and, in later phases, share progress links.
+The Android app is built in **Kotlin/Jetpack Compose**. Future web-companion technology is **TBD**; select its implementation separately if/when companion work is approved. The companion remains read-oriented, not a marketing landing page or a second full action surface.
 
-**What Flutter Web includes over the product roadmap:**
+**What the web companion includes over the product roadmap:**
 - Progress dashboard (weekly training goal status, learning streak, program position)
 - Curriculum browser (explore chapters and lessons without interactive completion)
 - Shareable milestone or streak cards (public URL, no auth required, post-MVP)
 - Account and program settings
 
-**What Flutter Web excludes (Android-only):**
+**What the web companion excludes (Android-only):**
 - Workout logging (requires gym-context, offline-first, mobile UX)
 - Daily learning node completion (push notifications and daily habit loop are mobile-native)
 - Progression map interaction (node completion triggers are mobile-only)
 
 **Rationale:**
-Workout logging and daily learning are active, in-the-moment behaviors that belong on the device in your pocket. The web surface serves review, sharing, and onboarding - not the daily habit loop. This keeps the Flutter Web scope contained and avoids building two full products.
+Workout logging and daily learning are active, in-the-moment behaviors that belong on the device in your pocket. The web surface serves review, sharing, and onboarding - not the daily habit loop. This keeps the web-companion scope contained and avoids building two full products.
 
 **MVP note:**
 Shareable and social web surfaces are deferred until after the core Android and curriculum loops are stable.
 
 **Implication for architecture:**
-The Solutions Architect must ensure Flutter Web only renders read-only views of state owned by the mobile client and backend. No web-only write paths for core progression data.
+The Solutions Architect must ensure any future web companion respects state ownership and has no web-only write paths for core progression data. Preserve the Kotlin/Compose Android direction; decide future web technology separately without assuming a shared client codebase.
 
 ---
 
@@ -185,6 +185,23 @@ All 73 authored lessons in Chapters 1–4 have expanded daily-reading drafts. Op
 
 **Rationale:**
 Increase depth and usefulness for everyday learning while preserving the 5–10-minute standard habit and allowing interested learners to go further without extra progression pressure.
+
+---
+
+### PD-008: Kotlin App and VS Code / Google AI Studio Workflow
+**Date:** 2026-10-06
+**Status:** Owner-confirmed current direction
+
+**Decision:**
+- PhysiApp is already built in **Kotlin with Jetpack Compose**. Kotlin/Compose is the owner-confirmed current Android implementation and development direction.
+- The owner orchestrates conversations, agent tasks, repository review and Git operations in **VS Code**.
+- The owner builds/implements the app with **Google AI Studio**. Agents should prepare Kotlin/Compose work and clear handoffs for that workspace, then review and reconcile returned changes against repository decisions and source.
+- PD-005's Android-primary/web-companion behavior remains the product boundary. Kotlin/Compose is the Android technology; a future web stack requires its own decision.
+
+**Agent implications:**
+Use Android/Kotlin/Compose concepts and the actual Gradle project for app setup and validation. Planned backend/provider services are still proposals until actually implemented. Do not infer automated AI Studio integration, a successful build or production/clinical readiness from this working-context decision.
+
+**Reference:** [Development and orchestration workflow](development-workflow.md), also surfaced in root [AGENTS.md](../AGENTS.md) for every platform/role.
 
 ---
 
