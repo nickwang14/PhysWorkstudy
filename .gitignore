@@ -24,4 +24,5 @@ build/
 # Standalone Android build outputs stay local.
 *.apk
 *.aab
+*-debug.log
 # PhysiApp_installer.zip stays tracked at the root for the owner's workflow.

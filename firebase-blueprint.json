@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile containing training preferences, goals, and metrics",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Unique Firebase Authentication UID" },
+        "email": { "type": "string", "description": "User email address" },
+        "displayName": { "type": "string", "description": "User display name" },
+        "photoUrl": { "type": "string", "description": "User avatar photo URL" },
+        "trainingGoal": { "type": "string", "description": "Primary fitness goal" },
+        "fitnessLevel": { "type": "string", "description": "Fitness experience level" },
+        "weeklyTargetWorkouts": { "type": "integer", "description": "Target workout sessions per week" },
+        "favoriteSplit": { "type": "string", "description": "Preferred workout split" },
+        "weightKg": { "type": "number", "description": "Body weight in kilograms" },
+        "heightCm": { "type": "number", "description": "Height in centimeters" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp via serverTimestamp" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Last update timestamp via serverTimestamp" }
+      },
+      "required": [
+        "userId",
+        "email",
+        "displayName",
+        "trainingGoal",
+        "fitnessLevel",
+        "weeklyTargetWorkouts",
+        "favoriteSplit",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "WorkoutLog": {
+      "title": "WorkoutLog",
+      "description": "User workout session history and progress log",
+      "type": "object",
+      "properties": {
+        "logId": { "type": "string", "description": "Unique workout log ID" },
+        "userId": { "type": "string", "description": "Owner Firebase Authentication UID" },
+        "workoutName": { "type": "string", "description": "Name of completed workout" },
+        "splitDay": { "type": "string", "description": "Split program day" },
+        "durationMinutes": { "type": "integer", "description": "Duration of session in minutes" },
+        "completedExercisesCount": { "type": "integer", "description": "Number of completed exercises" },
+        "totalExercisesCount": { "type": "integer", "description": "Total scheduled exercises" },
+        "notes": { "type": "string", "description": "Optional workout session notes" },
+        "completedAt": { "type": "string", "format": "date-time", "description": "Completion timestamp via serverTimestamp" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp via serverTimestamp" }
+      },
+      "required": [
+        "logId",
+        "userId",
+        "workoutName",
+        "splitDay",
+        "durationMinutes",
+        "completedExercisesCount",
+        "totalExercisesCount",
+        "completedAt",
+        "createdAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile document storing personal settings and workout targets"
+    },
+    "/users/{userId}/workout_logs/{logId}": {
+      "schema": "WorkoutLog",
+      "description": "Subcollection of logged workout sessions for progress tracking"
+    }
+  }
+}

@@ -19,11 +19,13 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
+import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.AltRoute
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Dashboard
 import androidx.compose.material.icons.filled.FitnessCenter
 import androidx.compose.material.icons.filled.LocalFireDepartment
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Card
@@ -46,6 +48,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -59,18 +62,23 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
+import com.example.physiapp.data.auth.AuthManager
 import com.example.physiapp.data.model.ExerciseDef
+import com.example.physiapp.data.model.WorkoutLogDoc
 import com.example.physiapp.data.model.WorkoutTemplate
 import com.example.physiapp.data.repository.ActiveWorkoutManager
 import com.example.physiapp.data.repository.CurriculumRepository
 import com.example.physiapp.data.repository.ExerciseRepository
 import com.example.physiapp.data.repository.UserPreferencesRepository
+import com.example.physiapp.data.repository.UserProfileRepository
 import com.example.physiapp.ui.components.ActiveWorkoutMiniBar
 import com.example.physiapp.ui.components.ExerciseMotionPlayer
 import com.example.physiapp.ui.components.ReadinessDialog
 import com.example.physiapp.ui.screens.ActiveWorkoutScreen
 import com.example.physiapp.ui.screens.CurriculumScreen
 import com.example.physiapp.ui.screens.LessonDetailScreen
+import com.example.physiapp.ui.screens.LoginScreen
+import com.example.physiapp.ui.screens.ProfileScreen
 import com.example.physiapp.ui.screens.ProgressionMapScreen
 import com.example.physiapp.ui.screens.SettingsAndBadgesDialog
 import com.example.physiapp.ui.screens.TodayScreen
@@ -79,19 +87,35 @@ import com.example.physiapp.ui.screens.WorkoutsScreen
 import com.example.physiapp.ui.theme.AmberTertiary
 import com.example.physiapp.ui.theme.PhysiAppTheme
 import com.example.physiapp.ui.theme.TealPrimary
+import kotlinx.coroutines.launch
 
 enum class AppDestination(val label: String, val icon: ImageVector) {
     TODAY("Today", Icons.Default.Dashboard),
     JOURNEY("Journey", Icons.Default.AltRoute),
     WORKOUTS("Workouts", Icons.Default.FitnessCenter),
-    CURRICULUM("Curriculum", Icons.AutoMirrored.Filled.MenuBook)
+    CURRICULUM("Curriculum", Icons.AutoMirrored.Filled.MenuBook),
+    PROFILE("Profile", Icons.Default.Person)
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PhysiAppMain() {
     val context = LocalContext.current
+    val coroutineScope = rememberCoroutineScope()
+    val authManager = remember { AuthManager() }
+    val currentUser by authManager.currentUserFlow.collectAsState(initial = authManager.currentUser)
+
+    // Auth Gate: Enforce Google SSO before entering application or accessing Firestore
+    val user = currentUser
+    if (user == null) {
+        PhysiAppTheme {
+            LoginScreen(authManager = authManager)
+        }
+        return
+    }
+
     val repository = remember { UserPreferencesRepository(context) }
+    val profileRepository = remember(user.uid) { UserProfileRepository(context) }
 
     val progress by repository.progressFlow.collectAsState()
     val preferences by repository.prefsFlow.collectAsState()
@@ -114,14 +138,18 @@ fun PhysiAppMain() {
     var showReadinessDialog by remember { mutableStateOf(false) }
     var selectedExerciseDetails by remember { mutableStateOf<ExerciseDef?>(null) }
 
-    // Back handling: if workout is full screen, minimize it rather than discarding!
+    // Back handling
     BackHandler(
-        enabled = selectedLessonId != null || (activeSession != null && !isSessionMinimized) || reviewingSplitTemplate != null
+        enabled = selectedLessonId != null ||
+            (activeSession != null && !isSessionMinimized) ||
+            reviewingSplitTemplate != null ||
+            currentDestination != AppDestination.TODAY
     ) {
         when {
             selectedLessonId != null -> selectedLessonId = null
             reviewingSplitTemplate != null -> reviewingSplitTemplate = null
             activeSession != null && !isSessionMinimized -> ActiveWorkoutManager.minimize()
+            currentDestination != AppDestination.TODAY -> currentDestination = AppDestination.TODAY
         }
     }
 
@@ -149,6 +177,22 @@ fun PhysiAppMain() {
                 onMinimize = { ActiveWorkoutManager.minimize() },
                 onFinish = { session ->
                     repository.logWorkout(session)
+                    // Automatically sync completed active workout to Cloud Firestore
+                    coroutineScope.launch {
+                        val completedSets = session.exercises.sumOf { ex -> ex.sets.count { it.isCompleted } }
+                        val totalSets = session.exercises.sumOf { it.sets.size }
+                        val logDoc = WorkoutLogDoc(
+                            logId = "log_${session.id}",
+                            userId = user.uid,
+                            workoutName = session.title,
+                            splitDay = if (session.isDeload) "Deload Recovery" else session.title,
+                            durationMinutes = session.durationMinutes.toLong().coerceAtLeast(1L),
+                            completedExercisesCount = session.exercises.size.toLong(),
+                            totalExercisesCount = session.exercises.size.toLong(),
+                            notes = if (session.notes.isNotBlank()) session.notes else "Completed Active Workout (${session.sessionRpe}/10 RPE, $completedSets/$totalSets sets)"
+                        )
+                        profileRepository.logWorkout(logDoc)
+                    }
                     currentDestination = AppDestination.WORKOUTS
                 }
             )
@@ -221,6 +265,17 @@ fun PhysiAppMain() {
                                     color = TealPrimary
                                 )
                             }
+                        }
+
+                        IconButton(
+                            onClick = { currentDestination = AppDestination.PROFILE },
+                            modifier = Modifier.testTag("top_bar_profile_button")
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.AccountCircle,
+                                contentDescription = "Profile & Cloud Progress",
+                                tint = if (currentDestination == AppDestination.PROFILE) TealPrimary else MaterialTheme.colorScheme.onSurfaceVariant
+                            )
                         }
 
                         IconButton(
@@ -331,6 +386,19 @@ fun PhysiAppMain() {
                             onManualCompleteTemplate = { tmpl, dur, rpe, notes ->
                                 val session = ActiveWorkoutManager.createManualCompletedSession(tmpl, dur, rpe, notes)
                                 repository.logWorkout(session)
+                                coroutineScope.launch {
+                                    val logDoc = WorkoutLogDoc(
+                                        logId = "log_${System.currentTimeMillis()}",
+                                        userId = user.uid,
+                                        workoutName = tmpl.title,
+                                        splitDay = tmpl.subtitle,
+                                        durationMinutes = dur.toLong().coerceAtLeast(1L),
+                                        completedExercisesCount = tmpl.defaultExerciseIds.size.toLong(),
+                                        totalExercisesCount = tmpl.defaultExerciseIds.size.toLong(),
+                                        notes = if (notes.isNotBlank()) notes else "Manual completion (${rpe}/10 RPE)"
+                                    )
+                                    profileRepository.logWorkout(logDoc)
+                                }
                             },
                             onStartCustomWorkout = {
                                 ActiveWorkoutManager.startWorkout(null)
@@ -345,6 +413,14 @@ fun PhysiAppMain() {
                             allLessons = CurriculumRepository.allLessons,
                             progress = progress,
                             onOpenLesson = { selectedLessonId = it }
+                        )
+                    }
+
+                    AppDestination.PROFILE -> {
+                        ProfileScreen(
+                            user = user,
+                            authManager = authManager,
+                            profileRepository = profileRepository
                         )
                     }
                 }
@@ -364,6 +440,19 @@ fun PhysiAppMain() {
                     reviewingSplitTemplate = null
                     val session = ActiveWorkoutManager.createManualCompletedSession(tmpl, dur, rpe, notes)
                     repository.logWorkout(session)
+                    coroutineScope.launch {
+                        val logDoc = WorkoutLogDoc(
+                            logId = "log_${System.currentTimeMillis()}",
+                            userId = user.uid,
+                            workoutName = tmpl.title,
+                            splitDay = tmpl.subtitle,
+                            durationMinutes = dur.toLong().coerceAtLeast(1L),
+                            completedExercisesCount = tmpl.defaultExerciseIds.size.toLong(),
+                            totalExercisesCount = tmpl.defaultExerciseIds.size.toLong(),
+                            notes = if (notes.isNotBlank()) notes else "Manual split completion (${rpe}/10 RPE)"
+                        )
+                        profileRepository.logWorkout(logDoc)
+                    }
                     currentDestination = AppDestination.WORKOUTS
                 },
                 onOpenExerciseDetails = { selectedExerciseDetails = it }
