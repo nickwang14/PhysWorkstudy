@@ -27,7 +27,7 @@ object ExerciseRepository {
             ),
             regression = "Assisted TRX Squat or Box Squat to parallel bench",
             progression = "Front Squat with barbell or Zercher Squat",
-            gifUrl = "https://static.exercisedb.dev/media/yn8yg1r.gif"
+            gifUrl = ""
         ),
         ExerciseDef(
             id = "sq-2",
@@ -47,7 +47,7 @@ object ExerciseRepository {
             ),
             regression = "Split squat with both feet on floor",
             progression = "Deficit Bulgarian split squat or barbell loading",
-            gifUrl = "https://static.exercisedb.dev/media/arsYEd3.gif"
+            gifUrl = ""
         ),
 
         // HINGE PATTERN
@@ -70,7 +70,7 @@ object ExerciseRepository {
             ),
             regression = "Wall-touch hip hinge or Cable pull-through",
             progression = "Single-leg Romanian Deadlift",
-            gifUrl = "https://static.exercisedb.dev/media/wQ2c4XD.gif"
+            gifUrl = ""
         ),
         ExerciseDef(
             id = "hg-2",
@@ -90,7 +90,7 @@ object ExerciseRepository {
             ),
             regression = "Banded kettlebell deadlift",
             progression = "Single-arm kettlebell swing",
-            gifUrl = "https://static.exercisedb.dev/media/UHJlbu3.gif"
+            gifUrl = ""
         ),
 
         // PUSH PATTERN
@@ -113,7 +113,7 @@ object ExerciseRepository {
             ),
             regression = "Floor Press with dumbbells (limits shoulder extension range)",
             progression = "Barbell bench press or incline press",
-            gifUrl = "https://assets.exercisedb.dev/media/qU7GQpl.gif"
+            gifUrl = ""
         ),
         ExerciseDef(
             id = "ps-2",
@@ -133,7 +133,7 @@ object ExerciseRepository {
             ),
             regression = "Half-kneeling landmine press",
             progression = "Standing strict barbell military press",
-            gifUrl = "https://static.exercisedb.dev/media/bBi35y3.gif"
+            gifUrl = ""
         ),
 
         // PULL PATTERN
@@ -155,7 +155,7 @@ object ExerciseRepository {
             ),
             regression = "Incline chest-supported row",
             progression = "Bent-over barbell row or meadow row",
-            gifUrl = "https://static.exercisedb.dev/media/C0MA9bC.gif"
+            gifUrl = ""
         ),
         ExerciseDef(
             id = "pl-2",
@@ -175,7 +175,7 @@ object ExerciseRepository {
             ),
             regression = "Band pull-apart or prone Y-raise",
             progression = "Heavier cable load or rings face pull",
-            gifUrl = "https://static.exercisedb.dev/media/veXwo0D.gif"
+            gifUrl = ""
         ),
 
         // CARRY PATTERN
@@ -197,7 +197,7 @@ object ExerciseRepository {
             ),
             regression = "Lighter dumbbells or static isometric carry hold",
             progression = "Trap bar carry or offset weight carry",
-            gifUrl = "https://static.exercisedb.dev/media/qPEzJjA.gif"
+            gifUrl = ""
         ),
         ExerciseDef(
             id = "cr-2",
@@ -217,7 +217,7 @@ object ExerciseRepository {
             ),
             regression = "Lighter load with focus on vertical posture",
             progression = "Heavy kettlebell or sandbag suitcase carry",
-            gifUrl = "https://static.exercisedb.dev/media/mWBtgmb.gif"
+            gifUrl = ""
         ),
 
         // ROTATION / ANTI-ROTATION PATTERN
@@ -239,7 +239,7 @@ object ExerciseRepository {
             ),
             regression = "Half-kneeling Pallof press or lighter band",
             progression = "Pallof press with overhead raise or lateral walkout",
-            gifUrl = "https://static.exercisedb.dev/media/9pa4H5m.gif"
+            gifUrl = ""
         ),
         ExerciseDef(
             id = "rt-2",
@@ -259,7 +259,7 @@ object ExerciseRepository {
             ),
             regression = "Leg extension only, hands remaining on floor",
             progression = "Bird dog with resistance band or isometric square holds",
-            gifUrl = "https://static.exercisedb.dev/media/iny3m5y.gif"
+            gifUrl = ""
         )
     )
 

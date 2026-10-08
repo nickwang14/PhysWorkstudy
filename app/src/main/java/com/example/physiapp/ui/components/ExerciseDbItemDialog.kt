@@ -43,10 +43,12 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.physiapp.BuildConfig
 import coil.Coil
 import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
 import com.example.physiapp.data.model.ExerciseDbItem
+import com.example.physiapp.data.repository.ExerciseCatalogMediaPolicy
 import com.example.physiapp.ui.theme.TealPrimary
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -58,6 +60,10 @@ fun ExerciseDbItemDialog(
 ) {
     val scrollState = rememberScrollState()
     val pattern = item.inferredPattern()
+    val approvedGifUrl = ExerciseCatalogMediaPolicy.gatewayOwnedUrl(
+        item.gifUrl,
+        BuildConfig.EXERCISE_CATALOG_GATEWAY_URL
+    )
 
     AlertDialog(
         onDismissRequest = onDismiss,
@@ -69,7 +75,7 @@ fun ExerciseDbItemDialog(
             ) {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = "EXERCISEDB API",
+                        text = "EXERCISE CATALOG",
                         style = MaterialTheme.typography.labelSmall.copy(
                             letterSpacing = 1.2.sp,
                             fontWeight = FontWeight.Bold
@@ -95,7 +101,7 @@ fun ExerciseDbItemDialog(
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 // Exercise Animated Visual / GIF
-                if (item.gifUrl.isNotBlank()) {
+                if (approvedGifUrl.isNotBlank()) {
                     val context = LocalContext.current
                     Card(
                         modifier = Modifier
@@ -107,7 +113,7 @@ fun ExerciseDbItemDialog(
                         Box(modifier = Modifier.fillMaxSize()) {
                             SubcomposeAsyncImage(
                                 model = ImageRequest.Builder(context)
-                                    .data(item.gifUrl)
+                                    .data(approvedGifUrl)
                                     .crossfade(true)
                                     .build(),
                                 imageLoader = Coil.imageLoader(context),
@@ -141,7 +147,7 @@ fun ExerciseDbItemDialog(
                                     )
                                     Spacer(modifier = Modifier.width(4.dp))
                                     Text(
-                                        text = "EXERCISEDB LIVE GIF",
+                                        text = "EXERCISE DEMONSTRATION",
                                         style = MaterialTheme.typography.labelSmall.copy(
                                             fontSize = 9.sp,
                                             fontWeight = FontWeight.Bold,

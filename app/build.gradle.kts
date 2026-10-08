@@ -22,20 +22,15 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        val envFile = rootProject.file(".env")
         val envProperties = Properties()
-        if (envFile.exists()) {
-            envProperties.load(envFile.inputStream())
-        }
-        val exerciseDbApiKey = envProperties.getProperty("EXERCISE_DB_API_KEY")
-            ?: System.getenv("EXERCISE_DB_API_KEY")
+        rootProject.file(".env").takeIf { it.exists() }?.inputStream()?.use { envProperties.load(it) }
+        val exerciseCatalogGatewayUrl = providers.gradleProperty("EXERCISE_CATALOG_GATEWAY_URL").orNull
+            ?: providers.environmentVariable("EXERCISE_CATALOG_GATEWAY_URL").orNull
+            ?: envProperties.getProperty("EXERCISE_CATALOG_GATEWAY_URL")
             ?: ""
-        val exerciseDbHost = envProperties.getProperty("EXERCISE_DB_API_HOST")
-            ?: System.getenv("EXERCISE_DB_API_HOST")
-            ?: "exercisedb.p.rapidapi.com"
-
-        buildConfigField("String", "EXERCISE_DB_API_KEY", "\"$exerciseDbApiKey\"")
-        buildConfigField("String", "EXERCISE_DB_API_HOST", "\"$exerciseDbHost\"")
+            .replace("\\", "\\\\")
+            .replace("\"", "\\\"")
+        buildConfigField("String", "EXERCISE_CATALOG_GATEWAY_URL", "\"$exerciseCatalogGatewayUrl\"")
     }
 
     signingConfigs {

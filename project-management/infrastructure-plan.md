@@ -103,6 +103,17 @@ This separates editorial source files from the runtime format while preserving r
 
 ## External API Strategy
 
+Third-party provider traffic must follow this boundary:
+
+1. Android calls only a PhysiApp-owned HTTPS gateway. Provider hosts, provider headers, and provider credentials must never be embedded in the app or sent from a device.
+2. The gateway owns provider credentials, enforces provider and per-client quotas, normalizes provider responses, applies bounded timeouts/retries, and returns useful errors without leaking provider details.
+3. Retries are bounded and limited to transient failures; honor `Retry-After` for rate limits. Android debounces interactive searches, uses bounded network timeouts, and does not retry ordinary client errors.
+4. Third-party results remain optional. Preserve a useful local/curated fallback and never make a provider outage block workout construction or another core flow. The gateway returns only approved, gateway-hosted media URLs; Android must not load provider media URLs directly.
+5. Send only the search/filter values needed for the request. Do not send user identity, workout history, or other personal data to a provider. Imported exercise/media records still require source, creator, license, attribution, review status, and retention checks before publication.
+6. Describe each gateway route and normalized response in OpenAPI 3.1 before or alongside server implementation. Do not couple Android screens to a provider's API schema.
+
+**Exercise catalog status:** The Android direct ExerciseDB/RapidAPI integration has been replaced by a gateway-only repository boundary. Android expects an optional configured endpoint accepting `GET` query parameters `query`, `bodyPart`, `target`, `equipment`, and `limit`, and a JSON array of normalized exercise items. Exercise demo media is accepted only when it shares the configured gateway origin. This is the client-side expectation, not an approved/published OpenAPI contract. The gateway is not implemented or deployed in this repository; with no endpoint configured the app stays local-only. Before enabling remote calls, define and validate the OpenAPI contract, implement server-side quotas/provider credentials/fallback and gateway-hosted approved media, and complete rights/attribution review. `EXERCISE_CATALOG_GATEWAY_URL` is a non-secret endpoint setting; do not put provider keys in Gradle properties, environment variables consumed by Android, or BuildConfig.
+
 ## Delivery Sequence
 
 These are planned delivery slices, not a claim that services, web or CI already exist. Extend the current Android app rather than scaffold a replacement framework; use the owner-mediated AI Studio handoff and repository review for app changes.

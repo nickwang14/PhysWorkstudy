@@ -57,9 +57,11 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.physiapp.BuildConfig
 import coil.Coil
 import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
+import com.example.physiapp.data.repository.ExerciseCatalogMediaPolicy
 import com.example.physiapp.data.model.MovementPattern
 import com.example.physiapp.ui.theme.TealPrimary
 import kotlin.math.PI
@@ -82,11 +84,15 @@ fun ExerciseMotionPlayer(
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
+    val approvedGifUrl = ExerciseCatalogMediaPolicy.gatewayOwnedUrl(
+        gifUrl,
+        BuildConfig.EXERCISE_CATALOG_GATEWAY_URL
+    )
     var isPlaying by remember { mutableStateOf(true) }
-    var currentMode by remember(gifUrl) {
-        mutableStateOf(if (gifUrl.isNotBlank()) MotionDisplayMode.LIVE_GIF else MotionDisplayMode.KINETIC_ANATOMY)
+    var currentMode by remember(approvedGifUrl) {
+        mutableStateOf(if (approvedGifUrl.isNotBlank()) MotionDisplayMode.LIVE_GIF else MotionDisplayMode.KINETIC_ANATOMY)
     }
-    var hasError by remember(gifUrl) { mutableStateOf(false) }
+    var hasError by remember(approvedGifUrl) { mutableStateOf(false) }
     var reloadTrigger by remember { mutableIntStateOf(0) }
 
     Card(
@@ -102,10 +108,10 @@ fun ExerciseMotionPlayer(
         Box(modifier = Modifier.fillMaxSize()) {
             when (currentMode) {
                 MotionDisplayMode.LIVE_GIF -> {
-                    if (gifUrl.isNotBlank()) {
+                    if (approvedGifUrl.isNotBlank()) {
                         SubcomposeAsyncImage(
                             model = ImageRequest.Builder(context)
-                                .data(gifUrl)
+                                .data(approvedGifUrl)
                                 .setParameter("cache_bust", reloadTrigger)
                                 .crossfade(true)
                                 .build(),
@@ -276,7 +282,7 @@ fun ExerciseMotionPlayer(
                     horizontalArrangement = Arrangement.spacedBy(4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    if (currentMode == MotionDisplayMode.LIVE_GIF && gifUrl.isNotBlank()) {
+                    if (currentMode == MotionDisplayMode.LIVE_GIF && approvedGifUrl.isNotBlank()) {
                         Box(
                             modifier = Modifier
                                 .clip(CircleShape)
