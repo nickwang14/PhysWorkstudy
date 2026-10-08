@@ -30,13 +30,11 @@ Use [shared guidance](../AGENTS.md) and the [development workflow](../docs/devel
 - [ ] Validate lesson and optional-reading favorites — **In Progress:** local persistence, Saved UI, and the optional-reading reader path were added in commit `46d47a5`; unit and Compose tests were authored but not run because Gradle/the wrapper were unavailable. The current curriculum has no optional-reading entries yet. Acceptance: run Android checks, verify add/remove/reopen for both item types, link optional readings through approved content work, and confirm favorites do not affect progression or streaks.
 - [ ] Build a provider-neutral media catalog with source, revision, license, creator, attribution, approval, and expiration metadata — **Backlog:** current exercise media URLs do not provide this provenance/approval model.
 - [ ] Add a curated Wikimedia API ingestion pilot for lesson reference media — **Backlog:** no Wikimedia ingestion implementation found.
-- [ ] Complete a MuscleWiki API commercial-license and product-fit spike — **Backlog:** no completed licensing/product-fit review recorded.
 
 ### P2 — Near-Term Enhancements
 - [ ] More advanced personalization logic — **Backlog:** no personalization engine found; keep behind reliable usage signal and approved product scope.
 - [ ] Expanded curriculum sequencing and modular learning tracks — **In Progress:** authored curriculum and indices are expanding, and Android source loads an 83-entry asset catalog; entries do not prove authored/reviewed status, and full authored-corpus coverage and native validation remain pending.
 - [ ] Scale-phase infra and observability improvements — **Backlog:** no scale-phase service or observability implementation found.
-- [ ] Add the official MuscleWiki API through the backend provider gateway if the license, cost, and editorial review gates are approved — **Backlog:** provider gateway, license approval and integration are not implemented.
 
 ### Deferred — Not in MVP
 - [ ] Social encouragement flows and friend streak nudges

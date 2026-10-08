@@ -29,7 +29,7 @@ These are target standards for the proposed backend, not commands available in a
 - **Linter:** ESLint with `@typescript-eslint` strict config — zero errors required to merge
 - **Static typing:** TypeScript `strict: true`; `tsc --noEmit` must pass in CI; no `any` without an inline justification comment
 - **Tests:** Vitest (or Jest, pick one and standardize — Vitest preferred for speed) — unit tests for services/business logic, integration tests for API routes against a real Postgres test database
-- **Coverage threshold:** 75% line coverage minimum; progression state machines (learning + training, kept separate) and the provider-gateway module (Wikimedia/MuscleWiki) require 90%+ coverage
+- **Coverage threshold:** 75% line coverage minimum; progression state machines (learning + training, kept separate) and the provider-gateway module require 90%+ coverage
 - **API contracts:** every route must be described in the OpenAPI 3.1 spec before or alongside implementation; CI validates the spec against actual route registrations where feasible
 - **Structure conventions:** modular monolith organized by domain module (e.g., `modules/learning`, `modules/training`, `modules/provider-gateway`, `modules/auth`); no domain module reaches directly into another module's database tables — cross-module access goes through an exported service interface
 

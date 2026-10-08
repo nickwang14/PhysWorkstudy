@@ -41,7 +41,7 @@ Proposal detail and rationale live in `project-management/infrastructure-plan.md
 - **Flexible schedule logic:** Weekly workout goal tracking (not daily) requires careful time-zone-aware date boundaries. Design this early.
 - **Adaptive split computation:** The weekly training split adaptation (based on logged workouts + goal + busyness) must be explainable — log inputs and outputs for debugging.
 - **Content delivery:** Curriculum is a continuous, gated hierarchy (program → chapter → subchapter → lesson, with knowledge checks). Design the content API around chapter/subchapter unlock logic, prerequisites, and offline caching, not calendar periods.
-- **Third-party content:** Wikimedia/MuscleWiki gateway designs are optional server-side proposals, not implemented services. Review the existing ExerciseDB OkHttp call and Gradle BuildConfig credential exposure with Android Developer/DevOps; production provider secrets must not ship in clients. Optional providers must never become a runtime dependency for core flows or drive curated plans.
+- **Third-party content:** Gateway designs are optional server-side proposals, not implemented services. Review the existing ExerciseDB OkHttp call and Gradle BuildConfig credential exposure with Android Developer/DevOps; production provider secrets must not ship in clients. Optional providers must never become a runtime dependency for core flows or drive curated plans.
 - **Shareable surfaces:** Deferred until post-MVP — do not design asset-generation or public-share endpoints into the current architecture.
 
 ## Constraints

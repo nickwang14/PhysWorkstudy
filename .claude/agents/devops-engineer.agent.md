@@ -25,7 +25,7 @@ Use `project-management/infrastructure-plan.md` as proposal context, subject to 
 - **Database:** PostgreSQL on Supabase (managed) · No Redis in MVP — defer until measured load requires it
 - **Auth:** Supabase Auth · No real-time subscriptions in MVP beyond light dashboard refresh
 - **Observability proposals:** Sentry (Android/backend crash reporting, integration unverified) · PostHog (product analytics events) · Grafana + Loki (infrastructure logs, scale phase only)
-- **Secrets management:** GitHub Actions secrets for CI · environment-specific `.env` files (never committed) · provider API keys (Wikimedia, MuscleWiki) live server-side only, never in client builds
+- **Secrets management:** GitHub Actions secrets for CI · environment-specific `.env` files (never committed) · provider API keys live server-side only, never in client builds
 
 ## Key Pipeline Requirements
 Apply requirements only to implemented, authorized components. Read `app/build.gradle.kts`, root Gradle configuration and `gradle/libs.versions.toml`; reconcile AI Studio exports without blanket replacement, unexpected dependency/permission changes or exposed credentials.
@@ -52,7 +52,7 @@ No separate Infrastructure Manager / SRE role exists for PhysiApp at MVP scale �
 - **Capacity and reliability:** define basic SLOs (uptime, error rate, sync latency), scaling triggers, and what "the system is unhealthy" means before it becomes a hard incident.
 - **Incident response:** own the incident runbook — detection, escalation, communication, and postmortem for production issues, until team size justifies a dedicated on-call rotation.
 - **Database operations:** verify backup policy is active, run periodic restore drills, and maintain a documented recovery runbook for PostgreSQL.
-- **Provider/vendor lifecycle:** administer accounts and access for hosting and third-party API providers (Wikimedia, MuscleWiki); monitor quotas; track renewal/contract terms; maintain a documented fallback if a provider is lost or terms change.
+- **Provider/vendor lifecycle:** administer accounts and access for hosting and third-party API providers; monitor quotas; track renewal/contract terms; maintain a documented fallback if a provider is lost or terms change.
 - **Access governance:** maintain least-privilege access to provider consoles and secrets stores; review access periodically.
 
 Revisit whether these responsibilities need a dedicated Infrastructure/SRE role only if the team hits sustained on-call burden, multiple production services, material cloud spend, compliance pressure, or provider complexity beyond one owner.
