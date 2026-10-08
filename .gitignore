@@ -8,6 +8,32 @@ docs/graphics-review/
 *.py[cod]
 __pycache__/
 .env
+# Local Firebase config, credentials, emulator data and admin before-images.
+**/google-services*.json
+**/google-services*.tmp
+!**/google-services.template.json
+**/*service-account*.json
+**/*serviceAccount*.json
+application_default_credentials.json
+.local/
+.firebase/
+node_modules/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+# Keep environment values local; commit only the placeholder template.
+.env.*
+!.env.example
+# Firebase client config is public by design, but kept local to avoid project mixups.
+google-services.json
+GoogleService-Info.plist
+# Private signing/admin credentials must never enter source or build handoffs.
+*.keystore
+*.jks
+*.p12
+service-account*.json
+*-firebase-adminsdk-*.json
+/secrets/
 # Local native skill-discovery aliases; author only .agents/skills/.
 /.claude/skills/
 /.github/skills/

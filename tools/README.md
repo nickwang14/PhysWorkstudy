@@ -1,5 +1,9 @@
 # Content and Agent Tools
 
+Firestore maintenance is a separate Node workflow: see [Firebase local development](../docs/firebase-local-development.md). `firestore_admin.mjs` manages exact `users` / `curriculum_lessons` documents with emulator defaults, dry-run writes and explicit live-target confirmation. Run `npm.cmd test` for its offline tests; it is not an app backend service or curriculum-content publishing tool.
+
+`google_services_config.mjs` imports authentic Android config into ignored `.env`, generates ignored `app/google-services.json` from the tracked placeholder template, and checks freshness without printing values. Use `npm.cmd run firebase:config:import`, `npm.cmd run firebase:config`, and `npm.cmd run firebase:config:check`; see [config template workflow](../docs/firebase-and-keys.md#local-environment--client-config-template-workflow). Generation is explicit, not a Gradle hook. Tests use synthetic credentials only.
+
 Run from the repository root using the configured Python environment. Install `requirements-content.txt` for PDF reading/rendering. Curriculum-map and agent-setup operations use the standard library. `content_common.py` holds shared validation; each CLI owns its task-specific parsing/output.
 
 | Entry point | Single responsibility | Safe inspection / selected work |

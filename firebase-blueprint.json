@@ -1,4 +1,5 @@
 {
+  "description": "Declarative documentation of the current Kotlin serializers and Firestore rules, not an automatically enforced database schema or evidence of deployment, security, content, or publication approval. JSON date-time strings are portable representations; x-firestore-type identifies native Firestore Timestamp storage. See docs/firestore-schema.md for access rules, lifecycle, and known gaps.",
   "entities": {
     "UserProfile": {
       "title": "UserProfile",
@@ -6,17 +7,17 @@
       "type": "object",
       "properties": {
         "userId": { "type": "string", "description": "Unique Firebase Authentication UID" },
-        "email": { "type": "string", "description": "User email address" },
-        "displayName": { "type": "string", "description": "User display name" },
-        "photoUrl": { "type": "string", "description": "User avatar photo URL" },
-        "trainingGoal": { "type": "string", "description": "Primary fitness goal" },
-        "fitnessLevel": { "type": "string", "description": "Fitness experience level" },
-        "weeklyTargetWorkouts": { "type": "integer", "description": "Target workout sessions per week" },
-        "favoriteSplit": { "type": "string", "description": "Preferred workout split" },
-        "weightKg": { "type": "number", "description": "Body weight in kilograms" },
-        "heightCm": { "type": "number", "description": "Height in centimeters" },
-        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp via serverTimestamp" },
-        "updatedAt": { "type": "string", "format": "date-time", "description": "Last update timestamp via serverTimestamp" }
+        "email": { "type": "string", "minLength": 1, "maxLength": 200, "description": "User email address; rules validate length, not email syntax or Auth equality" },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 100, "description": "User display name" },
+        "photoUrl": { "type": "string", "maxLength": 1000, "description": "User avatar photo URL; omitted when Kotlin value is null" },
+        "trainingGoal": { "type": "string", "minLength": 1, "maxLength": 100, "description": "Primary fitness goal; rules do not restrict goal names" },
+        "fitnessLevel": { "type": "string", "enum": ["Beginner", "Intermediate", "Advanced"], "description": "Fitness experience level" },
+        "weeklyTargetWorkouts": { "type": "integer", "minimum": 1, "maximum": 7, "description": "Current rules allow 1–7; product policy requires a minimum of 2 (unfixed gap)" },
+        "favoriteSplit": { "type": "string", "minLength": 1, "maxLength": 100, "description": "Preferred workout split" },
+        "weightKg": { "type": "number", "minimum": 20, "maximum": 300, "description": "Body weight in kilograms; omitted when Kotlin value is null" },
+        "heightCm": { "type": "number", "minimum": 50, "maximum": 260, "description": "Height in centimeters; omitted when Kotlin value is null" },
+        "createdAt": { "type": "string", "format": "date-time", "x-firestore-type": "timestamp", "description": "Native Firestore Timestamp, serialized here as JSON date-time; supplied timestamp or serverTimestamp fallback" },
+        "updatedAt": { "type": "string", "format": "date-time", "x-firestore-type": "timestamp", "description": "Native Firestore Timestamp, serialized here as JSON date-time; serverTimestamp on each profile write" }
       },
       "required": [
         "userId",
@@ -43,8 +44,8 @@
         "completedExercisesCount": { "type": "integer", "description": "Number of completed exercises" },
         "totalExercisesCount": { "type": "integer", "description": "Total scheduled exercises" },
         "notes": { "type": "string", "description": "Optional workout session notes" },
-        "completedAt": { "type": "string", "format": "date-time", "description": "Completion timestamp via serverTimestamp" },
-        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp via serverTimestamp" }
+        "completedAt": { "type": "string", "format": "date-time", "x-firestore-type": "timestamp", "description": "Native Firestore Timestamp, serialized here as JSON date-time; supplied timestamp or serverTimestamp fallback" },
+        "createdAt": { "type": "string", "format": "date-time", "x-firestore-type": "timestamp", "description": "Native Firestore Timestamp, serialized here as JSON date-time; supplied timestamp or serverTimestamp fallback" }
       },
       "required": [
         "logId",
@@ -64,17 +65,17 @@
       "type": "object",
       "properties": {
         "lessonId": { "type": "string", "description": "Unique lesson ID (e.g. terminology-01)" },
-        "title": { "type": "string", "description": "Title of the lesson" },
-        "chapterId": { "type": "string", "description": "Parent chapter slug" },
-        "chapterNumber": { "type": "integer", "description": "1-based chapter number" },
-        "chapterTitle": { "type": "string", "description": "Chapter display title" },
-        "subchapterId": { "type": "string", "description": "Parent subchapter slug" },
-        "subchapterTitle": { "type": "string", "description": "Subchapter display title" },
-        "lessonIndex": { "type": "integer", "description": "Index within subchapter" },
-        "durationMinutes": { "type": "integer", "description": "Estimated duration in minutes" },
-        "category": { "type": "string", "description": "Topic category name" },
-        "summary": { "type": "string", "description": "Learning objective or summary" },
-        "assetPath": { "type": "string", "description": "Relative asset location of markdown file" }
+        "title": { "type": "string", "minLength": 1, "maxLength": 200, "description": "Title of the lesson" },
+        "chapterId": { "type": "string", "minLength": 1, "maxLength": 100, "description": "Parent chapter slug" },
+        "chapterNumber": { "type": "integer", "minimum": 1, "maximum": 20, "description": "1-based chapter number" },
+        "chapterTitle": { "type": "string", "minLength": 1, "maxLength": 150, "description": "Chapter display title" },
+        "subchapterId": { "type": "string", "minLength": 1, "maxLength": 100, "description": "Parent subchapter slug" },
+        "subchapterTitle": { "type": "string", "minLength": 1, "maxLength": 150, "description": "Subchapter display title" },
+        "lessonIndex": { "type": "integer", "minimum": 1, "maximum": 50, "description": "1-based index within subchapter" },
+        "durationMinutes": { "type": "integer", "minimum": 1, "maximum": 120, "description": "Estimated duration in minutes" },
+        "category": { "type": "string", "minLength": 1, "maxLength": 50, "description": "Kotlin writes TopicCategory.name; rules allow any nonempty string within the length bound, not a fixed enum" },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 1000, "description": "Learning objective or summary" },
+        "assetPath": { "type": "string", "minLength": 1, "maxLength": 300, "description": "Relative bundled markdown asset location; rules check length, not asset existence" }
       },
       "required": [
         "lessonId",
@@ -98,7 +99,7 @@
       "properties": {
         "lessonId": { "type": "string", "description": "ID of the completed lesson" },
         "userId": { "type": "string", "description": "User UID who completed the lesson" },
-        "completedAt": { "type": "string", "format": "date-time", "description": "Timestamp when lesson was completed" }
+        "completedAt": { "type": "string", "format": "date-time", "x-firestore-type": "timestamp", "description": "Native Firestore Timestamp, serialized here as JSON date-time; current repository writes serverTimestamp on each completion save" }
       },
       "required": [
         "lessonId",

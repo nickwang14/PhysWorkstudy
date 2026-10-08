@@ -9,6 +9,8 @@ PhysiApp is already built as a **Kotlin/Jetpack Compose Android application**, s
 - Academic content: [knowledge repository](theory-and-knowledge/knowledge/README.md) and [curriculum workflow](theory-and-knowledge/knowledge/curriculum/foundations-of-movement/README.md). Authored material remains draft until actual reviews are recorded; use the live reading registry for coverage.
 - Agent setup: [AGENTS.md](AGENTS.md) and [shared skills](.agents/skills/README.md). Run `python tools/setup_agent_platforms.py` after cloning. Skills are authored once in `.agents/skills/`; Copilot profiles are generated from canonical Claude profiles.
 - Content utilities: [tools/README.md](tools/README.md). Source PDFs and review previews are local-only, not distributed app assets.
+- Firebase maintenance: [local setup and management](docs/firebase-local-development.md), [schema at a glance](docs/firestore-schema.md). Emulator-first tooling supports explicit named-database reads and guarded document writes; live access requires local Google ADC and IAM.
+- Firebase and credentials: [setup and key-storage guide](docs/firebase-and-keys.md). Register the actual Android application ID, keep local configuration out of Git, and never ship private provider/admin keys in an APK.
 
 The feature outline below describes the app's product intentions, not a production-readiness, scientific-validation or completeness checklist; actual acceptance/release status belongs in project-management records.
 

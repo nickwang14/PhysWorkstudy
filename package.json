@@ -1,0 +1,28 @@
+{
+  "name": "physiapp-local-backend-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local Firestore administration and emulator tests; not an app server",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "backend": "node tools/firestore_admin.mjs",
+    "firebase:config": "node tools/google_services_config.mjs generate",
+    "firebase:config:import": "node tools/google_services_config.mjs import",
+    "firebase:config:check": "node tools/google_services_config.mjs check",
+    "test": "node --test tools/test_firestore_admin.mjs tools/test_google_services_config.mjs",
+    "emulators": "firebase emulators:start --only firestore,auth --project demo-physiapp",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-physiapp \"node --test tools/test_firestore_rules.mjs\"",
+    "test:rules:legacy": "firebase emulators:exec --only firestore --project demo-physiapp \"node --test firestore.test.js\"",
+    "test:backend:emulator": "firebase emulators:exec --only firestore --project demo-physiapp \"node --test tools/test_firestore_emulator.mjs\""
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "firebase-admin": "^14.5.0"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^5.0.0",
+    "firebase": "^12.0.0",
+    "firebase-tools": "^15.0.0"
+  }
+}

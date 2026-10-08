@@ -1,0 +1,11 @@
+{
+  "userId": "local-review-user",
+  "email": "local-review@example.invalid",
+  "displayName": "Local Review",
+  "trainingGoal": "Strength & Hypertrophy",
+  "fitnessLevel": "Beginner",
+  "weeklyTargetWorkouts": 3,
+  "favoriteSplit": "Full Body",
+  "createdAt": "now",
+  "updatedAt": "now"
+}
