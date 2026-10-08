@@ -6,6 +6,7 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.physiapp.data.model.CurriculumOptionalReading
 import com.example.physiapp.data.model.FavoriteLearningItems
@@ -22,6 +23,7 @@ class FavoritesScreenTest {
 
     @Test
     fun savedLessonsAndOptionalReadingsCanBeReopenedOrRemoved() {
+        CurriculumRepository.init(ApplicationProvider.getApplicationContext())
         val baseLesson = CurriculumRepository.allLessons.first()
         val reading = CurriculumOptionalReading(
             id = "reading-reference-1",

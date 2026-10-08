@@ -88,4 +88,20 @@ class UserProfileRepositoryRuleTest : FirestoreEmulatorTestBase() {
         assertEquals("log_test_1", logs[0].logId)
         assertEquals("Upper Body Hypertrophy", logs[0].workoutName)
     }
+
+    @Test
+    fun testAuthenticatedUser_canSaveAndObserveLessonProgress() = runBlocking {
+        val aliceUid = signInTestUser("alice_lesson_progress@physiapp.com")
+        val repository = UserProfileRepository(firestore, auth)
+
+        val result = repository.saveLessonProgress("terminology-01")
+        if (result.isFailure) {
+            println("saveLessonProgress failed with: ${result.exceptionOrNull()?.message}")
+            result.exceptionOrNull()?.printStackTrace()
+        }
+        assertTrue("Saving lesson progress should succeed: ${result.exceptionOrNull()?.message}", result.isSuccess)
+
+        val completedLessons = repository.observeLessonProgress(aliceUid).first()
+        assertTrue("Completed lessons set should contain terminology-01", completedLessons.contains("terminology-01"))
+    }
 }

@@ -125,3 +125,47 @@ test("WorkoutLog: Bob cannot access Alice's workout logs", async () => {
     bobDb.collection("users").doc(ALICE_UID).collection("workout_logs").doc("log_1").get()
   );
 });
+
+test("CurriculumIndex: Alice can index and read curriculum lessons", async () => {
+  const aliceDb = testEnv.authenticatedContext(ALICE_UID).firestore();
+  const lessonData = {
+    lessonId: "terminology-01",
+    title: "What Is Movement?",
+    chapterId: "chapter-1-foundations-of-movement-and-terminology",
+    chapterTitle: "Foundations of Movement & Terminology",
+    chapterNumber: 1,
+    subchapterId: "subchapter-1-movement-terminology",
+    subchapterTitle: "Movement Terminology & Anatomical Position",
+    lessonIndex: 1,
+    durationMinutes: 8,
+    category: "MOVEMENT_PATTERNS",
+    summary: "Define movement and explain why movement terminology matters in exercise and training",
+    assetPath: "curriculum/chapter-1-foundations-of-movement-and-terminology/subchapter-1-movement-terminology/lesson-01-what-is-movement.md",
+  };
+  await assertSucceeds(aliceDb.collection("curriculum_lessons").doc("terminology-01").set(lessonData));
+  const snap = await assertSucceeds(aliceDb.collection("curriculum_lessons").doc("terminology-01").get());
+  if (!snap.exists) throw new Error("Lesson should exist in index");
+
+  const unauthDb = testEnv.unauthenticatedContext().firestore();
+  await assertFails(unauthDb.collection("curriculum_lessons").doc("terminology-01").get());
+});
+
+test("LessonProgress: Alice can track completed lessons and Bob cannot modify", async () => {
+  const aliceDb = testEnv.authenticatedContext(ALICE_UID).firestore();
+  const progressData = {
+    lessonId: "terminology-01",
+    userId: ALICE_UID,
+    completedAt: new Date(),
+  };
+  await assertSucceeds(
+    aliceDb.collection("users").doc(ALICE_UID).collection("lesson_progress").doc("terminology-01").set(progressData)
+  );
+
+  const bobDb = testEnv.authenticatedContext(BOB_UID).firestore();
+  await assertFails(
+    bobDb.collection("users").doc(ALICE_UID).collection("lesson_progress").doc("terminology-01").get()
+  );
+  await assertFails(
+    bobDb.collection("users").doc(ALICE_UID).collection("lesson_progress").doc("terminology-01").set(progressData)
+  );
+});

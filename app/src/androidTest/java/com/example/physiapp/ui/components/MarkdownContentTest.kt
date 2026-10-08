@@ -9,8 +9,12 @@ import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.hasAnyAncestor
 import androidx.compose.ui.test.hasTestTag
 import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.text.font.FontWeight
+import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.physiapp.data.repository.CurriculumRepository
 import com.example.physiapp.ui.screens.LessonDetailScreen
@@ -41,6 +45,7 @@ class MarkdownContentTest {
 
     @Test
     fun lessonScreenUsesTheFormattedReader() {
+        CurriculumRepository.init(ApplicationProvider.getApplicationContext())
         val lesson = CurriculumRepository.allLessons.first().copy(
             fullMarkdownText = "# Chapter 1\n\nSome **formatted** text."
         )
@@ -62,6 +67,38 @@ class MarkdownContentTest {
             .assert(hasAnyAncestor(hasTestTag("lesson_markdown_body")))
         compose.onNodeWithText("Some formatted text.").assertExists()
         compose.onNodeWithText("# Chapter 1", substring = true).assertDoesNotExist()
+    }
+
+    @Test
+    fun incorrectAnswerDoesNotClearTheLearningGate() {
+        CurriculumRepository.init(ApplicationProvider.getApplicationContext())
+        val baseLesson = CurriculumRepository.allLessons.first()
+        val question = baseLesson.questions.first()
+        val lesson = baseLesson.copy(questions = listOf(question))
+        var completions = 0
+        compose.setContent {
+            MaterialTheme {
+                LessonDetailScreen(
+                    lesson = lesson,
+                    isAlreadyCompleted = false,
+                    isFavorite = false,
+                    onBack = {},
+                    onCompleteLesson = { completions++ },
+                    onToggleFavorite = {},
+                    onOpenOptionalReading = {}
+                )
+            }
+        }
+
+        val incorrect = question.options.first { !it.isCorrect }
+        compose.onNodeWithTag("option_${incorrect.id}").performScrollTo().performClick()
+        compose.onNodeWithTag("complete_lesson_button").assertDoesNotExist()
+        assertTrue(completions == 0)
+
+        val correct = question.options.first { it.isCorrect }
+        compose.onNodeWithTag("option_${correct.id}").performScrollTo().performClick()
+        compose.onNodeWithTag("complete_lesson_button").performScrollTo().performClick()
+        assertTrue(completions == 1)
     }
 
     @Test
