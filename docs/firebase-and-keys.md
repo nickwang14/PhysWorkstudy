@@ -9,7 +9,7 @@ This guide follows the owner's [VS Code / Google AI Studio workflow](development
 | Firebase Android configuration, including the Firebase client API key | Firebase console, Android app settings, `google-services.json` | Ignored `.env` → generated ignored `app/google-services.json`, supplied to the Android build | Not an admin secret; shipped client configuration |
 | Google OAuth client ID | Generated through Firebase Google sign-in setup; also listed in Cloud credentials | Generated `default_web_client_id` Android resource | Public identifier, not a client secret |
 | Gemini API key | Google AI Studio API Keys, for a selected Cloud project | Trusted server/tool environment; production Secret Manager | Yes; never ship it in the APK |
-| ExerciseDB/RapidAPI key | RapidAPI account and subscribed API application | Development-only root `.env`; production server secret | Yes; current client integration exposes it in the APK |
+| ExerciseDB/RapidAPI key | RapidAPI account and subscribed API application | Development-only root `.env`; production server secret | Yes; opt-in private debug builds expose it in the APK; shared/release builds omit it |
 | Service-account private key JSON | Cloud IAM / Firebase service accounts, only if explicitly needed | Trusted server only; prefer keyless identity instead | Highly sensitive; never an Android configuration file |
 | Android upload/release signing key and passwords | Android signing tools / Play App Signing setup | Encrypted backup and protected build credentials | Yes; separate from all API keys |
 
@@ -62,7 +62,7 @@ The app gets its database ID from `app/src/main/res/values/firebase_applet_confi
 
 In the selected project's Firestore console, verify that this named database exists. If intentionally moving to another project/database, reconcile both files and data migration needs; do not silently substitute `(default)`. `google-services.json` alone does not select this named database or deploy rules. For a new database, start with locked-down/production rules, not open test-mode access; review and deploy rules to the explicitly selected project and database through an authenticated deployment workflow.
 
-Existing `firestore.rules` restrict user documents to their owner, but allow **any authenticated user to create/update curriculum lessons**. That shared-content write policy needs a scoped security fix/review before production. The presence of a local rules file does not prove it has been deployed.
+Local `firestore.rules` restrict user documents to their owner and curriculum publication/review to trusted admin-claim users. Lesson comments are private to author/admin. See [lesson-feedback security and rollout](lesson-feedback-security.md). Local rules do not prove deployment or provisioning of administrator claims.
 
 ## 3. Signing fingerprints and app-building credentials
 
@@ -77,7 +77,8 @@ Existing `firestore.rules` restrict user documents to their owner, but allow **a
 ### Local development in VS Code
 
 - Keep **`.env.example`** tracked, with placeholders and comments only. Your ignored root **`.env`** is the local development copy; edit it directly in your editor and do not paste values into chat. If it already exists, preserve it rather than replacing it from the template.
-- The current Android Gradle script reads only `EXERCISE_DB_API_KEY` and `EXERCISE_DB_API_HOST`, from `.env` first, then the process environment. An existing `.env` property wins even if blank or a placeholder. It uses Java Properties parsing, not a general dotenv loader: avoid surrounding quotes and shell expansion.
+- Gradle reads `EXERCISE_DB_API_HOST` from `.env` first, then the process environment. **The private ExerciseDB key is blank by default and always blank in release builds.** Private debug-only builds may opt in with **`-PincludeExerciseDbDevelopmentKey=true`**, using the same precedence for `EXERCISE_DB_API_KEY`. An existing `.env` property wins even if blank or a placeholder. Java Properties parsing is used: avoid surrounding quotes and shell expansion.
+- The shared installer task refuses that opt-in. For a strictly local key-bearing debug build, explicitly exclude **`-x :app:packageInstallerZip`**; never commit/upload its APK or replace the tracked installer with it. Shared builds without the key retain the exercise service's starter/offline fallback until an approved provider backend is implemented.
 - `.env.local`, `.env.staging`, and other `.env.*` files are ignored for safety but **not automatically loaded** by Gradle. Firebase generation can read one explicitly with `--env-file`; `GEMINI_API_KEY` is not consumed by this app.
 - Keep actual Firebase config values in `.env` and generate local `app/google-services.json` using the tracked placeholder template. Import authentic Firebase registration values rather than inventing keys. Treat files under an optional ignored root `secrets/` folder as local-only, with restricted filesystem access—not as an encrypted vault.
 - Git ignore rules prevent new files from being added accidentally; they do not protect against forced adds, prior commits, agent access, or copied archives. Check staged filenames before committing. Previously tracked sensitive files require deliberate removal from the index and credential rotation when appropriate.

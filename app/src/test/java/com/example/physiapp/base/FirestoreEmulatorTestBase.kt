@@ -5,7 +5,7 @@ import androidx.test.core.app.ApplicationProvider
 import com.google.firebase.FirebaseApp
 import com.google.firebase.FirebaseOptions
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.google.firebase.firestore.MemoryCacheSettings
@@ -49,18 +49,16 @@ abstract class FirestoreEmulatorTestBase {
         }
         shadowPackageManager.addOrUpdateService(serviceInfo)
 
-        val app = if (FirebaseApp.getApps(context).isEmpty()) {
-            FirebaseApp.initializeApp(
+        val app = FirebaseApp.getApps(context).firstOrNull { it.name == TEST_APP_NAME }
+            ?: FirebaseApp.initializeApp(
                 context,
                 FirebaseOptions.Builder()
                     .setApplicationId("com.aistudio.physiapp.kzmpqw")
                     .setProjectId(PROJECT_ID)
                     .setApiKey("fake-api-key-for-emulator")
-                    .build()
+                    .build(),
+                TEST_APP_NAME
             )
-        } else {
-            FirebaseApp.getInstance()
-        }
 
         firestore = FirebaseFirestore.getInstance(app, databaseId)
         try {
@@ -86,9 +84,9 @@ abstract class FirestoreEmulatorTestBase {
     protected suspend fun signInTestUser(email: String): String = withContext(Dispatchers.IO) {
         withTimeout(AUTH_TIMEOUT_MS) {
             val result = try {
-                auth.signInWithEmailAndPassword(email, DEFAULT_PASSWORD).await()
-            } catch (unused: FirebaseAuthInvalidUserException) {
                 auth.createUserWithEmailAndPassword(email, DEFAULT_PASSWORD).await()
+            } catch (unused: FirebaseAuthUserCollisionException) {
+                auth.signInWithEmailAndPassword(email, DEFAULT_PASSWORD).await()
             }
             checkNotNull(result.user?.uid) { "User auth failed" }
         }
@@ -96,10 +94,21 @@ abstract class FirestoreEmulatorTestBase {
 
     companion object {
         const val EMULATOR_HOST = "127.0.0.1"
-        const val FIRESTORE_PORT = 8085
-        const val AUTH_PORT = 9099
-        const val PROJECT_ID = "demo-no-project"
+        private const val TEST_APP_NAME = "physiapp-rule-tests"
+        val FIRESTORE_PORT = emulatorPort("FIRESTORE_EMULATOR_HOST", 8085)
+        val AUTH_PORT = emulatorPort("FIREBASE_AUTH_EMULATOR_HOST", 9099)
+        val PROJECT_ID = (System.getenv("GCP_PROJECT") ?: "demo-no-project").also {
+            require(it.startsWith("demo-")) { "Repository rules tests require an isolated demo project" }
+        }
         const val DEFAULT_PASSWORD = "password123"
         const val AUTH_TIMEOUT_MS = 5000L
+
+        private fun emulatorPort(variable: String, fallback: Int): Int {
+            val address = System.getenv(variable) ?: return fallback
+            require(address.substringBeforeLast(':') in setOf("127.0.0.1", "localhost")) {
+                "Repository rules tests require loopback emulators"
+            }
+            return address.substringAfterLast(':').toInt().also { require(it in 1..65535) }
+        }
     }
 }

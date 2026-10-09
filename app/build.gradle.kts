@@ -9,6 +9,8 @@ plugins {
     alias(libs.plugins.google.services)
 }
 
+val includeExerciseDbDevelopmentKey = providers.gradleProperty("includeExerciseDbDevelopmentKey").orNull == "true"
+
 android {
     namespace = "com.example.physiapp"
     compileSdk = 36
@@ -25,11 +27,11 @@ android {
         val envFile = rootProject.file(".env")
         val envProperties = Properties()
         if (envFile.exists()) {
-            envProperties.load(envFile.inputStream())
+            envFile.inputStream().use { envProperties.load(it) }
         }
-        val exerciseDbApiKey = envProperties.getProperty("EXERCISE_DB_API_KEY")
-            ?: System.getenv("EXERCISE_DB_API_KEY")
-            ?: ""
+        val exerciseDbApiKey = if (includeExerciseDbDevelopmentKey) {
+            envProperties.getProperty("EXERCISE_DB_API_KEY") ?: System.getenv("EXERCISE_DB_API_KEY") ?: ""
+        } else ""
         val exerciseDbHost = envProperties.getProperty("EXERCISE_DB_API_HOST")
             ?: System.getenv("EXERCISE_DB_API_HOST")
             ?: "exercisedb.p.rapidapi.com"
@@ -52,6 +54,8 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
         release {
+            // Private provider credentials must never be included in release builds.
+            buildConfigField("String", "EXERCISE_DB_API_KEY", "\"\"")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -114,8 +118,15 @@ val packageInstallerZip = tasks.register("packageInstallerZip") {
 
     val apkFile = layout.buildDirectory.file("outputs/apk/debug/app-debug.apk")
     inputs.file(apkFile)
+    inputs.property("includeExerciseDbDevelopmentKey", includeExerciseDbDevelopmentKey)
     outputs.file(rootProject.file("PhysiApp_installer.zip"))
     outputs.file(rootProject.file("PhysiApp.apk"))
+
+    doFirst {
+        check(!includeExerciseDbDevelopmentKey) {
+            "Shared installers must omit private keys. Build without includeExerciseDbDevelopmentKey."
+        }
+    }
 
     doLast {
         val srcApk = apkFile.get().asFile

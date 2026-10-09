@@ -72,7 +72,8 @@ fun LessonDetailScreen(
     onCompleteLesson: () -> Unit,
     onToggleFavorite: () -> Unit,
     onOpenOptionalReading: (CurriculumOptionalReading) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    feedbackSection: @Composable () -> Unit = {}
 ) {
     val scrollState = rememberScrollState()
     // Map of questionId to selectedOptionId
@@ -448,6 +449,8 @@ fun LessonDetailScreen(
                         }
                     }
                 }
+
+                feedbackSection()
 
                 Spacer(modifier = Modifier.height(24.dp))
             }

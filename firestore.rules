@@ -10,6 +10,11 @@ service cloud.firestore {
       return isAuthenticated() && request.auth.uid == userId;
     }
 
+    // Granted only by a trusted Admin SDK workflow, never a profile field.
+    function isAdmin() {
+      return isAuthenticated() && request.auth.token.get('admin', false) == true;
+    }
+
     function isValidTimestamp(ts) {
       return ts is timestamp && ts <= request.time;
     }
@@ -49,7 +54,11 @@ service cloud.firestore {
     }
 
     function isValidLessonIndex(data, lessonId) {
-      return data.lessonId == lessonId &&
+      return data.keys().hasOnly([
+          'lessonId', 'title', 'chapterId', 'chapterTitle', 'chapterNumber',
+          'subchapterId', 'subchapterTitle', 'lessonIndex', 'durationMinutes',
+          'category', 'summary', 'assetPath'
+        ]) && data.lessonId == lessonId &&
         data.title is string && data.title.size() > 0 && data.title.size() <= 200 &&
         data.chapterId is string && data.chapterId.size() > 0 && data.chapterId.size() <= 100 &&
         data.chapterTitle is string && data.chapterTitle.size() > 0 && data.chapterTitle.size() <= 150 &&
@@ -61,6 +70,27 @@ service cloud.firestore {
         data.category is string && data.category.size() > 0 && data.category.size() <= 50 &&
         data.summary is string && data.summary.size() > 0 && data.summary.size() <= 1000 &&
         data.assetPath is string && data.assetPath.size() > 0 && data.assetPath.size() <= 300;
+    }
+
+    function lessonExists(lessonId) {
+      return exists(/databases/$(database)/documents/curriculum_lessons/$(lessonId));
+    }
+
+    function isValidReview(data) {
+      return data.keys().hasAll(['status', 'updatedBy', 'updatedAt']) &&
+        data.keys().hasOnly(['status', 'updatedBy', 'updatedAt']) &&
+        data.status in ['approved', 'rejected', 'needs_improvement'] &&
+        data.updatedBy == request.auth.uid &&
+        data.updatedAt == request.time;
+    }
+
+    function isValidComment(data) {
+      return data.keys().hasAll(['authorId', 'text', 'createdAt']) &&
+        data.keys().hasOnly(['authorId', 'text', 'createdAt']) &&
+        data.authorId == request.auth.uid &&
+        data.text is string && data.text.size() > 0 && data.text.size() <= 2000 &&
+        !data.text.matches('\\s*') &&
+        data.createdAt == request.time;
     }
 
     match /users/{userId} {
@@ -83,8 +113,25 @@ service cloud.firestore {
 
     match /curriculum_lessons/{lessonId} {
       allow read: if isAuthenticated();
-      allow create, update: if isAuthenticated() && isValidLessonIndex(request.resource.data, lessonId);
+      allow create, update: if isAdmin() && isValidLessonIndex(request.resource.data, lessonId);
       allow delete: if false;
+
+      // Review metadata is separate from bundled lesson index/publishing payloads.
+      match /review/{reviewId} {
+        allow read: if reviewId == 'status' && isAuthenticated();
+        allow create, update: if reviewId == 'status' && isAdmin() &&
+          lessonExists(lessonId) && isValidReview(request.resource.data);
+        allow delete: if false;
+      }
+
+      match /comments/{commentId} {
+        // Queries by ordinary users must constrain authorId to their UID.
+        allow read: if isAdmin() || isOwner(resource.data.authorId);
+        allow create: if isAuthenticated() && lessonExists(lessonId) &&
+          isValidComment(request.resource.data);
+        allow update: if false;
+        allow delete: if isAdmin() || isOwner(resource.data.authorId);
+      }
     }
   }
 }

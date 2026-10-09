@@ -19,7 +19,9 @@ flowchart LR
     U --> W["users/{uid}/workout_logs/{logId}"]
     U --> P["users/{uid}/lesson_progress/{lessonId}"]
     P -. "lessonId; logical link only" .-> L["curriculum_lessons/{lessonId}"]
-    B["Bundled curriculum index + Markdown"] -->|"metadata merge-published after sign-in"| L
+    B["Bundled curriculum index + Markdown"] -->|"explicit admin publication only"| L
+    L --> R["review/status: admin-owned metadata"]
+    L --> C["comments/{commentId}: private author/admin feedback"]
 ```
 
 | Document path | Payload / identity | Current client access |
@@ -27,9 +29,11 @@ flowchart LR
 | `users/{uid}` | `UserProfile`; `userId == uid` | Owner read/create/update; delete denied |
 | `users/{uid}/workout_logs/{logId}` | `WorkoutLogDoc`; `userId == uid`, `logId == document ID` | Owner read/create/update/delete |
 | `users/{uid}/lesson_progress/{lessonId}` | `LessonProgressDoc`; `userId == uid`, `lessonId == document ID` | Owner read/create/update/delete |
-| `curriculum_lessons/{lessonId}` | `CurriculumLessonDoc`; `lessonId == document ID` | Any signed-in user read/create/update; delete denied |
+| `curriculum_lessons/{lessonId}` | `CurriculumLessonDoc`; `lessonId == document ID` | Signed-in read; admin create/update; delete denied |
+| `curriculum_lessons/{lessonId}/review/status` | `LessonReview`; individual-lesson status | Signed-in read; admin create/update; delete denied |
+| `curriculum_lessons/{lessonId}/comments/{commentId}` | `LessonComment`; auto ID, author UID | Author/admin read/delete; authenticated author create; updates denied |
 
-Rules do not require the parent profile or referenced curriculum lesson to exist. No separate chapter/subchapter collections are declared; their metadata is repeated in lesson documents. Unmatched paths are denied to clients.
+Progress/log rules do not require parent profiles or referenced lessons to exist. New comment/review writes require the parent lesson to exist. No separate chapter/subchapter collections are declared; their metadata is repeated in lesson documents. Unmatched paths are denied to clients.
 
 ## `users/{uid}` fields
 
@@ -73,9 +77,22 @@ All 12 fields below are required by current validation and emitted by `Curriculu
 
 Kotlin category names: `MOVEMENT_PATTERNS`, `ANATOMY_PHYSIOLOGY`, `BIOMECHANICS`, `LOAD_AND_RECOVERY`, `PROGRAMMING_COACHING`. These are app values, not an exhaustive rules restriction.
 
-Content is loaded from `app/src/main/assets/curriculum/curriculum_index.json` and bundled Markdown. In `PhysiAppMain`, `LaunchedEffect(user.uid)` calls `syncLessonsToFirestore()` after authentication, merge-publishing metadata at stable lesson IDs. This is a client-side write attempt, not a verified publishing service or proof of successful remote writes. Different app bundle versions can overwrite shared metadata; merge publication does not remove stale documents or extra fields.
+Content is loaded from `app/src/main/assets/curriculum/curriculum_index.json` and bundled Markdown. `PhysiAppMain` no longer publishes metadata on sign-in. `syncLessonsToFirestore()` remains an explicit admin-guarded operation, not an automatic or verified publishing service. Authorized publication still needs version/review discipline; merge publication does not remove stale documents. Rules now accept only the 12 listed index fields. Existing remote extra fields need an authorized migration before index updates can pass validation; review metadata belongs in the separate child document, not the index.
 
-`keyTerms` and `isGateMilestone` exist in `CurriculumLessonDoc` and are supplied during sync, but **are omitted by `toMap()`**; they are not part of the current published payload or blueprint. Full lesson text, questions, practical application and optional readings are bundled content, not fields in this Firestore payload. Rules do not restrict extra field names, so omission does not prove such fields are absent from remote documents.
+`keyTerms` and `isGateMilestone` exist in `CurriculumLessonDoc` and are supplied during sync, but **are omitted by `toMap()`**; they are not part of the current published payload or blueprint. Full lesson text, questions, practical application and optional readings are bundled content, not fields in this Firestore payload.
+
+## Individual lesson review and private comments
+
+The owner confirmed **module = each individual lesson** and **comment visibility = author and admins only**. No chapter/subchapter review workflow is introduced. See [security and rollout](lesson-feedback-security.md).
+
+| Document | Exact fields | Validation |
+|---|---|---|
+| `review/status` | `status`, `updatedBy`, `updatedAt` | Status is `approved`, `rejected`, or `needs_improvement`; writing admin UID; server timestamp equals request time |
+| `comments/{commentId}` | `authorId`, `text`, `createdAt` | Creating user's UID; nonblank string size 1–2000; server timestamp equals request time |
+
+Extra/missing fields are rejected. Comments are immutable; author/admin deletion is allowed. Ordinary-user queries must filter `authorId == current UID`; rules are not post-query filters. The app limits results to 50 and sorts that bounded subset locally, so it does not promise the latest 50. Admins query all lesson comments within the same limit. These new payloads use `LessonFeedbackContract` and `LessonFeedbackRepository`, not `CurriculumLessonDoc.toMap()`.
+
+Review status is informational and does not change lesson gates, required learning checks, streaks, or training. An absent review document means **Not reviewed**, not default approval. A status value is not proof of scientific, editorial, rights, or legal approval; those require actual approval evidence in the content workflow.
 
 ## User subcollections
 
@@ -97,11 +114,11 @@ Workout writes use `set()` without merge, retaining a supplied `logId` or genera
 
 | Gap | Current effect |
 |---|---|
-| Signed-in curriculum writes | Any authenticated user can create/update valid shared lesson metadata; there is no publisher/admin role check. |
 | Weekly minimum mismatch | Rules permit 1; [PD-001 / PD-003](product-decisions.md) require a minimum of 2. Blueprint reflects the existing rules, not a policy change. |
 | Timestamp immutability absent | Rules check type and upper time bound only; they do not preserve original `createdAt` or `completedAt`, require server-generated values, or enforce monotonic updates. |
+| Comment operational safeguards | Client rules/length validation do not implement robust rate limiting, account erasure, content moderation, or App Check. See rollout/security guide. |
 
-No rules, Kotlin implementation, security posture or product policy is changed by this documentation update.
+The timestamp gap above describes existing profile/log/progress contracts, not the new comment/review server timestamps. Local source changes do not prove deployed rules, provisioned admin claims, or verified live behavior.
 
 ## Future feature fields — proposed, not deployed
 

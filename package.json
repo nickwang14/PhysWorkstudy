@@ -11,7 +11,7 @@
     "firebase:config:check": "node tools/google_services_config.mjs check",
     "test": "node --test tools/test_firestore_admin.mjs tools/test_google_services_config.mjs",
     "emulators": "firebase emulators:start --only firestore,auth --project demo-physiapp",
-    "test:rules": "firebase emulators:exec --only firestore --project demo-physiapp \"node --test tools/test_firestore_rules.mjs\"",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-physiapp \"node --test firestore.test.js tools/test_firestore_rules.mjs\"",
     "test:rules:legacy": "firebase emulators:exec --only firestore --project demo-physiapp \"node --test firestore.test.js\"",
     "test:backend:emulator": "firebase emulators:exec --only firestore --project demo-physiapp \"node --test tools/test_firestore_emulator.mjs\""
   },

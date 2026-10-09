@@ -72,11 +72,13 @@ import com.example.physiapp.data.model.WorkoutTemplate
 import com.example.physiapp.data.repository.ActiveWorkoutManager
 import com.example.physiapp.data.repository.CurriculumRepository
 import com.example.physiapp.data.repository.ExerciseRepository
+import com.example.physiapp.data.repository.LessonFeedbackRepository
 import com.example.physiapp.data.repository.UserPreferencesRepository
 import com.example.physiapp.data.repository.UserProfileRepository
 import com.example.physiapp.ui.components.ActiveWorkoutMiniBar
 import com.example.physiapp.ui.components.ExerciseMotionPlayer
 import com.example.physiapp.ui.components.ReadinessDialog
+import com.example.physiapp.ui.components.LessonFeedbackSection
 import com.example.physiapp.ui.screens.ActiveWorkoutScreen
 import com.example.physiapp.ui.screens.CurriculumScreen
 import com.example.physiapp.ui.screens.FavoritesScreen
@@ -124,7 +126,7 @@ fun PhysiAppMain() {
     val repository = remember { UserPreferencesRepository(context) }
     val profileRepository = remember(user.uid) { UserProfileRepository(context) }
 
-    // Load assets before screens and sync effects query the non-observable curriculum cache.
+    // Load the bundled lesson cache before screens query it; never publish metadata at startup.
     remember(context.applicationContext) {
         CurriculumRepository.init(context.applicationContext)
     }
@@ -134,15 +136,6 @@ fun PhysiAppMain() {
         profileRepository.observeLessonProgress(user.uid).collect { remoteIds ->
             repository.syncRemoteCompletedLessons(remoteIds)
         }
-    }
-
-    // Index curriculum lessons into Firestore /curriculum_lessons for cloud reference
-    LaunchedEffect(user.uid) {
-        try {
-            val databaseId = context.getString(R.string.firestore_database_id)
-            val db = FirebaseFirestore.getInstance(databaseId)
-            CurriculumRepository.syncLessonsToFirestore(db)
-        } catch (_: Exception) {}
     }
 
     val progress by repository.progressFlow.collectAsState()
@@ -214,6 +207,12 @@ fun PhysiAppMain() {
         if (selectedLessonId != null) {
             val lesson = CurriculumRepository.getLessonById(selectedLessonId!!)
             if (lesson != null) {
+                val feedbackRepository = remember(user, lesson.id) {
+                    LessonFeedbackRepository(
+                        FirebaseFirestore.getInstance(context.getString(R.string.firestore_database_id)),
+                        authManager.auth, user.uid, lesson.id
+                    )
+                }
                 LessonDetailScreen(
                     lesson = lesson,
                     isAlreadyCompleted = progress.completedLessonIds.contains(lesson.id),
@@ -230,6 +229,9 @@ fun PhysiAppMain() {
                         readingReturnLessonId = lesson.id
                         selectedLessonId = null
                         selectedOptionalReadingId = reading.id
+                    },
+                    feedbackSection = {
+                        LessonFeedbackSection(feedbackRepository)
                     }
                 )
                 return@PhysiAppTheme

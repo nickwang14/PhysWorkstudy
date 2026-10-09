@@ -15,6 +15,12 @@ __pycache__/
 **/*service-account*.json
 **/*serviceAccount*.json
 application_default_credentials.json
+# Google CLI credentials belong in the Windows user profile, never in Git.
+credentials.db
+access_tokens.db
+legacy_credentials/
+.config/gcloud/
+/.gcloud/
 .local/
 .firebase/
 node_modules/

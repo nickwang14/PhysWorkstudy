@@ -63,6 +63,7 @@
       "title": "CurriculumLessonIndex",
       "description": "Indexed movement curriculum lesson referencing markdown asset location",
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "lessonId": { "type": "string", "description": "Unique lesson ID (e.g. terminology-01)" },
         "title": { "type": "string", "minLength": 1, "maxLength": 200, "description": "Title of the lesson" },
@@ -91,6 +92,30 @@
         "summary",
         "assetPath"
       ]
+    },
+    "LessonReview": {
+      "title": "LessonReview",
+      "description": "Individual lesson review metadata; only trusted admin-claim clients can write. No document means not reviewed; not a publication/domain/rights approval certificate.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": { "type": "string", "enum": ["approved", "rejected", "needs_improvement"] },
+        "updatedBy": { "type": "string", "description": "Writing admin's Firebase Auth UID" },
+        "updatedAt": { "type": "string", "format": "date-time", "x-firestore-type": "timestamp", "description": "Native serverTimestamp; client rules require request.time" }
+      },
+      "required": ["status", "updatedBy", "updatedAt"]
+    },
+    "LessonComment": {
+      "title": "LessonComment",
+      "description": "Private immutable plain-text feedback. Only author/admin can read or delete; authenticated author creates for an existing lesson.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "authorId": { "type": "string", "description": "Creating user's Firebase Auth UID; cannot impersonate others" },
+        "text": { "type": "string", "minLength": 1, "maxLength": 2000, "pattern": "\\S", "description": "Plain text; no HTML, Markdown, URL or code interpretation. App UTF-16 length check may be stricter than rule string size for some Unicode." },
+        "createdAt": { "type": "string", "format": "date-time", "x-firestore-type": "timestamp", "description": "Native serverTimestamp; client rules require request.time" }
+      },
+      "required": ["authorId", "text", "createdAt"]
     },
     "LessonProgress": {
       "title": "LessonProgress",
@@ -123,7 +148,15 @@
     },
     "/curriculum_lessons/{lessonId}": {
       "schema": "CurriculumLessonIndex",
-      "description": "Indexed movement curriculum lessons referencing markdown file locations"
+      "description": "Signed-in read; admin-only create/update; no client deletes"
+    },
+    "/curriculum_lessons/{lessonId}/review/status": {
+      "schema": "LessonReview",
+      "description": "Signed-in read; trusted admin claim create/update; parent lesson must exist; no client deletes"
+    },
+    "/curriculum_lessons/{lessonId}/comments/{commentId}": {
+      "schema": "LessonComment",
+      "description": "Authenticated author create for existing lesson; author/admin read/delete; no updates"
     }
   }
 }

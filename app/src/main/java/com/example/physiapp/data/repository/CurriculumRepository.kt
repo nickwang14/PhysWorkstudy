@@ -9,6 +9,8 @@ import com.example.physiapp.data.model.CurriculumSubchapter
 import com.example.physiapp.data.model.KnowledgeCheckOption
 import com.example.physiapp.data.model.KnowledgeCheckQuestion
 import com.example.physiapp.data.model.TopicCategory
+import com.example.physiapp.data.model.LessonFeedbackContract
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
 import kotlinx.coroutines.Dispatchers
@@ -251,15 +253,23 @@ object CurriculumRepository {
     }
 
     /**
-     * Indexes all lessons into Cloud Firestore at /curriculum_lessons/{lessonId}.
-     * References Firestore for lesson location and metadata across clients.
+    * Explicit administrator-only publication of bundled individual-lesson metadata.
+    * Never call at startup, including for admins. Rules must enforce admin-only writes;
+    * this client guard cannot grant claims or replace server authorization.
      */
     suspend fun syncLessonsToFirestore(db: FirebaseFirestore): Result<Int> = withContext(Dispatchers.IO) {
         try {
+            val auth = FirebaseAuth.getInstance(db.app)
+            val user = checkNotNull(auth.currentUser) { "Administrator access required." }
+            check(LessonFeedbackContract.isAdminClaim(user.getIdToken(false).await().claims["admin"])) {
+                "Administrator access required."
+            }
             ensureInitialized()
+            check(cachedLessons.all { LessonFeedbackContract.isValidId(it.id) }) { "Invalid bundled lesson ID." }
             val collection = db.collection("curriculum_lessons")
             var count = 0
             for (lesson in cachedLessons) {
+                check(auth.currentUser === user) { "Account changed during publication." }
                 val doc = CurriculumLessonDoc(
                     lessonId = lesson.id,
                     title = lesson.title,
