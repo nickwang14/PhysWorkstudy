@@ -185,7 +185,8 @@ fun LessonDetailScreen(
                     Column(modifier = Modifier.padding(18.dp)) {
                         MarkdownContent(
                             markdown = lesson.fullMarkdownText,
-                            modifier = Modifier.testTag("lesson_markdown_body")
+                            modifier = Modifier.testTag("lesson_markdown_body"),
+                            documentAssetPath = lesson.assetPath
                         )
                     }
                 }

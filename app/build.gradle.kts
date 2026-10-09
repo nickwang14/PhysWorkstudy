@@ -11,6 +11,21 @@ plugins {
 
 val includeExerciseDbDevelopmentKey = providers.gradleProperty("includeExerciseDbDevelopmentKey").orNull == "true"
 
+// Reuse the maintained graphics and credits without duplicating source assets.
+abstract class SyncLessonGraphics : Sync() {
+    @get:OutputDirectory
+    abstract val assetOutputDirectory: DirectoryProperty
+}
+
+val syncLessonGraphics = tasks.register<SyncLessonGraphics>("syncLessonGraphics") {
+    from(rootProject.file("theory-and-knowledge/knowledge/curriculum/foundations-of-movement/assets")) {
+        include("*.svg", "*.jpg", "README.md")
+        into("curriculum/assets")
+    }
+    assetOutputDirectory.set(layout.buildDirectory.dir("generated/lessonGraphics"))
+    into(assetOutputDirectory)
+}
+
 android {
     namespace = "com.example.physiapp"
     compileSdk = 36
@@ -73,6 +88,12 @@ android {
     }
 }
 
+androidComponents {
+    onVariants { variant ->
+        variant.sources.assets?.addGeneratedSourceDirectory(syncLessonGraphics, SyncLessonGraphics::assetOutputDirectory)
+    }
+}
+
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -87,6 +108,7 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.coil.compose)
     implementation(libs.coil.gif)
+    implementation(libs.coil.svg)
     implementation(libs.okhttp)
     implementation(libs.markdown.m3)
     implementation(platform(libs.firebase.bom))

@@ -16,6 +16,7 @@ import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.text.font.FontWeight
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.physiapp.data.content.resolveMarkdownImagePath
 import com.example.physiapp.data.repository.CurriculumRepository
 import com.example.physiapp.ui.screens.LessonDetailScreen
 import org.junit.Assert.assertTrue
@@ -27,6 +28,71 @@ import org.junit.runner.RunWith
 class MarkdownContentTest {
     @get:Rule
     val compose = createComposeRule()
+
+    @Test
+    fun everyBundledLessonImageExistsInTheAppAssets() {
+        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
+        CurriculumRepository.init(context)
+        val imageSyntax = Regex("!\\[[^\\]]*\\]\\(([^)]+)\\)")
+        var references = 0
+        for (lesson in CurriculumRepository.allLessons) {
+            for (match in imageSyntax.findAll(lesson.fullMarkdownText)) {
+                val resolved = requireNotNull(resolveMarkdownImagePath(match.groupValues[1], lesson.assetPath))
+                val path = resolved.removePrefix("file:///android_asset/")
+                context.assets.open(path).use { assertTrue("Empty image: $path", it.read() != -1) }
+                references++
+            }
+        }
+        assertTrue("Expected bundled lesson illustrations", references > 0)
+        context.assets.open("curriculum/assets/README.md").use {
+            assertTrue(it.bufferedReader().readText().contains("CC BY 4.0"))
+        }
+    }
+
+    @Test
+    fun relativeSvgImageLoadsAndExposesAltText() {
+        assertIllustrationLoads("anatomical-planes-and-axes.svg")
+    }
+
+    @Test
+    fun relativeTextbookJpegLoadsAndExposesAltText() {
+        assertIllustrationLoads("openstax-biomechanics-figure-movements-body-part-1-pdf93.jpg")
+    }
+
+    private fun assertIllustrationLoads(filename: String) {
+        compose.setContent {
+            MaterialTheme {
+                MarkdownContent(
+                    "![Movement illustration](../../assets/$filename)",
+                    documentAssetPath = "curriculum/chapter-1/subchapter-1/lesson-01.md"
+                )
+            }
+        }
+        val loaded = SemanticsMatcher.expectValue(SemanticsProperties.StateDescription, "loaded")
+        compose.waitUntil(timeoutMillis = 15_000) {
+            compose.onAllNodes(loaded).fetchSemanticsNodes().isNotEmpty()
+        }
+        compose.onNodeWithTag("markdown_image_../../assets/$filename")
+            .assert(loaded)
+            .assert(SemanticsMatcher.expectValue(SemanticsProperties.ContentDescription, listOf("Movement illustration")))
+    }
+
+    @Test
+    fun missingImageShowsAReadableFallback() {
+        compose.setContent {
+            MaterialTheme {
+                MarkdownContent(
+                    "![Missing movement example](../../assets/does-not-exist.svg)",
+                    documentAssetPath = "curriculum/chapter-1/subchapter-1/lesson-01.md"
+                )
+            }
+        }
+        compose.waitUntil(timeoutMillis = 15_000) {
+            compose.onAllNodes(SemanticsMatcher.expectValue(SemanticsProperties.StateDescription, "unavailable"))
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+        compose.onNodeWithText("Illustration unavailable: Missing movement example").assertExists()
+    }
 
     @Test
     fun headingsAreRenderedWithoutMarkersAndExposeHeadingSemantics() {

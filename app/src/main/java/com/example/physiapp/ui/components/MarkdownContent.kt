@@ -14,19 +14,22 @@ import androidx.compose.ui.unit.sp
 import com.example.physiapp.data.content.parseMarkdownDocument
 import com.mikepenz.markdown.compose.components.MarkdownComponent
 import com.mikepenz.markdown.compose.components.markdownComponents
+import com.mikepenz.markdown.compose.elements.MarkdownParagraph
 import com.mikepenz.markdown.compose.elements.MarkdownText
 import com.mikepenz.markdown.m3.Markdown
 import com.mikepenz.markdown.m3.markdownColor
 import com.mikepenz.markdown.m3.markdownTypography
 import com.mikepenz.markdown.model.MarkdownTypography
 import org.intellij.markdown.IElementType
+import org.intellij.markdown.MarkdownElementTypes
 import org.intellij.markdown.MarkdownTokenTypes
 
 /** Shared reader for lesson bodies, and future imported/optional Markdown readings. */
 @Composable
 fun MarkdownContent(
     markdown: String,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    documentAssetPath: String = ""
 ) {
     val document = remember(markdown) { runCatching { parseMarkdownDocument(markdown) } }
     val body = document.getOrNull()?.body
@@ -62,6 +65,19 @@ fun MarkdownContent(
             list = bodyStyle
         ),
         components = markdownComponents(
+            image = { MarkdownLessonImage(it.content, it.node, documentAssetPath) },
+            paragraph = {
+                // The renderer treats paragraph images as inline text; route standalone figures
+                // through our accessible reader instead of its default no-op image transformer.
+                val children = it.node.children.filter { child ->
+                    child.type != MarkdownTokenTypes.WHITE_SPACE && child.type != MarkdownTokenTypes.EOL
+                }
+                if (children.isNotEmpty() && children.all { child -> child.type == MarkdownElementTypes.IMAGE }) {
+                    children.forEach { image -> MarkdownLessonImage(it.content, image, documentAssetPath) }
+                } else {
+                    MarkdownParagraph(it.content, it.node, style = it.typography.paragraph)
+                }
+            },
             heading1 = accessibleHeading({ it.h1 }),
             heading2 = accessibleHeading({ it.h2 }),
             heading3 = accessibleHeading({ it.h3 }),

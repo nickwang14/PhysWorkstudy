@@ -28,6 +28,26 @@ The new certificate differs from the old APK certificate. Android cannot normall
 
 ## Validation and isolation
 
+### Lesson illustrations
+
+The maintained graphics live in `theory-and-knowledge/knowledge/curriculum/foundations-of-movement/assets/`.
+Gradle's `syncLessonGraphics` task copies the existing SVG/JPEG files and their attribution registry into
+generated `curriculum/assets/` APK assets using the Android variant API. Do not copy PDFs or full-page
+graphics-review previews into this bundle, or maintain a second manually copied set of images.
+
+`LessonDetailScreen` passes each lesson's `assetPath` to `MarkdownContent`, which resolves standalone
+Markdown image paragraphs relative to that document. Coil loads JPEGs and decodes original SVG schematics;
+alt text is exposed to accessibility services and failed loads show an explicit fallback. Images embedded
+inside a prose paragraph still use the library's inline-image path and are not supported by this reader.
+Keep lesson figures in their own paragraphs, as the existing curriculum does.
+
+Run `MarkdownContentTest`'s packaged-asset, SVG/JPEG load and missing-image checks on an emulator when
+changing this pipeline. `MarkdownImagePathTest` covers relative-path resolution and rejects paths escaping
+the curriculum bundle. Build checks do not confer domain/editorial or publication approval. This restores
+existing figures; it does not author visuals for lessons that have none or add motion videos.
+
+### Other validation
+
 - **`npm.cmd test`** checks local backend/config tooling; **`npm.cmd run test:rules`** checks default and named-database client permissions on demo emulators. Use alternate test ports when the owner's local Emulator UI is already running; never stop that instance or redirect tests to live data implicitly.
 - **`:app:testDebugUnitTest`** includes Firestore/Auth integration tests. Run it under a Firebase `emulators:exec --only firestore,auth` invocation with an explicit `demo-` project, setting `GCP_PROJECT` to that same project. The fixture reads emulator-port variables provided by the CLI, enforces loopback/demo targets, and uses a dedicated Firebase app rather than the production default app.
 - Robolectric may download Android runtime artifacts separately from Gradle dependencies. Where its default Maven endpoint has certificate trouble, the verified HTTPS alternate is `https://repo.maven.apache.org/maven2`, selected with JVM property `robolectric.dependency.repo.url`. Set that property for the test JVM (e.g. a temporary `JAVA_TOOL_OPTIONS`) and restore the prior setting afterward. Do not disable TLS validation.
